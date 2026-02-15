@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert academic support for CII Advanced Diploma in Insurance (ACII). The highest CII qualification - Levels 4-7. Professional guidance for all advanced modules.">
+    <title>CII Advanced Diploma in Insurance (ACII) | CII Assignment Help</title>
+    <link rel="icon" href="/favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #1e3a5f;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .page-hero {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 4px solid #ffd700;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            color: #1c205ebe;
+        .highlight-box p {
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .warning-box {
+            background: #fff8e1;
+            border-left: 5px solid #ffd700;
+            padding: 1.8rem;
+            margin: 2rem 0;
+            border-radius: 6px;
+        }
+
+        .warning-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box {
+            background: #f0f7ff;
+            border-left: 5px solid #2c5282;
+            padding: 1.8rem;
+            margin: 2rem 0;
+            border-radius: 6px;
+        }
+
+        .info-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .success-box {
+            background: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            padding: 1.8rem;
+            margin: 2rem 0;
+            border-radius: 6px;
+        }
+
+        .success-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .modules-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            background: white;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .modules-table thead {
+            background: #1e3a5f;
+            color: white;
+        }
+
+        .modules-table th {
+            padding: 1.1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .modules-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .modules-table tbody tr:hover {
+            background: #f8f9fa;
+            transition: background 0.2s;
+        }
+
+        .modules-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .table-section-header {
+            background: #2c5282 !important;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .table-section-header td {
+            padding: 1.2rem;
+            border-bottom: 2px solid #1e3a5f;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        .info-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .related-posts {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .related-posts h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+        }
+
+        .related-posts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .related-posts li {
+            margin: 0.8rem 0;
+        }
+
+        .related-posts a {
+            color: #2c5282;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .related-posts a:hover {
+            color: #ffd700;
+        }
+
+        .related-posts a:before {
+            content: "→ ";
+            color: #1e3a5f;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e3a5f;
+            padding: 1.1rem 2.8rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+        }
+
+        footer {
+            background: #1e3a5f;
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            opacity: 0.9;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+                margin-top: 1rem;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .page-hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 1.7rem;
+            }
+
+            .modules-table {
+                font-size: 0.85rem;
+            }
+
+            .modules-table th,
+            .modules-table td {
+                padding: 0.7rem 0.5rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .page-hero {
+                padding: 3rem 0;
+            }
+
+            .page-hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .modules-table thead {
+                display: none;
+            }
+
+            .modules-table tr {
+                display: block;
+                margin-bottom: 1rem;
+                border: 1px solid #e0e0e0;
+                border-radius: 6px;
+                background: white;
+            }
+
+            .modules-table td {
+                display: block;
+                text-align: left;
+                padding: 0.6rem 1rem;
+                border-bottom: 1px solid #f0f0f0;
+            }
+
+            .modules-table td:before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: inline-block;
+                width: 110px;
+                color: #1e3a5f;
+            }
+
+            .modules-table td:last-child {
+                border-bottom: none;
+            }
+
+            .table-section-header {
+                display: block !important;
+            }
+
+            .table-section-header td {
+                text-align: center;
+            }
+
+            .table-section-header td:before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">CII Assignment Help</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#qualifications">Qualifications</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>CII Advanced Diploma in Insurance</h1>
+            <p class="subtitle">ACII - The Highest CII Qualification (Levels 4-7)</p>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/#qualifications">Qualifications</a> / Advanced Diploma (ACII)
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section>
+            <div class="container">
+                <h2 class="section-title">About the CII Advanced Diploma (ACII)</h2>
+                <p class="intro">Currently, the Advanced Diploma (ACII) is the highest qualification offered by the CII. This prestigious qualification demonstrates mastery of insurance principles and strategic thinking at the highest professional level.</p>
+                
+                <div class="highlight-box">
+                    <h3>What Makes ACII Different?</h3>
+                    <p>The ACII is very different from Certificates and Diplomas because students are mostly tested on <strong>applying their knowledge</strong> rather than simply remembering content. Unlike the earlier qualifications where tests focus on recall and comprehension, in ACII, the examiners want to hear your thoughts, opinions, and strategic analysis. This qualification tests your ability to think critically and apply insurance principles to complex, real-world scenarios.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Module Selection Requirements</h2>
+                
+                <div class="warning-box">
+                    <h3>Five Modules Required</h3>
+                    <p>To achieve the ACII, you must complete <strong>5 modules in total</strong>. This includes one compulsory advanced module which you must choose from:</p>
+                    <ul style="margin-top: 1rem; padding-left: 2rem;">
+                        <li style="margin: 0.5rem 0;"><strong>Advanced Claims (820)</strong></li>
+                        <li style="margin: 0.5rem 0;"><strong>Advanced Insurance Broking (930)</strong></li>
+                        <li style="margin: 0.5rem 0;"><strong>Advanced Underwriting (960)</strong></li>
+                    </ul>
+                    <p style="margin-top: 1rem;">Your choice should align with your career path and area of specialisation within the insurance industry.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Advanced Diploma Modules</h2>
+                <p class="intro">The ACII qualification includes modules ranging from Level 4 to Level 7, with the higher-level modules demonstrating master's degree equivalent knowledge.</p>
+                
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Module</th>
+                            <th>Module Title</th>
+                            <th>Credits</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-section-header">
+                            <td colspan="4">Core Units</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">M92</td>
+                            <td data-label="Module Title">Insurance Business and Finance</td>
+                            <td data-label="Credits">25</td>
+                            <td data-label="Level">4</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">530</td>
+                            <td data-label="Module Title">Economics and Business</td>
+                            <td data-label="Credits">30</td>
+                            <td data-label="Level">6</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">M05</td>
+                            <td data-label="Module Title">Insurance Law</td>
+                            <td data-label="Credits">25</td>
+                            <td data-label="Level">4</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">820</td>
+                            <td data-label="Module Title">Advanced Claims</td>
+                            <td data-label="Credits">30</td>
+                            <td data-label="Level">6</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">930</td>
+                            <td data-label="Module Title">Advanced Insurance Broking</td>
+                            <td data-label="Credits">30</td>
+                            <td data-label="Level">6</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">960</td>
+                            <td data-label="Module Title">Advanced Underwriting</td>
+                            <td data-label="Credits">30</td>
+                            <td data-label="Level">6</td>
+                        </tr>
+
+                        <tr class="table-section-header">
+                            <td colspan="4">Optional Units</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">590</td>
+                            <td data-label="Module Title">Principles of Takaful</td>
+                            <td data-label="Credits">30</td>
+                            <td data-label="Level">6</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">590 (Arabic)</td>
+                            <td data-label="Module Title">Principles of Takaful – Arabic</td>
+                            <td data-label="Credits">30</td>
+                            <td data-label="Level">6</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">545</td>
+                            <td data-label="Module Title">Marketing Insurance Products and Services</td>
+                            <td data-label="Credits">30</td>
+                            <td data-label="Level">6</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">990</td>
+                            <td data-label="Module Title">Insurance Corporate Management</td>
+                            <td data-label="Credits">30</td>
+                            <td data-label="Level">6</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">991</td>
+                            <td data-label="Module Title">London Market Insurance Specialisation</td>
+                            <td data-label="Credits">50</td>
+                            <td data-label="Level">7</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">992</td>
+                            <td data-label="Module Title">Risk Management in Insurance</td>
+                            <td data-label="Credits">30</td>
+                            <td data-label="Level">6</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">993</td>
+                            <td data-label="Module Title">Advances in Strategic Risk Management in Insurance</td>
+                            <td data-label="Credits">50</td>
+                            <td data-label="Level">7</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">994</td>
+                            <td data-label="Module Title">Insurance Market Specialisation</td>
+                            <td data-label="Credits">50</td>
+                            <td data-label="Level">7</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">995</td>
+                            <td data-label="Module Title">Strategic Underwriting</td>
+                            <td data-label="Credits">30</td>
+                            <td data-label="Level">6</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">996</td>
+                            <td data-label="Module Title">Strategic Claims Management</td>
+                            <td data-label="Credits">30</td>
+                            <td data-label="Level">6</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Module">997</td>
+                            <td data-label="Module Title">Advanced Risk Financing and Transfer</td>
+                            <td data-label="Credits">30</td>
+                            <td data-label="Level">6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Credit Requirements</h2>
+                
+                <div class="info-box">
+                    <h3>Understanding the 290 Credit Journey</h3>
+                    <p>By the time you complete the 5 ACII modules, you will have accumulated <strong>150 credits</strong> from your Advanced Diploma studies. If you add the <strong>120 credits</strong> from the Certificate and Diploma levels, you will have <strong>270 credits</strong> in total.</p>
+                    <p style="margin-top: 1rem;">However, to achieve the ACII qualification, you need a total of <strong>290 credits</strong>. The extra 20 credits can come from wherever you like, so long as you have accumulated <strong>205 credits at Diploma level and Advanced Diploma level</strong>.</p>
+                </div>
+
+                <div class="success-box" style="margin-top: 2rem;">
+                    <h3>Credit Breakdown Summary</h3>
+                    <ul style="padding-left: 2rem; margin-top: 1rem;">
+                        <li style="margin: 0.5rem 0;"><strong>Certificate Level:</strong> 40 credits</li>
+                        <li style="margin: 0.5rem 0;"><strong>Diploma Level:</strong> 80 credits (120 total)</li>
+                        <li style="margin: 0.5rem 0;"><strong>Advanced Diploma:</strong> 150 credits (270 total)</li>
+                        <li style="margin: 0.5rem 0;"><strong>Additional Credits Needed:</strong> 20 credits</li>
+                        <li style="margin: 0.5rem 0;"><strong>Total Required:</strong> 290 credits</li>
+                    </ul>
+                    <p style="margin-top: 1rem;"><em>Note: Of the 290 credits, at least 205 must be at Diploma level (Level 4) or above.</em></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Professional Recognition & Career Benefits</h2>
+                <p class="intro">Achieving the ACII qualification is the pinnacle of CII professional development and opens doors to senior leadership positions.</p>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Chartered Status</h3>
+                        <p>ACII holders are eligible for Chartered Insurance Practitioner status, using the prestigious ACII designation. This demonstrates the highest level of professional competence and ethical standards in the industry.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Senior Leadership Roles</h3>
+                        <p>The qualification is recognised globally as evidence of strategic thinking, technical expertise, and leadership capability, opening pathways to board-level and C-suite positions.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>International Recognition</h3>
+                        <p>The ACII is recognised worldwide as the gold standard in insurance qualifications, enhancing your credibility and career mobility across international markets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="related-posts">
+                    <h3>Related Qualifications</h3>
+                    <ul>
+                        <li><a href="/CII-Diploma-in-Insurance">CII Diploma in Insurance | CII Assignment Help</a></li>
+                        <li><a href="/cii-certificate-in-insurance">CII Certificate in Insurance | CII Assignment Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Need Support with Your ACII Studies?</h2>
+                <p>Our expert team provides specialised guidance for Advanced Diploma modules, strategic analysis, and exam preparation at the highest level.</p>
+                <a href="/#contact" class="cta-button">Get Expert Help Today</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CII Assignment Help. Supporting insurance professionals worldwide.</p>
+            <p><a href="/">Home</a> | <a href="/#services">Services</a> | <a href="/#contact">Contact</a></p>
+        </div>
+    </footer>
+</body>
+</html>

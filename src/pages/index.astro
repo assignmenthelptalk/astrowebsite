@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leading CII assignment help platform. Professional support for CII Certificate, Diploma, and Advanced Diploma (ACII). Expert insurance writers, 24/7 support, guaranteed results.">
+    <title>CII Assignment Help - Expert Support for All CII Qualifications</title>
+    <link rel="icon" href="/favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: b#0e0d0d;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: #0d1f35;
+            color: rgb(17, 17, 17);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section - IMPROVED */
+        .hero {
+            background: #0d1f35;
+            background: linear-gradient(135deg, #0a1525 0%, #1e3a5f 50%, #2c5282 100%);
+            color: #ffffff;
+            padding: 6rem 0;
+            text-align: center;
+            position: relative;
+            border-bottom: 5px solid #ffd700;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(44, 82, 130, 0.3) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #353079;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            color: #332a2a;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #0d1f35;
+            padding: 1.2rem 3rem;
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+            margin: 0.5rem;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+            background: #ffed4e;
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            box-shadow: none;
+        }
+
+        .cta-button.secondary:hover {
+            background: #ffffff;
+            color: #0d1f35;
+            transform: translateY(-3px);
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .about-content a {
+            color: #1e3a5f;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #ffd700;
+            transition: color 0.3s;
+        }
+
+        .about-content a:hover {
+            color: #ffd700;
+        }
+
+        /* Qualifications Grid */
+        .qualifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .qualification-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid #1e3a5f;
+        }
+
+        .qualification-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .qualification-card .level-badge {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e3a5f;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .qualification-card h3 {
+            color: #1e3a5f;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .qualification-card p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .qualification-card .learn-more {
+            display: inline-block;
+            color: #1e3a5f;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .qualification-card .learn-more:hover {
+            color: #ffd700;
+        }
+
+        .qualification-card .learn-more:after {
+            content: " →";
+            font-weight: bold;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #1e3a5f;
+        }
+
+        .feature-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        /* Why Choose Section */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .why-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .why-icon {
+            font-size: 2rem;
+            color: #1e3a5f;
+            flex-shrink: 0;
+        }
+
+        .why-item h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.5rem;
+        }
+
+        .why-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* How It Works */
+        .steps-container {
+            max-width: 900px;
+            margin: 3rem auto;
+        }
+
+        .step {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            background: #1e3a5f;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-content p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: #0d1f35;
+            background: linear-gradient(135deg, #0a1525 0%, #1e3a5f 100%);
+            color: white;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            color: #ffffff;
+        }
+
+        /* Footer */
+        footer {
+            background: #0d1f35;
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: #ffd700;
+            font-size: 1.2rem;
+        }
+
+        .footer-section p {
+            color: rgba(255,255,255,0.85);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #ffd700;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+                margin-top: 1rem;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.15rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .qualifications-grid,
+            .features-grid,
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .step {
+                flex-direction: column;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 4rem 0;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                display: block;
+                margin: 0.5rem auto;
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">CII Assignment Help</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#qualifications">Qualifications</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Leading Platform for Premium CII Assignment Help Worldwide</h1>
+            <p>Professional support for all CII qualifications. Expert writers, proven results, thousands of successful students.</p>
+            <a href="#contact" class="cta-button">Get Started Today</a>
+            <a href="#qualifications" class="cta-button secondary">View Qualifications</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About CII Assignment Help</h2>
+            <div class="about-content">
+                <p>CII Assignment Help is the leading platform for the delivery of premium CII assignments across the world. Our team consists of professional and experienced insurance writers who strive to deliver the best-quality assignments to our customers.</p>
+                <p style="margin-top: 1.5rem;">We have helped thousands of professional courses students pass their <a href="http://en.wikipedia.org/wiki/Chartered_Insurance_Institute" target="_blank" rel="noopener noreferrer">Chartered Insurance Institute</a> qualifications. Because of our excellent results, clients keep coming back to us and even referring more clients. Our quality control department ensures that we only deliver the best to our clients.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualifications Section -->
+    <section id="qualifications" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">CII Qualifications We Support</h2>
+            <p class="section-subtitle">Expert guidance for every level of your CII journey, from Certificate to Advanced Diploma</p>
+            
+            <div class="qualifications-grid">
+                <div class="qualification-card">
+                    <span class="level-badge">LEVEL 3</span>
+                    <h3>CII Certificate in Insurance</h3>
+                    <p>The CII Certificate in Insurance is a Level 3 qualification and an introductory level to help staff develop basic knowledge and confidence in key disciplines. The certificate provides basic grounding in insurance principles such as regulatory environment, underwriting, and claims.</p>
+                    <a href="/cii-certificate-in-insurance" class="learn-more">Read more on CII Certificate</a>
+                </div>
+
+                <div class="qualification-card">
+                    <span class="level-badge">LEVEL 4</span>
+                    <h3>CII Diploma in Insurance</h3>
+                    <p>The CII Diploma in Insurance is a more technical and supervisory qualification. The diploma gives students a greater understanding of insurance fundamentals and is mainly for insurance technicians, supervisors, and team leaders.</p>
+                    <a href="/CII-Diploma-in-Insurance" class="learn-more">Read more on CII Diploma</a>
+                </div>
+
+                <div class="qualification-card">
+                    <span class="level-badge">LEVELS 4-7</span>
+                    <h3>Advanced Diploma (ACII)</h3>
+                    <p>The CII Advanced Diploma in Insurance is the highest qualification offered by the Chartered Institute of Insurance. It provides an enhanced understanding of insurance practice and a comprehensive assessment of market knowledge, joining you to the community of proven insurance professionals.</p>
+                    <a href="/cii-advanced-diploma-in-insurance" class="learn-more">Read more on ACII</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">What Makes Our CII Assignment Help Unique?</h2>
+            <p class="section-subtitle">Professional expertise, proven results, and dedicated support for your success</p>
+            
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">🎓</div>
+                    <div>
+                        <h3>Expert CII-Qualified Writers</h3>
+                        <p>All our writers have successfully undertaken CII qualifications to the level of Diploma and above, with in-depth knowledge of the insurance industry and CII's stringent requirements.</p>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">✍️</div>
+                    <div>
+                        <h3>Original, Custom Work</h3>
+                        <p>Every assignment is written from scratch and comes with a free Turnitin report. We have a strict plagiarism policy ensuring complete originality.</p>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🔄</div>
+                    <div>
+                        <h3>Unlimited Free Revisions</h3>
+                        <p>We undertake unlimited revisions free of charge to ensure you receive the best CII assignment possible, no matter how many times.</p>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">⏰</div>
+                    <div>
+                        <h3>Guaranteed Timely Delivery</h3>
+                        <p>Writers are under strict instructions to deliver before deadlines, giving you enough time to review and request revisions if needed.</p>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">💰</div>
+                    <div>
+                        <h3>Affordable Pricing</h3>
+                        <p>Flexible prices that aren't out of reach. Reasonable rates for professional CII assignment help with full refund policy if needed.</p>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🔒</div>
+                    <div>
+                        <h3>Safe & Secure Payments</h3>
+                        <p>Multiple payment modes including PayPal, internet banking, debit, or credit card, all protected by the latest firewall security features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Why Students Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🕐</div>
+                    <h3>24/7 Support</h3>
+                    <p>Our customer support is top-notch and our agents are available 24/7. Contact us anytime, day or night, with any questions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Experienced Professionals</h3>
+                    <p>Highly skilled in-house writers who have extensive experience in writing and teaching as their full-time job.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>All Modules Covered</h3>
+                    <p>Whether it's Insurance Law, Economics & Business, or Underwriting Practice, our qualified writers can help with any module.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✓</div>
+                    <h3>Proven Track Record</h3>
+                    <p>Thousands of successful students worldwide. Excellent results that keep clients coming back and referring others.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">How to Access CII Assignment Writing Service</h2>
+            <p class="section-subtitle">Simple, secure, and straightforward process to get expert help</p>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Fill the Order Form</h3>
+                        <p>Register yourself with our writing service. Include all your details to receive updates on our latest services and exclusive discounts to your advantage.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Specify Requirements</h3>
+                        <p>Provide all instructions and deadlines to enable smooth delivery of your required service. Our writers need complete information to deliver exactly what you need.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Make Secure Payment</h3>
+                        <p>Choose your most convenient payment mode, protected by the latest firewall security features. Your details remain completely confidential.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Receive Your Assignment</h3>
+                        <p>Get your professionally written assignment before the deadline with time to review. Request unlimited free revisions if needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why We Exist Section -->
+    <section style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <div class="about-content">
+                <p>The sole purpose of CII Assignment Help is to ease the CII journey and make it as enjoyable as possible. We provide students and insurance experts with professional assistance throughout their CII journey, regardless of the modules.</p>
+                <p style="margin-top: 1.5rem;">Having offered CII assignment help for several years, our writers have gained better research skills and analytical skills to give each of your CII papers the deserving treatment it needs. Professional qualifications such as CII increase your chances of having a lucrative career in the insurance industry. Take advantage of our assignment service to help obtain your CII Diploma or Advanced Diploma.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <h2>Ready to Excel in Your CII Studies?</h2>
+            <p>Contact us today and experience our efficiency when it comes to CII assignment help</p>
+            <a href="mailto:support@ciiassignmenthelp.com" class="cta-button">Get Expert Help Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CII Assignment Help</h4>
+                    <p>Your trusted partner for CII academic success. Supporting insurance students at every level of their professional journey worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Qualifications</h4>
+                    <ul>
+                        <li><a href="/cii-certificate-in-insurance">Certificate in Insurance (Level 3)</a></li>
+                        <li><a href="/CII-Diploma-in-Insurance">Diploma in Insurance (Level 4)</a></li>
+                        <li><a href="/cii-advanced-diploma-in-insurance">Advanced Diploma - ACII (Levels 4-7)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Assignment Writing</a></li>
+                        <li><a href="#services">Exam Preparation</a></li>
+                        <li><a href="#services">Coursework Support</a></li>
+                        <li><a href="#services">Unlimited Revisions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Get in Touch</h4>
+                    <p>Email: support@ciiassignmenthelp.com</p>
+                    <p>Available 24/7 for enquiries</p>
+                    <p style="margin-top: 1rem;"><a href="http://web.archive.org/web/20231211100928/http://en.wikipedia.org/wiki/Chartered_Insurance_Institute" target="_blank" rel="noopener noreferrer">About the Chartered Insurance Institute</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CII Assignment Help. All rights reserved. Supporting students worldwide.</p>
+            </div>
+        </div>
+    </footer>
+	       
+  
+</body>
+</html>
+
+</body>
+</html>
+
+</body>
+</html>

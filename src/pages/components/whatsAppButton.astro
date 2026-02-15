@@ -1,0 +1,111 @@
+---
+// src/components/WhatsAppButton.astro
+const phoneNumber = "254721165448"; // Replace with your actual WhatsApp number (country code + number, no + or spaces)
+const message = "Hello! I need help with my CII assignment."; // Optional pre-filled message
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+---
+
+<a href={whatsappUrl} class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg class="whatsapp-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.923 0-7.435 6.050-13.485 13.485-13.485s13.485 6.050 13.485 13.485c0 7.435-6.050 13.485-13.485 13.485zM21.305 18.694c-0.372-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.186-0.837 0.186s-0.961 1.208-1.179 1.456c-0.217 0.248-0.434 0.279-0.806 0.093s-1.571-0.579-2.991-1.847c-1.107-0.988-1.854-2.209-2.071-2.581s-0.023-0.573 0.163-0.758c0.167-0.167 0.372-0.434 0.558-0.651s0.248-0.372 0.372-0.620c0.124-0.248 0.062-0.465-0.031-0.651s-0.837-2.010-1.147-2.751c-0.303-0.722-0.610-0.624-0.837-0.636-0.217-0.011-0.465-0.014-0.713-0.014s-0.651 0.093-0.992 0.465c-0.341 0.372-1.301 1.270-1.301 3.096s1.332 3.589 1.518 3.837c0.186 0.248 2.632 4.019 6.378 5.637 0.890 0.384 1.587 0.614 2.129 0.786 0.894 0.283 1.707 0.243 2.350 0.148 0.717-0.107 2.197-0.898 2.507-1.766s0.310-1.611 0.217-1.766c-0.093-0.155-0.341-0.248-0.713-0.434z"/>
+    </svg>
+    <span class="whatsapp-text">Chat on WhatsApp</span>
+</a>
+
+<style>
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #25D366;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        transition: all 0.3s ease;
+        z-index: 1000;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    }
+
+    .whatsapp-button:hover {
+        background: #20BA5A;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+    }
+
+    .whatsapp-button:active {
+        transform: translateY(-1px) scale(1.02);
+    }
+
+    .whatsapp-icon {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+    }
+
+    .whatsapp-text {
+        white-space: nowrap;
+    }
+
+    /* Pulse animation to grab attention */
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        }
+        50% {
+            box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7);
+        }
+        100% {
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        }
+    }
+
+    .whatsapp-button {
+        animation: pulse 2s infinite;
+    }
+
+    .whatsapp-button:hover {
+        animation: none;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+        .whatsapp-button {
+            bottom: 15px;
+            right: 15px;
+            padding: 10px 16px;
+            font-size: 0.9rem;
+        }
+
+        .whatsapp-icon {
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    /* Extra small screens - show only icon */
+    @media (max-width: 480px) {
+        .whatsapp-text {
+            display: none;
+        }
+
+        .whatsapp-button {
+            padding: 14px;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            justify-content: center;
+        }
+
+        .whatsapp-icon {
+            width: 28px;
+            height: 28px;
+        }
+    }
+</style>
