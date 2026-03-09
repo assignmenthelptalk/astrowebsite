@@ -332,15 +332,16 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         }
 
         .contact-info p {
-            color: rgba(255,255,255,0.85);
-            margin-bottom: 0.5rem;
+            color: #ffffff;
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
         }
 
         .quote-form {
-            background: rgba(255,255,255,0.1);
+            background: #ffffff;
             padding: 2rem;
             border-radius: 10px;
-            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
         }
 
         .quote-form input,
@@ -348,23 +349,36 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         .quote-form textarea {
             width: 100%;
             padding: 0.8rem 1rem;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 2px solid #d0d5dd;
             border-radius: 5px;
-            background: rgba(255,255,255,0.1);
-            color: white;
+            background: #f9fafb;
+            color: #1e3a5f;
             font-size: 1rem;
             margin-bottom: 1rem;
             font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .quote-form input:focus,
+        .quote-form select:focus,
+        .quote-form textarea:focus {
+            outline: none;
+            border-color: #ffd700;
+            box-shadow: 0 0 0 3px rgba(255,215,0,0.2);
         }
 
         .quote-form input::placeholder,
         .quote-form textarea::placeholder {
-            color: rgba(255,255,255,0.5);
+            color: #8e99a4;
+        }
+
+        .quote-form select {
+            color: #8e99a4;
         }
 
         .quote-form select option {
-            background: #1e3a5f;
-            color: white;
+            background: white;
+            color: #1e3a5f;
         }
 
         .quote-form button {
