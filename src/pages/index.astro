@@ -399,6 +399,45 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             box-shadow: 0 4px 15px rgba(255,215,0,0.4);
         }
 
+        .file-upload {
+            text-align: left;
+            margin-bottom: 1rem;
+        }
+        
+        .file-upload label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 0.95rem;
+        }
+
+        .file-upload input[type="file"] {
+            padding: 0.8rem;
+            background: #f9fafb;
+            color: #1e3a5f;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            border: 2px solid #d0d5dd;
+        }
+
+        .file-upload input[type="file"]::file-selector-button {
+            border: none;
+            background: #1e3a5f;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            margin-right: 1rem;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .file-upload input[type="file"]::file-selector-button:hover {
+            background: #ffd700;
+            color: #0d1f35;
+        }
+
         .cta-whatsapp {
             display: inline-flex;
             align-items: center;
@@ -1169,7 +1208,12 @@ import WhatsAppButton from './components/whatsAppButton.astro';
                     <p style="margin-top: 1.5rem;"><a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20my%20CII%20assignment." target="_blank" rel="noopener noreferrer" class="cta-whatsapp" style="margin: 0;">💬 WhatsApp Us Now</a></p>
                     <p style="margin-top: 1rem;"><a href="mailto:support@ciiassignmenthelp.com" class="cta-button" style="margin: 0; font-size: 1rem; padding: 0.9rem 2rem;">📧 Email Us</a></p>
                 </div>
-                <form class="quote-form" id="quoteForm">
+                <form class="quote-form" id="quoteForm" action="https://formsubmit.co/assignmenthelptalk@gmail.com" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="_subject" value="New CII Assignment Quote & File Attachment">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" id="nextUrl" value="https://wa.me/254721165448">
+
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <select name="module" required>
@@ -1179,6 +1223,12 @@ import WhatsAppButton from './components/whatsAppButton.astro';
                         <option value="ACII">Advanced Diploma - ACII (Levels 4-7)</option>
                     </select>
                     <input type="text" name="deadline" placeholder="Your Deadline (e.g. 15 April 2026)">
+                    
+                    <div class="file-upload">
+                        <label for="assignment-file">Attach Assignment Questions (Optional)</label>
+                        <input type="file" id="assignment-file" name="attachment" accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png">
+                    </div>
+
                     <button type="submit">Get Your Free Quote →</button>
                 </form>
             </div>
@@ -1275,14 +1325,17 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         const form = document.getElementById('quoteForm');
         if (form) {
             form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const data = new FormData(form);
-                const name = data.get('name');
-                const email = data.get('email');
-                const module = data.get('module');
-                const deadline = data.get('deadline');
-                const msg = `Hello! I need CII assignment help.%0A%0AName: ${name}%0AEmail: ${email}%0AModule: ${module}%0ADeadline: ${deadline}`;
-                window.open(`https://wa.me/254721165448?text=${msg}`, '_blank');
+                // Generate WhatsApp redirect URL dynamically before native submission
+                const name = form.querySelector('[name="name"]').value;
+                const email = form.querySelector('[name="email"]').value;
+                const module = form.querySelector('[name="module"]').value;
+                const deadline = form.querySelector('[name="deadline"]').value;
+                const msg = `Hello! I need CII assignment help.\n\nName: ${name}\nEmail: ${email}\nModule: ${module}\nDeadline: ${deadline}`;
+                
+                const nextUrlInput = document.getElementById('nextUrl');
+                if (nextUrlInput) {
+                    nextUrlInput.value = `https://wa.me/254721165448?text=${encodeURIComponent(msg)}`;
+                }
             });
         }
     </script>
