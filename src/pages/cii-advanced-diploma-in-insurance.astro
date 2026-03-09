@@ -8,6 +8,9 @@ import WhatsAppButton from './components/whatsAppButton.astro';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Expert academic support for CII Advanced Diploma in Insurance (ACII). The highest CII qualification - Levels 4-7. Professional guidance for all advanced modules.">
     <title>CII Advanced Diploma in Insurance (ACII) | CII Assignment Help</title>
+    <meta property="og:title" content="CII Advanced Diploma in Insurance (ACII) | CII Assignment Help">
+    <meta property="og:description" content="Expert academic support for CII Advanced Diploma in Insurance (ACII). The highest CII qualification - Levels 4-7.">
+    <meta property="og:type" content="article">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
     <link rel="shortcut icon" href="/favicon.ico?v=4">
     <style>
@@ -44,6 +47,39 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            position: relative;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+            z-index: 101;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #ffffff;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
         }
 
         .logo {
@@ -83,7 +119,163 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             font-size: 2.8rem;
             margin-bottom: 0.8rem;
             font-weight: 700;
-            color: #1c205ebe;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            color: #ffd700;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .breadcrumb a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            opacity: 0.8;
+        }
+
+        .cta-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: white;
+            padding: 0.9rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0.5rem;
+        }
+
+        .cta-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+            background: #20BA5A;
+        }
+
+        .mid-cta {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .mid-cta h3 {
+            color: #1e3a5f;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .mid-cta p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #0d1f35;
+            padding: 0.8rem 1rem;
+            text-align: center;
+            z-index: 99;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+        }
+
+        .sticky-cta a {
+            display: inline-block;
+            background: #ffd700;
+            color: #0d1f35;
+            padding: 0.7rem 2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            margin: 0 0.3rem;
+        }
+
+        .sticky-cta .wa-sticky {
+            background: #25D366;
+            color: white;
+        }
+
+        main {
+            background: white;
+        }
+
+        section {
+            padding: 3.5rem 0;
+        }
+
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #1e3a5f;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            font-size: 1.5rem;
+            color: #2c5282;
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .intro a {
+            color: #1e3a5f;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #ffd700;
+            transition: color 0.3s;
+        }
+
+        .intro a:hover {
+            color: #ffd700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            border-left: 5px solid #1e3a5f;
+            padding: 1.8rem;
+            margin: 2rem 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .highlight-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
         .highlight-box p {
             color: #444;
             line-height: 1.8;
@@ -111,19 +303,6 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         }
 
         .info-box h3 {
-            color: #1e3a5f;
-            margin-bottom: 0.8rem;
-        }
-
-        .success-box {
-            background: #e8f5e9;
-            border-left: 5px solid #4caf50;
-            padding: 1.8rem;
-            margin: 2rem 0;
-            border-radius: 6px;
-        }
-
-        .success-box h3 {
             color: #1e3a5f;
             margin-bottom: 0.8rem;
         }
@@ -200,6 +379,27 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             color: #1e3a5f;
             margin-bottom: 1rem;
             font-size: 1.3rem;
+        }
+
+        .info-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .info-card li {
+            padding: 0.6rem 0;
+            padding-left: 1.8rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .info-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e3a5f;
+            font-weight: bold;
+            font-size: 1.1rem;
         }
 
         .related-posts {
@@ -299,11 +499,36 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         }
 
         @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
             .nav-links {
-                gap: 1rem;
-                margin-top: 1rem;
-                width: 100%;
-                justify-content: center;
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1e3a5f;
+                padding: 1rem;
+                gap: 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                z-index: 100;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.7rem 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
             }
 
             .page-hero h1 {
@@ -325,6 +550,10 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             .modules-table th,
             .modules-table td {
                 padding: 0.7rem 0.5rem;
+            }
+
+            .sticky-cta {
+                display: block;
             }
         }
 
@@ -380,6 +609,19 @@ import WhatsAppButton from './components/whatsAppButton.astro';
                 display: none;
             }
         }
+
+        .success-box {
+            background: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            padding: 1.8rem;
+            margin: 2rem 0;
+            border-radius: 6px;
+        }
+
+        .success-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
     </style>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
@@ -399,7 +641,12 @@ import WhatsAppButton from './components/whatsAppButton.astro';
     <header>
         <nav class="container">
             <a href="/" class="logo">CII Assignment Help</a>
-            <ul class="nav-links">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="/">Home</a></li>
                 <li><a href="/#qualifications">Qualifications</a></li>
                 <li><a href="/#services">Services</a></li>
@@ -424,10 +671,9 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             <div class="container">
                 <h2 class="section-title">About the CII Advanced Diploma (ACII)</h2>
                 <p class="intro">Currently, the Advanced Diploma (ACII) is the highest qualification offered by the CII. This prestigious qualification demonstrates mastery of insurance principles and strategic thinking at the highest professional level.</p>
-                
                 <div class="highlight-box">
                     <h3>What Makes ACII Different?</h3>
-                    <p>The ACII is very different from Certificates and Diplomas because students are mostly tested on <strong>applying their knowledge</strong> rather than simply remembering content. Unlike the earlier qualifications where tests focus on recall and comprehension, in ACII, the examiners want to hear your thoughts, opinions, and strategic analysis. This qualification tests your ability to think critically and apply insurance principles to complex, real-world scenarios.</p>
+                    <p>The ACII is very different from Certificates and Diplomas because students are mostly tested on <strong>applying their knowledge</strong> rather than simply remembering content. Unlike the earlier qualifications where tests focus on recall and comprehension, in ACII, the examiners want to hear your thoughts, opinions, and strategic analysis.</p>
                 </div>
             </div>
         </section>
@@ -435,7 +681,6 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         <section>
             <div class="container">
                 <h2 class="section-title">Module Selection Requirements</h2>
-                
                 <div class="warning-box">
                     <h3>Five Modules Required</h3>
                     <p>To achieve the ACII, you must complete <strong>5 modules in total</strong>. This includes one compulsory advanced module which you must choose from:</p>
@@ -453,20 +698,10 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             <div class="container">
                 <h2 class="section-title">Advanced Diploma Modules</h2>
                 <p class="intro">The ACII qualification includes modules ranging from Level 4 to Level 7, with the higher-level modules demonstrating master's degree equivalent knowledge.</p>
-                
                 <table class="modules-table">
-                    <thead>
-                        <tr>
-                            <th>Module</th>
-                            <th>Module Title</th>
-                            <th>Credits</th>
-                            <th>Level</th>
-                        </tr>
-                    </thead>
+                    <thead><tr><th>Module</th><th>Module Title</th><th>Credits</th><th>Level</th></tr></thead>
                     <tbody>
-                        <tr class="table-section-header">
-                            <td colspan="4">Core Units</td>
-                        </tr>
+                        <tr class="table-section-header"><td colspan="4">Core Units</td></tr>
                         <tr>
                             <td data-label="Module">M92</td>
                             <td data-label="Module Title">Insurance Business and Finance</td>
@@ -503,10 +738,7 @@ import WhatsAppButton from './components/whatsAppButton.astro';
                             <td data-label="Credits">30</td>
                             <td data-label="Level">6</td>
                         </tr>
-
-                        <tr class="table-section-header">
-                            <td colspan="4">Optional Units</td>
-                        </tr>
+                        <tr class="table-section-header"><td colspan="4">Optional Units</td></tr>
                         <tr>
                             <td data-label="Module">590</td>
                             <td data-label="Module Title">Principles of Takaful</td>
@@ -575,19 +807,23 @@ import WhatsAppButton from './components/whatsAppButton.astro';
                         </tr>
                     </tbody>
                 </table>
+                <div class="mid-cta">
+                    <h3>Need Help With an ACII Module?</h3>
+                    <p>Our expert writers specialise in Advanced Diploma modules — strategic analysis at the highest level</p>
+                    <a href="/#contact" class="cta-button" style="margin: 0.3rem;">Get a Free Quote</a>
+                    <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20my%20ACII%20assignment." target="_blank" rel="noopener noreferrer" class="cta-whatsapp" style="margin: 0.3rem;">💬 WhatsApp Us</a>
+                </div>
             </div>
         </section>
 
         <section>
             <div class="container">
                 <h2 class="section-title">Credit Requirements</h2>
-                
                 <div class="info-box">
                     <h3>Understanding the 290 Credit Journey</h3>
                     <p>By the time you complete the 5 ACII modules, you will have accumulated <strong>150 credits</strong> from your Advanced Diploma studies. If you add the <strong>120 credits</strong> from the Certificate and Diploma levels, you will have <strong>270 credits</strong> in total.</p>
                     <p style="margin-top: 1rem;">However, to achieve the ACII qualification, you need a total of <strong>290 credits</strong>. The extra 20 credits can come from wherever you like, so long as you have accumulated <strong>205 credits at Diploma level and Advanced Diploma level</strong>.</p>
                 </div>
-
                 <div class="success-box" style="margin-top: 2rem;">
                     <h3>Credit Breakdown Summary</h3>
                     <ul style="padding-left: 2rem; margin-top: 1rem;">
@@ -604,21 +840,20 @@ import WhatsAppButton from './components/whatsAppButton.astro';
 
         <section>
             <div class="container">
-                <h2 class="section-title">Professional Recognition & Career Benefits</h2>
+                <h2 class="section-title">Professional Recognition &amp; Career Benefits</h2>
                 <p class="intro">Achieving the ACII qualification is the pinnacle of CII professional development and opens doors to senior leadership positions.</p>
-                
                 <div class="info-grid">
                     <div class="info-card">
                         <h3>Chartered Status</h3>
-                        <p>ACII holders are eligible for Chartered Insurance Practitioner status, using the prestigious ACII designation. This demonstrates the highest level of professional competence and ethical standards in the industry.</p>
+                        <p>ACII holders are eligible for Chartered Insurance Practitioner status, using the prestigious ACII designation.</p>
                     </div>
                     <div class="info-card">
                         <h3>Senior Leadership Roles</h3>
-                        <p>The qualification is recognised globally as evidence of strategic thinking, technical expertise, and leadership capability, opening pathways to board-level and C-suite positions.</p>
+                        <p>The qualification is recognised globally as evidence of strategic thinking, technical expertise, and leadership capability.</p>
                     </div>
                     <div class="info-card">
                         <h3>International Recognition</h3>
-                        <p>The ACII is recognised worldwide as the gold standard in insurance qualifications, enhancing your credibility and career mobility across international markets.</p>
+                        <p>The ACII is recognised worldwide as the gold standard in insurance qualifications.</p>
                     </div>
                 </div>
             </div>
@@ -640,7 +875,8 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             <div class="container">
                 <h2>Need Support with Your ACII Studies?</h2>
                 <p>Our expert team provides specialised guidance for Advanced Diploma modules, strategic analysis, and exam preparation at the highest level.</p>
-                <a href="/#contact" class="cta-button">Get Expert Help Today</a>
+                <a href="/#contact" class="cta-button">Get Your Free Quote</a>
+                <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20my%20ACII%20studies." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
             </div>
         </section>
     </main>
@@ -652,6 +888,25 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         </div>
     </footer>
     <WhatsAppButton />
+
+    <div class="sticky-cta">
+        <a href="/#contact">Get Quote</a>
+        <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20my%20ACII%20studies." target="_blank" rel="noopener noreferrer" class="wa-sticky">💬 WhatsApp</a>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
-

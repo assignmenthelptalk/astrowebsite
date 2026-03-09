@@ -8,6 +8,9 @@ import WhatsAppButton from './components/whatsAppButton.astro';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Expert academic support for CII Certificate in Insurance (Level 3). Complete guide to modules, prior learning credits, and professional guidance.">
     <title>CII Certificate in Insurance - Level 3 Support | CII Assignment Help</title>
+    <meta property="og:title" content="CII Certificate in Insurance - Level 3 Support | CII Assignment Help">
+    <meta property="og:description" content="Expert academic support for CII Certificate in Insurance (Level 3). Complete guide to modules, prior learning credits, and professional guidance.">
+    <meta property="og:type" content="article">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
     <link rel="shortcut icon" href="/favicon.ico?v=4">
     <style>
@@ -44,6 +47,39 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            position: relative;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+            z-index: 101;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #ffffff;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
         }
 
         .logo {
@@ -83,7 +119,7 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             font-size: 2.8rem;
             margin-bottom: 0.8rem;
             font-weight: 700;
-            color: #3c2d64;
+            color: #ffffff;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
@@ -97,7 +133,7 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         .breadcrumb {
             margin-top: 1rem;
             font-size: 0.9rem;
-            color: rgba(14, 13, 13, 0.85);
+            color: rgba(255, 255, 255, 0.85);
         }
 
         .breadcrumb a {
@@ -108,6 +144,76 @@ import WhatsAppButton from './components/whatsAppButton.astro';
 
         .breadcrumb a:hover {
             opacity: 0.8;
+        }
+
+        .cta-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: white;
+            padding: 0.9rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0.5rem;
+        }
+
+        .cta-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+            background: #20BA5A;
+        }
+
+        .mid-cta {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .mid-cta h3 {
+            color: #1e3a5f;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .mid-cta p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #0d1f35;
+            padding: 0.8rem 1rem;
+            text-align: center;
+            z-index: 99;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+        }
+
+        .sticky-cta a {
+            display: inline-block;
+            background: #ffd700;
+            color: #0d1f35;
+            padding: 0.7rem 2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            margin: 0 0.3rem;
+        }
+
+        .sticky-cta .wa-sticky {
+            background: #25D366;
+            color: white;
         }
 
         main {
@@ -141,6 +247,18 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             line-height: 1.8;
             color: #555;
             margin-bottom: 1.5rem;
+        }
+
+        .intro a {
+            color: #1e3a5f;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #ffd700;
+            transition: color 0.3s;
+        }
+
+        .intro a:hover {
+            color: #ffd700;
         }
 
         .highlight-box {
@@ -225,6 +343,18 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             border-bottom: none;
         }
 
+        .table-section-header {
+            background: #2c5282 !important;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .table-section-header td {
+            padding: 1.2rem;
+            border-bottom: 2px solid #1e3a5f;
+        }
+
         .info-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -249,6 +379,27 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             color: #1e3a5f;
             margin-bottom: 1rem;
             font-size: 1.3rem;
+        }
+
+        .info-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .info-card li {
+            padding: 0.6rem 0;
+            padding-left: 1.8rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .info-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e3a5f;
+            font-weight: bold;
+            font-size: 1.1rem;
         }
 
         .related-posts {
@@ -348,11 +499,36 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         }
 
         @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
             .nav-links {
-                gap: 1rem;
-                margin-top: 1rem;
-                width: 100%;
-                justify-content: center;
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1e3a5f;
+                padding: 1rem;
+                gap: 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                z-index: 100;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.7rem 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
             }
 
             .page-hero h1 {
@@ -374,6 +550,10 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             .modules-table th,
             .modules-table td {
                 padding: 0.7rem 0.5rem;
+            }
+
+            .sticky-cta {
+                display: block;
             }
         }
 
@@ -416,6 +596,18 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             .modules-table td:last-child {
                 border-bottom: none;
             }
+
+            .table-section-header {
+                display: block !important;
+            }
+
+            .table-section-header td {
+                text-align: center;
+            }
+
+            .table-section-header td:before {
+                display: none;
+            }
         }
     </style>
     <!--Start of Tawk.to Script-->
@@ -436,7 +628,12 @@ import WhatsAppButton from './components/whatsAppButton.astro';
     <header>
         <nav class="container">
             <a href="/" class="logo">CII Assignment Help</a>
-            <ul class="nav-links">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="/">Home</a></li>
                 <li><a href="/#qualifications">Qualifications</a></li>
                 <li><a href="/#services">Services</a></li>
@@ -461,7 +658,6 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             <div class="container">
                 <h2 class="section-title">About the CII Certificate in Insurance</h2>
                 <p class="intro">The CII Certificate in Insurance is a Level 3 qualification that provides essential knowledge and technical competence for insurance professionals. It's the foundation for a successful career in the insurance industry and serves as the pathway to higher qualifications.</p>
-                
                 <div class="highlight-box">
                     <h3>40 Credits: The Magic Number</h3>
                     <p>To achieve the CII Certificate in Insurance, you need to accumulate 40 credits. This is typically accomplished by completing three modules (IF1 plus two electives), each worth 15 credits, though credit requirements may vary based on prior learning recognition.</p>
@@ -472,12 +668,10 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         <section>
             <div class="container">
                 <h2 class="section-title">Module Selection Path</h2>
-                
                 <div class="warning-box">
                     <h3>Starting Your Journey</h3>
                     <p>After completing IF1 (Insurance, Legal and Regulatory), students get to choose two other modules. One advantage of a CII Certificate is that there are a lot of options available, allowing you to tailor your qualification to your career interests and goals.</p>
                 </div>
-
                 <h3 class="section-subtitle">Recommended Study Path</h3>
                 <p class="intro">Generally, for most students, <strong>Insurance Underwriting Process (IF3)</strong> is a good second module. Once you have completed your second option, the best choice for the third module is the one that is closest to your role or interest from the comprehensive list below.</p>
             </div>
@@ -487,16 +681,8 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             <div class="container">
                 <h2 class="section-title">Certificate Modules</h2>
                 <p class="intro">Below is a complete list of all available modules for the CII Certificate in Insurance. All modules are Level 3 and worth 15 credits each.</p>
-                
                 <table class="modules-table">
-                    <thead>
-                        <tr>
-                            <th>Unit</th>
-                            <th>Module Title</th>
-                            <th>Credit</th>
-                            <th>Level</th>
-                        </tr>
-                    </thead>
+                    <thead><tr><th>Unit</th><th>Module Title</th><th>Credit</th><th>Level</th></tr></thead>
                     <tbody>
                         <tr>
                             <td data-label="Unit">IF2</td>
@@ -620,17 +806,22 @@ import WhatsAppButton from './components/whatsAppButton.astro';
                         </tr>
                     </tbody>
                 </table>
+                <div class="mid-cta">
+                    <h3>Need Help With a Certificate Module?</h3>
+                    <p>Our experts cover all CII Certificate modules — from IF1 through to specialist units</p>
+                    <a href="/#contact" class="cta-button" style="margin: 0.3rem;">Get a Free Quote</a>
+                    <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20my%20CII%20Certificate%20assignment." target="_blank" rel="noopener noreferrer" class="cta-whatsapp" style="margin: 0.3rem;">💬 WhatsApp Us</a>
+                </div>
             </div>
         </section>
 
         <section>
             <div class="container">
                 <h2 class="section-title">Prior Learning Credits</h2>
-                
                 <div class="info-box">
                     <h3>Recognition of Prior Learning</h3>
-                    <p>If you have completed a degree in a module that has some overlap with CII content, you can apply to be given some credits towards your CII Certificate. This is most common with business degrees or legal degrees. These credits are assigned to specific modules, for example, Business and Economics.</p>
-                    <p style="margin-top: 1rem;">Prior learning credits may also be awarded based on a professional course you have completed. Most students who receive prior learning credits obtain their certificate after passing IF1, as their previous qualifications cover the remaining credit requirements.</p>
+                    <p>If you have completed a degree in a module that has some overlap with CII content, you can apply to be given some credits towards your CII Certificate. This is most common with business degrees or legal degrees.</p>
+                    <p style="margin-top: 1rem;">Prior learning credits may also be awarded based on a professional course you have completed. Most students who receive prior learning credits obtain their certificate after passing IF1.</p>
                 </div>
             </div>
         </section>
@@ -639,7 +830,6 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             <div class="container">
                 <h2 class="section-title">Assessment Methods</h2>
                 <p class="intro">For certificates, the assessment method is multiple-choice examinations. The exams have different structures depending on the module.</p>
-                
                 <div class="info-grid">
                     <div class="info-card">
                         <h3>Standard MCQ Format</h3>
@@ -656,11 +846,10 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         <section>
             <div class="container">
                 <h2 class="section-title">Time Frame to Complete the CII Certificate</h2>
-                
                 <div class="highlight-box">
                     <h3>Maintaining Momentum</h3>
-                    <p>Generally, it's advisable to work through the three modules with good momentum for both the London market and non-market qualifications. You should avoid taking long breaks between modules to maintain knowledge continuity and study habits.</p>
-                    <p style="margin-top: 1rem;"><strong>Recommended timeframe:</strong> Between 4 to 6 months is ideal to finish all three modules. This allows adequate study time whilst maintaining momentum and knowledge retention.</p>
+                    <p>Generally, it's advisable to work through the three modules with good momentum. You should avoid taking long breaks between modules to maintain knowledge continuity and study habits.</p>
+                    <p style="margin-top: 1rem;"><strong>Recommended timeframe:</strong> Between 4 to 6 months is ideal to finish all three modules.</p>
                 </div>
             </div>
         </section>
@@ -669,19 +858,18 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             <div class="container">
                 <h2 class="section-title">Career Progression</h2>
                 <p class="intro">The CII Certificate in Insurance is your gateway to professional advancement in the insurance sector.</p>
-                
                 <div class="info-grid">
                     <div class="info-card">
                         <h3>Professional Recognition</h3>
-                        <p>Demonstrates fundamental competence and commitment to professional standards, making you more attractive to employers and enhancing career prospects.</p>
+                        <p>Demonstrates fundamental competence and commitment to professional standards, making you more attractive to employers.</p>
                     </div>
                     <div class="info-card">
                         <h3>Foundation for Further Study</h3>
-                        <p>The 40 credits earned count towards the 120 credits required for the CII Diploma in Insurance, providing a clear pathway for continued professional development.</p>
+                        <p>The 40 credits earned count towards the 120 credits required for the CII Diploma in Insurance.</p>
                     </div>
                     <div class="info-card">
                         <h3>Industry Standard</h3>
-                        <p>Increasingly required by employers for frontline insurance roles, client-facing positions, and as a prerequisite for career advancement.</p>
+                        <p>Increasingly required by employers for frontline insurance roles and client-facing positions.</p>
                     </div>
                 </div>
             </div>
@@ -693,7 +881,7 @@ import WhatsAppButton from './components/whatsAppButton.astro';
                     <h3>Related Qualifications</h3>
                     <ul>
                         <li><a href="/CII-Diploma-in-Insurance">CII Diploma in Insurance | CII Assignment Help</a></li>
-                        <li><a href="/#qualifications">CII Advanced Diploma in Insurance | CII Assignment Help</a></li>
+                        <li><a href="/cii-advanced-diploma-in-insurance">CII Advanced Diploma in Insurance | CII Assignment Help</a></li>
                     </ul>
                 </div>
             </div>
@@ -703,7 +891,8 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             <div class="container">
                 <h2>Need Support with Your CII Certificate?</h2>
                 <p>Our experienced team provides expert guidance for all Certificate modules and exam preparation.</p>
-                <a href="/#contact" class="cta-button">Get Expert Help Today</a>
+                <a href="/#contact" class="cta-button">Get Your Free Quote</a>
+                <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20my%20CII%20Certificate." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
             </div>
         </section>
     </main>
@@ -715,6 +904,25 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         </div>
     </footer>
     <WhatsAppButton />
+
+    <div class="sticky-cta">
+        <a href="/#contact">Get Quote</a>
+        <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20my%20CII%20Certificate." target="_blank" rel="noopener noreferrer" class="wa-sticky">💬 WhatsApp</a>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
-

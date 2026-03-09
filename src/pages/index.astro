@@ -9,6 +9,10 @@ import WhatsAppButton from './components/whatsAppButton.astro';
     <meta name="google-site-verification" content="GUF29DzXtbcjQrkTKab8zCK0GVjHNn5QPBMV64dNw0c" />
     <meta name="description" content="Leading CII assignment help platform. Professional support for CII Certificate, Diploma, and Advanced Diploma (ACII). Expert insurance writers, 24/7 support, guaranteed results.">
     <title>CII Assignment Help - Expert Support for All CII Qualifications</title>
+    <meta property="og:title" content="CII Assignment Help - Expert Support for All CII Qualifications">
+    <meta property="og:description" content="Leading CII assignment help platform. Professional support for CII Certificate, Diploma, and Advanced Diploma (ACII). Expert insurance writers, 24/7 support, guaranteed results.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ciiassignmenthelp.com">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
     <link rel="shortcut icon" href="/favicon.ico?v=4">
     <style>
@@ -22,7 +26,7 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: b#0e0d0d;
+            background: #0e0d0d;
         }
 
         .container {
@@ -47,6 +51,39 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            position: relative;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+            z-index: 101;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #ffffff;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
         }
 
         .logo {
@@ -107,19 +144,266 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             margin-bottom: 1.5rem;
             font-weight: 700;
             line-height: 1.2;
-            color: #353079;
+            color: #ffffff;
             text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
         }
 
         .hero p {
             font-size: 1.4rem;
             margin-bottom: 2.5rem;
-            color: #332a2a;
+            color: rgba(255,255,255,0.9);
             opacity: 0.95;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
             text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero-trust {
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .hero-trust span {
+            margin: 0 0.3rem;
+        }
+
+        /* Social Proof Stats Bar */
+        .stats-bar {
+            background: #0d1f35;
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 1rem;
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ffd700;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.85);
+            margin-top: 0.3rem;
+            display: block;
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            position: relative;
+            border-top: 4px solid #ffd700;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            font-size: 4rem;
+            color: #ffd700;
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .testimonial-text {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+            padding-top: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: #1e3a5f;
+        }
+
+        .testimonial-role {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .testimonial-stars {
+            color: #ffd700;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.3rem 1.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            color: #1e3a5f;
+            font-size: 1.05rem;
+            transition: background 0.3s;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            font-family: inherit;
+        }
+
+        .faq-question:hover {
+            background: #f8f9fa;
+        }
+
+        .faq-icon {
+            font-size: 1.4rem;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer-inner {
+            padding: 0 1.5rem 1.3rem;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+        }
+
+        /* Contact Form */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            max-width: 900px;
+            margin: 2rem auto 0;
+        }
+
+        .contact-info h3 {
+            color: #ffd700;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 0.5rem;
+        }
+
+        .quote-form {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+
+        .quote-form input,
+        .quote-form select,
+        .quote-form textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 5px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            font-family: inherit;
+        }
+
+        .quote-form input::placeholder,
+        .quote-form textarea::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .quote-form select option {
+            background: #1e3a5f;
+            color: white;
+        }
+
+        .quote-form button {
+            width: 100%;
+            padding: 1rem;
+            background: #ffd700;
+            color: #0d1f35;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .quote-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255,215,0,0.4);
+        }
+
+        .cta-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0.5rem;
+        }
+
+        .cta-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+            background: #20BA5A;
         }
 
         .cta-button {
@@ -444,11 +728,36 @@ import WhatsAppButton from './components/whatsAppButton.astro';
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
             .nav-links {
-                gap: 1rem;
-                margin-top: 1rem;
-                width: 100%;
-                justify-content: center;
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #0d1f35;
+                padding: 1rem;
+                gap: 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                z-index: 100;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.7rem 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
             }
 
             .hero h1 {
@@ -469,11 +778,19 @@ import WhatsAppButton from './components/whatsAppButton.astro';
                 grid-template-columns: 1fr;
             }
 
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             .step {
                 flex-direction: column;
             }
 
             .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -499,6 +816,16 @@ import WhatsAppButton from './components/whatsAppButton.astro';
                 max-width: 280px;
             }
         }
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5rem;
+            }
+
+            .stat-number {
+                font-size: 1.6rem;
+            }
+        }
     </style>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
@@ -519,7 +846,12 @@ import WhatsAppButton from './components/whatsAppButton.astro';
     <header>
         <nav class="container">
             <a href="/" class="logo">CII Assignment Help</a>
-            <ul class="nav-links">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#qualifications">Qualifications</a></li>
                 <li><a href="#services">Services</a></li>
@@ -534,10 +866,36 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         <div class="container">
             <h1>Leading Platform for Premium CII Assignment Help Worldwide</h1>
             <p>Professional support for all CII qualifications. Expert writers, proven results, thousands of successful students.</p>
-            <a href="#contact" class="cta-button">Get Started Today</a>
-            <a href="#qualifications" class="cta-button secondary">View Qualifications</a>
+            <a href="#contact" class="cta-button">Get Your Free Quote Now</a>
+            <a href="#qualifications" class="cta-button secondary">See What We Cover</a>
+            <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20my%20CII%20assignment." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+            <p class="hero-trust">⭐⭐⭐⭐⭐ <span>Rated 4.9/5</span> · <span>Trusted by 3,000+ students worldwide</span></p>
         </div>
     </section>
+
+    <!-- Social Proof Stats Bar -->
+    <div class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">3,000+</span>
+                    <span class="stat-label">Students Helped</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Pass Rate</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.9/5</span>
+                    <span class="stat-label">Average Rating</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Expert Support</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- About Section -->
     <section id="about">
@@ -663,6 +1021,40 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Students Say</h2>
+            <p class="section-subtitle">Real feedback from CII students who achieved success with our help</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">CII Assignment Help was a lifesaver for my Diploma modules. The quality of the M05 Insurance Law assignment was exceptional — well-researched with proper case law references. Passed with flying colours!</p>
+                    <p class="testimonial-author">James T.</p>
+                    <p class="testimonial-role">CII Diploma Student, London</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">I was struggling with my ACII Advanced Claims module. Their writer clearly had deep industry knowledge. The strategic analysis was exactly what the examiners were looking for. Highly recommend!</p>
+                    <p class="testimonial-author">Sarah M.</p>
+                    <p class="testimonial-role">ACII Candidate, Manchester</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">Fast delivery, original work with Turnitin report, and unlimited revisions. I've used them for 3 different modules now and the quality has been consistently excellent every single time.</p>
+                    <p class="testimonial-author">David K.</p>
+                    <p class="testimonial-role">CII Certificate Student, Dubai</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">The 24/7 WhatsApp support is brilliant. I had questions at midnight before my deadline and they responded within minutes. The assignment was delivered ahead of schedule too. Absolutely worth it.</p>
+                    <p class="testimonial-author">Priya R.</p>
+                    <p class="testimonial-role">CII Diploma Student, Mumbai</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- How It Works Section -->
     <section>
         <div class="container">
@@ -705,6 +1097,40 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about our CII assignment help service</p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">How does your CII assignment help service work? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><div class="faq-answer-inner">Simply contact us via WhatsApp or the quote form with your module details and deadline. We'll match you with a qualified CII writer who specialises in your module. You'll receive your professionally written assignment before your deadline with time to review and request any revisions.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is my information kept confidential? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><div class="faq-answer-inner">Absolutely. We take confidentiality extremely seriously. All personal information and assignment details are encrypted and never shared with third parties. Your privacy is guaranteed throughout the entire process.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How much does CII assignment help cost? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><div class="faq-answer-inner">Pricing depends on the module level, complexity, and deadline. Certificate modules start from affordable rates, while Diploma and ACII modules are priced according to their complexity. Contact us for a free, no-obligation quote tailored to your specific requirements.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How do I know the work is original? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><div class="faq-answer-inner">Every assignment is written from scratch by our expert writers. We provide a free Turnitin plagiarism report with every delivery so you can verify the originality yourself. We maintain a strict zero-plagiarism policy.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What if I'm not satisfied with the assignment? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><div class="faq-answer-inner">We offer unlimited free revisions to ensure your complete satisfaction. If the work doesn't meet the brief, our writers will revise it at no extra cost. We also have a full refund policy for cases where we cannot deliver as promised.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I speak to a writer before placing an order? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><div class="faq-answer-inner">Yes! We encourage you to reach out via WhatsApp to discuss your requirements. Our team can answer any questions about the module, timeline, and approach before you commit. There's no obligation until you're fully satisfied.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Why We Exist Section -->
     <section style="background: #f8f9fa;">
         <div class="container">
@@ -720,8 +1146,28 @@ import WhatsAppButton from './components/whatsAppButton.astro';
     <section id="contact" class="cta-section">
         <div class="container">
             <h2>Ready to Excel in Your CII Studies?</h2>
-            <p>Contact us today and experience our efficiency when it comes to CII assignment help</p>
-            <a href="mailto:support@ciiassignmenthelp.com" class="cta-button">Get Expert Help Now</a>
+            <p>Get a free quote in minutes — reply guaranteed within 5 minutes on WhatsApp</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>📧 support@ciiassignmenthelp.com</p>
+                    <p>💬 Available 24/7 on WhatsApp</p>
+                    <p style="margin-top: 1.5rem;"><a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20my%20CII%20assignment." target="_blank" rel="noopener noreferrer" class="cta-whatsapp" style="margin: 0;">💬 WhatsApp Us Now</a></p>
+                    <p style="margin-top: 1rem;"><a href="mailto:support@ciiassignmenthelp.com" class="cta-button" style="margin: 0; font-size: 1rem; padding: 0.9rem 2rem;">📧 Email Us</a></p>
+                </div>
+                <form class="quote-form" id="quoteForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <select name="module" required>
+                        <option value="" disabled selected>Select Your Module Level</option>
+                        <option value="Certificate">CII Certificate (Level 3)</option>
+                        <option value="Diploma">CII Diploma (Level 4)</option>
+                        <option value="ACII">Advanced Diploma - ACII (Levels 4-7)</option>
+                    </select>
+                    <input type="text" name="deadline" placeholder="Your Deadline (e.g. 15 April 2026)">
+                    <button type="submit">Get Your Free Quote →</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -763,6 +1209,69 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         </div>
     </footer>
     <WhatsAppButton />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CII Assignment Help",
+        "url": "https://ciiassignmenthelp.com",
+        "description": "Leading platform for premium CII assignment help worldwide. Expert support for Certificate, Diploma, and Advanced Diploma (ACII) qualifications.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "support@ciiassignmenthelp.com",
+            "availableLanguage": "English"
+        },
+        "sameAs": []
+    }
+    </script>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                document.querySelectorAll('.faq-item').forEach(other => {
+                    if (other !== item) other.classList.remove('active');
+                });
+                item.classList.toggle('active');
+            });
+        });
+
+        // Quote form handler
+        const form = document.getElementById('quoteForm');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const data = new FormData(form);
+                const name = data.get('name');
+                const email = data.get('email');
+                const module = data.get('module');
+                const deadline = data.get('deadline');
+                const msg = `Hello! I need CII assignment help.%0A%0AName: ${name}%0AEmail: ${email}%0AModule: ${module}%0ADeadline: ${deadline}`;
+                window.open(`https://wa.me/254721165448?text=${msg}`, '_blank');
+            });
+        }
+    </script>
 </body>
 </html>
 
