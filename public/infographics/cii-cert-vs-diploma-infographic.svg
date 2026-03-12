@@ -1,0 +1,105 @@
+<figure class="wp-block-image infographic-figure" style="text-align:center; margin: 2rem auto;">
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg"
+     width="100%" style="max-width:800px; display:block; margin:0 auto;"
+     role="img" aria-labelledby="svg-comp-certdip">
+  <title id="svg-comp-certdip">CII Certificate vs CII Diploma — level, audience, modules, and career outcome comparison</title>
+  <desc>Side-by-side comparison of the CII Certificate in Insurance (Level 3) and CII Diploma in Insurance (Level 4), showing the key differences in target audience, module count, assignment format, and career outcomes</desc>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="#F8F9FC" rx="12"/>
+
+  <!-- Header -->
+  <rect width="800" height="64" fill="#1B3A6B" rx="12"/>
+  <rect y="52" width="800" height="12" fill="#1B3A6B"/>
+  <text x="400" y="30" text-anchor="middle" font-family="Georgia, serif"
+        font-size="20" font-weight="bold" fill="white">
+    CII Certificate vs CII Diploma in Insurance
+  </text>
+  <text x="400" y="53" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="13" fill="white" opacity="0.85">
+    Which qualification is right for your insurance career stage?
+  </text>
+  <rect y="64" width="800" height="3" fill="#C9A84C"/>
+
+  <!-- Dashed centre divider -->
+  <line x1="400" y1="80" x2="400" y2="455"
+        stroke="#C9A84C" stroke-width="1.5"
+        stroke-dasharray="6,5" stroke-opacity="0.45"/>
+
+  <!-- ════ LEFT — CII Certificate ════ -->
+  <!-- Column label -->
+  <rect x="18" y="80" width="364" height="42" fill="#1B3A6B" opacity="0.09" rx="8"/>
+  <text x="200" y="107" text-anchor="middle" font-family="Georgia, serif"
+        font-size="17" font-weight="bold" fill="#1B3A6B">CII Certificate in Insurance</text>
+
+  <!-- Icon / level badge -->
+  <text x="200" y="200" text-anchor="middle" font-size="68">🎓</text>
+
+  <!-- Level — large primary stat -->
+  <text x="200" y="268" text-anchor="middle" font-family="Georgia, serif"
+        font-size="48" font-weight="bold" fill="#C9A84C">Level 3</text>
+  <text x="200" y="292" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="13" fill="#666">QCF qualification level</text>
+
+  <!-- Attribute rows -->
+  <rect x="30" y="308" width="340" height="36" fill="#1B3A6B" opacity="0.06" rx="6"/>
+  <text x="200" y="331" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="13" fill="#333">Audience: <tspan font-weight="bold">New insurance staff</tspan></text>
+
+  <rect x="30" y="349" width="340" height="36" fill="#1B3A6B" opacity="0.03" rx="6"/>
+  <text x="200" y="372" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="13" fill="#333">Modules: <tspan font-weight="bold">4–6 modules</tspan></text>
+
+  <rect x="30" y="390" width="340" height="36" fill="#1B3A6B" opacity="0.06" rx="6"/>
+  <text x="200" y="413" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="13" fill="#333">Format: <tspan font-weight="bold">Short answer assignments</tspan></text>
+
+  <rect x="30" y="431" width="340" height="36" fill="#1B3A6B" opacity="0.03" rx="6"/>
+  <text x="200" y="454" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="13" fill="#333">Next step: <tspan font-weight="bold" fill="#C9A84C">CII Diploma</tspan></text>
+
+  <!-- ════ RIGHT — CII Diploma ════ -->
+  <!-- Column label — highlighted (recommended) -->
+  <rect x="418" y="80" width="364" height="42" fill="#C9A84C" opacity="0.18" rx="8"/>
+  <text x="600" y="107" text-anchor="middle" font-family="Georgia, serif"
+        font-size="17" font-weight="bold" fill="#1B3A6B">CII Diploma in Insurance</text>
+
+  <!-- Recommended badge -->
+  <rect x="510" y="82" width="90" height="20" fill="#C9A84C" rx="10"/>
+  <text x="555" y="96" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="10" font-weight="bold" fill="#1B3A6B">▲ ADVANCED</text>
+
+  <!-- Icon -->
+  <text x="600" y="200" text-anchor="middle" font-size="68">🏆</text>
+
+  <!-- Level -->
+  <text x="600" y="268" text-anchor="middle" font-family="Georgia, serif"
+        font-size="48" font-weight="bold" fill="#C9A84C">Level 4</text>
+  <text x="600" y="292" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="13" fill="#666">QCF qualification level</text>
+
+  <!-- Attribute rows -->
+  <rect x="430" y="308" width="340" height="36" fill="#C9A84C" opacity="0.10" rx="6"/>
+  <text x="600" y="331" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="13" fill="#333">Audience: <tspan font-weight="bold">Technicians &amp; supervisors</tspan></text>
+
+  <rect x="430" y="349" width="340" height="36" fill="#C9A84C" opacity="0.06" rx="6"/>
+  <text x="600" y="372" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="13" fill="#333">Modules: <tspan font-weight="bold">6–8 modules</tspan></text>
+
+  <rect x="430" y="390" width="340" height="36" fill="#C9A84C" opacity="0.10" rx="6"/>
+  <text x="600" y="413" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="13" fill="#333">Format: <tspan font-weight="bold">Extended answer assignments</tspan></text>
+
+  <rect x="430" y="431" width="340" height="36" fill="#C9A84C" opacity="0.06" rx="6"/>
+  <text x="600" y="454" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="13" fill="#333">Next step: <tspan font-weight="bold" fill="#C9A84C">ACII Advanced Diploma</tspan></text>
+
+  <!-- Footer -->
+  <text x="400" y="474" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="10" fill="#aaa">ciiassignmenthelp.com</text>
+</svg>
+<figcaption style="font-size:0.85rem; color:#666; margin-top:0.5rem;">
+  CII Certificate vs CII Diploma — level, audience, and career outcome comparison for insurance professionals
+</figcaption>
+</figure>

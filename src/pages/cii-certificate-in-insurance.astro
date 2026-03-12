@@ -318,6 +318,29 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             margin-bottom: 0.8rem;
         }
 
+        .infographic-frame {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(13, 31, 53, 0.08);
+            border: 1px solid rgba(30, 58, 95, 0.08);
+            margin: 2rem 0;
+        }
+
+        .infographic-frame img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .infographic-caption {
+            font-size: 0.95rem;
+            color: #5f6b7a;
+            margin-top: 0.9rem;
+            text-align: center;
+        }
+
         .modules-table {
             width: 100%;
             border-collapse: collapse;
@@ -672,6 +695,12 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             <div class="container">
                 <h2 class="section-title">About the CII Certificate in Insurance</h2>
                 <p class="intro">The CII Certificate in Insurance is a Level 3 qualification that provides essential knowledge and technical competence for insurance professionals. It's the foundation for a successful career in the insurance industry and serves as the pathway to higher qualifications.</p>
+
+                <figure class="infographic-frame">
+                    <img src="/infographics/cii-cert-vs-diploma-infographic.svg" alt="Comparison infographic showing the differences between the CII Certificate in Insurance and the CII Diploma in Insurance." loading="lazy" />
+                    <figcaption class="infographic-caption">Use this comparison to decide whether to complete the Level 3 Certificate first or move on to the more technical Diploma path.</figcaption>
+                </figure>
+
                 <div class="highlight-box">
                     <h3>40 Credits: The Magic Number</h3>
                     <p>To achieve the CII Certificate in Insurance, you need to accumulate 40 credits. This is typically accomplished by completing three modules (IF1 plus two electives), each worth 15 credits, though credit requirements may vary based on prior learning recognition.</p>

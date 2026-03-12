@@ -318,6 +318,29 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             margin-bottom: 0.8rem;
         }
 
+        .infographic-frame {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(13, 31, 53, 0.08);
+            border: 1px solid rgba(30, 58, 95, 0.08);
+            margin: 2rem 0;
+        }
+
+        .infographic-frame img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .infographic-caption {
+            font-size: 0.95rem;
+            color: #5f6b7a;
+            margin-top: 0.9rem;
+            text-align: center;
+        }
+
         .modules-table {
             width: 100%;
             border-collapse: collapse;
@@ -672,6 +695,11 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             <div class="container">
                 <h2 class="section-title">About the CII Diploma in Insurance</h2>
                 <p class="intro">The <a href="https://www.cii.co.uk/" target="_blank" rel="noopener noreferrer">CII</a> Diploma in Insurance is a Level 4 qualification that demonstrates advanced technical knowledge and professional competence within the insurance sector. Recognised by employers worldwide, this qualification is essential for those seeking to establish themselves as credible insurance professionals.</p>
+
+                <figure class="infographic-frame">
+                    <img src="/infographics/cii-diploma-benefits-infographic.svg" alt="Infographic highlighting four career benefits of the CII Diploma in Insurance including Level 4 status, technical knowledge, ACII progression, and industry recognition." loading="lazy" />
+                    <figcaption class="infographic-caption">The CII Diploma combines Level 4 recognition, specialist module depth, and a clear pathway toward ACII.</figcaption>
+                </figure>
                 
                 <div class="highlight-box">
                     <h3>Diploma vs Certificate: What's the Difference?</h3>

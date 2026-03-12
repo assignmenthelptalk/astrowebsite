@@ -211,6 +211,34 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             display: block;
         }
 
+        .infographic-panel {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .infographic-frame {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(13, 31, 53, 0.08);
+            border: 1px solid rgba(30, 58, 95, 0.08);
+            margin-top: 2rem;
+        }
+
+        .infographic-frame img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .infographic-caption {
+            font-size: 0.95rem;
+            color: #5f6b7a;
+            margin-top: 0.9rem;
+            text-align: center;
+        }
+
         /* Testimonials */
         .testimonials-grid {
             display: grid;
@@ -915,11 +943,11 @@ import WhatsAppButton from './components/whatsAppButton.astro';
                 <span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#qualifications">Qualifications</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/#home">Home</a></li>
+                <li><a href="/#qualifications">Qualifications</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -959,6 +987,25 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             </div>
         </div>
     </div>
+
+    <section aria-labelledby="infographics-title">
+        <div class="container">
+            <div class="infographic-panel">
+                <h2 class="section-title" id="infographics-title">CII Qualification Snapshot</h2>
+                <p class="section-subtitle">A quick visual overview of student outcomes and the step up from Certificate to Diploma level.</p>
+
+                <figure class="infographic-frame">
+                    <img src="/infographics/cii-passrate-stat-infographic.svg" alt="CII Assignment Help pass rate infographic showing 95 percent pass rate across Certificate, Diploma and ACII levels." loading="lazy" />
+                    <figcaption class="infographic-caption">95% reported pass rate across Certificate, Diploma, and ACII support.</figcaption>
+                </figure>
+
+                <figure class="infographic-frame">
+                    <img src="/infographics/cii-cert-vs-diploma-infographic.svg" alt="Comparison infographic showing the differences between the CII Certificate in Insurance and the CII Diploma in Insurance." loading="lazy" />
+                    <figcaption class="infographic-caption">Certificate vs Diploma: level, audience, module count, and next-step progression.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section id="about">
