@@ -1,0 +1,508 @@
+---
+import WhatsAppButton from './components/whatsAppButton.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the premium services offered by CII Assignment Help. Expertise in CII Certificate, Diploma, and Advanced Diploma assignments with 24/7 support.">
+    <meta name="keywords" content="CII assignment services, insurance assignment help, premium CII support, CII writing experts, insurance law help, module guidance">
+    <link rel="canonical" href="https://ciiassignmenthelp.com/services" />
+    <title>Our Services | CII Assignment Help - Expert Support</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://ciiassignmenthelp.com/services">
+    <meta property="og:title" content="Our Services | CII Assignment Help - Expert Support">
+    <meta property="og:description" content="Explore the premium services offered by CII Assignment Help. Expertise in CII Certificate, Diploma, and Advanced Diploma assignments.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ciiassignmenthelp.com/services">
+    <meta property="twitter:title" content="Our Services | CII Assignment Help - Expert Support">
+    <meta property="twitter:description" content="Explore the premium services offered by CII Assignment Help. Expertise in CII Certificate, Diploma, and Advanced Diploma assignments.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
+    <link rel="shortcut icon" href="/favicon.ico?v=4">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #1e3a5f;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+            z-index: 101;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #ffffff;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .page-hero {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 4px solid #ffd700;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .breadcrumb {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .breadcrumb a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            opacity: 0.8;
+        }
+
+        main {
+            background: white;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Services Specific Styles */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .why-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: transform 0.3s;
+        }
+        
+        .why-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .why-icon {
+            font-size: 2rem;
+            color: #1e3a5f;
+            flex-shrink: 0;
+        }
+
+        .why-item h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.5rem;
+        }
+
+        .why-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #1e3a5f;
+        }
+
+        .feature-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            color: #ffffff;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #0d1f35;
+            padding: 1.2rem 3rem;
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+            margin: 0.5rem;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+            background: #ffed4e;
+        }
+        
+        .cta-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: white;
+            padding: 1.1rem 2.8rem;
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0.5rem;
+        }
+
+        .cta-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+            background: #20BA5A;
+        }
+
+        footer {
+            background: #1e3a5f;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.8;
+            margin-top: 1rem;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1e3a5f;
+                padding: 1rem;
+                gap: 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                z-index: 100;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.7rem 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">CII Assignment Help</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#qualifications">Qualifications</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Premium Services</h1>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / Services
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Unique Value Proposition Section -->
+        <section id="what-makes-us-unique">
+            <div class="container">
+                <h2 class="section-title">What Makes Our CII Assignment Help Unique?</h2>
+                <p class="section-subtitle">Professional expertise, proven results, and dedicated support for your success</p>
+                
+                <div class="why-grid">
+                    <div class="why-item">
+                        <div class="why-icon">🎓</div>
+                        <div>
+                            <h3>Expert CII-Qualified Writers</h3>
+                            <p>All our writers have successfully undertaken CII qualifications to the level of Diploma and above, with in-depth knowledge of the insurance industry and CII's stringent requirements.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">✍️</div>
+                        <div>
+                            <h3>Original, Custom Work</h3>
+                            <p>Every assignment is written from scratch and comes with a free Turnitin report. We have a strict plagiarism policy ensuring complete originality.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">🔄</div>
+                        <div>
+                            <h3>Unlimited Free Revisions</h3>
+                            <p>We undertake unlimited revisions free of charge to ensure you receive the best CII assignment possible, no matter how many times.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">⏰</div>
+                        <div>
+                            <h3>Guaranteed Timely Delivery</h3>
+                            <p>Writers are under strict instructions to deliver before deadlines, giving you enough time to review and request revisions if needed.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">💰</div>
+                        <div>
+                            <h3>Affordable Pricing</h3>
+                            <p>Flexible prices that aren't out of reach. Reasonable rates for professional CII assignment help with full refund policy if needed.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">🔒</div>
+                        <div>
+                            <h3>Safe & Secure Payments</h3>
+                            <p>Multiple payment modes including PayPal, internet banking, debit, or credit card, all protected by the latest firewall security features.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Students Choose Us Section -->
+        <section style="background: #f8f9fa;">
+            <div class="container">
+                <h2 class="section-title">Why Students Choose Us</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🕐</div>
+                        <h3>24/7 Support</h3>
+                        <p>Our customer support is top-notch and our agents are available 24/7. Contact us anytime, day or night, with any questions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Experienced Professionals</h3>
+                        <p>Highly skilled in-house writers who have extensive experience in writing and teaching as their full-time job.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>All Modules Covered</h3>
+                        <p>Whether it's Insurance Law, Economics & Business, or Underwriting Practice, our qualified writers can help with any module.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✓</div>
+                        <h3>Proven Track Record</h3>
+                        <p>Thousands of successful students worldwide. Excellent results that keep clients coming back and referring others.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Ace Your CII Assignments?</h2>
+                <p>Join thousands of successful students and get expert help today.</p>
+                <a href="/#contact" class="cta-button">Get Your Free Quote Now</a>
+                <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20my%20CII%20assignment." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CII Assignment Help. All Rights Reserved.</p>
+            <p>Designed for success in <a href="https://www.cii.co.uk/">CII Qualifications</a></p>
+        </div>
+    </footer>
+
+    <script is:inline>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
+    <WhatsAppButton />
+</body>
+</html>
