@@ -5,6 +5,67 @@ const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
 const canonicalUrl = new URL(Astro.url.pathname, site);
 const siteUrl = site.origin;
 const websiteSearchUrl = new URL('/?s={search_term_string}', site);
+const professionalServiceSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "CII Assignment Help",
+    "url": "https://www.ciiassignmenthelp.com/",
+    "description": "Expert CII assignment help for all qualifications - Certificate, Diploma, and ACII.",
+    "review": [
+        {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "James T." },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "CII Assignment Help was a lifesaver for my Diploma modules. The quality of the M05 Insurance Law assignment was exceptional."
+        },
+        {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Sarah M." },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Their writer clearly had deep industry knowledge. The strategic analysis was exactly what the examiners were looking for."
+        },
+        {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "David K." },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Fast delivery, original work with Turnitin report, and unlimited revisions. Consistently excellent quality."
+        }
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "3000"
+    }
+};
+const structuredData = [
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CII Assignment Help",
+        "url": siteUrl,
+        "description": "Leading platform for premium CII assignment help worldwide. Expert support for Certificate, Diploma, and Advanced Diploma (ACII) qualifications.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "support@ciiassignmenthelp.com",
+            "availableLanguage": "English"
+        },
+        "sameAs": []
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "CII Assignment Help",
+        "url": siteUrl,
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": websiteSearchUrl.href,
+            "query-input": "required name=search_term_string"
+        }
+    }
+];
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -1382,35 +1443,7 @@ const websiteSearchUrl = new URL('/?s={search_term_string}', site);
     <WhatsAppButton />
 
     <!-- Structured Data -->
-    <script type="application/ld+json">
-    [
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "CII Assignment Help",
-            "url": {JSON.stringify(siteUrl)},
-            "description": "Leading platform for premium CII assignment help worldwide. Expert support for Certificate, Diploma, and Advanced Diploma (ACII) qualifications.",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "customer service",
-                "email": "support@ciiassignmenthelp.com",
-                "availableLanguage": "English"
-            },
-            "sameAs": []
-        },
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "CII Assignment Help",
-            "url": {JSON.stringify(siteUrl)},
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": {JSON.stringify(websiteSearchUrl.href)},
-                "query-input": "required name=search_term_string"
-            }
-        }
-    ]
-    </script>
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)}></script>
 
     <!-- Interactive Scripts -->
     <script>
