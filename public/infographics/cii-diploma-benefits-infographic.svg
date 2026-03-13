@@ -1,122 +1,55 @@
-<figure class="wp-block-image infographic-figure" style="text-align:center; margin: 2rem auto;">
-<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg"
-     width="100%" style="max-width:800px; display:block; margin:0 auto;"
-     role="img" aria-labelledby="svg-title-cii-diploma-benefits">
-  <title id="svg-title-cii-diploma-benefits">CII Diploma in Insurance — 4 key benefits for insurance professionals seeking career advancement</title>
-  <desc>Icon grid showing the four main benefits of the CII Diploma in Insurance: supervisory qualification status, technical insurance knowledge, career progression, and industry recognition</desc>
+<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svg-title-cii-diploma-benefits">
+  <title id="svg-title-cii-diploma-benefits">CII Diploma in Insurance - four career benefits for insurance professionals</title>
+  <desc>Four-panel infographic showing Level 4 status, technical knowledge, ACII progression, and industry recognition.</desc>
 
-  <!-- Background -->
   <rect width="800" height="560" fill="#F8F9FC" rx="12"/>
-
-  <!-- Header bar -->
   <rect width="800" height="64" fill="#1B3A6B" rx="12"/>
   <rect y="52" width="800" height="12" fill="#1B3A6B"/>
-  <text x="400" y="30" text-anchor="middle" font-family="Georgia, serif"
-        font-size="20" font-weight="bold" fill="white">
-    CII Diploma in Insurance
-  </text>
-  <text x="400" y="53" text-anchor="middle" font-family="Arial, sans-serif"
-        font-size="13" fill="white" opacity="0.85">
-    4 Career Benefits for Insurance Professionals
-  </text>
-
-  <!-- Gold accent line -->
   <rect y="64" width="800" height="3" fill="#C9A84C"/>
 
-  <!-- ═══ CELL 1 — Top Left: Supervisory Qualification ═══ -->
-  <rect x="18" y="82" width="372" height="210" fill="white" rx="10"
-        stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.35"/>
-  <!-- Icon circle -->
+  <text x="400" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="white">CII Diploma in Insurance</text>
+  <text x="400" y="53" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.85">4 Career Benefits for Insurance Professionals</text>
+
+  <rect x="18" y="82" width="372" height="210" fill="white" rx="10" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.35"/>
   <circle cx="72" cy="152" r="34" fill="#1B3A6B" opacity="0.10"/>
-  <text x="72" y="162" text-anchor="middle" font-size="30">🏅</text>
-  <!-- Heading -->
-  <text x="125" y="114" font-family="Georgia, serif" font-size="15"
-        font-weight="bold" fill="#1B3A6B">Supervisory Qualification</text>
-  <!-- Description -->
-  <text x="125" y="136" font-family="Arial, sans-serif" font-size="12" fill="#444">
-    Recognised at team leader and
-  </text>
-  <text x="125" y="153" font-family="Arial, sans-serif" font-size="12" fill="#444">
-    technician level across the
-  </text>
-  <text x="125" y="170" font-family="Arial, sans-serif" font-size="12" fill="#444">
-    UK insurance market
-  </text>
-  <!-- Stat -->
-  <text x="38" y="248" font-family="Georgia, serif" font-size="30"
-        font-weight="bold" fill="#C9A84C">Level 4</text>
-  <text x="130" y="248" font-family="Arial, sans-serif" font-size="12"
-        fill="#666">QCF qualification</text>
+  <text x="72" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1B3A6B">L4</text>
+  <text x="125" y="114" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#1B3A6B">Supervisory Qualification</text>
+  <text x="125" y="136" font-family="Arial, sans-serif" font-size="12" fill="#444">Recognised at team leader and</text>
+  <text x="125" y="153" font-family="Arial, sans-serif" font-size="12" fill="#444">technician level across the</text>
+  <text x="125" y="170" font-family="Arial, sans-serif" font-size="12" fill="#444">insurance market</text>
+  <text x="38" y="248" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#C9A84C">Level 4</text>
+  <text x="130" y="248" font-family="Arial, sans-serif" font-size="12" fill="#666">QCF qualification</text>
 
-  <!-- ═══ CELL 2 — Top Right: Technical Knowledge ═══ -->
-  <rect x="410" y="82" width="372" height="210" fill="white" rx="10"
-        stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.35"/>
+  <rect x="410" y="82" width="372" height="210" fill="white" rx="10" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.35"/>
   <circle cx="464" cy="152" r="34" fill="#1B3A6B" opacity="0.10"/>
-  <text x="464" y="162" text-anchor="middle" font-size="30">📚</text>
-  <text x="517" y="114" font-family="Georgia, serif" font-size="15"
-        font-weight="bold" fill="#1B3A6B">Technical Insurance Knowledge</text>
-  <text x="517" y="136" font-family="Arial, sans-serif" font-size="12" fill="#444">
-    Covers Insurance Law, Underwriting,
-  </text>
-  <text x="517" y="153" font-family="Arial, sans-serif" font-size="12" fill="#444">
-    Claims, and Economics across
-  </text>
-  <text x="517" y="170" font-family="Arial, sans-serif" font-size="12" fill="#444">
-    6–8 specialist modules
-  </text>
-  <text x="430" y="248" font-family="Georgia, serif" font-size="30"
-        font-weight="bold" fill="#C9A84C">6–8</text>
-  <text x="510" y="248" font-family="Arial, sans-serif" font-size="12"
-        fill="#666">specialist modules</text>
+  <text x="464" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1B3A6B">KN</text>
+  <text x="517" y="114" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#1B3A6B">Technical Insurance Knowledge</text>
+  <text x="517" y="136" font-family="Arial, sans-serif" font-size="12" fill="#444">Covers Insurance Law, Underwriting,</text>
+  <text x="517" y="153" font-family="Arial, sans-serif" font-size="12" fill="#444">Claims, and Economics across</text>
+  <text x="517" y="170" font-family="Arial, sans-serif" font-size="12" fill="#444">6-8 specialist modules</text>
+  <text x="430" y="248" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#C9A84C">6-8</text>
+  <text x="510" y="248" font-family="Arial, sans-serif" font-size="12" fill="#666">specialist modules</text>
 
-  <!-- ═══ CELL 3 — Bottom Left: Career Progression ═══ -->
-  <rect x="18" y="308" width="372" height="210" fill="white" rx="10"
-        stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.35"/>
+  <rect x="18" y="308" width="372" height="210" fill="white" rx="10" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.35"/>
   <circle cx="72" cy="378" r="34" fill="#1B3A6B" opacity="0.10"/>
-  <text x="72" y="388" text-anchor="middle" font-size="30">📈</text>
-  <text x="125" y="340" font-family="Georgia, serif" font-size="15"
-        font-weight="bold" fill="#1B3A6B">Career Progression</text>
-  <text x="125" y="362" font-family="Arial, sans-serif" font-size="12" fill="#444">
-    Opens pathways to the Advanced
-  </text>
-  <text x="125" y="379" font-family="Arial, sans-serif" font-size="12" fill="#444">
-    Diploma (ACII) and Chartered
-  </text>
-  <text x="125" y="396" font-family="Arial, sans-serif" font-size="12" fill="#444">
-    Insurance status
-  </text>
-  <text x="38" y="474" font-family="Georgia, serif" font-size="30"
-        font-weight="bold" fill="#C9A84C">ACII</text>
-  <text x="112" y="474" font-family="Arial, sans-serif" font-size="12"
-        fill="#666">pathway next step</text>
+  <text x="72" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1B3A6B" transform="translate(0 226)">UP</text>
+  <text x="125" y="340" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#1B3A6B">Career Progression</text>
+  <text x="125" y="362" font-family="Arial, sans-serif" font-size="12" fill="#444">Opens pathways to the Advanced</text>
+  <text x="125" y="379" font-family="Arial, sans-serif" font-size="12" fill="#444">Diploma (ACII) and Chartered</text>
+  <text x="125" y="396" font-family="Arial, sans-serif" font-size="12" fill="#444">Insurance status</text>
+  <text x="38" y="474" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#C9A84C">ACII</text>
+  <text x="112" y="474" font-family="Arial, sans-serif" font-size="12" fill="#666">pathway next step</text>
 
-  <!-- ═══ CELL 4 — Bottom Right: Industry Recognition ═══ -->
-  <rect x="410" y="308" width="372" height="210" fill="white" rx="10"
-        stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.35"/>
+  <rect x="410" y="308" width="372" height="210" fill="white" rx="10" stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.35"/>
   <circle cx="464" cy="378" r="34" fill="#1B3A6B" opacity="0.10"/>
-  <text x="464" y="388" text-anchor="middle" font-size="30">🛡️</text>
-  <text x="517" y="340" font-family="Georgia, serif" font-size="15"
-        font-weight="bold" fill="#1B3A6B">Industry Recognition</text>
-  <text x="517" y="362" font-family="Arial, sans-serif" font-size="12" fill="#444">
-    Awarded by the Chartered Insurance
-  </text>
-  <text x="517" y="379" font-family="Arial, sans-serif" font-size="12" fill="#444">
-    Institute — the global standard
-  </text>
-  <text x="517" y="396" font-family="Arial, sans-serif" font-size="12" fill="#444">
-    for insurance professionals
-  </text>
-  <text x="430" y="474" font-family="Georgia, serif" font-size="30"
-        font-weight="bold" fill="#C9A84C">Global</text>
-  <text x="544" y="474" font-family="Arial, sans-serif" font-size="12"
-        fill="#666">CII recognition</text>
+  <text x="464" y="386" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1B3A6B">IR</text>
+  <text x="517" y="340" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#1B3A6B">Industry Recognition</text>
+  <text x="517" y="362" font-family="Arial, sans-serif" font-size="12" fill="#444">Awarded by the Chartered Insurance</text>
+  <text x="517" y="379" font-family="Arial, sans-serif" font-size="12" fill="#444">Institute, the global standard</text>
+  <text x="517" y="396" font-family="Arial, sans-serif" font-size="12" fill="#444">for insurance professionals</text>
+  <text x="430" y="474" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#C9A84C">Global</text>
+  <text x="544" y="474" font-family="Arial, sans-serif" font-size="12" fill="#666">CII recognition</text>
 
-  <!-- Footer -->
-  <rect y="528" width="800" height="32" fill="#1B3A6B" opacity="0.08" rx="0"/>
-  <text x="400" y="549" text-anchor="middle" font-family="Arial, sans-serif"
-        font-size="10" fill="#888">ciiassignmenthelp.com</text>
+  <rect y="528" width="800" height="32" fill="#1B3A6B" opacity="0.08"/>
+  <text x="400" y="549" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#888">ciiassignmenthelp.com</text>
 </svg>
-<figcaption style="font-size:0.85rem; color:#666; margin-top:0.5rem;">
-  CII Diploma in Insurance — career benefits and qualification structure for insurance technicians and supervisors
-</figcaption>
-</figure>
