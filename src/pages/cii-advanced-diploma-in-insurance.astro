@@ -928,8 +928,7 @@ const siteUrl = site.origin;
     </script>
 
     <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
+    <script type="application/ld+json" set:html={JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Course",
         "name": "CII Advanced Diploma in Insurance (ACII)",
@@ -937,9 +936,8 @@ const siteUrl = site.origin;
         "provider": {
             "@type": "Organization",
             "name": "CII Assignment Help",
-            "sameAs": {JSON.stringify(siteUrl)}
+            "sameAs": siteUrl
         }
-    }
-    </script>
+    })}></script>
 </body>
 </html>
