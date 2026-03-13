@@ -1,5 +1,9 @@
 ---
-import WhatsAppButton from './components/whatsAppButton.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+
+const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
+const canonicalUrl = new URL(Astro.url.pathname, site);
+const siteUrl = site.origin;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -8,18 +12,18 @@ import WhatsAppButton from './components/whatsAppButton.astro';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Professional assignment help for the CII Certificate in Insurance (Level 3). Get expert guidance for IF1, IF2, and all certificate modules.">
     <meta name="keywords" content="CII Certificate in Insurance, Level 3 Certificate help, CertCII assignment writing, CII IF1 help, CII certificate support">
-    <link rel="canonical" href="https://ciiassignmenthelp.com/cii-certificate-in-insurance" />
+    <link rel="canonical" href={canonicalUrl.href} />
     <title>CII Certificate in Insurance - Level 3 Support | CII Assignment Help</title>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ciiassignmenthelp.com/cii-certificate-in-insurance">
+    <meta property="og:url" content={canonicalUrl.href}>
     <meta property="og:title" content="CII Certificate in Insurance - Level 3 Support | CII Assignment Help">
     <meta property="og:description" content="Professional assignment help for the CII Certificate in Insurance (Level 3). Get expert guidance for IF1, IF2, and all certificate modules.">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ciiassignmenthelp.com/cii-certificate-in-insurance">
+    <meta property="twitter:url" content={canonicalUrl.href}>
     <meta property="twitter:title" content="CII Certificate in Insurance - Level 3 Support | CII Assignment Help">
     <meta property="twitter:description" content="Professional assignment help for the CII Certificate in Insurance (Level 3). Get expert guidance for IF1, IF2, and all certificate modules.">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
@@ -978,7 +982,7 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         "provider": {
             "@type": "Organization",
             "name": "CII Assignment Help",
-            "sameAs": "https://ciiassignmenthelp.com"
+            "sameAs": {JSON.stringify(siteUrl)}
         }
     }
     </script>

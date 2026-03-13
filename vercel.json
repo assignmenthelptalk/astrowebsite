@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "ciiassignmenthelp.com"
+        }
+      ],
+      "destination": "https://www.ciiassignmenthelp.com/:path*",
+      "permanent": true
+    }
+  ]
+}

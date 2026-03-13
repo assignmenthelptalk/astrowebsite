@@ -1,5 +1,8 @@
 ---
-import WhatsAppButton from './components/whatsAppButton.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+
+const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
+const canonicalUrl = new URL(Astro.url.pathname, site);
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -8,18 +11,18 @@ import WhatsAppButton from './components/whatsAppButton.astro';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore the premium services offered by CII Assignment Help. Expertise in CII Certificate, Diploma, and Advanced Diploma assignments with 24/7 support.">
     <meta name="keywords" content="CII assignment services, insurance assignment help, premium CII support, CII writing experts, insurance law help, module guidance">
-    <link rel="canonical" href="https://ciiassignmenthelp.com/services" />
+    <link rel="canonical" href={canonicalUrl.href} />
     <title>Our Services | CII Assignment Help - Expert Support</title>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ciiassignmenthelp.com/services">
+    <meta property="og:url" content={canonicalUrl.href}>
     <meta property="og:title" content="Our Services | CII Assignment Help - Expert Support">
     <meta property="og:description" content="Explore the premium services offered by CII Assignment Help. Expertise in CII Certificate, Diploma, and Advanced Diploma assignments.">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ciiassignmenthelp.com/services">
+    <meta property="twitter:url" content={canonicalUrl.href}>
     <meta property="twitter:title" content="Our Services | CII Assignment Help - Expert Support">
     <meta property="twitter:description" content="Explore the premium services offered by CII Assignment Help. Expertise in CII Certificate, Diploma, and Advanced Diploma assignments.">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">

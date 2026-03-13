@@ -1,5 +1,10 @@
 ---
-import WhatsAppButton from './components/whatsAppButton.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+
+const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
+const canonicalUrl = new URL(Astro.url.pathname, site);
+const siteUrl = site.origin;
+const websiteSearchUrl = new URL('/?s={search_term_string}', site);
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -9,19 +14,19 @@ import WhatsAppButton from './components/whatsAppButton.astro';
     <meta name="google-site-verification" content="GUF29DzXtbcjQrkTKab8zCK0GVjHNn5QPBMV64dNw0c" />
     <meta name="description" content="Leading CII assignment help platform. Professional support for CII Certificate, Diploma, and Advanced Diploma (ACII). Expert insurance writers, 24/7 support, guaranteed results.">
     <meta name="keywords" content="CII assignment help, CII coursework writing, Chartered Insurance Institute assignments, CII Diploma help, ACII writers, insurance assignments">
-    <link rel="canonical" href="https://ciiassignmenthelp.com/" />
-    <title>CII Assignment Help - Expert Support for All CII Qualifications</title>
+    <link rel="canonical" href={canonicalUrl.href} />
+    <title>CII Assignment Help | Expert Support for All CII Qualifications</title>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ciiassignmenthelp.com/">
-    <meta property="og:title" content="CII Assignment Help - Expert Support for All CII Qualifications">
+    <meta property="og:url" content={canonicalUrl.href}>
+    <meta property="og:title" content="CII Assignment Help | Expert Support for All CII Qualifications">
     <meta property="og:description" content="Leading CII assignment help platform. Professional support for CII Certificate, Diploma, and Advanced Diploma (ACII). Expert insurance writers, 24/7 support, guaranteed results.">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ciiassignmenthelp.com/">
-    <meta property="twitter:title" content="CII Assignment Help - Expert Support for All CII Qualifications">
+    <meta property="twitter:url" content={canonicalUrl.href}>
+    <meta property="twitter:title" content="CII Assignment Help | Expert Support for All CII Qualifications">
     <meta property="twitter:description" content="Leading CII assignment help platform. Professional support for CII Certificate, Diploma, and Advanced Diploma (ACII). Expert insurance writers, 24/7 support, guaranteed results.">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
     <link rel="shortcut icon" href="/favicon.ico?v=4">
@@ -1338,7 +1343,7 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "CII Assignment Help",
-            "url": "https://ciiassignmenthelp.com",
+            "url": {JSON.stringify(siteUrl)},
             "description": "Leading platform for premium CII assignment help worldwide. Expert support for Certificate, Diploma, and Advanced Diploma (ACII) qualifications.",
             "contactPoint": {
                 "@type": "ContactPoint",
@@ -1352,10 +1357,10 @@ import WhatsAppButton from './components/whatsAppButton.astro';
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "CII Assignment Help",
-            "url": "https://ciiassignmenthelp.com",
+            "url": {JSON.stringify(siteUrl)},
             "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://ciiassignmenthelp.com/?s={search_term_string}",
+                "target": {JSON.stringify(websiteSearchUrl.href)},
                 "query-input": "required name=search_term_string"
             }
         }

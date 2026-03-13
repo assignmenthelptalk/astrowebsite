@@ -1,5 +1,9 @@
 ---
-import WhatsAppButton from './components/whatsAppButton.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+
+const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
+const canonicalUrl = new URL(Astro.url.pathname, site);
+const siteUrl = site.origin;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -8,18 +12,18 @@ import WhatsAppButton from './components/whatsAppButton.astro';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Premium academic support for the CII Advanced Diploma in Insurance (ACII). Expert level 6 assignment writing and dissertation guidance.">
     <meta name="keywords" content="CII Advanced Diploma, ACII assignment help, Level 6 insurance diploma, ACII coursework writing, chartered insurance institute level 6">
-    <link rel="canonical" href="https://ciiassignmenthelp.com/cii-advanced-diploma-in-insurance" />
+    <link rel="canonical" href={canonicalUrl.href} />
     <title>CII Advanced Diploma (ACII) - Level 6 Support | CII Assignment Help</title>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ciiassignmenthelp.com/cii-advanced-diploma-in-insurance">
+    <meta property="og:url" content={canonicalUrl.href}>
     <meta property="og:title" content="CII Advanced Diploma (ACII) - Level 6 Support | CII Assignment Help">
     <meta property="og:description" content="Premium academic support for the CII Advanced Diploma in Insurance (ACII). Expert level 6 assignment writing and dissertation guidance.">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ciiassignmenthelp.com/cii-advanced-diploma-in-insurance">
+    <meta property="twitter:url" content={canonicalUrl.href}>
     <meta property="twitter:title" content="CII Advanced Diploma (ACII) - Level 6 Support | CII Assignment Help">
     <meta property="twitter:description" content="Premium academic support for the CII Advanced Diploma in Insurance (ACII). Expert level 6 assignment writing and dissertation guidance.">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
@@ -933,7 +937,7 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         "provider": {
             "@type": "Organization",
             "name": "CII Assignment Help",
-            "sameAs": "https://ciiassignmenthelp.com"
+            "sameAs": {JSON.stringify(siteUrl)}
         }
     }
     </script>

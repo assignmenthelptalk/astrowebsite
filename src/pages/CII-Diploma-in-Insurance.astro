@@ -1,5 +1,9 @@
 ---
-import WhatsAppButton from './components/whatsAppButton.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+
+const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
+const canonicalUrl = new URL(Astro.url.pathname, site);
+const siteUrl = site.origin;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -8,18 +12,18 @@ import WhatsAppButton from './components/whatsAppButton.astro';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Expert academic support for CII Diploma in Insurance (Level 4). Professional guidance for all diploma modules including core and optional units.">
     <meta name="keywords" content="CII Diploma in Insurance, Level 4 Diploma help, DipCII assignment writing, CII Diploma support, M05 Insurance Law assignment, CII module help">
-    <link rel="canonical" href="https://ciiassignmenthelp.com/CII-Diploma-in-Insurance" />
+    <link rel="canonical" href={canonicalUrl.href} />
     <title>CII Diploma in Insurance - Level 4 Support | CII Assignment Help</title>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ciiassignmenthelp.com/CII-Diploma-in-Insurance">
+    <meta property="og:url" content={canonicalUrl.href}>
     <meta property="og:title" content="CII Diploma in Insurance - Level 4 Support | CII Assignment Help">
     <meta property="og:description" content="Expert academic support for CII Diploma in Insurance (Level 4). Professional guidance for all diploma modules including core and optional units.">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ciiassignmenthelp.com/CII-Diploma-in-Insurance">
+    <meta property="twitter:url" content={canonicalUrl.href}>
     <meta property="twitter:title" content="CII Diploma in Insurance - Level 4 Support | CII Assignment Help">
     <meta property="twitter:description" content="Expert academic support for CII Diploma in Insurance (Level 4). Professional guidance for all diploma modules including core and optional units.">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
@@ -1016,7 +1020,7 @@ import WhatsAppButton from './components/whatsAppButton.astro';
         "provider": {
             "@type": "Organization",
             "name": "CII Assignment Help",
-            "sameAs": "https://ciiassignmenthelp.com"
+            "sameAs": {JSON.stringify(siteUrl)}
         }
     }
     </script>

@@ -1,0 +1,18 @@
+
+> astrowebsite@0.0.1 dev
+> astro dev --host 0.0.0.0
+
+[2m02:51:05[22m [34m[types][39m Generated [2m2ms[22m
+[2m02:51:05[22m [34m[content][39m Syncing content
+[2m02:51:05[22m [34m[content][39m Synced content
+
+[42m[1m astro [22m[49m [32mv5.17.2[39m [2mready in[22m 406 [2mms[22m
+
+[2m┃[22m Local    [36mhttp://localhost:4321/[39m
+[2m┃[22m Network  [36mhttp://10.38.246.70:4321/[39m
+
+[2m02:51:05[22m [32mwatching for file changes...[39m
+[2m02:51:57[22m [34m[200][39m / [2m40ms[22m
+[2m02:52:06[22m [34m[200][39m /CII-Diploma-in-Insurance [2m13ms[22m
+[2m02:59:47[22m [34m[200][39m / [2m9ms[22m
+[2m02:59:47[22m [34m[200][39m /CII-Diploma-in-Insurance [2m8ms[22m

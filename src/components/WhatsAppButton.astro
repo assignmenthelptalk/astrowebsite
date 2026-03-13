@@ -1,5 +1,4 @@
 ---
-// src/components/WhatsAppButton.astro
 const phoneNumber = "254721165448"; // Replace with your actual WhatsApp number (country code + number, no + or spaces)
 const message = "Hello! I need help with my CII assignment."; // Optional pre-filled message
 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
@@ -53,7 +52,6 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
         white-space: nowrap;
     }
 
-    /* Pulse animation to grab attention */
     @keyframes pulse {
         0% {
             box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
@@ -74,7 +72,6 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
         animation: none;
     }
 
-    /* Mobile responsive */
     @media (max-width: 768px) {
         .whatsapp-button {
             bottom: 15px;
@@ -89,7 +86,6 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
         }
     }
 
-    /* Extra small screens - show only icon */
     @media (max-width: 480px) {
         .whatsapp-text {
             display: none;

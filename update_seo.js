@@ -41,18 +41,18 @@ files.forEach(fileInfo => {
     // We'll just look for the block starting with `<meta name="description" ` and ending with `<link rel="icon"`
     const newMeta = `    <meta name="description" content="${fileInfo.desc}">
     <meta name="keywords" content="${fileInfo.keywords}">
-    <link rel="canonical" href="https://ciiassignmenthelp.com/${fileInfo.url}" />
+    <link rel="canonical" href="https://www.ciiassignmenthelp.com/${fileInfo.url}" />
     <title>${fileInfo.title}</title>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ciiassignmenthelp.com/${fileInfo.url}">
+    <meta property="og:url" content="https://www.ciiassignmenthelp.com/${fileInfo.url}">
     <meta property="og:title" content="${fileInfo.title}">
     <meta property="og:description" content="${fileInfo.desc}">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ciiassignmenthelp.com/${fileInfo.url}">
+    <meta property="twitter:url" content="https://www.ciiassignmenthelp.com/${fileInfo.url}">
     <meta property="twitter:title" content="${fileInfo.title}">
     <meta property="twitter:description" content="${fileInfo.desc}">
     <link rel="icon"`;
@@ -73,7 +73,7 @@ files.forEach(fileInfo => {
         "provider": {
             "@type": "Organization",
             "name": "CII Assignment Help",
-            "sameAs": "https://ciiassignmenthelp.com"
+            "sameAs": "https://www.ciiassignmenthelp.com"
         }
     }
     </script>
