@@ -28,6 +28,51 @@ const websiteSearchUrl = new URL('/?s={search_term_string}', site);
     <meta property="twitter:url" content={canonicalUrl.href}>
     <meta property="twitter:title" content="CII Assignment Help | Expert Support for All CII Qualifications">
     <meta property="twitter:description" content="Leading CII assignment help platform. Professional support for CII Certificate, Diploma, and Advanced Diploma (ACII). Expert insurance writers, 24/7 support, guaranteed results.">
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "CII Assignment Help",
+        "url": "https://www.ciiassignmenthelp.com/",
+        "description": "Expert CII assignment help for all qualifications – Certificate, Diploma, and ACII.",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1",
+            "reviewCount": "3000"
+        }
+    })}></script>
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "CII Assignment Help",
+        "review": [
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "James T." },
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "CII Assignment Help was a lifesaver for my Diploma modules. The quality of the M05 Insurance Law assignment was exceptional."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Sarah M." },
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "Their writer clearly had deep industry knowledge. The strategic analysis was exactly what the examiners were looking for."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "David K." },
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "Fast delivery, original work with Turnitin report, and unlimited revisions. Consistently excellent quality."
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "reviewCount": "3000"
+        }
+    })}></script>
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
     <link rel="shortcut icon" href="/favicon.ico?v=4">
     <style>
@@ -996,7 +1041,7 @@ const websiteSearchUrl = new URL('/?s={search_term_string}', site);
     <section aria-labelledby="infographics-title">
         <div class="container">
             <div class="infographic-panel">
-                <h2 class="section-title" id="infographics-title">CII Assignment Help Results</h2>
+                <h2 class="section-title" id="infographics-title">CII Assignment Help</h2>
                 <p class="section-subtitle">A quick visual overview of student outcomes and the step up from Certificate to Diploma level.</p>
 
                 <figure class="infographic-frame">
