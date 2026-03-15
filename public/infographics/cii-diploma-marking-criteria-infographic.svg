@@ -1,0 +1,90 @@
+<svg viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg"
+     width="100%" style="max-width:800px; display:block; margin:0 auto;"
+     role="img" aria-labelledby="svg-title-mc">
+  <title id="svg-title-mc">CII Diploma Written Assessment – Four Marking Criteria – Knowledge, Analysis, Structure, Examples</title>
+  <desc>The four independently weighted marking criteria for CII Diploma and Advanced Diploma written assessments: Knowledge, Analysis, Structure, and Examples – with Analysis the most commonly failed criterion at Diploma level.</desc>
+
+  <!-- Background -->
+  <rect width="800" height="460" fill="#F8F9FC" rx="12"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" fill="#1B3A6B" rx="12"/>
+  <rect y="52" width="800" height="12" fill="#1B3A6B"/>
+  <text x="400" y="40" text-anchor="middle" font-family="Georgia, serif"
+        font-size="20" font-weight="bold" fill="white">
+    CII Diploma Written Assessment – Four Marking Criteria
+  </text>
+
+  <!-- Accent line -->
+  <rect y="64" width="800" height="3" fill="#C9A84C"/>
+
+  <!-- ===== CELL 1 – Knowledge (Top Left) ===== -->
+  <rect x="20" y="80" width="370" height="170" fill="white" rx="10"
+        stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.3"/>
+  <circle cx="68" cy="158" r="28" fill="#1B3A6B" opacity="0.1"/>
+  <text x="68" y="167" text-anchor="middle" font-size="26">📖</text>
+  <text x="115" y="105" font-family="Georgia, serif" font-size="16"
+        font-weight="bold" fill="#1B3A6B">Knowledge</text>
+  <text x="115" y="124" font-family="Arial, sans-serif" font-size="12" fill="#444">Accurate technical content from the</text>
+  <text x="115" y="141" font-family="Arial, sans-serif" font-size="12" fill="#444">unit syllabus – stated with precision</text>
+  <text x="115" y="158" font-family="Arial, sans-serif" font-size="12" fill="#444">and correct terminology.</text>
+  <text x="115" y="182" font-family="Arial, sans-serif" font-size="11" fill="#888">Fails when: definitions lack specificity</text>
+  <rect x="20" y="228" width="370" height="4" fill="#1B3A6B" opacity="0.12" rx="0"/>
+  <text x="115" y="242" font-family="Arial, sans-serif" font-size="11"
+        fill="#1B3A6B" font-weight="bold">Criterion 1 of 4</text>
+
+  <!-- ===== CELL 2 – Analysis (Top Right) ===== -->
+  <rect x="410" y="80" width="370" height="170" fill="white" rx="10"
+        stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.3"/>
+  <rect x="410" y="80" width="370" height="6" fill="#C9A84C" rx="10" opacity="0.7"/>
+  <circle cx="458" cy="158" r="28" fill="#C9A84C" opacity="0.15"/>
+  <text x="458" y="167" text-anchor="middle" font-size="26">🔍</text>
+  <text x="505" y="105" font-family="Georgia, serif" font-size="16"
+        font-weight="bold" fill="#1B3A6B">Analysis</text>
+  <rect x="580" y="90" width="185" height="20" fill="#C9A84C" opacity="0.2" rx="4"/>
+  <text x="672" y="104" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="10" font-weight="bold" fill="#1B3A6B">★ Most Commonly Failed</text>
+  <text x="505" y="124" font-family="Arial, sans-serif" font-size="12" fill="#444">Reasoned argument applying knowledge</text>
+  <text x="505" y="141" font-family="Arial, sans-serif" font-size="12" fill="#444">to the specific scenario facts – not</text>
+  <text x="505" y="158" font-family="Arial, sans-serif" font-size="12" fill="#444">restatement of theory.</text>
+  <text x="505" y="182" font-family="Arial, sans-serif" font-size="11" fill="#888">Fails when: description replaces argument</text>
+  <rect x="410" y="228" width="370" height="4" fill="#C9A84C" opacity="0.3" rx="0"/>
+  <text x="505" y="242" font-family="Arial, sans-serif" font-size="11"
+        fill="#1B3A6B" font-weight="bold">Criterion 2 of 4</text>
+
+  <!-- ===== CELL 3 – Structure (Bottom Left) ===== -->
+  <rect x="20" y="265" width="370" height="170" fill="white" rx="10"
+        stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.3"/>
+  <circle cx="68" cy="343" r="28" fill="#1B3A6B" opacity="0.1"/>
+  <text x="68" y="352" text-anchor="middle" font-size="26">📐</text>
+  <text x="115" y="290" font-family="Georgia, serif" font-size="16"
+        font-weight="bold" fill="#1B3A6B">Structure</text>
+  <text x="115" y="309" font-family="Arial, sans-serif" font-size="12" fill="#444">Clear introduction – developed body</text>
+  <text x="115" y="326" font-family="Arial, sans-serif" font-size="12" fill="#444">argument – stated conclusion with</text>
+  <text x="115" y="343" font-family="Arial, sans-serif" font-size="12" fill="#444">supporting reasons.</text>
+  <text x="115" y="367" font-family="Arial, sans-serif" font-size="11" fill="#888">Fails when: answer starts with content</text>
+  <text x="115" y="381" font-family="Arial, sans-serif" font-size="11" fill="#888">without framing the question first</text>
+  <rect x="20" y="413" width="370" height="4" fill="#1B3A6B" opacity="0.12" rx="0"/>
+  <text x="115" y="427" font-family="Arial, sans-serif" font-size="11"
+        fill="#1B3A6B" font-weight="bold">Criterion 3 of 4</text>
+
+  <!-- ===== CELL 4 – Examples (Bottom Right) ===== -->
+  <rect x="410" y="265" width="370" height="170" fill="white" rx="10"
+        stroke="#C9A84C" stroke-width="1.5" stroke-opacity="0.3"/>
+  <circle cx="458" cy="343" r="28" fill="#C9A84C" opacity="0.15"/>
+  <text x="458" y="352" text-anchor="middle" font-size="26">✏️</text>
+  <text x="505" y="290" font-family="Georgia, serif" font-size="16"
+        font-weight="bold" fill="#1B3A6B">Examples</text>
+  <text x="505" y="309" font-family="Arial, sans-serif" font-size="12" fill="#444">Named case law + year + statutory</text>
+  <text x="505" y="326" font-family="Arial, sans-serif" font-size="12" fill="#444">provision by reference or verified</text>
+  <text x="505" y="343" font-family="Arial, sans-serif" font-size="12" fill="#444">industry practice example.</text>
+  <text x="505" y="367" font-family="Arial, sans-serif" font-size="11" fill="#888">✗ "Relevant case law supports this"</text>
+  <text x="505" y="381" font-family="Arial, sans-serif" font-size="11" fill="#555">✓ Castellain v Preston [1883]</text>
+  <rect x="410" y="413" width="370" height="4" fill="#C9A84C" opacity="0.3" rx="0"/>
+  <text x="505" y="427" font-family="Arial, sans-serif" font-size="11"
+        fill="#1B3A6B" font-weight="bold">Criterion 4 of 4</text>
+
+  <!-- Footer -->
+  <text x="400" y="452" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="10" fill="#bbb">ciiassignmenthelp.com</text>
+</svg>

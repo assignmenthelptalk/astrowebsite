@@ -1,0 +1,33 @@
+<svg viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg"
+     width="100%" style="max-width:800px; display:block; margin:0 auto;"
+     role="img" aria-labelledby="svg-title-l7">
+  <title id="svg-title-l7">CII Advanced Diploma Level 7 Units – Credits per Unit: 50 – Units 991, 993 and 994</title>
+  <desc>Units 991 London Market Specialisation, 993 Strategic Risk Management, and 994 Insurance Market Specialisation each carry 50 credits at RQF Level 7 – the highest credit weighting of any single unit in the CII qualification framework – requiring sustained strategic analysis at board and executive level.</desc>
+
+  <!-- Background -->
+  <rect width="800" height="150" fill="#1B3A6B" rx="10"/>
+
+  <!-- Left accent block -->
+  <rect width="12" height="150" fill="#C9A84C" rx="10"/>
+  <rect x="8" width="8" height="150" fill="#C9A84C"/>
+
+  <!-- Main stat -->
+  <text x="120" y="100" font-family="Georgia, serif" font-size="68"
+        font-weight="bold" fill="#C9A84C">50</text>
+
+  <!-- Label -->
+  <text x="315" y="52" font-family="Georgia, serif" font-size="20"
+        font-weight="bold" fill="white">Credits per Level 7 Unit</text>
+
+  <!-- Context lines -->
+  <text x="315" y="78" font-family="Arial, sans-serif" font-size="13"
+        fill="white" opacity="0.88">Units 991, 993 and 994 – the highest credit weighting of any single unit</text>
+  <text x="315" y="98" font-family="Arial, sans-serif" font-size="13"
+        fill="white" opacity="0.88">in the entire CII qualification framework.</text>
+  <text x="315" y="122" font-family="Arial, sans-serif" font-size="12"
+        fill="#C9A84C">Requires sustained strategic analysis at board and executive level.</text>
+
+  <!-- URL -->
+  <text x="786" y="140" text-anchor="end" font-family="Arial, sans-serif"
+        font-size="10" fill="white" opacity="0.45">ciiassignmenthelp.com</text>
+</svg>

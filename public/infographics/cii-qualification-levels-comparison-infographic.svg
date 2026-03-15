@@ -1,0 +1,114 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg"
+     width="100%" style="max-width:800px; display:block; margin:0 auto;"
+     role="img" aria-labelledby="svg-title-ql">
+  <title id="svg-title-ql">CII Insurance Qualification Assessment – Level Comparison – Certificate, Diploma, Advanced Diploma</title>
+  <desc>Side-by-side comparison of the three CII insurance qualification levels showing RQF level, assessment format, pass mark, credits per unit, and marking standard for each level.</desc>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#F8F9FC" rx="12"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="64" fill="#1B3A6B" rx="12"/>
+  <rect y="52" width="800" height="12" fill="#1B3A6B"/>
+  <text x="400" y="40" text-anchor="middle" font-family="Georgia, serif"
+        font-size="20" font-weight="bold" fill="white">
+    CII Insurance Qualification – Three Assessment Levels
+  </text>
+
+  <!-- Accent line under header -->
+  <rect y="64" width="800" height="3" fill="#C9A84C"/>
+
+  <!-- Column dividers -->
+  <line x1="266" y1="80" x2="266" y2="435" stroke="#C9A84C" stroke-width="1.5"
+        stroke-dasharray="6,4" stroke-opacity="0.45"/>
+  <line x1="533" y1="80" x2="533" y2="435" stroke="#C9A84C" stroke-width="1.5"
+        stroke-dasharray="6,4" stroke-opacity="0.45"/>
+
+  <!-- ===== ENTITY A – Certificate in Insurance ===== -->
+  <rect x="10" y="80" width="246" height="40" fill="#1B3A6B" opacity="0.09" rx="6"/>
+  <text x="133" y="106" text-anchor="middle" font-family="Georgia, serif"
+        font-size="14" font-weight="bold" fill="#1B3A6B">Certificate in Insurance</text>
+
+  <text x="133" y="168" text-anchor="middle" font-size="50">📋</text>
+
+  <text x="133" y="210" text-anchor="middle" font-family="Georgia, serif"
+        font-size="32" font-weight="bold" fill="#C9A84C">Level 3</text>
+  <text x="133" y="228" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="11" fill="#555">RQF Level</text>
+
+  <rect x="18" y="240" width="230" height="36" fill="#1B3A6B" opacity="0.06" rx="5"/>
+  <text x="133" y="264" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="12" fill="#333">Format: <tspan font-weight="bold">MCQ Scenario-Based</tspan></text>
+
+  <rect x="18" y="281" width="230" height="36" fill="white" rx="5"/>
+  <text x="133" y="305" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="12" fill="#333">Pass Mark: <tspan font-weight="bold">65%</tspan></text>
+
+  <rect x="18" y="322" width="230" height="36" fill="#1B3A6B" opacity="0.06" rx="5"/>
+  <text x="133" y="346" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="12" fill="#333">Credits/Unit: <tspan font-weight="bold">15 credits</tspan></text>
+
+  <rect x="18" y="363" width="230" height="36" fill="white" rx="5"/>
+  <text x="133" y="384" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="11" fill="#333">Standard: <tspan font-weight="bold">Applied Scenario Judgment</tspan></text>
+
+  <!-- ===== ENTITY B – Diploma in Insurance ===== -->
+  <rect x="277" y="80" width="246" height="40" fill="#C9A84C" opacity="0.15" rx="6"/>
+  <text x="400" y="106" text-anchor="middle" font-family="Georgia, serif"
+        font-size="14" font-weight="bold" fill="#1B3A6B">Diploma in Insurance</text>
+
+  <text x="400" y="168" text-anchor="middle" font-size="50">📝</text>
+
+  <text x="400" y="210" text-anchor="middle" font-family="Georgia, serif"
+        font-size="32" font-weight="bold" fill="#C9A84C">Level 4–6</text>
+  <text x="400" y="228" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="11" fill="#555">RQF Level</text>
+
+  <rect x="285" y="240" width="230" height="36" fill="#C9A84C" opacity="0.1" rx="5"/>
+  <text x="400" y="264" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="12" fill="#333">Format: <tspan font-weight="bold">Written Examination</tspan></text>
+
+  <rect x="285" y="281" width="230" height="36" fill="white" rx="5"/>
+  <text x="400" y="305" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="12" fill="#333">Pass Mark: <tspan font-weight="bold">50%</tspan></text>
+
+  <rect x="285" y="322" width="230" height="36" fill="#C9A84C" opacity="0.1" rx="5"/>
+  <text x="400" y="346" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="12" fill="#333">Credits/Unit: <tspan font-weight="bold">25–30 credits</tspan></text>
+
+  <rect x="285" y="363" width="230" height="36" fill="white" rx="5"/>
+  <text x="400" y="382" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="11" fill="#333">Standard: <tspan font-weight="bold">Structured Analytical Argument</tspan></text>
+
+  <!-- ===== ENTITY C – Advanced Diploma in Insurance ===== -->
+  <rect x="544" y="80" width="246" height="40" fill="#1B3A6B" opacity="0.09" rx="6"/>
+  <text x="667" y="106" text-anchor="middle" font-family="Georgia, serif"
+        font-size="14" font-weight="bold" fill="#1B3A6B">Advanced Diploma</text>
+
+  <text x="667" y="168" text-anchor="middle" font-size="50">🏆</text>
+
+  <text x="667" y="210" text-anchor="middle" font-family="Georgia, serif"
+        font-size="32" font-weight="bold" fill="#C9A84C">Level 6–7</text>
+  <text x="667" y="228" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="11" fill="#555">RQF Level</text>
+
+  <rect x="552" y="240" width="230" height="36" fill="#1B3A6B" opacity="0.06" rx="5"/>
+  <text x="667" y="264" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="12" fill="#333">Format: <tspan font-weight="bold">Strategic Written</tspan></text>
+
+  <rect x="552" y="281" width="230" height="36" fill="white" rx="5"/>
+  <text x="667" y="305" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="12" fill="#333">Pass Mark: <tspan font-weight="bold">50%</tspan></text>
+
+  <rect x="552" y="322" width="230" height="36" fill="#1B3A6B" opacity="0.06" rx="5"/>
+  <text x="667" y="346" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="12" fill="#333">Credits/Unit: <tspan font-weight="bold">30–50 credits</tspan></text>
+
+  <rect x="552" y="363" width="230" height="36" fill="white" rx="5"/>
+  <text x="667" y="382" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="11" fill="#333">Standard: <tspan font-weight="bold">Board-Level Strategic Reasoning</tspan></text>
+
+  <!-- Footer -->
+  <text x="400" y="442" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="10" fill="#bbb">ciiassignmenthelp.com</text>
+</svg>

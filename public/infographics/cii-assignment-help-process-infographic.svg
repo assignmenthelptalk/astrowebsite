@@ -1,0 +1,93 @@
+<svg viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg"
+     width="100%" style="max-width:800px; display:block; margin:0 auto;"
+     role="img" aria-labelledby="svg-title-pf">
+  <title id="svg-title-pf">CII Assignment Help Process – 4 Steps – Submit Brief, Expert Matched, Support Delivered, Submit and Pass</title>
+  <desc>How to receive CII assignment help in four steps: submit your qualification level, unit code and brief; get matched to a CII-qualified specialist; receive tailored drafting or exam preparation support; submit your assignment with confidence.</desc>
+
+  <!-- Background -->
+  <rect width="800" height="320" fill="#F8F9FC" rx="12"/>
+
+  <!-- Header -->
+  <rect width="800" height="56" fill="#1B3A6B" rx="12"/>
+  <rect y="44" width="800" height="12" fill="#1B3A6B"/>
+  <text x="400" y="34" text-anchor="middle" font-family="Georgia, serif"
+        font-size="20" font-weight="bold" fill="white">How CII Assignment Help Works – 4 Steps</text>
+  <rect y="56" width="800" height="3" fill="#C9A84C"/>
+
+  <!-- Horizontal connector line through all step circles -->
+  <line x1="80" y1="155" x2="720" y2="155" stroke="#C9A84C"
+        stroke-width="2" stroke-opacity="0.4"/>
+
+  <!-- ===== STEP 1 – Submit Your Brief ===== -->
+  <circle cx="100" cy="155" r="36" fill="#1B3A6B"/>
+  <circle cx="100" cy="155" r="32" fill="white"/>
+  <text x="100" y="147" text-anchor="middle" font-family="Georgia, serif"
+        font-size="11" fill="#1B3A6B" opacity="0.7">STEP</text>
+  <text x="100" y="165" text-anchor="middle" font-family="Georgia, serif"
+        font-size="18" font-weight="bold" fill="#1B3A6B">1</text>
+  <text x="100" y="116" text-anchor="middle" font-size="22">📋</text>
+  <text x="100" y="210" text-anchor="middle" font-family="Georgia, serif"
+        font-size="13" font-weight="bold" fill="#1B3A6B">Submit Brief</text>
+  <text x="100" y="228" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="11" fill="#555">Qualification level,</text>
+  <text x="100" y="243" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="11" fill="#555">unit code &amp; question</text>
+
+  <!-- Arrow 1 to 2 -->
+  <polygon points="168,149 168,161 182,155" fill="#C9A84C" opacity="0.8"/>
+
+  <!-- ===== STEP 2 – Expert Matched ===== -->
+  <circle cx="300" cy="155" r="36" fill="#1B3A6B"/>
+  <circle cx="300" cy="155" r="32" fill="white"/>
+  <text x="300" y="147" text-anchor="middle" font-family="Georgia, serif"
+        font-size="11" fill="#1B3A6B" opacity="0.7">STEP</text>
+  <text x="300" y="165" text-anchor="middle" font-family="Georgia, serif"
+        font-size="18" font-weight="bold" fill="#1B3A6B">2</text>
+  <text x="300" y="116" text-anchor="middle" font-size="22">🔍</text>
+  <text x="300" y="210" text-anchor="middle" font-family="Georgia, serif"
+        font-size="13" font-weight="bold" fill="#1B3A6B">Expert Matched</text>
+  <text x="300" y="228" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="11" fill="#555">CII-qualified specialist</text>
+  <text x="300" y="243" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="11" fill="#555">for your specific unit</text>
+
+  <!-- Arrow 2 to 3 -->
+  <polygon points="368,149 368,161 382,155" fill="#C9A84C" opacity="0.8"/>
+
+  <!-- ===== STEP 3 – Support Delivered ===== -->
+  <circle cx="500" cy="155" r="36" fill="#C9A84C"/>
+  <circle cx="500" cy="155" r="32" fill="white"/>
+  <text x="500" y="147" text-anchor="middle" font-family="Georgia, serif"
+        font-size="11" fill="#1B3A6B" opacity="0.7">STEP</text>
+  <text x="500" y="165" text-anchor="middle" font-family="Georgia, serif"
+        font-size="18" font-weight="bold" fill="#1B3A6B">3</text>
+  <text x="500" y="116" text-anchor="middle" font-size="22">✍️</text>
+  <text x="500" y="210" text-anchor="middle" font-family="Georgia, serif"
+        font-size="13" font-weight="bold" fill="#1B3A6B">Support Delivered</text>
+  <text x="500" y="228" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="11" fill="#555">Drafting, analysis review</text>
+  <text x="500" y="243" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="11" fill="#555">or MCQ scenario practice</text>
+
+  <!-- Arrow 3 to 4 -->
+  <polygon points="568,149 568,161 582,155" fill="#C9A84C" opacity="0.8"/>
+
+  <!-- ===== STEP 4 – Submit and Pass – Final step highlighted ===== -->
+  <circle cx="700" cy="155" r="36" fill="#C9A84C"/>
+  <circle cx="700" cy="155" r="32" fill="#1B3A6B"/>
+  <text x="700" y="147" text-anchor="middle" font-family="Georgia, serif"
+        font-size="11" fill="white" opacity="0.7">STEP</text>
+  <text x="700" y="165" text-anchor="middle" font-family="Georgia, serif"
+        font-size="18" font-weight="bold" fill="white">4</text>
+  <text x="700" y="116" text-anchor="middle" font-size="22">✅</text>
+  <text x="700" y="210" text-anchor="middle" font-family="Georgia, serif"
+        font-size="13" font-weight="bold" fill="#1B3A6B">Submit &amp; Pass</text>
+  <text x="700" y="228" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="11" fill="#555">Assignment meets all</text>
+  <text x="700" y="243" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="11" fill="#555">marking criteria</text>
+
+  <!-- Footer -->
+  <text x="400" y="310" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="10" fill="#bbb">ciiassignmenthelp.com</text>
+</svg>
