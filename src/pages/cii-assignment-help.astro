@@ -1,0 +1,1580 @@
+---
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+
+const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
+const canonicalUrl = new URL(Astro.url.pathname, site);
+const siteUrl = site.origin;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get expert CII assignment help for Certificate, Diploma and Advanced Diploma in Insurance. Written assignment support, MCQ exam prep and unit tutoring from qualified specialists.">
+    <meta name="keywords" content="CII assignment help, CII insurance qualification, Certificate in Insurance help, Diploma in Insurance assignment, Advanced Diploma CII, IF1 IF3 IF4 IF5 M05 M92 530 assignment help">
+    <link rel="canonical" href={canonicalUrl.href} />
+    <title>CII Assignment Help – Expert Insurance Qualification Support</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content={canonicalUrl.href}>
+    <meta property="og:title" content="CII Assignment Help – Expert Insurance Qualification Support">
+    <meta property="og:description" content="Get expert CII assignment help for Certificate, Diploma and Advanced Diploma in Insurance. Written assignment support, MCQ exam prep and unit tutoring from qualified specialists.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content={canonicalUrl.href}>
+    <meta property="twitter:title" content="CII Assignment Help – Expert Insurance Qualification Support">
+    <meta property="twitter:description" content="Get expert CII assignment help for Certificate, Diploma and Advanced Diploma in Insurance. Written assignment support, MCQ exam prep and unit tutoring from qualified specialists.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
+    <link rel="shortcut icon" href="/favicon.ico?v=4">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #1e3a5f;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+            z-index: 101;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #ffffff;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .page-hero {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 4px solid #ffd700;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            color: #ffd700;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .breadcrumb a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            opacity: 0.8;
+        }
+
+        .cta-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: white;
+            padding: 0.9rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0.5rem;
+        }
+
+        .cta-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+            background: #20BA5A;
+        }
+
+        .mid-cta {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .mid-cta h3 {
+            color: #1e3a5f;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .mid-cta p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #0d1f35;
+            padding: 0.8rem 1rem;
+            text-align: center;
+            z-index: 99;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+        }
+
+        .sticky-cta a {
+            display: inline-block;
+            background: #ffd700;
+            color: #0d1f35;
+            padding: 0.7rem 2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            margin: 0 0.3rem;
+        }
+
+        .sticky-cta .wa-sticky {
+            background: #25D366;
+            color: white;
+        }
+
+        main {
+            background: white;
+        }
+
+        section {
+            padding: 3.5rem 0;
+        }
+
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #1e3a5f;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            font-size: 1.5rem;
+            color: #2c5282;
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+
+        .section-subtitle-sm {
+            font-size: 1.25rem;
+            color: #2c5282;
+            margin: 1.5rem 0 0.8rem;
+            font-weight: 600;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .intro a {
+            color: #1e3a5f;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #ffd700;
+            transition: color 0.3s;
+        }
+
+        .intro a:hover {
+            color: #ffd700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            border-left: 5px solid #1e3a5f;
+            padding: 1.8rem;
+            margin: 2rem 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .highlight-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .highlight-box p {
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .warning-box {
+            background: #fff8e1;
+            border-left: 5px solid #ffd700;
+            padding: 1.8rem;
+            margin: 2rem 0;
+            border-radius: 6px;
+        }
+
+        .warning-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box {
+            background: #f0f7ff;
+            border-left: 5px solid #2c5282;
+            padding: 1.8rem;
+            margin: 2rem 0;
+            border-radius: 6px;
+        }
+
+        .info-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .modules-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            background: white;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .modules-table thead {
+            background: #1e3a5f;
+            color: white;
+        }
+
+        .modules-table th {
+            padding: 1.1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .modules-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .modules-table tbody tr:hover {
+            background: #f8f9fa;
+            transition: background 0.2s;
+        }
+
+        .modules-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .table-section-header {
+            background: #2c5282 !important;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .table-section-header td {
+            padding: 1.2rem;
+            border-bottom: 2px solid #1e3a5f;
+            color: white;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        .info-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .info-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .info-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .info-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.8rem;
+            position: relative;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .info-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e3a5f;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .cases-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .cases-table thead {
+            background: #1e3a5f;
+            color: white;
+        }
+
+        .cases-table th {
+            padding: 1rem 1.2rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .cases-table td {
+            padding: 1rem 1.2rem;
+            border-bottom: 1px solid #e0e0e0;
+            vertical-align: top;
+            line-height: 1.6;
+        }
+
+        .cases-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .cases-table tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        .cases-table td:first-child {
+            font-style: italic;
+            font-weight: 600;
+            color: #1e3a5f;
+            white-space: nowrap;
+        }
+
+        .pathway-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .pathway-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .pathway-card h4 {
+            color: #1e3a5f;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .pathway-card p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .faq-list {
+            margin: 2rem 0;
+        }
+
+        .faq-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: #f8f9fa;
+            padding: 1.2rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #1e3a5f;
+            user-select: none;
+            transition: background 0.2s;
+        }
+
+        .faq-question:hover {
+            background: #e8f4f8;
+        }
+
+        .faq-question .faq-icon {
+            font-size: 1.4rem;
+            font-weight: 400;
+            transition: transform 0.3s;
+            color: #2c5282;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+
+        .faq-question.open .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            background: white;
+        }
+
+        .faq-answer.open {
+            max-height: 800px;
+        }
+
+        .faq-answer-inner {
+            padding: 1.2rem 1.5rem;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .related-posts {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .related-posts h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+        }
+
+        .related-posts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .related-posts li {
+            margin: 0.8rem 0;
+        }
+
+        .related-posts a {
+            color: #2c5282;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .related-posts a:hover {
+            color: #ffd700;
+        }
+
+        .related-posts a:before {
+            content: "→ ";
+            color: #1e3a5f;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            color: #ffffff;
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e3a5f;
+            padding: 1.1rem 2.8rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0.5rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+        }
+
+        .unit-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin: 1.5rem 0;
+        }
+
+        .unit-link {
+            display: inline-block;
+            background: #f0f7ff;
+            border: 1px solid #c0d4ea;
+            color: #1e3a5f;
+            padding: 0.4rem 0.9rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .unit-link:hover {
+            background: #1e3a5f;
+            color: #ffd700;
+        }
+
+        footer {
+            background: #1e3a5f;
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            opacity: 0.9;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1e3a5f;
+                padding: 1rem;
+                gap: 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                z-index: 100;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.7rem 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .page-hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 1.7rem;
+            }
+
+            .modules-table {
+                font-size: 0.85rem;
+            }
+
+            .modules-table th,
+            .modules-table td {
+                padding: 0.7rem 0.5rem;
+            }
+
+            .cases-table {
+                font-size: 0.85rem;
+            }
+
+            .sticky-cta {
+                display: block;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .page-hero {
+                padding: 3rem 0;
+            }
+
+            .page-hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .modules-table thead {
+                display: none;
+            }
+
+            .modules-table tr {
+                display: block;
+                margin-bottom: 1rem;
+                border: 1px solid #e0e0e0;
+                border-radius: 6px;
+                background: white;
+            }
+
+            .modules-table td {
+                display: block;
+                text-align: left;
+                padding: 0.6rem 1rem;
+                border-bottom: 1px solid #f0f0f0;
+            }
+
+            .modules-table td:before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: inline-block;
+                width: 110px;
+                color: #1e3a5f;
+            }
+
+            .modules-table td:last-child {
+                border-bottom: none;
+            }
+
+            .table-section-header {
+                display: block !important;
+            }
+
+            .table-section-header td {
+                text-align: center;
+            }
+
+            .table-section-header td:before {
+                display: none;
+            }
+
+            .cases-table thead {
+                display: none;
+            }
+
+            .cases-table tr {
+                display: block;
+                margin-bottom: 1rem;
+                border: 1px solid #e0e0e0;
+                border-radius: 6px;
+                background: white;
+                padding: 1rem;
+            }
+
+            .cases-table td {
+                display: block;
+                padding: 0.4rem 0;
+                border-bottom: none;
+            }
+
+            .cases-table td:first-child {
+                white-space: normal;
+                font-size: 1rem;
+                margin-bottom: 0.3rem;
+            }
+        }
+    </style>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/63f58ff531ebfa0fe7ee9bdb/1gprjkmdp';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">CII Assignment Help</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#qualifications">Qualifications</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>CII Assignment Help</h1>
+            <p class="subtitle">Expert Support for Every CII Insurance Qualification Level</p>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / CII Assignment Help
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- INTRO -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">CII Insurance Qualification Assignments</h2>
+                <p class="intro">CII insurance qualification assignments are formally assessed components of the Chartered Insurance Institute qualification framework — a Regulated Qualifications Framework (RQF) structure spanning Certificate in Insurance (Level 3), Diploma in Insurance (Level 4–6), and Advanced Diploma in Insurance (Level 6–7). Each qualification requires students to pass individually assessed units, taking the form of MCQ scenario-based examinations at Certificate level or written examinations and structured coursework at Diploma and Advanced Diploma level. This service provides expert CII assignment help across all three qualification tiers, for every unit, for UK and international students.</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Certificate in Insurance (Level 3)</h3>
+                        <ul>
+                            <li>MCQ scenario-based examinations</li>
+                            <li>Pass mark: 65%</li>
+                            <li>15 credits per unit</li>
+                            <li>IF1–IF11, GR1, LM3, R05 and international variants</li>
+                            <li>Applied professional judgment — not rote recall</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>Diploma in Insurance (Level 4–6)</h3>
+                        <ul>
+                            <li>Written examinations and coursework</li>
+                            <li>Pass mark: 50%</li>
+                            <li>Four marking criteria: Knowledge, Analysis, Structure, Examples</li>
+                            <li>Three compulsory core units (M05, M92, 530)</li>
+                            <li>18 optional specialist units</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>Advanced Diploma in Insurance (Level 6–7)</h3>
+                        <ul>
+                            <li>Strategic written assignments</li>
+                            <li>Level 6 core: 820, 930, 960</li>
+                            <li>Level 7 optionals: 991, 993, 994 (50 credits each)</li>
+                            <li>Portfolio and director-level reasoning required</li>
+                            <li>Pathway to ACII designation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT IS A CII ASSIGNMENT -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">What Is a CII Insurance Qualification Assignment?</h2>
+                <p class="intro">A CII insurance qualification assignment requires a student to demonstrate applied professional knowledge within a defined assessment format, under the marking standards set by the Chartered Insurance Institute. The precise format — and therefore the nature of the challenge — differs between qualification levels.</p>
+
+                <h3 class="section-subtitle">MCQ Scenario-Based Exams — Certificate in Insurance</h3>
+                <p class="intro">At Certificate in Insurance level, assessments are MCQ scenario-based examinations: each question presents a realistic professional insurance situation and the student must identify the correct professional action, policy interpretation, or legal position from four answer options. The pass mark is 65%. Rote memorisation of insurance definitions does not meet this standard — the examination requires applied judgment in a live professional context.</p>
+
+                <div class="highlight-box">
+                    <h3>Applied Judgment, Not Definition Recall</h3>
+                    <p>A student who has read the IF3 syllabus and memorised the definition of an insurance warranty will not automatically know which of four scenario outcomes correctly reflects the effect of an Insurance Act 2015 section 10 breach under the given fact pattern. The scenarios require the student to reason from principle to outcome — under examination conditions, within the time limit, without reference materials.</p>
+                </div>
+
+                <h3 class="section-subtitle">Written Examinations and Coursework — Diploma and Advanced Diploma</h3>
+                <p class="intro">At Diploma in Insurance and Advanced Diploma in Insurance level, assessments are written examinations and structured coursework with a pass mark of 50%. The four marking criteria are applied separately and weighted independently:</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Knowledge</h3>
+                        <p>Accurate technical content drawn from the unit syllabus — correct statements of insurance law principles, statutory provisions, financial metrics, or economic models.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Analysis</h3>
+                        <p>Reasoned argument applying knowledge to the specific question or scenario — identifying what the rule means for the given facts and why one outcome follows from the applicable principle. This is the most commonly failed criterion at Diploma level.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Structure</h3>
+                        <p>Logical sequencing with a clear introduction that frames the question, a developed body addressing each element in turn, and a conclusion stating the position with reasons.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Examples</h3>
+                        <p>Specific, verifiable citations: named case law with year and outcome, named regulatory provisions by reference, or named industry practice examples. General references do not score marks.</p>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <h3>Why Most Diploma Students Who Fail Are Close to Passing</h3>
+                    <p>Most students who fail CII written assessments do so not because their Knowledge is insufficient, but because their Analysis is underdeveloped and their Examples are too general to score marks. "Relevant case law supports this position" is not an Example. "<em>Castellain v Preston</em> [1883]: the insurer's right of subrogation arises only after the insurer has paid the full amount of the insured's loss" is an Example that scores marks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATE UNITS -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">CII Certificate in Insurance — Assignment Types and Units</h2>
+                <p class="intro">Each unit within the CII Certificate in Insurance covers a distinct professional insurance discipline and is assessed by a scenario-based MCQ examination worth 15 credits at RQF Level 3. The Certificate requires accumulation of units to achieve the award — students may combine IF series units, specialist units (GR1, LM3, R05), and approved international variant units.</p>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr><th>Unit</th><th>Module Title</th><th>Credits</th><th>Level</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-section-header"><td colspan="4">IF Series — Core Certificate Units</td></tr>
+                        <tr>
+                            <td data-label="Unit">IF1</td>
+                            <td data-label="Module Title">Insurance: Legal and Regulatory</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">IF2</td>
+                            <td data-label="Module Title">General Insurance Business</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">IF3</td>
+                            <td data-label="Module Title">Insurance Underwriting Process</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">IF4</td>
+                            <td data-label="Module Title">Insurance Claims Handling Process</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">IF5</td>
+                            <td data-label="Module Title">Motor Insurance</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">IF6</td>
+                            <td data-label="Module Title">Household Insurance</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">IF7</td>
+                            <td data-label="Module Title">Healthcare Insurance</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">IF8</td>
+                            <td data-label="Module Title">Packaged Commercial Insurances</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">IF9</td>
+                            <td data-label="Module Title">Customer Service in Insurance</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">IF10</td>
+                            <td data-label="Module Title">Insurance Broking Fundamentals</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">IF11</td>
+                            <td data-label="Module Title">Risk and Insurance</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr class="table-section-header"><td colspan="4">Specialist Certificate Units</td></tr>
+                        <tr>
+                            <td data-label="Unit">GR1</td>
+                            <td data-label="Module Title">Group Risk</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">LM3</td>
+                            <td data-label="Module Title">London Market Broker</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">R05</td>
+                            <td data-label="Module Title">Financial Protection</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr class="table-section-header"><td colspan="4">International Variant Units</td></tr>
+                        <tr>
+                            <td data-label="Unit">WCE</td>
+                            <td data-label="Module Title">Insurance Claims (International English)</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">WCA</td>
+                            <td data-label="Module Title">Insurance Claims (Arabic)</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">WUE</td>
+                            <td data-label="Module Title">Insurance Underwriting Process (International English)</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">WUA</td>
+                            <td data-label="Module Title">Insurance Underwriting Process (Arabic)</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">W04</td>
+                            <td data-label="Module Title">Customer Service in Insurance (International)</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">IMU</td>
+                            <td data-label="Module Title">India Motor Underwriting</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Unit">IMP</td>
+                            <td data-label="Module Title">India Motor Practice</td>
+                            <td data-label="Credits">15</td>
+                            <td data-label="Level">3</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="section-subtitle">Unit-Specific Certificate Assignment Help</h3>
+                <p class="intro">The most frequently requested Certificate-level units:</p>
+                <div class="unit-links">
+                    <a href="/if1-assignment-help" class="unit-link">IF1 — Insurance Legal &amp; Regulatory</a>
+                    <a href="/if3-assignment-help" class="unit-link">IF3 — Underwriting Process</a>
+                    <a href="/if4-assignment-help" class="unit-link">IF4 — Claims Handling</a>
+                    <a href="/if5-assignment-help" class="unit-link">IF5 — Motor Insurance</a>
+                    <a href="/lm3-assignment-help" class="unit-link">LM3 — London Market Broker</a>
+                    <a href="/gr1-assignment-help" class="unit-link">GR1 — Group Risk</a>
+                    <a href="/imu-assignment-help" class="unit-link">IMU — India Motor Underwriting</a>
+                    <a href="/wce-assignment-help" class="unit-link">WCE — Claims (International)</a>
+                    <a href="/cii-certificate-in-insurance-assignment-help" class="unit-link">All Certificate Units →</a>
+                </div>
+
+                <div class="mid-cta">
+                    <h3>Need Help With a Certificate Unit?</h3>
+                    <p>Expert support for every IF unit, specialist unit, and international variant — scenario technique, applied rule application, and exam preparation</p>
+                    <a href="/#contact" class="cta-button" style="margin: 0.3rem;">Get a Free Quote</a>
+                    <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20my%20CII%20Certificate%20assignment." target="_blank" rel="noopener noreferrer" class="cta-whatsapp" style="margin: 0.3rem;">💬 WhatsApp Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIPLOMA -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">CII Diploma in Insurance — Core and Optional Module Support</h2>
+                <p class="intro">Three compulsory core units form the foundation of the CII Diploma in Insurance — M05 Insurance Law and Practice, M92 Insurance Business and Finance, and 530 Economics and Business. All three must be passed before the Diploma award is conferred. These core units are assessed by written examination at a materially higher level of analytical demand than Certificate-level MCQ units — they require structured argument, case law citation, and demonstration of professional-level reasoning across all four marking criteria.</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>M05 Insurance Law and Practice</h3>
+                        <p>25 credits, RQF Level 4. Precise application of English contract law principles — the six elements of contract formation, misrepresentation and non-disclosure rules, classification of policy terms, and Insurance Act 2015 reforms to warranty law (s.9–s.11: warranties now operate as suspensive conditions, not absolute discharge triggers).</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>M92 Insurance Business and Finance</h3>
+                        <p>25 credits, RQF Level 4. Insurance company financial operations — premium setting, loss ratio and combined ratio analysis, reinsurance structures (proportional and non-proportional), Solvency II three-pillar framework (SCR/MCR; ORSA; SFCR disclosure), and distribution channel analysis.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>530 Economics and Business</h3>
+                        <p>30 credits, RQF Level 6. Microeconomic and macroeconomic theory applied to the insurance market — demand elasticity, adverse selection, moral hazard, the underwriting cycle, macroeconomic factors (GDP, claims inflation, interest rates), and Porter's Five Forces applied to insurance market dynamics.</p>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle">M05 — The Five Key Cases</h3>
+                <p class="intro">M05 Insurance Law and Practice demands the most intensive use of named case law of any unit in the CII Diploma. Five cases appear frequently across M05 assessments and must be understood at the level of the doctrine each establishes — not merely as names:</p>
+
+                <table class="cases-table">
+                    <thead>
+                        <tr><th>Case</th><th>Doctrine Established</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Case">Castellain v Preston [1883]</td>
+                            <td data-label="Doctrine">Subrogation: after an insurer pays a claim in full, the insurer acquires the right to stand in the insured's place and recover from any third party responsible for the loss. The insured cannot profit — if they have already recovered from the third party, the insurer can reclaim the amount paid.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Case">Macaura v Northern Assurance [1925]</td>
+                            <td data-label="Doctrine">Insurable interest: a shareholder does not have an insurable interest in the assets owned by the company in which they hold shares, even if they are the sole shareholder. Insurable interest must be a legally recognised financial interest in the subject matter itself, not in the entity that owns it.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Case">Leyland Shipping v Norwich Union [1918]</td>
+                            <td data-label="Doctrine">Proximate cause: where a loss results from a chain of causes, the cause that is proximate in efficiency (not necessarily proximate in time) determines whether the loss falls within the scope of the insured peril.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Case">Carter v Boehm [1766]</td>
+                            <td data-label="Doctrine">Utmost good faith (uberrimae fidei): Lord Mansfield's foundational statement that both parties to an insurance contract must disclose all material facts that would affect the other's decision — the insurer knows the general probability of risk; the insured knows the specific circumstances.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Case">Pan Atlantic Insurance v Pine Top Insurance [1994]</td>
+                            <td data-label="Doctrine">Materiality test for disclosure: a fact is material if a prudent underwriter would have wished to know it before deciding whether to accept the risk and on what terms. It does not need to have been decisive — it merely needs to have been relevant to the prudent underwriter's assessment.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="section-subtitle">Optional Specialist Units — Diploma Pathways</h3>
+                <p class="intro">Beyond the three compulsory core units, Diploma students select optional specialist units aligned to their professional practice area:</p>
+
+                <div class="pathway-grid">
+                    <div class="pathway-card">
+                        <h4>Underwriting Professionals</h4>
+                        <p><a href="/m80-assignment-help">M80 Underwriting Practice</a> (30cr) — process and strategy of professional underwriting</p>
+                    </div>
+                    <div class="pathway-card">
+                        <h4>Claims Professionals</h4>
+                        <p><a href="/m85-assignment-help">M85 Claims Practice</a> (30cr) — complex claims handling, large loss strategy, coverage dispute management</p>
+                    </div>
+                    <div class="pathway-card">
+                        <h4>Insurance Brokers</h4>
+                        <p>M81 Broking Practice (30cr) — professional broking obligations, client management, market access strategy</p>
+                    </div>
+                    <div class="pathway-card">
+                        <h4>London Market and Specialty</h4>
+                        <p>M97 Reinsurance · M90 Cargo · M98 Marine Hull · M96 Liability · M94 Motor · M91 Aviation (30cr each)</p>
+                    </div>
+                    <div class="pathway-card">
+                        <h4>Life and Protection</h4>
+                        <p>P61 Life Underwriting · P62 Life Claims · P63 Long-term Insurance · P64 Private Medical Insurance (30cr each)</p>
+                    </div>
+                    <div class="pathway-card">
+                        <h4>Commercial Property and BI</h4>
+                        <p>M93 Property and Business Interruption (30cr)</p>
+                    </div>
+                    <div class="pathway-card">
+                        <h4>Risk Management</h4>
+                        <p>M67 Risk Management (30cr)</p>
+                    </div>
+                    <div class="pathway-card">
+                        <h4>Delegated Authority / MGA</h4>
+                        <p>M66 Delegated Authority (30cr)</p>
+                    </div>
+                    <div class="pathway-card">
+                        <h4>Policy Drafting / Personal Lines</h4>
+                        <p>M21 Contract Wording · M86 Personal Lines (30cr each)</p>
+                    </div>
+                </div>
+
+                <div class="unit-links" style="margin-top: 1rem;">
+                    <a href="/m05-assignment-help" class="unit-link">M05 Insurance Law</a>
+                    <a href="/m92-assignment-help" class="unit-link">M92 Business and Finance</a>
+                    <a href="/530-assignment-help" class="unit-link">530 Economics and Business</a>
+                    <a href="/m80-assignment-help" class="unit-link">M80 Underwriting Practice</a>
+                    <a href="/m85-assignment-help" class="unit-link">M85 Claims Practice</a>
+                    <a href="/cii-diploma-in-insurance-assignment-help" class="unit-link">All Diploma Units →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADVANCED DIPLOMA -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">CII Advanced Diploma in Insurance — Strategic Assignment Support</h2>
+                <p class="intro">The Advanced Diploma in Insurance requires candidates to demonstrate strategic management capability at RQF Level 6 and Level 7 — not practice-level operational description. Completion of the Advanced Diploma and fulfilment of the CII's Chartered status requirements leads to the <strong>ACII designation</strong> — the recognised professional credential in the UK and international insurance market for experienced practitioners.</p>
+
+                <div class="warning-box">
+                    <h3>Strategic Reasoning — Not Operational Description</h3>
+                    <p>A unit 820 assignment that describes how a claims team processes a large loss claim — rather than analysing how a claims portfolio strategy should be adjusted in response to systemic frequency deterioration in a commercial property class — does not meet the Level 6 standard. Advanced Diploma assignments must argue at portfolio, strategy, and director level.</p>
+                </div>
+
+                <h3 class="section-subtitle">Core Level 6 Units — 820, 930 and 960</h3>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3><a href="/820-assignment-help" style="color: #1e3a5f; text-decoration: none;">820 Advanced Claims Management</a></h3>
+                        <p>30 credits, Level 6. Strategic management of complex claims portfolios — how a portfolio of large loss claims affects the combined ratio and reinsurance recovery position; litigation strategy for coverage disputes exceeding delegated authority; coordination of major losses across multiple insurers, reinsurers, and loss adjusters.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><a href="/930-assignment-help" style="color: #1e3a5f; text-decoration: none;">930 Advanced Insurance Broking</a></h3>
+                        <p>30 credits, Level 6. Senior professional reasoning about corporate client broking — placement strategy decisions, market access choices, regulatory compliance architecture, and corporate client relationship management at director level.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3><a href="/960-assignment-help" style="color: #1e3a5f; text-decoration: none;">960 Advanced Underwriting</a></h3>
+                        <p>30 credits, Level 6. Portfolio underwriting strategy — designing a risk appetite framework, constructing a reinsurance programme, pricing model design at the class of business level, and strategic underwriting decisions about risk selection and pricing adequacy.</p>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle">Level 7 Optional Units — 991, 993 and 994</h3>
+                <div class="highlight-box">
+                    <h3>50 Credits Each — The Highest Weighting in the CII Framework</h3>
+                    <p>Units 991, 993, and 994 each carry 50 credits at Level 7 — the single highest credit weighting of any unit in the entire CII qualification framework. These require sustained strategic analysis and argument at executive or board level. Students undertaking these units are typically senior insurance professionals — directors, senior managers, or experienced specialists operating at a level where the written assignment must reflect board-level strategic reasoning.</p>
+                </div>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3><a href="/991-assignment-help" style="color: #1e3a5f; text-decoration: none;">991 London Market Specialisation</a></h3>
+                        <p>50 credits, Level 7. Lloyd's syndicate structure and governance, IUA market, Lloyd's Franchise Performance Directorate, global positioning relative to Bermuda/Singapore/Zurich, strategic implications of InsurTech and emerging risks for the London market.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>993 Strategic Risk Management</h3>
+                        <p>50 credits, Level 7. ERM framework design, risk appetite articulation and governance, the interface between insurance purchasing strategy and the enterprise risk management framework, strategic implications of emerging risks (climate, cyber, geopolitical, supply chain disruption).</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>994 Insurance Market Specialisation</h3>
+                        <p>50 credits, Level 7. Deep specialisation in a chosen insurance market segment — expert, board-level understanding of that segment's strategic dynamics, competitive positioning, regulatory environment, and future trajectory.</p>
+                    </div>
+                </div>
+
+                <div class="unit-links" style="margin-top: 1rem;">
+                    <a href="/820-assignment-help" class="unit-link">820 Advanced Claims</a>
+                    <a href="/930-assignment-help" class="unit-link">930 Advanced Broking</a>
+                    <a href="/960-assignment-help" class="unit-link">960 Advanced Underwriting</a>
+                    <a href="/991-assignment-help" class="unit-link">991 London Market</a>
+                    <a href="/590-assignment-help" class="unit-link">590 Takaful Insurance</a>
+                    <a href="/cii-advanced-diploma-in-insurance-assignment-help" class="unit-link">All Advanced Diploma Units →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">How Our CII Assignment Help Service Works</h2>
+                <p class="intro">Students submit three pieces of information: their qualification level (Certificate in Insurance, Diploma in Insurance, or Advanced Diploma in Insurance), their unit code (for example, IF3, M05, or 820), and their assignment brief or examination topic. This information is used to match the request to a CII-qualified insurance professional or experienced unit tutor with demonstrated competence in the specific unit and assessment format.</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Certificate Level Support</h3>
+                        <ul>
+                            <li>MCQ scenario technique — reading and interpreting scenario questions systematically</li>
+                            <li>Unit-specific applied practice aligned to the named IF unit syllabus</li>
+                            <li>Explanation of the specific rules that appear in that unit's examination scenarios</li>
+                            <li>IF3: Insurance Act 2015 warranty provisions; IF4: subrogation timing; IF5: MIB scheme conditions</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>Diploma Level Support</h3>
+                        <ul>
+                            <li>Written assignment drafting addressing all four marking criteria</li>
+                            <li>Case law explanation and application for M05 (doctrine, case name, year, outcome)</li>
+                            <li>Financial analysis support for M92 (combined ratio, reinsurance structure, Solvency II)</li>
+                            <li>Economic model application for 530 (underwriting cycle, PED, Porter's Five Forces)</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>Advanced Diploma Level Support</h3>
+                        <ul>
+                            <li>Strategic written answer development for 820, 930, and 960 at portfolio and strategy level</li>
+                            <li>High-credit strategic analysis for Level 7 optional units (991, 993, 994)</li>
+                            <li>Analytical review and feedback on drafted strategic arguments</li>
+                            <li>Expert strategic drafting assistance — not study guidance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mid-cta">
+                    <h3>Submit Your Unit Code and Assignment Brief</h3>
+                    <p>All support is matched to the specific unit and assessment format — Certificate, Diploma, or Advanced Diploma</p>
+                    <a href="/#contact" class="cta-button" style="margin: 0.3rem;">Get a Quote</a>
+                    <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20my%20CII%20assignment." target="_blank" rel="noopener noreferrer" class="cta-whatsapp" style="margin: 0.3rem;">💬 WhatsApp Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERNATIONAL -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">CII Assignment Help for International, Arabic-Speaking and Indian Students</h2>
+                <p class="intro">The CII qualification framework includes a full range of international variant units designed for students sitting CII examinations outside the UK, in regulatory environments that differ from the FCA/PRA framework. International variant units cover the same core subject matter disciplines as their IF series equivalents but replace UK-specific statute references with general insurance principles applicable across jurisdictions.</p>
+
+                <h3 class="section-subtitle">International Variant Units</h3>
+                <p class="intro">International variant units available within the CII Certificate framework include WCE and WCA (Insurance Claims — non-UK English and Arabic language variants), WUE and WUA (Insurance Underwriting Process — non-UK English and Arabic variants), and W04 (Customer Service in Insurance — international variant). These units test the same core knowledge as their UK IF equivalents — but the regulatory and statutory frame of reference is general insurance law principles, not the Insurance Act 2015 or ICOBS specifically.</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Arabic-Language Units</h3>
+                        <p>Students who speak Arabic as their primary language may sit WCA (Claims — Arabic), WUA (Underwriting — Arabic), and at Advanced Diploma level, unit 590 Takaful Insurance in its Arabic-language variant. Arabic-language tutoring support is available for these units.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>India Market — IMU and IMP</h3>
+                        <p>IMU (India Motor Underwriting) and IMP (India Motor Practice) are assessed under the IRDAI regulatory framework — the Motor Vehicles Act 1988 (India), IRDAI detariffication of Own Damage rates, IDV calculation, NCB scale, IRDAI's 5-year long-term third-party policy mandate, and the Solatium Fund. Support reflects the correct IRDAI regulatory context — not UK RTA 1988 content.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>590 Takaful Insurance</h3>
+                        <p>Unit 590 is the most commonly requested CII unit among Arabic-speaking students in GCC markets. Takaful operates on Shariah-compliant principles — <em>tabarru</em> (mutual contribution), <em>wakalah</em> (agency model), and <em>mudarabah</em> (profit-sharing). Different GCC markets use different model combinations. Support requires genuine understanding of these models — not surface awareness that Takaful is "Islamic insurance."</p>
+                    </div>
+                </div>
+
+                <div class="unit-links">
+                    <a href="/cii-assignment-help-international" class="unit-link">International Students →</a>
+                    <a href="/wce-assignment-help" class="unit-link">WCE Claims (International)</a>
+                    <a href="/imu-assignment-help" class="unit-link">IMU India Motor Underwriting</a>
+                    <a href="/590-assignment-help" class="unit-link">590 Takaful Insurance</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-list">
+
+                    <div class="faq-item">
+                        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+                            What is the difference between a CII written examination and a CII MCQ scenario-based exam?
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>CII MCQ scenario-based examinations are used at Certificate in Insurance level. Each question presents a realistic professional insurance scenario — a claims dispute, an underwriting decision, a regulatory obligation — and the student must select the correct professional outcome from four answer options. The pass mark is 65%. The examination tests applied professional judgment: the ability to identify the correct rule and apply it to a described professional situation. It does not test recall of definitions in isolation.</p>
+                                <p style="margin-top: 1rem;">CII written examinations are used at Diploma in Insurance and Advanced Diploma in Insurance level. The student writes structured answers to questions or analyses scenarios, marked independently on four criteria: Knowledge, Analysis, Structure, and Examples. The pass mark is 50%. The two formats require fundamentally different preparation — scenario-based MCQ requires practised applied interpretation; written examinations require structured argument construction supported by case law and regulatory citation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+                            Can I get CII assignment help for optional specialist units as well as core units?
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>CII assignment help is available for every unit in the qualification framework — including all optional specialist units at Diploma and Advanced Diploma level. At Diploma level, optional units include M80 Underwriting Practice, M81 Broking Practice, M85 Claims Practice, M96 Liability Insurance, M97 Reinsurance, M93 Property and Business Interruption, M94 Motor Insurance, M98 Marine Hull, M90 Cargo Insurance, M91 Aviation Insurance, M67 Risk Management, M66 Delegated Authority, P61 Life Underwriting, P62 Life Claims, P63 Long-term Insurance, P64 Private Medical Insurance, M21 Contract Wording, and M86 Personal Lines. At Advanced Diploma level, optional units include 590 Takaful, 545 Insurance Marketing, 990 Corporate Management, 991 London Market Specialisation, 992 Risk Management, 993 Strategic Risk Management, 994 Insurance Market Specialisation, 995 Strategic Underwriting, 996 Strategic Claims Management, and 997 Risk Financing. Submit your unit code and assignment brief and the request is matched to a specialist with competence in that unit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+                            How long does a CII unit enrolment window last and what happens if the deadline is missed?
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>The standard CII unit enrolment window is 12–18 months from the date of unit registration. Students must sit their unit examination within this window. A student who does not sit within the enrolment window must re-enrol and pay the unit registration fee to obtain a new examination sitting opportunity. Seeking CII assignment help early in the enrolment window — not in the final weeks before the examination date — allows sufficient time for preparation, practice, and review. For official enrolment window durations and extension policies, consult the Chartered Insurance Institute directly, as these may vary by unit and examination session.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+                            Is CII assignment help available for students sitting CII examinations outside the United Kingdom?
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>CII assignment help is available to international students worldwide — including students sitting international variant units. International variant units supported include: WCE and WCA (Insurance Claims — non-UK English and Arabic), WUE and WUA (Insurance Underwriting Process — non-UK English and Arabic), W04 (Customer Service in Insurance — international variant), IMU (India Motor Underwriting — assessed under the IRDAI regulatory framework), IMP (India Motor Practice — IRDAI-aligned), and the Arabic-language variant of unit 590 (Takaful Insurance). All these units are awarded by the Chartered Insurance Institute but their content is assessed on the regulatory and market context relevant to the student's jurisdiction — not the UK FCA/PRA framework. Arabic-language tutoring support is available for Arabic-variant units.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" tabindex="0" role="button" aria-expanded="false">
+                            What do CII Diploma examiners look for in a written assignment answer?
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>Diploma written assignments are marked on four independently weighted criteria. <strong>Knowledge</strong> requires accurate technical content from the unit syllabus — correct statements of insurance law, regulatory provisions, financial concepts, or economic models. <strong>Analysis</strong> requires the student to reason from that knowledge to a conclusion about the specific question or scenario — not to restate theory, but to apply it and explain what it means for the situation described. <strong>Structure</strong> requires logical sequencing: a clear introduction that frames the question, a developed body that addresses each element in order, and a conclusion that states the student's position with supporting reasons. <strong>Examples</strong> require specific, verifiable citations — named case law with year and outcome (<em>Macaura v Northern Assurance</em> [1925]: shareholder has no insurable interest in company assets), named regulatory provisions by reference (Insurance Act 2015 s.3: duty of fair presentation), or named industry practice examples. Diploma answers that demonstrate adequate Knowledge but underdeveloped Analysis and insufficient Examples consistently fail — because Analysis and Examples carry substantial independent marking weight.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- RELATED QUALIFICATIONS -->
+        <section>
+            <div class="container">
+                <div class="related-posts">
+                    <h3>CII Qualification Pages</h3>
+                    <ul>
+                        <li><a href="/cii-certificate-in-insurance">CII Certificate in Insurance | CII Assignment Help</a></li>
+                        <li><a href="/CII-Diploma-in-Insurance">CII Diploma in Insurance | CII Assignment Help</a></li>
+                        <li><a href="/cii-advanced-diploma-in-insurance">CII Advanced Diploma in Insurance | CII Assignment Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Get CII Assignment Help Now</h2>
+                <p>Tell us your unit and qualification level. Supporting Certificate, Diploma and Advanced Diploma students across all units.</p>
+                <a href="/#contact" class="cta-button">Get Your Free Quote</a>
+                <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20my%20CII%20assignment." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CII Assignment Help. Supporting insurance professionals worldwide.</p>
+            <p><a href="/">Home</a> | <a href="/#services">Services</a> | <a href="/#contact">Contact</a></p>
+        </div>
+    </footer>
+
+    <WhatsAppButton />
+
+    <div class="sticky-cta">
+        <a href="/#contact">Get Quote</a>
+        <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20my%20CII%20assignment." target="_blank" rel="noopener noreferrer" class="wa-sticky">💬 WhatsApp</a>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isOpen = answer.classList.contains('open');
+                // Close all
+                document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    q.classList.remove('open');
+                    q.setAttribute('aria-expanded', 'false');
+                });
+                // Open clicked if it was closed
+                if (!isOpen) {
+                    answer.classList.add('open');
+                    question.classList.add('open');
+                    question.setAttribute('aria-expanded', 'true');
+                }
+            });
+            question.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    question.click();
+                }
+            });
+        });
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "CII Assignment Help",
+        "description": "Expert CII assignment help for Certificate, Diploma and Advanced Diploma in Insurance. Written assignment support, MCQ exam prep and unit tutoring from qualified specialists.",
+        "provider": {
+            "@type": "Organization",
+            "name": "CII Assignment Help",
+            "url": siteUrl
+        },
+        "serviceType": "Insurance Qualification Assignment Help",
+        "areaServed": "Worldwide",
+        "url": canonicalUrl.href
+    })}></script>
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the difference between a CII written examination and a CII MCQ scenario-based exam?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CII MCQ scenario-based examinations are used at Certificate in Insurance level. Each question presents a realistic professional insurance scenario and the student must select the correct professional outcome from four answer options. The pass mark is 65%. CII written examinations are used at Diploma and Advanced Diploma level, marked on four criteria: Knowledge, Analysis, Structure, and Examples. The pass mark is 50%."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I get CII assignment help for optional specialist units as well as core units?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CII assignment help is available for every unit in the qualification framework — including all optional specialist units at Diploma and Advanced Diploma level. Diploma optional units include M80, M81, M85, M96, M97, M93, M94, M98, M90, M91, M67, M66, P61, P62, P63, P64, M21, and M86. Advanced Diploma optional units include 590, 545, 990, 991, 992, 993, 994, 995, 996, and 997."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does a CII unit enrolment window last and what happens if the deadline is missed?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The standard CII unit enrolment window is 12–18 months from the date of unit registration. A student who does not sit within the enrolment window must re-enrol and pay the unit registration fee to obtain a new examination sitting opportunity."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is CII assignment help available for students sitting CII examinations outside the United Kingdom?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CII assignment help is available to international students worldwide — including students sitting international variant units WCE, WCA, WUE, WUA, W04, IMU (IRDAI framework), IMP, and unit 590 Takaful Insurance in its Arabic-language variant. Arabic-language tutoring support is available for Arabic-variant units."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What do CII Diploma examiners look for in a written assignment answer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Diploma written assignments are marked on four independently weighted criteria: Knowledge (accurate technical content), Analysis (reasoning from knowledge to a conclusion about the specific scenario), Structure (clear introduction, developed body, stated conclusion), and Examples (specific named case law with year and outcome, named regulatory provisions by reference). Answers that demonstrate adequate Knowledge but underdeveloped Analysis and insufficient Examples consistently fail."
+                }
+            }
+        ]
+    })}></script>
+
+</body>
+</html>
