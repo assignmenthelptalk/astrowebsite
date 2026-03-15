@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 660" width="900" height="660">
+
+  <!-- Background -->
+  <rect width="900" height="660" fill="#f5f7fa"/>
+
+  <!-- Header -->
+  <rect width="900" height="66" fill="#1e3a5f"/>
+  <text x="450" y="35" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">Reinsurance Types - Structure and Purpose</text>
+  <text x="450" y="55" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#a8c4e0" text-anchor="middle">M92 Insurance Business and Finance | CII Diploma in Insurance</text>
+
+  <!-- Column Headers -->
+  <rect x="18" y="80" width="418" height="42" rx="5" fill="#2980b9"/>
+  <text x="227" y="107" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="bold" fill="white" text-anchor="middle">PROPORTIONAL REINSURANCE</text>
+
+  <rect x="464" y="80" width="418" height="42" rx="5" fill="#8e44ad"/>
+  <text x="673" y="107" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="bold" fill="white" text-anchor="middle">NON-PROPORTIONAL (EXCESS OF LOSS)</text>
+
+  <!-- Centre divider -->
+  <line x1="450" y1="78" x2="450" y2="570" stroke="#c8d6e5" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+  <!-- Shared principle tag -->
+  <rect x="250" y="134" width="400" height="24" rx="4" fill="#fef9e7" stroke="#e67e22" stroke-width="1"/>
+  <text x="450" y="150" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#d35400" text-anchor="middle">KEY DISTINCTION: How is reinsurer liability triggered?</text>
+
+  <!-- PROPORTIONAL COLUMN -->
+
+  <!-- Quota Share -->
+  <rect x="18" y="168" width="418" height="138" rx="6" fill="white" stroke="#2980b9" stroke-width="2"/>
+  <rect x="18" y="168" width="418" height="7" rx="3" fill="#2980b9"/>
+  <text x="227" y="193" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#2980b9" text-anchor="middle">QUOTA SHARE TREATY</text>
+  <text x="227" y="213" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Fixed percentage of EVERY risk in portfolio ceded</text>
+  <text x="227" y="231" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Same % applies regardless of individual risk size</text>
+  <text x="227" y="249" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Reinsurer shares premium AND claims in same %</text>
+  <rect x="38" y="264" width="378" height="28" rx="3" fill="#ebf5fb"/>
+  <rect x="38" y="264" width="151" height="28" rx="3" fill="#2980b9"/>
+  <text x="113" y="283" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Cedant: 60%</text>
+  <rect x="189" y="264" width="227" height="28" rx="3" fill="#5dade2"/>
+  <text x="302" y="283" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Reinsurer: 40%</text>
+  <text x="227" y="306" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#777" font-style="italic" text-anchor="middle">Ceding commission paid back to cedant by reinsurer</text>
+
+  <!-- Surplus Treaty -->
+  <rect x="18" y="322" width="418" height="144" rx="6" fill="white" stroke="#2980b9" stroke-width="2"/>
+  <rect x="18" y="322" width="418" height="7" rx="3" fill="#2980b9"/>
+  <text x="227" y="347" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#2980b9" text-anchor="middle">SURPLUS TREATY</text>
+  <text x="227" y="367" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Cedant defines a RETENTION LINE (e.g. £500k)</text>
+  <text x="227" y="385" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Risks BELOW retention: 100% retained, not ceded</text>
+  <text x="227" y="403" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Risks ABOVE retention: surplus ceded to reinsurer</text>
+  <text x="227" y="421" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#2980b9" font-weight="bold" text-anchor="middle">% ceded VARIES by risk size - more capital-efficient</text>
+  <rect x="38" y="432" width="378" height="24" rx="3" fill="#ebf5fb"/>
+  <text x="227" y="449" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="middle">£1M risk: cedant 50% / reinsurer 50% | £5M risk: cedant 10% / reinsurer 90%</text>
+
+  <!-- NON-PROPORTIONAL COLUMN -->
+
+  <!-- Risk XL -->
+  <rect x="464" y="168" width="418" height="110" rx="6" fill="white" stroke="#8e44ad" stroke-width="2"/>
+  <rect x="464" y="168" width="418" height="7" rx="3" fill="#8e44ad"/>
+  <text x="673" y="193" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#8e44ad" text-anchor="middle">EXCESS OF LOSS PER RISK (Risk XL)</text>
+  <text x="673" y="213" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Triggered by a SINGLE LARGE LOSS on one risk</text>
+  <text x="673" y="231" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">exceeding the cedant's per-risk retention</text>
+  <text x="673" y="251" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#555" text-anchor="middle">e.g. Retention £500k - XL pays £500k-£5M</text>
+  <text x="673" y="269" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#8e44ad" font-style="italic" text-anchor="middle">Protects against individual large losses</text>
+
+  <!-- Catastrophe XL -->
+  <rect x="464" y="292" width="418" height="110" rx="6" fill="white" stroke="#8e44ad" stroke-width="2"/>
+  <rect x="464" y="292" width="418" height="7" rx="3" fill="#8e44ad"/>
+  <text x="673" y="317" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#8e44ad" text-anchor="middle">EXCESS OF LOSS PER OCCURRENCE (Cat XL)</text>
+  <text x="673" y="337" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Triggered by AGGREGATE of all losses from a</text>
+  <text x="673" y="355" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">SINGLE EVENT (hurricane, flood, earthquake)</text>
+  <text x="673" y="375" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#555" text-anchor="middle">e.g. 1,000 claims from storm total £50M</text>
+  <text x="673" y="393" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#8e44ad" font-style="italic" text-anchor="middle">Protects against catastrophe accumulation</text>
+
+  <!-- Aggregate XL -->
+  <rect x="464" y="416" width="418" height="96" rx="6" fill="white" stroke="#8e44ad" stroke-width="2"/>
+  <rect x="464" y="416" width="418" height="7" rx="3" fill="#8e44ad"/>
+  <text x="673" y="441" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#8e44ad" text-anchor="middle">AGGREGATE EXCESS OF LOSS</text>
+  <text x="673" y="461" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Triggered when ANNUAL TOTAL claims for a class</text>
+  <text x="673" y="479" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">exceed the aggregate retention for the year</text>
+  <text x="673" y="499" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#8e44ad" font-style="italic" text-anchor="middle">Protects against high-frequency small losses: "bad year" cover</text>
+
+  <!-- Retrocession note -->
+  <rect x="464" y="526" width="418" height="38" rx="5" fill="#f8f3ff" stroke="#8e44ad" stroke-width="1.5"/>
+  <text x="673" y="543" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#8e44ad" text-anchor="middle">+ RETROCESSION</text>
+  <text x="673" y="558" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="middle">Reinsurance of a reinsurer - manages reinsurer accumulation risk</text>
+
+  <!-- M92 Exam Trap box -->
+  <rect x="18" y="526" width="418" height="38" rx="5" fill="#1e3a5f"/>
+  <text x="227" y="543" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#e8c96d" text-anchor="middle">M92 EXAM TRAP</text>
+  <text x="227" y="558" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#a8c4e0" text-anchor="middle">Quota share is not Surplus | Risk XL is not Catastrophe XL</text>
+
+  <!-- Footer -->
+  <rect x="0" y="616" width="900" height="44" fill="#2c3e50"/>
+  <text x="450" y="641" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#a8c4e0" text-anchor="middle">CIIAssignmentHelp.com - M92 Insurance Business and Finance | CII Diploma in Insurance</text>
+</svg>

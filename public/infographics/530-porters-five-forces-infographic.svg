@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+
+  <!-- Background -->
+  <rect width="900" height="700" fill="#f5f7fa"/>
+
+  <!-- Header -->
+  <rect width="900" height="66" fill="#1e3a5f"/>
+  <text x="450" y="35" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">Porter's Five Forces - Applied to Insurance</text>
+  <text x="450" y="55" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#a8c4e0" text-anchor="middle">530 Economics and Business | CII Diploma in Insurance - Every force needs insurance-specific examples</text>
+
+  <!-- SPOKE LINES from centre (450,370) to each force box -->
+  <line x1="450" y1="330" x2="450" y2="220" stroke="#bdc3c7" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="530" y1="355" x2="660" y2="340" stroke="#bdc3c7" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="510" y1="400" x2="640" y2="490" stroke="#bdc3c7" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="390" y1="400" x2="260" y2="490" stroke="#bdc3c7" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="370" y1="355" x2="240" y2="340" stroke="#bdc3c7" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- CENTRE BOX: Insurance Industry -->
+  <rect x="360" y="328" width="180" height="74" rx="8" fill="#1e3a5f" stroke="#e8c96d" stroke-width="2.5"/>
+  <text x="450" y="355" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#e8c96d" text-anchor="middle">INSURANCE</text>
+  <text x="450" y="372" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#e8c96d" text-anchor="middle">INDUSTRY</text>
+  <text x="450" y="393" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#a8c4e0" text-anchor="middle">Porter's Five Forces</text>
+
+  <!-- FORCE 1 (TOP): COMPETITIVE RIVALRY -->
+  <rect x="200" y="82" width="500" height="130" rx="7" fill="white" stroke="#2980b9" stroke-width="2.5"/>
+  <rect x="200" y="82" width="500" height="8" rx="4" fill="#2980b9"/>
+  <text x="450" y="107" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#2980b9" text-anchor="middle">COMPETITIVE RIVALRY</text>
+  <text x="340" y="127" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#c0392b" text-anchor="middle">Personal lines: VERY HIGH</text>
+  <text x="340" y="144" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="middle">PCW commoditisation - price</text>
+  <text x="340" y="160" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="middle">is sole differentiator; high churn</text>
+  <line x1="450" y1="90" x2="450" y2="200" stroke="#c8d6e5" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="570" y="127" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#1e8449" text-anchor="middle">Specialist lines: LOW</text>
+  <text x="570" y="144" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="middle">Expert underwriting limits</text>
+  <text x="570" y="160" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="middle">number of credible competitors</text>
+  <text x="450" y="200" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#2980b9" font-style="italic" text-anchor="middle">Commercial lines: MODERATE - broker-mediated, relationship-based</text>
+
+  <!-- FORCE 2 (RIGHT): THREAT OF NEW ENTRANTS -->
+  <rect x="660" y="280" width="228" height="160" rx="7" fill="white" stroke="#8e44ad" stroke-width="2.5"/>
+  <rect x="660" y="280" width="228" height="8" rx="4" fill="#8e44ad"/>
+  <text x="774" y="304" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#8e44ad" text-anchor="middle">THREAT OF</text>
+  <text x="774" y="320" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#8e44ad" text-anchor="middle">NEW ENTRANTS</text>
+  <text x="774" y="342" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#c0392b" text-anchor="middle">Barriers (HIGH):</text>
+  <text x="774" y="358" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="middle">Solvency II capital (SCR)</text>
+  <text x="774" y="374" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="middle">FCA/PRA authorisation</text>
+  <text x="774" y="392" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#1e8449" text-anchor="middle">Lowered by:</text>
+  <text x="774" y="408" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="middle">InsurTech; MGA model</text>
+  <text x="774" y="424" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="middle">reduces capital need</text>
+
+  <!-- FORCE 3 (BOTTOM-RIGHT): THREAT OF SUBSTITUTES -->
+  <rect x="590" y="498" width="296" height="140" rx="7" fill="white" stroke="#d35400" stroke-width="2.5"/>
+  <rect x="590" y="498" width="296" height="8" rx="4" fill="#d35400"/>
+  <text x="738" y="522" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#d35400" text-anchor="middle">THREAT OF SUBSTITUTES</text>
+  <text x="738" y="544" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#444" text-anchor="middle">Captive insurers - large corporates</text>
+  <text x="738" y="560" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#444" text-anchor="middle">insure themselves via wholly-owned</text>
+  <text x="738" y="576" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#444" text-anchor="middle">insurance subsidiary</text>
+  <text x="738" y="594" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#444" text-anchor="middle">Self-insurance - retained risk</text>
+  <text x="738" y="612" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#777" font-style="italic" text-anchor="middle">Not viable for compulsory classes</text>
+  <text x="738" y="628" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#777" font-style="italic" text-anchor="middle">(motor TP, employers' liability)</text>
+
+  <!-- FORCE 4 (BOTTOM-LEFT): BUYER POWER -->
+  <rect x="15" y="498" width="296" height="140" rx="7" fill="white" stroke="#e74c3c" stroke-width="2.5"/>
+  <rect x="15" y="498" width="296" height="8" rx="4" fill="#e74c3c"/>
+  <text x="163" y="522" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#e74c3c" text-anchor="middle">BUYER POWER</text>
+  <text x="163" y="544" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#c0392b" text-anchor="middle">Large corporates: HIGH</text>
+  <text x="163" y="560" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#444" text-anchor="middle">Informed buyers; broker access;</text>
+  <text x="163" y="576" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#444" text-anchor="middle">captive threat; Lloyd's market access</text>
+  <text x="163" y="596" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#1e8449" text-anchor="middle">Individual consumers: LOW</text>
+  <text x="163" y="612" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#444" text-anchor="middle">Information asymmetry; complexity</text>
+  <text x="163" y="628" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#444" text-anchor="middle">of policy terms; switching friction</text>
+
+  <!-- FORCE 5 (LEFT): SUPPLIER POWER -->
+  <rect x="12" y="280" width="228" height="160" rx="7" fill="white" stroke="#27ae60" stroke-width="2.5"/>
+  <rect x="12" y="280" width="228" height="8" rx="4" fill="#27ae60"/>
+  <text x="126" y="304" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#27ae60" text-anchor="middle">SUPPLIER POWER</text>
+  <text x="126" y="328" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#c0392b" text-anchor="middle">Reinsurers: HIGH post-cat</text>
+  <text x="126" y="344" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#444" text-anchor="middle">Post-catastrophe: scarce</text>
+  <text x="126" y="360" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#444" text-anchor="middle">reinsurance capacity forces</text>
+  <text x="126" y="376" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#444" text-anchor="middle">primary rate increases</text>
+  <text x="126" y="396" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#555" text-anchor="middle">Managing agents: specialist</text>
+  <text x="126" y="412" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#444" text-anchor="middle">Lloyd's capacity is scarce</text>
+  <text x="126" y="428" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#444" text-anchor="middle">in specialist classes</text>
+
+  <!-- Exam note -->
+  <rect x="15" y="652" width="870" height="30" rx="5" fill="#1e3a5f"/>
+  <text x="450" y="671" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#e8c96d" text-anchor="middle">530 EXAM: Every force must have an insurance-specific example - generic analysis without insurance context fails at Diploma level</text>
+
+  <!-- Footer -->
+  <rect x="0" y="658" width="900" height="42" fill="#2c3e50"/>
+  <text x="450" y="683" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#a8c4e0" text-anchor="middle">CIIAssignmentHelp.com - 530 Economics and Business | CII Diploma in Insurance</text>
+</svg>

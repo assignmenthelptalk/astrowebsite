@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <marker id="arr-red" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#c0392b"/>
+    </marker>
+    <marker id="arr-green" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="600" fill="#f5f7fa"/>
+
+  <!-- Header -->
+  <rect width="900" height="66" fill="#1e3a5f"/>
+  <text x="450" y="36" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">Insurance Warranties: Pre vs Post Insurance Act 2015</text>
+  <text x="450" y="56" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#a8c4e0" text-anchor="middle">M05 Insurance Law - CII Diploma in Insurance | Exam-Critical Distinction</text>
+
+  <!-- Column headers -->
+  <rect x="18" y="78" width="415" height="40" rx="5" fill="#c0392b"/>
+  <text x="225" y="104" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">PRE-INSURANCE ACT 2015 (Common Law)</text>
+
+  <rect x="467" y="78" width="415" height="40" rx="5" fill="#1e8449"/>
+  <text x="675" y="104" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">POST-INSURANCE ACT 2015 (from 12 Aug 2016)</text>
+
+  <!-- VS badge -->
+  <circle cx="450" cy="310" r="26" fill="#1e3a5f" stroke="#f5f7fa" stroke-width="3"/>
+  <text x="450" y="316" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">VS</text>
+
+  <!-- Centre divider -->
+  <line x1="450" y1="118" x2="450" y2="545" stroke="#c8d6e5" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- PRE-2015 COLUMN -->
+
+  <!-- Box 1: Basis of Contract -->
+  <rect x="18" y="130" width="415" height="88" rx="6" fill="white" stroke="#e74c3c" stroke-width="2"/>
+  <rect x="18" y="130" width="415" height="7" rx="3" fill="#e74c3c"/>
+  <text x="225" y="155" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#c0392b" text-anchor="middle">BASIS OF CONTRACT CLAUSE</text>
+  <text x="225" y="174" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Converts ALL proposal form answers into</text>
+  <text x="225" y="191" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">contractual warranties automatically</text>
+  <text x="225" y="208" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#c0392b" font-style="italic" text-anchor="middle">Any inaccuracy in any answer = warranty breach</text>
+
+  <!-- Arrow 1 -->
+  <line x1="225" y1="218" x2="225" y2="242" stroke="#c0392b" stroke-width="2" marker-end="url(#arr-red)"/>
+
+  <!-- Box 2: Warranty Breach -->
+  <rect x="18" y="244" width="415" height="82" rx="6" fill="white" stroke="#e74c3c" stroke-width="2"/>
+  <rect x="18" y="244" width="415" height="7" rx="3" fill="#e74c3c"/>
+  <text x="225" y="269" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#c0392b" text-anchor="middle">WARRANTY BREACH</text>
+  <text x="225" y="289" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Any breach - however trivial, however</text>
+  <text x="225" y="306" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">unrelated to the actual loss suffered</text>
+
+  <!-- Arrow 2 -->
+  <line x1="225" y1="326" x2="225" y2="350" stroke="#c0392b" stroke-width="2" marker-end="url(#arr-red)"/>
+
+  <!-- Box 3: Permanent Discharge -->
+  <rect x="18" y="352" width="415" height="112" rx="6" fill="#fdf2f2" stroke="#c0392b" stroke-width="2.5"/>
+  <text x="225" y="378" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#c0392b" text-anchor="middle">CONSEQUENCE: PERMANENT DISCHARGE</text>
+  <text x="225" y="398" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">All insurer liability discharged from date of breach</text>
+  <text x="225" y="416" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">No causal connection to the loss required</text>
+  <text x="225" y="434" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">No requirement to show prejudice</text>
+  <text x="225" y="454" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#777" font-style="italic" text-anchor="middle">Dawsons v Bonnin [1922] AC 413 (House of Lords)</text>
+
+  <!-- POST-2015 COLUMN -->
+
+  <!-- Box A: s.9 -->
+  <rect x="467" y="130" width="415" height="82" rx="6" fill="white" stroke="#1e8449" stroke-width="2"/>
+  <rect x="467" y="130" width="415" height="7" rx="3" fill="#1e8449"/>
+  <text x="675" y="155" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#1e8449" text-anchor="middle">s.9 - BASIS OF CONTRACT CLAUSES ABOLISHED</text>
+  <text x="675" y="175" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Proposal form answers are no longer automatically</text>
+  <text x="675" y="193" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">converted into warranties for business insurance</text>
+
+  <!-- Arrow A -->
+  <line x1="675" y1="212" x2="675" y2="236" stroke="#1e8449" stroke-width="2" marker-end="url(#arr-green)"/>
+
+  <!-- Box B: s.10 -->
+  <rect x="467" y="238" width="415" height="112" rx="6" fill="white" stroke="#1e8449" stroke-width="2"/>
+  <rect x="467" y="238" width="415" height="7" rx="3" fill="#1e8449"/>
+  <text x="675" y="263" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#1e8449" text-anchor="middle">s.10 - WARRANTIES = SUSPENSIVE CONDITIONS</text>
+  <text x="675" y="283" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Breach SUSPENDS insurer liability (does not discharge)</text>
+  <text x="675" y="301" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#1e8449" font-weight="bold" text-anchor="middle">If breach remedied before loss - liability REINSTATED</text>
+  <text x="675" y="319" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">If loss occurs during breach - insurer may decline</text>
+  <text x="675" y="337" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">If loss after breach remedied - insurer MUST pay</text>
+
+  <!-- Arrow B -->
+  <line x1="675" y1="350" x2="675" y2="374" stroke="#1e8449" stroke-width="2" marker-end="url(#arr-green)"/>
+
+  <!-- Box C: s.11 -->
+  <rect x="467" y="376" width="415" height="88" rx="6" fill="#f0fdf4" stroke="#1e8449" stroke-width="2.5"/>
+  <text x="675" y="401" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#1e8449" text-anchor="middle">s.11 - LIMITATION ON RELIANCE</text>
+  <text x="675" y="421" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Insurer cannot rely on a policy term if the breach</text>
+  <text x="675" y="439" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">could not have increased the risk of the loss</text>
+  <text x="675" y="457" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">that actually occurred</text>
+
+  <!-- Key Exam Note -->
+  <rect x="18" y="478" width="864" height="36" rx="5" fill="#1e3a5f"/>
+  <text x="450" y="501" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#e8c96d" text-anchor="middle">M05 EXAM KEY WORD POST-2015: "SUSPENDED" - not permanently discharged</text>
+
+  <!-- Footer -->
+  <rect x="0" y="557" width="900" height="43" fill="#2c3e50"/>
+  <text x="450" y="583" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#a8c4e0" text-anchor="middle">CIIAssignmentHelp.com - M05 Insurance Law | CII Diploma in Insurance</text>
+</svg>

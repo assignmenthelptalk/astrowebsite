@@ -330,6 +330,29 @@ const siteUrl = site.origin;
             margin-bottom: 0.8rem;
         }
 
+        .infographic-frame {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(13, 31, 53, 0.08);
+            border: 1px solid rgba(30, 58, 95, 0.08);
+            margin: 2rem 0;
+        }
+
+        .infographic-frame img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .infographic-caption {
+            font-size: 0.95rem;
+            color: #5f6b7a;
+            margin-top: 0.9rem;
+            text-align: center;
+        }
+
         .info-box {
             background: #f0f7ff;
             border-left: 5px solid #2c5282;
@@ -784,6 +807,11 @@ const siteUrl = site.origin;
             <div class="container">
                 <h2 class="section-title">Porter's Five Forces Applied to Insurance</h2>
                 <p class="intro">Porter's Five Forces provides a framework for analysing the competitive intensity and profit potential of an industry. In 530, the framework is applied specifically to the insurance industry — each force must be described with insurance-specific examples rather than generic competitive analysis.</p>
+
+                <figure class="infographic-frame">
+                    <img src="/infographics/530-porters-five-forces-infographic.svg" alt="Porter's Five Forces diagram applied to the insurance industry: competitive rivalry (very high in personal lines via PCW, moderate in commercial, low in specialist Lloyd's classes); threat of new entrants (high barriers from Solvency II SCR and FCA/PRA authorisation, lowered by InsurTech and MGA model); threat of substitutes (captive insurance and self-insurance); buyer power (high for large corporates, low for individual consumers); supplier power (reinsurers post-catastrophe and Lloyd's managing agents)." loading="lazy" />
+                    <figcaption class="infographic-caption">530 exam requirement: every force must be answered with insurance-specific examples. Generic analysis without insurance market participants and insurance-specific competitive dynamics fails at Diploma level.</figcaption>
+                </figure>
 
                 <div class="info-grid">
                     <div class="info-card">

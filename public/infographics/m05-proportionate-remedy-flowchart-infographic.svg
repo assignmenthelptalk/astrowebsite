@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" width="900" height="720">
+  <defs>
+    <marker id="arr" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#555"/>
+    </marker>
+    <marker id="arr-r" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#c0392b"/>
+    </marker>
+    <marker id="arr-b" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#2980b9"/>
+    </marker>
+    <marker id="arr-g" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#1e8449"/>
+    </marker>
+    <marker id="arr-o" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#d35400"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="720" fill="#f5f7fa"/>
+
+  <!-- Header -->
+  <rect width="900" height="66" fill="#1e3a5f"/>
+  <text x="450" y="35" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="bold" fill="white" text-anchor="middle">Insurance Act 2015 - Proportionate Remedy Decision Tree</text>
+  <text x="450" y="55" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#a8c4e0" text-anchor="middle">s.3 Duty of Fair Presentation | s.4-7 Proportionate Remedies | M05 CII Diploma in Insurance</text>
+
+  <!-- START BOX -->
+  <rect x="230" y="82" width="440" height="52" rx="6" fill="#1e3a5f"/>
+  <text x="450" y="103" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">BREACH OF DUTY OF FAIR PRESENTATION</text>
+  <text x="450" y="121" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#a8c4e0" text-anchor="middle">Insurance Act 2015 s.3 - business insurance policyholders</text>
+
+  <!-- Arrow down to Diamond 1 -->
+  <line x1="450" y1="134" x2="450" y2="162" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- DIAMOND 1 -->
+  <polygon points="450,162 610,200 450,238 290,200" fill="#fef9e7" stroke="#e67e22" stroke-width="2.5"/>
+  <text x="450" y="196" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#d35400" text-anchor="middle">Was the breach</text>
+  <text x="450" y="213" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#d35400" text-anchor="middle">deliberate or reckless?</text>
+
+  <!-- YES label + arrow right to red box -->
+  <text x="630" y="196" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#c0392b" text-anchor="start">YES</text>
+  <line x1="610" y1="200" x2="648" y2="200" stroke="#c0392b" stroke-width="2" marker-end="url(#arr-r)"/>
+
+  <!-- Red outcome box (YES branch) -->
+  <rect x="648" y="156" width="234" height="116" rx="6" fill="#fdf2f2" stroke="#c0392b" stroke-width="2.5"/>
+  <rect x="648" y="156" width="234" height="8" rx="3" fill="#c0392b"/>
+  <text x="765" y="180" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#c0392b" text-anchor="middle">INSURER MAY AVOID</text>
+  <text x="765" y="200" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Retain ALL premium paid</text>
+  <text x="765" y="218" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Refuse ALL claims</text>
+  <text x="765" y="238" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Most severe remedy</text>
+  <text x="765" y="258" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#888" font-style="italic" text-anchor="middle">s.4 Insurance Act 2015</text>
+
+  <!-- NO label + arrow down -->
+  <text x="456" y="252" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#2980b9" text-anchor="start">NO</text>
+  <line x1="450" y1="238" x2="450" y2="278" stroke="#2980b9" stroke-width="2" marker-end="url(#arr-b)"/>
+
+  <!-- "Not deliberate/reckless" label -->
+  <rect x="268" y="282" width="364" height="28" rx="4" fill="#ebf5fb"/>
+  <text x="450" y="301" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#2471a3" text-anchor="middle" font-style="italic">If NOT deliberate or reckless - proportionate remedy applies</text>
+
+  <!-- Arrow down to Diamond 2 -->
+  <line x1="450" y1="310" x2="450" y2="338" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- DIAMOND 2 -->
+  <polygon points="450,338 610,376 450,414 290,376" fill="#fef9e7" stroke="#e67e22" stroke-width="2.5"/>
+  <text x="450" y="370" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#d35400" text-anchor="middle">What would the insurer</text>
+  <text x="450" y="386" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#d35400" text-anchor="middle">have done with full disclosure?</text>
+
+  <!-- THREE OUTCOME BRANCHES -->
+
+  <!-- Branch LEFT -->
+  <line x1="290" y1="376" x2="148" y2="440" stroke="#c0392b" stroke-width="1.8" marker-end="url(#arr-r)"/>
+  <text x="196" y="420" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#c0392b" text-anchor="middle" font-style="italic">Not written</text>
+
+  <!-- Branch CENTER -->
+  <line x1="450" y1="414" x2="450" y2="448" stroke="#1e8449" stroke-width="1.8" marker-end="url(#arr-g)"/>
+  <text x="476" y="435" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1e8449" font-style="italic">Diff. terms</text>
+
+  <!-- Branch RIGHT -->
+  <line x1="610" y1="376" x2="752" y2="440" stroke="#d35400" stroke-width="1.8" marker-end="url(#arr-o)"/>
+  <text x="700" y="420" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#d35400" text-anchor="middle" font-style="italic">Higher premium</text>
+
+  <!-- LEFT BOX: Would not have insured -->
+  <rect x="18" y="448" width="258" height="136" rx="6" fill="#fdf2f2" stroke="#c0392b" stroke-width="2"/>
+  <rect x="18" y="448" width="258" height="8" rx="3" fill="#c0392b"/>
+  <text x="147" y="472" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#c0392b" text-anchor="middle">Would NOT have</text>
+  <text x="147" y="488" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#c0392b" text-anchor="middle">insured at all</text>
+  <text x="147" y="510" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Insurer may AVOID</text>
+  <text x="147" y="528" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">contract from inception</text>
+  <text x="147" y="548" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#1e8449" font-weight="bold" text-anchor="middle">Must RETURN premium</text>
+  <text x="147" y="574" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#888" font-style="italic" text-anchor="middle">s.5 Insurance Act 2015</text>
+
+  <!-- CENTRE BOX: Different terms -->
+  <rect x="320" y="448" width="260" height="136" rx="6" fill="#f0fdf4" stroke="#1e8449" stroke-width="2"/>
+  <rect x="320" y="448" width="260" height="8" rx="3" fill="#1e8449"/>
+  <text x="450" y="472" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#1e8449" text-anchor="middle">Would have written on</text>
+  <text x="450" y="488" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#1e8449" text-anchor="middle">DIFFERENT TERMS</text>
+  <text x="450" y="510" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Contract treated as if those</text>
+  <text x="450" y="528" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">different terms applied</text>
+  <text x="450" y="546" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">from inception</text>
+  <text x="450" y="574" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#888" font-style="italic" text-anchor="middle">s.6 Insurance Act 2015</text>
+
+  <!-- RIGHT BOX: Higher premium -->
+  <rect x="624" y="448" width="258" height="136" rx="6" fill="#fef5ec" stroke="#d35400" stroke-width="2"/>
+  <rect x="624" y="448" width="258" height="8" rx="3" fill="#d35400"/>
+  <text x="753" y="472" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#d35400" text-anchor="middle">Would have charged a</text>
+  <text x="753" y="488" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#d35400" text-anchor="middle">HIGHER PREMIUM</text>
+  <text x="753" y="510" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Claim REDUCED proportionately</text>
+  <text x="753" y="530" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#555" text-anchor="middle">Claim x (Actual / Correct Premium)</text>
+  <text x="753" y="550" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#888" text-anchor="middle">e.g. £8k paid / £10k correct</text>
+  <text x="753" y="566" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#888" text-anchor="middle">= 80% of claim paid</text>
+  <text x="753" y="574" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#888" font-style="italic" text-anchor="middle">s.7 Insurance Act 2015</text>
+
+  <!-- Key exam note -->
+  <rect x="18" y="602" width="864" height="36" rx="5" fill="#1e3a5f"/>
+  <text x="450" y="625" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#e8c96d" text-anchor="middle">M05 EXAM: State the counterfactual (what insurer would have done) - then apply the correct s.4-7 remedy to the scenario facts</text>
+
+  <!-- Footer -->
+  <rect x="0" y="678" width="900" height="42" fill="#2c3e50"/>
+  <text x="450" y="703" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#a8c4e0" text-anchor="middle">CIIAssignmentHelp.com - M05 Insurance Law | CII Diploma in Insurance</text>
+</svg>

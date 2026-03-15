@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+
+  <!-- Background -->
+  <rect width="900" height="600" fill="#f5f7fa"/>
+
+  <!-- Header -->
+  <rect width="900" height="66" fill="#1e3a5f"/>
+  <text x="450" y="35" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">The Combined Ratio - M92 Key Financial Metric</text>
+  <text x="450" y="55" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#a8c4e0" text-anchor="middle">Measuring Insurance Underwriting Profitability | M92 CII Diploma in Insurance</text>
+
+  <!-- FORMULA SECTION -->
+  <rect x="18" y="82" width="864" height="66" rx="6" fill="#eaf2fb" stroke="#2980b9" stroke-width="1.5"/>
+  <text x="450" y="106" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="bold" fill="#1e3a5f" text-anchor="middle">Combined Ratio  =  Loss Ratio  +  Expense Ratio</text>
+  <text x="450" y="134" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#555" text-anchor="middle">Loss Ratio = (Claims paid + Claims outstanding) / Earned premiums x 100      |      Expense Ratio = Operating expenses / Written premiums x 100</text>
+
+  <!-- COMPONENT DEFINITIONS -->
+  <!-- Loss Ratio box -->
+  <rect x="18" y="162" width="278" height="98" rx="6" fill="white" stroke="#e74c3c" stroke-width="2"/>
+  <rect x="18" y="162" width="278" height="7" rx="3" fill="#e74c3c"/>
+  <text x="157" y="187" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#c0392b" text-anchor="middle">LOSS RATIO</text>
+  <text x="157" y="207" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Claims paid + outstanding</text>
+  <text x="157" y="224" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">/ Earned premiums x 100</text>
+  <text x="157" y="245" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#c0392b" font-style="italic" text-anchor="middle">e.g. 72% = 72p claims per £1 premium</text>
+
+  <!-- Plus sign -->
+  <text x="312" y="218" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="bold" fill="#1e3a5f" text-anchor="middle">+</text>
+
+  <!-- Expense Ratio box -->
+  <rect x="328" y="162" width="244" height="98" rx="6" fill="white" stroke="#e67e22" stroke-width="2"/>
+  <rect x="328" y="162" width="244" height="7" rx="3" fill="#e67e22"/>
+  <text x="450" y="187" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#d35400" text-anchor="middle">EXPENSE RATIO</text>
+  <text x="450" y="207" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">Operating expenses</text>
+  <text x="450" y="224" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#444" text-anchor="middle">/ Written premiums x 100</text>
+  <text x="450" y="245" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#d35400" font-style="italic" text-anchor="middle">Commissions, salaries, IT, claims</text>
+
+  <!-- Equals sign -->
+  <text x="590" y="218" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="bold" fill="#1e3a5f" text-anchor="middle">=</text>
+
+  <!-- Combined Ratio box -->
+  <rect x="608" y="162" width="274" height="98" rx="6" fill="#1e3a5f" stroke="#1e3a5f" stroke-width="2"/>
+  <text x="745" y="187" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">COMBINED RATIO</text>
+  <text x="745" y="210" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="bold" fill="#e8c96d" text-anchor="middle">LR% + ER%</text>
+  <text x="745" y="232" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#a8c4e0" text-anchor="middle">Primary underwriting</text>
+  <text x="745" y="248" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#a8c4e0" text-anchor="middle">profitability measure</text>
+
+  <!-- SCENARIO BARS -->
+  <text x="450" y="286" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="bold" fill="#1e3a5f" text-anchor="middle">WORKED EXAMPLES - Show Workings in M92 Written Exam</text>
+
+  <!-- Scenario A: Profitable (CR 96%) -->
+  <rect x="18" y="298" width="420" height="130" rx="6" fill="white" stroke="#1e8449" stroke-width="2"/>
+  <rect x="18" y="298" width="420" height="7" rx="3" fill="#1e8449"/>
+  <text x="228" y="322" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#1e8449" text-anchor="middle">SCENARIO A - Underwriting PROFIT</text>
+
+  <rect x="28" y="334" width="272" height="24" rx="3" fill="#e74c3c"/>
+  <text x="164" y="351" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Loss Ratio: 68%</text>
+  <rect x="300" y="334" width="112" height="24" rx="3" fill="#e67e22"/>
+  <text x="356" y="351" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">ER: 28%</text>
+
+  <text x="28" y="373" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#777">0%</text>
+  <text x="400" y="373" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#777" text-anchor="end">100%</text>
+  <line x1="28" y1="366" x2="413" y2="366" stroke="#ddd" stroke-width="1"/>
+
+  <text x="228" y="396" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="bold" fill="#1e8449" text-anchor="middle">Combined Ratio = 96% - 4% Underwriting PROFIT</text>
+  <text x="228" y="416" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="middle">68% + 28% = 96% (below 100% = profitable underwriting)</text>
+
+  <!-- Scenario B: Loss-making (CR 103%) -->
+  <rect x="462" y="298" width="420" height="130" rx="6" fill="white" stroke="#c0392b" stroke-width="2"/>
+  <rect x="462" y="298" width="420" height="7" rx="3" fill="#c0392b"/>
+  <text x="672" y="322" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#c0392b" text-anchor="middle">SCENARIO B - Underwriting LOSS</text>
+
+  <rect x="472" y="334" width="272" height="24" rx="3" fill="#c0392b"/>
+  <text x="608" y="351" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Loss Ratio: 72%</text>
+  <rect x="744" y="334" width="117" height="24" rx="3" fill="#e67e22"/>
+  <text x="803" y="351" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">ER: 31%</text>
+  <rect x="861" y="334" width="12" height="24" rx="2" fill="#c0392b" opacity="0.4"/>
+  <text x="875" y="350" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#c0392b">+3%</text>
+
+  <text x="472" y="373" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#777">0%</text>
+  <text x="856" y="373" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#777" text-anchor="end">100%</text>
+  <line x1="472" y1="366" x2="860" y2="366" stroke="#ddd" stroke-width="1"/>
+
+  <text x="672" y="396" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="bold" fill="#c0392b" text-anchor="middle">Combined Ratio = 103% - 3% Underwriting LOSS</text>
+  <text x="672" y="416" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#555" text-anchor="middle">72% + 31% = 103% - investment income must compensate</text>
+
+  <!-- Investment income note -->
+  <rect x="18" y="442" width="864" height="48" rx="5" fill="#eaf2fb" stroke="#2980b9" stroke-width="1.5"/>
+  <text x="450" y="461" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#1e3a5f" text-anchor="middle">INVESTMENT INCOME: Insurers invest the premium float before claims are paid</text>
+  <text x="450" y="480" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#555" text-anchor="middle">High investment returns can make a CR above 100% sustainably profitable - but falling interest rates remove this buffer</text>
+
+  <!-- Exam note -->
+  <rect x="18" y="502" width="864" height="36" rx="5" fill="#1e3a5f"/>
+  <text x="450" y="525" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#e8c96d" text-anchor="middle">M92 EXAM RULE: Always show LR and ER separately before combining - unsupported wrong totals score zero</text>
+
+  <!-- Footer -->
+  <rect x="0" y="558" width="900" height="42" fill="#2c3e50"/>
+  <text x="450" y="583" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#a8c4e0" text-anchor="middle">CIIAssignmentHelp.com - M92 Insurance Business and Finance | CII Diploma in Insurance</text>
+</svg>

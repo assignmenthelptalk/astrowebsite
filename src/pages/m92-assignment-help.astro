@@ -330,6 +330,29 @@ const siteUrl = site.origin;
             margin-bottom: 0.8rem;
         }
 
+        .infographic-frame {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(13, 31, 53, 0.08);
+            border: 1px solid rgba(30, 58, 95, 0.08);
+            margin: 2rem 0;
+        }
+
+        .infographic-frame img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .infographic-caption {
+            font-size: 0.95rem;
+            color: #5f6b7a;
+            margin-top: 0.9rem;
+            text-align: center;
+        }
+
         .info-box {
             background: #f0f7ff;
             border-left: 5px solid #2c5282;
@@ -711,6 +734,11 @@ const siteUrl = site.origin;
 
                 <h3 class="section-subtitle">Key Ratios and Formulas</h3>
 
+                <figure class="infographic-frame">
+                    <img src="/infographics/m92-combined-ratio-breakdown-infographic.svg" alt="Infographic showing the combined ratio formula (loss ratio plus expense ratio), with two worked examples — Scenario A at 96% (underwriting profit) and Scenario B at 103% (underwriting loss) — and the M92 exam rule to always show components separately before combining." loading="lazy" />
+                    <figcaption class="infographic-caption">The combined ratio is the primary measure of underwriting profitability. Below 100% = underwriting profit; above 100% = underwriting loss. M92 exam rule: always show loss ratio and expense ratio separately before combining — unsupported totals score zero.</figcaption>
+                </figure>
+
                 <div class="info-grid">
                     <div class="info-card">
                         <h3>Pure Premium</h3>
@@ -838,6 +866,11 @@ const siteUrl = site.origin;
                         </tr>
                     </tbody>
                 </table>
+
+                <figure class="infographic-frame">
+                    <img src="/infographics/m92-reinsurance-types-infographic.svg" alt="Infographic comparing proportional reinsurance (quota share treaty and surplus treaty) with non-proportional reinsurance (excess of loss per risk, catastrophe XL per occurrence, and aggregate excess of loss), showing trigger mechanisms, premium sharing, and the M92 exam trap of confusing these types." loading="lazy" />
+                    <figcaption class="infographic-caption">Proportional: reinsurer shares premium and claims in a fixed or variable proportion. Non-proportional: reinsurer pays only when losses exceed the defined retention. The M92 exam trap: quota share ≠ surplus; risk XL ≠ catastrophe XL — the trigger mechanism is fundamentally different.</figcaption>
+                </figure>
             </div>
         </section>
 
