@@ -37,7 +37,8 @@ const siteUrl = site.origin;
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
+            font-size: 1.0625rem;
             color: #333;
         }
 
@@ -236,7 +237,7 @@ const siteUrl = site.origin;
         }
 
         section {
-            padding: 3.5rem 0;
+            padding: 4rem 0;
         }
 
         section:nth-child(even) {
@@ -262,6 +263,7 @@ const siteUrl = site.origin;
             line-height: 1.8;
             color: #555;
             margin-bottom: 1.5rem;
+            max-width: 72ch;
         }
 
         .intro a {
@@ -294,6 +296,17 @@ const siteUrl = site.origin;
         .highlight-box p {
             color: #444;
             line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box p,
+        .info-box p,
+        .success-box p,
+        .faq-item p {
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
         }
 
         .warning-box {
