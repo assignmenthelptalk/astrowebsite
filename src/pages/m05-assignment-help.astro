@@ -1,0 +1,985 @@
+---
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+
+const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
+const canonicalUrl = new URL(Astro.url.pathname, site);
+const siteUrl = site.origin;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="M05 Insurance Law assignment help for CII Diploma in Insurance. Written exam support covering Insurance Act 2015, contract formation, warranties, subrogation, contribution and IRAC technique at RQF Level 4.">
+    <meta name="keywords" content="M05 Insurance Law, M05 assignment help, CII Diploma Insurance Law, Insurance Act 2015, M05 written exam, DipCII law unit">
+    <link rel="canonical" href={canonicalUrl.href} />
+    <title>M05 Insurance Law Assignment Help — CII Diploma in Insurance | CII Assignment Help</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content={canonicalUrl.href}>
+    <meta property="og:title" content="M05 Insurance Law Assignment Help — CII Diploma in Insurance | CII Assignment Help">
+    <meta property="og:description" content="M05 Insurance Law assignment help for CII Diploma in Insurance. Written exam support covering Insurance Act 2015, contract formation, warranties, subrogation, contribution and IRAC technique at RQF Level 4.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content={canonicalUrl.href}>
+    <meta property="twitter:title" content="M05 Insurance Law Assignment Help — CII Diploma in Insurance | CII Assignment Help">
+    <meta property="twitter:description" content="M05 Insurance Law assignment help for CII Diploma in Insurance. Written exam support covering Insurance Act 2015, contract formation, warranties, subrogation, contribution and IRAC technique at RQF Level 4.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
+    <link rel="shortcut icon" href="/favicon.ico?v=4">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            font-size: 1.0625rem;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #1e3a5f;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+            z-index: 101;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #ffffff;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .page-hero {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 4px solid #ffd700;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            color: #ffd700;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .breadcrumb a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            opacity: 0.8;
+        }
+
+        .cta-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: white;
+            padding: 0.9rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0.5rem;
+        }
+
+        .cta-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+            background: #20BA5A;
+        }
+
+        .mid-cta {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .mid-cta h3 {
+            color: #1e3a5f;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .mid-cta p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #0d1f35;
+            padding: 0.8rem 1rem;
+            text-align: center;
+            z-index: 99;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+        }
+
+        .sticky-cta a {
+            display: inline-block;
+            background: #ffd700;
+            color: #0d1f35;
+            padding: 0.7rem 2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            margin: 0 0.3rem;
+        }
+
+        .sticky-cta .wa-sticky {
+            background: #25D366;
+            color: white;
+        }
+
+        main {
+            background: white;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #1e3a5f;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.5rem;
+            color: #2c5282;
+            margin: 2rem auto 1rem;
+            font-weight: 600;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .section-subtitle-sm {
+            font-size: 1.2rem;
+            color: #2c5282;
+            margin: 1.5rem auto 0.8rem;
+            font-weight: 600;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+            max-width: 72ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .intro a {
+            color: #1e3a5f;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #ffd700;
+            transition: color 0.3s;
+        }
+
+        .intro a:hover {
+            color: #ffd700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            border-left: 5px solid #1e3a5f;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            max-width: 800px;
+        }
+
+        .highlight-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .highlight-box p {
+            color: #444;
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box p,
+        .info-box p,
+        .faq-item p {
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box {
+            background: #fff8e1;
+            border-left: 5px solid #ffd700;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            max-width: 800px;
+        }
+
+        .warning-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box {
+            background: #f0f7ff;
+            border-left: 5px solid #2c5282;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            max-width: 800px;
+        }
+
+        .info-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box p {
+            color: #444;
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .modules-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            background: white;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .modules-table thead {
+            background: #1e3a5f;
+            color: white;
+        }
+
+        .modules-table th {
+            padding: 1.1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .modules-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .modules-table tbody tr:hover {
+            background: #f8f9fa;
+            transition: background 0.2s;
+        }
+
+        .modules-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        .info-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .related-posts {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .related-posts h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+        }
+
+        .related-posts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .related-posts li {
+            margin: 0.8rem 0;
+        }
+
+        .related-posts a {
+            color: #2c5282;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .related-posts a:hover {
+            color: #ffd700;
+        }
+
+        .related-posts a:before {
+            content: "→ ";
+            color: #1e3a5f;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            color: #ffffff;
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e3a5f;
+            padding: 1.1rem 2.8rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+        }
+
+        footer {
+            background: #1e3a5f;
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            opacity: 0.9;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1.5rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h4 {
+            color: #1e3a5f;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .faq-item p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1e3a5f;
+                padding: 1rem;
+                gap: 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                z-index: 100;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.7rem 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .page-hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 1.7rem;
+            }
+
+            .modules-table {
+                font-size: 0.85rem;
+            }
+
+            .sticky-cta {
+                display: block;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .page-hero {
+                padding: 3rem 0;
+            }
+
+            .page-hero h1 {
+                font-size: 1.7rem;
+            }
+
+            section {
+                padding: 2.5rem 0;
+            }
+        }
+    </style>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/63f58ff531ebfa0fe7ee9bdb/1gprjkmdp';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">CII Assignment Help</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#qualifications">Qualifications</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>M05 Insurance Law Assignment Help</h1>
+            <p class="subtitle">CII Diploma in Insurance — Written Exam Support at RQF Level 4</p>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/cii-assignment-help">CII Assignment Help</a> / <a href="/CII-Diploma-in-Insurance">Diploma in Insurance</a> / M05 Insurance Law
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Section 1: What is M05 -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">What Is M05 Insurance Law?</h2>
+                <p class="intro">M05 Insurance Law is a 25-credit Level 4 compulsory core unit of the <a href="/CII-Diploma-in-Insurance">CII Diploma in Insurance</a>, assessed by written examination — not MCQ. The written exam requires structured legal analysis of insurance scenarios using statute citation, case law reference, and analytical application of legal principles. Every student pursuing the CII Diploma in Insurance must pass M05; it is not optional.</p>
+
+                <div class="highlight-box">
+                    <h3>Written Examination — Not MCQ</h3>
+                    <p>M05 is assessed exclusively by written examination. MCQ technique — eliminating wrong options, working from recognition — does not transfer to M05 written answers. Every mark requires demonstration of knowledge, analysis, and application within a structured written response combining short-answer questions (10–15 marks) with extended answer questions (25 marks) requiring IRAC-format legal analysis.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>M05 Syllabus Coverage</h3>
+                    <p>M05 covers: the formation of insurance contracts; the classification of policy terms as conditions or warranties; the Insurance Act 2015 in depth — including the duty of fair presentation and proportionate remedies for breach; subrogation and contribution at Diploma level; agency law in insurance; and insurable interest with the full case law thread.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Contract Formation -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Insurance Contract Formation</h2>
+                <p class="intro">Insurance contract formation requires the same six elements as any contract at common law, but each element operates distinctively in the insurance context. M05 written exam questions frequently present a scenario describing a proposed insurance transaction and ask which element is absent or defective.</p>
+
+                <h3 class="section-subtitle">Offer and Acceptance</h3>
+                <p class="intro">In insurance, <strong>offer and acceptance operate in the reverse of most commercial transactions</strong>. The insured makes the offer by completing and submitting the proposal form. The insurer accepts by issuing the policy, or counter-offers by proposing amended terms. A quotation issued by the insurer in response to a proposal is a counter-offer, not an acceptance. This distinction is consistently tested in M05.</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>The Six Elements</h3>
+                        <p><strong>Offer and acceptance:</strong> Insured makes the offer via proposal form; insurer accepts or counter-offers.</p>
+                        <p><strong>Consensus ad idem:</strong> Meeting of the minds; material non-disclosure prevents genuine consensus.</p>
+                        <p><strong>Consideration:</strong> Premium in exchange for the insurer's promise of indemnity.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Capacity and Legality</h3>
+                        <p><strong>Capacity:</strong> Insurers must be authorised under FSMA 2000; individuals must have legal competence.</p>
+                        <p><strong>Legality:</strong> The subject matter must be lawful. An insured cannot insure against the consequences of their own criminal act — established in <em>Gray v Barr</em> [1971].</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Policy Terms -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Policy Terms Classification — Conditions and Warranties</h2>
+                <p class="intro">The classification of a policy term determines the legal consequences of its breach. M05 requires students to distinguish between conditions precedent, conditions subsequent, and warranties — and to apply both the pre-Insurance Act 2015 common law position and the reformed position under the 2015 Act.</p>
+
+                <h3 class="section-subtitle">Conditions Precedent vs Conditions Subsequent</h3>
+                <p class="intro">A <strong>condition precedent</strong> must be satisfied before the insured acquires any rights under the policy. Breach automatically eliminates the insurer's obligation to pay — no prejudice required, no causal connection required. A <strong>condition subsequent</strong> is an ongoing obligation during the currency of the policy; breach does not automatically void the policy but may give the insurer a right to terminate or limit liability where prejudice is shown.</p>
+
+                <h3 class="section-subtitle">Warranties — Pre and Post Insurance Act 2015</h3>
+                <p class="intro">The law of insurance warranties changed fundamentally when the Insurance Act 2015 came into force on 12 August 2016 for business insurance contracts. M05 requires students to know both positions — exam scenarios will specify dates, and the applicable law depends on whether the contract was entered into before or after 12 August 2016.</p>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th>Pre-Insurance Act 2015</th>
+                            <th>Post-Insurance Act 2015 (from 12 Aug 2016)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Position">Effect of warranty breach</td>
+                            <td data-label="Pre-2015">Permanent discharge of insurer liability from date of breach</td>
+                            <td data-label="Post-2015">Suspension of insurer liability during period of breach (s.10)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Position">Basis of contract clause</td>
+                            <td data-label="Pre-2015">Valid — converts all proposal answers into warranties</td>
+                            <td data-label="Post-2015">Abolished for business insurance (s.9)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Position">Relevance of breach to loss</td>
+                            <td data-label="Pre-2015">Irrelevant — no causal connection required (<em>Dawsons v Bonnin</em> [1922])</td>
+                            <td data-label="Post-2015">s.11: insurer cannot rely on term if breach could not have increased risk of actual loss</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="warning-box">
+                    <h3>Key Exam Point: "Suspended" Not "Discharged"</h3>
+                    <p>Under Insurance Act 2015 s.10, a warranty breach <strong>suspends</strong> insurer liability — it does not permanently discharge it. If the breach is remedied before the loss occurs, insurer liability is fully reinstated. The key word for M05 exam answers is "suspended," not "discharged." This is the most common error in M05 warranty answers.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Insurance Act 2015 -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Insurance Act 2015 — Fair Presentation and Proportionate Remedies</h2>
+                <p class="intro">The Insurance Act 2015 replaced the pre-existing duty of utmost good faith with a precisely defined <strong>duty of fair presentation</strong> for business insurance contracts. The old duty provided only the blunt remedy of avoidance for any breach, however minor or innocent. The 2015 Act replaces this with a structured duty and a graduated remedy system.</p>
+
+                <h3 class="section-subtitle">The Duty of Fair Presentation (s.3)</h3>
+                <p class="intro">The business insured must: disclose every material circumstance which the insured knows or ought to know; or give the insurer sufficient information to put a prudent insurer on notice that it needs to make further enquiry. The insured must present information in a reasonably clear and accessible manner. The test for materiality remains the prudent insurer test.</p>
+
+                <h3 class="section-subtitle">Proportionate Remedies (s.4–7)</h3>
+                <p class="intro">The remedy for breach depends on the insured's state of mind and on what the insurer would have done if presented with the true information:</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Deliberate or Reckless Breach</h3>
+                        <p>The insurer may avoid the contract from inception, retain all premiums paid, and refuse all claims. The most severe outcome — reserved for the most culpable conduct.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Insurer Would Not Have Written the Risk</h3>
+                        <p>The insurer may avoid the contract but must return the premium. The insured is not penalised financially beyond losing the cover.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Insurer Would Have Written on Different Terms</h3>
+                        <p>The contract is treated as if those different terms had applied from inception. The insurer cannot avoid but can rely on terms it would have imposed.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Insurer Would Have Charged Higher Premium</h3>
+                        <p>The insurer pays the claim but reduces it proportionately — by the ratio of the premium charged to the premium that would have been charged. Example: if £8,000 was paid but £10,000 should have been charged, the insurer pays 80% of the claim.</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h3>Section 13A — Late Payment of Claims</h3>
+                    <p>Insurance Act 2015 s.13A implies a term into every insurance contract that the insurer must pay any sums due under a claim within a reasonable time. If the insurer breaches this implied term without good cause, the insured may have a claim for damages for late payment — including consequential losses. This provision applies to insurance contracts entered into after 4 May 2017.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Subrogation and Contribution -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Subrogation and Contribution at Diploma Depth</h2>
+
+                <h3 class="section-subtitle">Subrogation</h3>
+                <p class="intro">Subrogation is the right of the insurer, following payment of a claim, to stand in the insured's shoes and pursue any third party responsible for causing the loss. The doctrine prevents the insured from recovering twice — once from the insurer and once from the third party.</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Three Key Rules</h3>
+                        <p><strong>1. After full indemnity only:</strong> Subrogation only arises after full indemnity has been paid. An insurer who has paid only part of a claim cannot yet exercise subrogation rights.</p>
+                        <p><strong>2. In the insured's name:</strong> The insurer sues in the insured's name — not its own name.</p>
+                        <p><strong>3. Reinsurance context:</strong> <em>Lord Napier and Ettrick v Hunter</em> [1993] established that reinsurer subrogation rights extend to any recovery the insured achieves from a third party.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Contribution</h3>
+                        <p>Contribution applies where two or more policies cover the same risk for the same insured against the same peril. Each insurer is liable to contribute a rateable proportion of the claim.</p>
+                        <p><strong>Independent liability method:</strong> Each insurer calculates its liability as if it were the sole insurer; each pays its proportion of that total.</p>
+                        <p><strong>Maximum liability method:</strong> Each insurer contributes in the ratio of its policy limit to the sum of all policy limits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Insurable Interest -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Insurable Interest — Case Law Thread</h2>
+                <p class="intro">Insurable interest is the legal or equitable interest in the subject matter of insurance that the insured must hold to be entitled to effect a valid policy. Without insurable interest, an insurance contract is void or unenforceable. The statutory basis differs by insurance class.</p>
+
+                <div class="highlight-box">
+                    <h3>Macaura v Northern Assurance [1925]</h3>
+                    <p>The House of Lords held that a shareholder has no insurable interest in the assets of the company whose shares he holds — even where the shareholder owns all the shares. The company is a separate legal entity from its shareholders; the shareholder's insurable interest is in the shares, not in the company's physical assets. This is the most frequently tested insurable interest case in M05.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>By Class</h3>
+                        <p><strong>Life assurance:</strong> Life Assurance Act 1774 — required at time of effecting the policy.</p>
+                        <p><strong>Marine insurance:</strong> Marine Insurance Act 1906 s.5 — legal or equitable relation to the adventure.</p>
+                        <p><strong>Indemnity insurance:</strong> Must exist at the time of the loss (not necessarily at inception).</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Key Cases</h3>
+                        <p><em>Macaura v Northern Assurance</em> [1925]: Shareholder has no interest in company assets.</p>
+                        <p><em>Feasey v Sun Life Assurance</em> [2003]: P&I Club had insurable interest in members' lives due to pecuniary interest in their survival.</p>
+                        <p><em>Gray v Barr</em> [1971]: Public policy — cannot insure consequences of own criminal act.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Exam Technique -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">M05 Written Exam Answer Technique</h2>
+                <p class="intro">M05 is assessed exclusively by written examination. Every mark requires demonstration of knowledge, analysis, and application within a structured written response. The IRAC format — Issue, Rule, Application, Conclusion — is the standard structure for extended answer questions at Diploma level.</p>
+
+                <h3 class="section-subtitle">IRAC Format for Extended Answers</h3>
+                <p class="intro"><strong>Issue:</strong> Identify the legal issue raised by the scenario. <strong>Rule:</strong> State the applicable rule with full citation — statute section number and case name and year. <strong>Application:</strong> Apply the rule to the specific facts of the scenario. <strong>Conclusion:</strong> State who wins, on what basis, with what remedy.</p>
+
+                <div class="warning-box">
+                    <h3>Citation Rules — Non-Negotiable at Diploma Level</h3>
+                    <p><strong>Statute citation:</strong> Always cite by section number — "Under Insurance Act 2015 s.10..." not "Under the Insurance Act." Vague statutory references lose marks. Know: s.3 (fair presentation), s.4–7 (proportionate remedies), s.9 (basis of contract abolition), s.10 (warranties as suspensive conditions), s.11 (limitation on reliance), s.13A (late payment).</p>
+                    <p><strong>Case law citation:</strong> State the full case name and year — "In <em>Dawsons v Bonnin</em> [1922], the House of Lords held that..." A legal principle without its case law authority loses marks at Diploma level.</p>
+                </div>
+
+                <h3 class="section-subtitle">Common M05 Exam Failures</h3>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Warranty Errors</h3>
+                        <p>Describing the pre-2015 warranty rule (permanent discharge) without stating the post-2015 reform (suspensive condition). The exam expects both positions stated and contrasted.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Conditions Confusion</h3>
+                        <p>Confusing conditions precedent (breach = automatic discharge, no prejudice required) with conditions subsequent (breach may give right to terminate, prejudice relevant). The distinction changes the answer completely.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Subrogation Timing</h3>
+                        <p>Applying subrogation before indemnity has been fully paid. Subrogation only arises after full payment — a frequently tested M05 point.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Incomplete Remedy Analysis</h3>
+                        <p>Stating the Insurance Act 2015 proportionate remedy without specifying which of the four outcome scenarios applies to the facts given in the scenario.</p>
+                    </div>
+                </div>
+
+                <div class="mid-cta">
+                    <h3>Need M05 Written Exam Support?</h3>
+                    <p>Structured answer templates, statute section reference sheets, case law summary cards, and practice scenario analysis with feedback on legal reasoning depth.</p>
+                    <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20M05%20Insurance%20Law." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: M05 Within the Diploma -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">M05 Within the CII Diploma in Insurance</h2>
+                <p class="intro">M05 Insurance Law is one of three compulsory core units required to complete the <a href="/CII-Diploma-in-Insurance">CII Diploma in Insurance</a>. The other two mandatory core units are <a href="/m92-assignment-help">M92 Insurance Business and Finance</a> and <a href="/530-assignment-help">530 Economics and Business</a>. All three must be passed before the Diploma is awarded — no substitution or exemption is available for the core units.</p>
+
+                <p class="intro">Students who have completed the <a href="/cii-certificate-in-insurance">CII Certificate in Insurance</a> unit IF1 (Insurance Legal and Regulatory) will find M05 extends that Certificate-level foundation significantly. IF1 introduces the legal and regulatory framework of insurance at Level 3 using MCQ assessment; M05 requires statutory analysis, case law application, and written examination technique at Level 4 — a different intellectual task, not a continuation of the same one.</p>
+
+                <div class="highlight-box">
+                    <h3>How M05 Connects to M92 and 530</h3>
+                    <p>The legal principles M05 establishes directly inform the other core units. The Insurance Act 2015 fair presentation framework (M05) makes the financial consequences of misrepresentation in insurance pricing (M92) more precise. Understanding the contribution doctrine (M05) gives context to double-insurance scenarios in M92 financial ratio questions. The Insurance Act 2015's reform of policyholder duties also changed the information asymmetry dynamic studied in <a href="/530-assignment-help">530 Economics and Business</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: FAQs -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions — M05 Insurance Law Assignment Help</h2>
+
+                <div class="faq-item">
+                    <h4>Is M05 assessed by MCQ or written exam?</h4>
+                    <p>M05 is assessed exclusively by written examination — it is not MCQ. This is the most important structural distinction between M05 and Certificate-level IF units. The written exam combines short-answer questions (typically 10–15 marks each) requiring precise legal definitions and statutory citations, with extended answer questions (25 marks) requiring structured legal analysis of insurance scenarios in IRAC format. Students who have only experience of Certificate MCQ assessment must develop a different approach for M05.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What is the difference between a condition precedent and a warranty in M05?</h4>
+                    <p>A condition precedent must be satisfied before the insured has any rights under the policy — breach automatically eliminates the insurer's obligation to pay, with no requirement to show prejudice or causal connection to the loss. A warranty, under the Insurance Act 2015 s.10 (for contracts from 12 August 2016), operates as a suspensive condition — insurer liability is suspended during the period of breach but reinstated if the breach is remedied before the loss. Pre-2015 at common law, a warranty breach permanently discharged insurer liability (<em>Dawsons v Bonnin</em> [1922]). The exam requires students to state both positions and identify which applies based on the contract date in the scenario.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Does M05 cover the Consumer Insurance Act 2012 or only the Insurance Act 2015?</h4>
+                    <p>M05 covers both Acts. The Consumer Insurance (Disclosure and Representations) Act 2012 applies to individual consumer policyholders — it introduced the duty to take reasonable care not to make misrepresentations, replacing the previous disclosure duty for consumers. The Insurance Act 2015 applies to business (commercial) policyholders from 12 August 2016 — it introduced the duty of fair presentation and the proportionate remedy structure. M05 exam scenarios identify whether the policyholder is a consumer or a business; students must apply the correct Act based on the scenario facts.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>How many credits is M05 and what level is it?</h4>
+                    <p>M05 carries 25 credits at RQF Level 4. This is significantly more demanding than Certificate-level IF units, which carry 15 credits at RQF Level 3. The Level 4 assessment requires written examination technique, statutory section citation, and case law application — none of which are required at Certificate level. Confirm the current pass mark with the CII directly, as assessment standards are subject to periodic review.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What is the Insurance Act 2015 s.13A?</h4>
+                    <p>Insurance Act 2015 s.13A implies a term into every insurance contract that the insurer must pay any sums due under a claim within a reasonable time. If the insurer breaches this implied term by failing to pay within a reasonable time without good cause, the insured may have a claim for damages for late payment — including consequential losses that flow from the delay. This provision applies to insurance contracts entered into after 4 May 2017. It is a distinct remedy from the proportionate remedy framework in s.4–7.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Pages -->
+        <section>
+            <div class="container">
+                <div class="related-posts">
+                    <h3>Related Qualification and Unit Support</h3>
+                    <ul>
+                        <li><a href="/CII-Diploma-in-Insurance">CII Diploma in Insurance — All Core and Optional Units</a></li>
+                        <li><a href="/m92-assignment-help">M92 Insurance Business and Finance — Assignment Help</a></li>
+                        <li><a href="/530-assignment-help">530 Economics and Business — Assignment Help</a></li>
+                        <li><a href="/cii-certificate-in-insurance">CII Certificate in Insurance — IF Unit Exam Support</a></li>
+                        <li><a href="/cii-advanced-diploma-in-insurance">CII Advanced Diploma in Insurance — ACII Support</a></li>
+                        <li><a href="/cii-assignment-help">CII Assignment Help — All Qualification Levels</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Need Support With M05 Insurance Law?</h2>
+                <p>Structured answer templates using IRAC format, statute section reference sheets, case law summary cards, practice scenario analysis with feedback on legal reasoning depth, and extended answer review focused on analytical completeness at Diploma level.</p>
+                <a href="/#contact" class="cta-button">Get Your Free Quote</a>
+                <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20M05%20Insurance%20Law." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CII Assignment Help. Supporting insurance professionals worldwide.</p>
+            <p><a href="/">Home</a> | <a href="/#services">Services</a> | <a href="/#contact">Contact</a></p>
+        </div>
+    </footer>
+    <WhatsAppButton />
+
+    <div class="sticky-cta">
+        <a href="/#contact">Get Quote</a>
+        <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20M05%20Insurance%20Law." target="_blank" rel="noopener noreferrer" class="wa-sticky">💬 WhatsApp</a>
+    </div>
+
+    <script is:inline>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
