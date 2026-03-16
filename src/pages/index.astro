@@ -1,5 +1,6 @@
 ---
 import WhatsAppButton from '../components/WhatsAppButton.astro';
+import TawkToWidget from '../components/TawkToWidget.astro';
 
 const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
 const canonicalUrl = new URL(Astro.url.pathname, site);
@@ -1030,19 +1031,7 @@ const structuredData = [
             }
         }
     </style>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/63f58ff531ebfa0fe7ee9bdb/1gprjkmdp';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
+    <TawkToWidget />
 </head>
 <body>
     <!-- Header & Navigation -->
