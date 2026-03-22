@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" role="img" aria-labelledby="lm3-chain-title">
+  <title id="lm3-chain-title">Lloyd's Chain of Security — Three Layers of Financial Protection, LM3 CII</title>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="#F8F9FC"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="800" height="60" fill="#1B3A6B"/>
+  <text x="400" y="22" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#C9A84C" font-weight="600" letter-spacing="1">LM3 — LONDON MARKET BROKER</text>
+  <text x="400" y="44" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#FFFFFF" font-weight="700">Lloyd's Chain of Security</text>
+
+  <!-- Left side: "Order of call" arrow -->
+  <line x1="48" y1="90" x2="48" y2="358" stroke="#1B3A6B" stroke-width="2.5"/>
+  <polygon points="42,358 48,372 54,358" fill="#1B3A6B"/>
+  <!-- Arrow label rotated -->
+  <text x="48" y="230" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#1B3A6B" font-weight="600" transform="rotate(-90, 48, 230)">ORDER OF CALL</text>
+
+  <!-- === LAYER 1 — Premium Trust Funds === -->
+  <!-- Widest layer at top -->
+  <rect x="72" y="80" width="700" height="90" rx="6" fill="#1B3A6B"/>
+  <!-- Layer number badge -->
+  <rect x="82" y="92" width="70" height="22" rx="3" fill="#C9A84C"/>
+  <text x="117" y="108" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#FFFFFF" font-weight="700">LAYER 1</text>
+  <!-- Layer content -->
+  <text x="430" y="108" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#FFFFFF" font-weight="700">PREMIUM TRUST FUNDS</text>
+  <text x="430" y="128" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#C9A84C">First call — syndicate's annual premium income</text>
+  <text x="430" y="146" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#FFFFFF" opacity="0.85">Policyholder premiums held in trust by managing agents for each year of account</text>
+  <!-- Width indicator bar -->
+  <line x1="72" y1="172" x2="772" y2="172" stroke="#C9A84C" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+
+  <!-- Down arrow between layers -->
+  <line x1="400" y1="174" x2="400" y2="188" stroke="#1B3A6B" stroke-width="2"/>
+  <polygon points="394,186 400,196 406,186" fill="#1B3A6B"/>
+
+  <!-- === LAYER 2 — Member-Level Assets === -->
+  <!-- Medium width, centred -->
+  <rect x="112" y="198" width="576" height="90" rx="6" fill="#1B3A6B" opacity="0.75"/>
+  <rect x="122" y="210" width="70" height="22" rx="3" fill="#C9A84C"/>
+  <text x="157" y="226" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#FFFFFF" font-weight="700">LAYER 2</text>
+  <text x="400" y="226" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#FFFFFF" font-weight="700">MEMBER-LEVEL ASSETS</text>
+  <text x="400" y="246" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#C9A84C">Funds at Lloyd's (FAL) — each member's capital deposit</text>
+  <text x="400" y="264" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#FFFFFF" opacity="0.85">Risk-based capital deposited by corporate and individual Names to support their underwriting</text>
+  <!-- Width indicator -->
+  <line x1="112" y1="290" x2="688" y2="290" stroke="#C9A84C" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+
+  <!-- Down arrow between layers -->
+  <line x1="400" y1="292" x2="400" y2="306" stroke="#1B3A6B" stroke-width="2"/>
+  <polygon points="394,304 400,314 406,304" fill="#1B3A6B"/>
+
+  <!-- === LAYER 3 — Central Assets === -->
+  <!-- Narrowest layer at bottom -->
+  <rect x="192" y="316" width="416" height="90" rx="6" fill="#1B3A6B" opacity="0.55"/>
+  <rect x="202" y="328" width="70" height="22" rx="3" fill="#C9A84C"/>
+  <text x="237" y="344" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#FFFFFF" font-weight="700">LAYER 3</text>
+  <text x="400" y="344" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#FFFFFF" font-weight="700">CENTRAL ASSETS</text>
+  <text x="400" y="364" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#C9A84C">Lloyd's Central Fund — mutual backstop</text>
+  <text x="400" y="382" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#FFFFFF" opacity="0.85">Society-level mutual reserve — funded by annual levies on all Lloyd's market participants</text>
+
+  <!-- S&P rating badge -->
+  <rect x="620" y="334" width="140" height="28" rx="4" fill="#FFFFFF" opacity="0.92"/>
+  <text x="690" y="352" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#1B3A6B" font-weight="700">S&amp;P A+ Financial Strength</text>
+
+  <!-- Footer -->
+  <text x="400" y="407" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#999">ciiassignmenthelp.com</text>
+</svg>

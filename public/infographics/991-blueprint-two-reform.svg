@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="100%" role="img" aria-labelledby="title-991-blueprint">
+  <title id="title-991-blueprint">Blueprint Two — London Market Digital Transformation</title>
+
+  <!-- Background -->
+  <rect width="800" height="440" fill="#F8F9FC"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="800" height="50" fill="#1B3A6B"/>
+  <text x="400" y="32" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#C9A84C" text-anchor="middle">Blueprint Two — London Market Digital Transformation</text>
+
+  <!-- Subtitle -->
+  <text x="400" y="72" font-family="Arial, sans-serif" font-size="12" fill="#1B3A6B" text-anchor="middle" font-style="italic">Lloyd's and the London market's programme to modernise placement and processing</text>
+
+  <!-- Column 1 — PPL -->
+  <rect x="45" y="88" width="215" height="280" rx="8" fill="#FFFFFF" stroke="#1B3A6B" stroke-width="2.5"/>
+  <!-- Column 1 header -->
+  <rect x="45" y="88" width="215" height="50" rx="8" fill="#1B3A6B"/>
+  <rect x="45" y="120" width="215" height="18" fill="#1B3A6B"/>
+  <text x="152" y="109" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9A84C" text-anchor="middle">PPL</text>
+  <text x="152" y="128" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF" text-anchor="middle">Placing Platform Limited</text>
+  <!-- Column 1 label bar -->
+  <rect x="55" y="148" width="195" height="22" rx="4" fill="#E8ECF4"/>
+  <text x="152" y="163" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B" text-anchor="middle">Electronic Placement Solution</text>
+  <!-- Column 1 content -->
+  <text x="152" y="193" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Replaces paper-based Lloyd's</text>
+  <text x="152" y="209" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">slip for standard risks</text>
+  <line x1="70" y1="220" x2="234" y2="220" stroke="#E8ECF4" stroke-width="1.5"/>
+  <text x="152" y="238" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Digital contract captures</text>
+  <text x="152" y="254" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">data at point of placement</text>
+  <line x1="70" y1="265" x2="234" y2="265" stroke="#E8ECF4" stroke-width="1.5"/>
+  <text x="152" y="283" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Feeds directly into all</text>
+  <text x="152" y="299" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">downstream processing systems</text>
+  <line x1="70" y1="310" x2="234" y2="310" stroke="#E8ECF4" stroke-width="1.5"/>
+  <text x="152" y="328" font-family="Arial, sans-serif" font-size="10" fill="#1B3A6B" text-anchor="middle" font-style="italic">Eliminates broker visits</text>
+  <text x="152" y="343" font-family="Arial, sans-serif" font-size="10" fill="#1B3A6B" text-anchor="middle" font-style="italic">to underwriting boxes</text>
+
+  <!-- Column 2 — CDRC -->
+  <rect x="292" y="88" width="215" height="280" rx="8" fill="#FFFFFF" stroke="#C9A84C" stroke-width="2.5"/>
+  <!-- Column 2 header -->
+  <rect x="292" y="88" width="215" height="50" rx="8" fill="#1B3A6B"/>
+  <rect x="292" y="120" width="215" height="18" fill="#1B3A6B"/>
+  <text x="400" y="109" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9A84C" text-anchor="middle">CDRC</text>
+  <text x="400" y="128" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF" text-anchor="middle">Central Data Repository &amp; Contract</text>
+  <!-- Column 2 label bar -->
+  <rect x="302" y="148" width="195" height="22" rx="4" fill="#C9A84C"/>
+  <text x="400" y="163" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B" text-anchor="middle">Market Data Standard</text>
+  <!-- Column 2 content -->
+  <text x="400" y="193" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Standardises contract data</text>
+  <text x="400" y="209" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">across all market participants</text>
+  <line x1="317" y1="220" x2="481" y2="220" stroke="#E8ECF4" stroke-width="1.5"/>
+  <text x="400" y="238" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Eliminates manual re-keying</text>
+  <text x="400" y="254" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">and data inconsistency</text>
+  <line x1="317" y1="265" x2="481" y2="265" stroke="#E8ECF4" stroke-width="1.5"/>
+  <text x="400" y="283" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Single consistent data format</text>
+  <text x="400" y="299" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">enables automation downstream</text>
+  <line x1="317" y1="310" x2="481" y2="310" stroke="#E8ECF4" stroke-width="1.5"/>
+  <text x="400" y="328" font-family="Arial, sans-serif" font-size="10" fill="#1B3A6B" text-anchor="middle" font-style="italic">Foundation for all digital</text>
+  <text x="400" y="343" font-family="Arial, sans-serif" font-size="10" fill="#1B3A6B" text-anchor="middle" font-style="italic">market transformation</text>
+
+  <!-- Column 3 — LIMOSS -->
+  <rect x="540" y="88" width="215" height="280" rx="8" fill="#FFFFFF" stroke="#1B3A6B" stroke-width="2.5"/>
+  <!-- Column 3 header -->
+  <rect x="540" y="88" width="215" height="50" rx="8" fill="#1B3A6B"/>
+  <rect x="540" y="120" width="215" height="18" fill="#1B3A6B"/>
+  <text x="648" y="109" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9A84C" text-anchor="middle">LIMOSS</text>
+  <text x="648" y="128" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF" text-anchor="middle">London Market Operations &amp; Shared Services</text>
+  <!-- Column 3 label bar -->
+  <rect x="550" y="148" width="195" height="22" rx="4" fill="#E8ECF4"/>
+  <text x="648" y="163" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B" text-anchor="middle">Centralised Back-Office Services</text>
+  <!-- Column 3 content -->
+  <text x="648" y="193" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Premium processing across</text>
+  <text x="648" y="209" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">all market participants</text>
+  <line x1="565" y1="220" x2="729" y2="220" stroke="#E8ECF4" stroke-width="1.5"/>
+  <text x="648" y="238" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Claims processing</text>
+  <text x="648" y="254" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">and settlement services</text>
+  <line x1="565" y1="265" x2="729" y2="265" stroke="#E8ECF4" stroke-width="1.5"/>
+  <text x="648" y="283" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Replaces fragmented broker</text>
+  <text x="648" y="299" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">and underwriter back-offices</text>
+  <line x1="565" y1="310" x2="729" y2="310" stroke="#E8ECF4" stroke-width="1.5"/>
+  <text x="648" y="328" font-family="Arial, sans-serif" font-size="10" fill="#1B3A6B" text-anchor="middle" font-style="italic">Consolidates market-wide</text>
+  <text x="648" y="343" font-family="Arial, sans-serif" font-size="10" fill="#1B3A6B" text-anchor="middle" font-style="italic">operational infrastructure</text>
+
+  <!-- Target bar -->
+  <rect x="45" y="382" width="710" height="32" rx="6" fill="#1B3A6B"/>
+  <text x="400" y="402" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C9A84C" text-anchor="middle">Target: 90%+ of relevant contracts placed electronically</text>
+
+  <!-- Footer -->
+  <text x="400" y="430" font-family="Arial, sans-serif" font-size="10" fill="#1B3A6B" text-anchor="middle" opacity="0.7">Lloyd's Blueprint Two modernisation programme — ciiassignmenthelp.com</text>
+</svg>

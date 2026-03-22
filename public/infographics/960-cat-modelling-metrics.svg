@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 800 420">
+  <defs>
+    <style>
+      .panel-title { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; font-weight: bold; }
+      .panel-acronym { font-family: Georgia, 'Times New Roman', serif; font-size: 42px; font-weight: bold; }
+      .panel-label { font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
+      .panel-body { font-family: Arial, Helvetica, sans-serif; font-size: 11px; }
+      .panel-note { font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="#F8F9FC"/>
+
+  <!-- Title Bar -->
+  <rect x="0" y="0" width="800" height="54" fill="#1B3A6B"/>
+  <text x="400" y="22" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="20" font-weight="bold" fill="white">960 Advanced Underwriting</text>
+  <text x="400" y="43" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#C9A84C">Catastrophe Modelling Metrics — PML | OEP | AEP</text>
+
+  <!-- ==================== PANEL 1: PML (navy) ==================== -->
+  <rect x="12" y="66" width="246" height="290" rx="8" ry="8" fill="#1B3A6B"/>
+
+  <!-- Acronym -->
+  <text x="135" y="120" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="52" font-weight="bold" fill="#C9A84C">PML</text>
+
+  <!-- Full name -->
+  <text x="135" y="143" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="white">Probable Maximum Loss</text>
+
+  <!-- Divider -->
+  <line x1="32" y1="152" x2="238" y2="152" stroke="#C9A84C" stroke-width="1.5"/>
+
+  <!-- Definition label + text -->
+  <text x="32" y="168" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="1">DEFINITION</text>
+  <text x="32" y="182" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="white">Loss level not exceeded at a</text>
+  <text x="32" y="196" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="white">given return-period probability</text>
+
+  <!-- Use label + text -->
+  <text x="32" y="216" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="1">PRIMARY USE</text>
+  <text x="32" y="230" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="white">Internal capital allocation</text>
+
+  <!-- Example label + text -->
+  <text x="32" y="250" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="1">EXAMPLE</text>
+  <text x="32" y="264" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="white">250-year PML =</text>
+  <text x="32" y="278" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="white">0.4% annual probability</text>
+
+  <!-- Probability axis illustration -->
+  <text x="32" y="302" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="1">PROBABILITY AXIS</text>
+  <!-- axis line -->
+  <line x1="32" y1="318" x2="225" y2="318" stroke="white" stroke-width="1.5" marker-end="url(#arrow-white)"/>
+  <!-- ticks -->
+  <line x1="60" y1="314" x2="60" y2="322" stroke="white" stroke-width="1"/>
+  <line x1="128" y1="314" x2="128" y2="322" stroke="white" stroke-width="1"/>
+  <line x1="196" y1="314" x2="196" y2="322" stroke="white" stroke-width="1"/>
+  <text x="50" y="332" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#C9A84C">0.4%</text>
+  <text x="114" y="332" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#C9A84C">1%</text>
+  <text x="180" y="332" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="#C9A84C">2%</text>
+  <text x="32" y="346" font-family="Arial,Helvetica,sans-serif" font-size="8" fill="white" font-style="italic">← Rarer events          Common →</text>
+
+  <!-- ==================== PANEL 2: OEP (gold) ==================== -->
+  <rect x="277" y="66" width="246" height="290" rx="8" ry="8" fill="#C9A84C"/>
+
+  <!-- Acronym -->
+  <text x="400" y="120" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="52" font-weight="bold" fill="#1B3A6B">OEP</text>
+
+  <!-- Full name -->
+  <text x="400" y="143" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#1B3A6B">Occurrence Exceedance Probability</text>
+
+  <!-- Divider -->
+  <line x1="297" y1="152" x2="503" y2="152" stroke="#1B3A6B" stroke-width="1.5"/>
+
+  <!-- Definition -->
+  <text x="297" y="168" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#1B3A6B" letter-spacing="1">DEFINITION</text>
+  <text x="297" y="182" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#1B3A6B">Single worst-event loss</text>
+  <text x="297" y="196" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#1B3A6B">in a given year</text>
+
+  <!-- Annual prob -->
+  <text x="297" y="216" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#1B3A6B" letter-spacing="1">ANNUAL PROBABILITY</text>
+  <text x="297" y="230" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#1B3A6B">1% = 1-in-100 year event</text>
+
+  <!-- Use -->
+  <text x="297" y="250" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#1B3A6B" letter-spacing="1">PRIMARY USE</text>
+  <text x="297" y="264" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#1B3A6B">Per-occurrence reinsurance</text>
+  <text x="297" y="278" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="#1B3A6B">sizing and structuring</text>
+
+  <!-- Note -->
+  <text x="297" y="302" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#1B3A6B" letter-spacing="1">KEY NOTE</text>
+  <rect x="297" y="308" width="192" height="34" rx="4" ry="4" fill="#1B3A6B" fill-opacity="0.12"/>
+  <text x="305" y="321" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#1B3A6B" font-style="italic">Lower than AEP at same</text>
+  <text x="305" y="335" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#1B3A6B" font-style="italic">probability (single event only)</text>
+
+  <!-- ==================== PANEL 3: AEP (navy) ==================== -->
+  <rect x="542" y="66" width="246" height="290" rx="8" ry="8" fill="#1B3A6B"/>
+
+  <!-- Acronym -->
+  <text x="665" y="120" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="52" font-weight="bold" fill="#C9A84C">AEP</text>
+
+  <!-- Full name -->
+  <text x="665" y="143" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="white">Aggregate Exceedance Probability</text>
+
+  <!-- Divider -->
+  <line x1="562" y1="152" x2="768" y2="152" stroke="#C9A84C" stroke-width="1.5"/>
+
+  <!-- Definition -->
+  <text x="562" y="168" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="1">DEFINITION</text>
+  <text x="562" y="182" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="white">Total all-event losses</text>
+  <text x="562" y="196" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="white">accumulated within a year</text>
+
+  <!-- Relationship -->
+  <text x="562" y="216" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="1">RELATIONSHIP TO OEP</text>
+  <text x="562" y="230" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="white">Always ≥ OEP at same</text>
+  <text x="562" y="244" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="white">exceedance probability</text>
+
+  <!-- Use -->
+  <text x="562" y="264" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="1">PRIMARY USE</text>
+  <text x="562" y="278" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="white">Aggregate reinsurance /</text>
+  <text x="562" y="292" font-family="Arial,Helvetica,sans-serif" font-size="10.5" fill="white">stop-loss structures</text>
+
+  <!-- Note -->
+  <text x="562" y="312" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="1">KEY NOTE</text>
+  <rect x="562" y="318" width="192" height="24" rx="4" ry="4" fill="white" fill-opacity="0.10"/>
+  <text x="570" y="334" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="white" font-style="italic">Higher than OEP when multiple</text>
+  <!-- second line of note below rect -->
+  <text x="562" y="350" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="white" font-style="italic">catastrophe events likely in a year</text>
+
+  <!-- ==================== BOTTOM GOLD BANNER ==================== -->
+  <rect x="0" y="370" width="800" height="50" fill="#C9A84C"/>
+  <text x="400" y="390" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="bold" fill="#1B3A6B">Return Period = 1 ÷ Annual Probability</text>
+  <text x="400" y="408" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1B3A6B">Vendor Models: RMS (Moody's Analytics)  |  AIR Worldwide (Verisk Analytics)  |  CII 960 Examination Support</text>
+</svg>

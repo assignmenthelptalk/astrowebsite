@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 800 560" font-family="'Segoe UI', Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="800" height="560" fill="#F8F9FC"/>
+
+  <!-- Title Bar -->
+  <rect x="0" y="0" width="800" height="52" fill="#1B3A6B"/>
+  <text x="400" y="33" text-anchor="middle" fill="white" font-size="18" font-weight="700" letter-spacing="0.5">993 Strategic Risk Management — Five Risk Categories</text>
+
+  <!-- ═══════════════════════════════════════════
+       CARD 1 — SYSTEMIC RISK (navy)
+       y=52, height=88
+  ════════════════════════════════════════════ -->
+  <rect x="0" y="52" width="800" height="88" fill="#1B3A6B"/>
+  <!-- left accent strip -->
+  <rect x="0" y="52" width="6" height="88" fill="#C9A84C"/>
+
+  <!-- Category label -->
+  <text x="26" y="76" fill="#C9A84C" font-size="11" font-weight="700" letter-spacing="2">CARD 1</text>
+  <text x="26" y="97" fill="white" font-size="17" font-weight="800" letter-spacing="1">SYSTEMIC RISK</text>
+
+  <!-- Divider line -->
+  <line x1="200" y1="62" x2="200" y2="130" stroke="#C9A84C" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- Bullet points -->
+  <circle cx="218" cy="78" r="3" fill="#C9A84C"/>
+  <text x="230" y="82" fill="white" font-size="12.5">G-SII designation (FSB) — global systemically important insurers</text>
+
+  <circle cx="218" cy="98" r="3" fill="#C9A84C"/>
+  <text x="230" y="102" fill="white" font-size="12.5">AIG / AIGFP case study — $500bn CDS exposure → $182bn bailout</text>
+
+  <circle cx="218" cy="118" r="3" fill="#C9A84C"/>
+  <text x="230" y="122" fill="white" font-size="12.5">IAIS COMFRAME + ICS — regulatory response to systemic concentration</text>
+
+  <!-- ═══════════════════════════════════════════
+       CARD 2 — CLIMATE RISK (gold)
+       y=140, height=88
+  ════════════════════════════════════════════ -->
+  <rect x="0" y="140" width="800" height="88" fill="#C9A84C"/>
+  <rect x="0" y="140" width="6" height="88" fill="#1B3A6B"/>
+
+  <text x="26" y="164" fill="#1B3A6B" font-size="11" font-weight="700" letter-spacing="2">CARD 2</text>
+  <text x="26" y="185" fill="#1B3A6B" font-size="17" font-weight="800" letter-spacing="1">CLIMATE RISK (TCFD)</text>
+
+  <line x1="200" y1="150" x2="200" y2="218" stroke="#1B3A6B" stroke-width="1" stroke-opacity="0.3"/>
+
+  <circle cx="218" cy="166" r="3" fill="#1B3A6B"/>
+  <text x="230" y="170" fill="#1B3A6B" font-size="12.5">Physical: acute (hurricane, wildfire) + chronic (sea-level rise, subsidence)</text>
+
+  <circle cx="218" cy="186" r="3" fill="#1B3A6B"/>
+  <text x="230" y="190" fill="#1B3A6B" font-size="12.5">Transition: stranded assets, carbon pricing, litigation risk</text>
+
+  <circle cx="218" cy="206" r="3" fill="#1B3A6B"/>
+  <text x="230" y="210" fill="#1B3A6B" font-size="12.5">4 TCFD pillars: Governance · Strategy · Risk Management · Metrics &amp; Targets</text>
+
+  <!-- ═══════════════════════════════════════════
+       CARD 3 — CYBER SYSTEMIC RISK (navy)
+       y=228, height=88
+  ════════════════════════════════════════════ -->
+  <rect x="0" y="228" width="800" height="88" fill="#1B3A6B"/>
+  <rect x="0" y="228" width="6" height="88" fill="#C9A84C"/>
+
+  <text x="26" y="252" fill="#C9A84C" font-size="11" font-weight="700" letter-spacing="2">CARD 3</text>
+  <text x="26" y="273" fill="white" font-size="17" font-weight="800" letter-spacing="1">CYBER SYSTEMIC RISK</text>
+
+  <line x1="200" y1="238" x2="200" y2="306" stroke="#C9A84C" stroke-width="1" stroke-opacity="0.4"/>
+
+  <circle cx="218" cy="254" r="3" fill="#C9A84C"/>
+  <text x="230" y="258" fill="white" font-size="12.5">NotPetya (2017): ~$10bn global economic loss — systemic accumulation event</text>
+
+  <circle cx="218" cy="274" r="3" fill="#C9A84C"/>
+  <text x="230" y="278" fill="white" font-size="12.5">Silent cyber accumulation — unintended exposure in non-cyber policies</text>
+
+  <circle cx="218" cy="294" r="3" fill="#C9A84C"/>
+  <text x="230" y="298" fill="white" font-size="12.5">Lloyd's LMA5400 war exclusion (2023) — market-wide response to aggregation</text>
+
+  <!-- ═══════════════════════════════════════════
+       CARD 4 — PANDEMIC RISK (gold)
+       y=316, height=88
+  ════════════════════════════════════════════ -->
+  <rect x="0" y="316" width="800" height="88" fill="#C9A84C"/>
+  <rect x="0" y="316" width="6" height="88" fill="#1B3A6B"/>
+
+  <text x="26" y="340" fill="#1B3A6B" font-size="11" font-weight="700" letter-spacing="2">CARD 4</text>
+  <text x="26" y="361" fill="#1B3A6B" font-size="17" font-weight="800" letter-spacing="1">PANDEMIC RISK</text>
+
+  <line x1="200" y1="326" x2="200" y2="394" stroke="#1B3A6B" stroke-width="1" stroke-opacity="0.3"/>
+
+  <circle cx="218" cy="342" r="3" fill="#1B3A6B"/>
+  <text x="230" y="346" fill="#1B3A6B" font-size="12.5">FCA Business Interruption Test Case [2020] — landmark Covid-19 dispute</text>
+
+  <circle cx="218" cy="362" r="3" fill="#1B3A6B"/>
+  <text x="230" y="366" fill="#1B3A6B" font-size="12.5">UK Supreme Court January 2021 — ruled in favour of policyholders</text>
+
+  <circle cx="218" cy="382" r="3" fill="#1B3A6B"/>
+  <text x="230" y="386" fill="#1B3A6B" font-size="12.5">BI wording precision critical — disease, denial of access, prevention of access clauses</text>
+
+  <!-- ═══════════════════════════════════════════
+       CARD 5 — GEOPOLITICAL / SANCTIONS (navy)
+       y=404, height=88
+  ════════════════════════════════════════════ -->
+  <rect x="0" y="404" width="800" height="88" fill="#1B3A6B"/>
+  <rect x="0" y="404" width="6" height="88" fill="#C9A84C"/>
+
+  <text x="26" y="428" fill="#C9A84C" font-size="11" font-weight="700" letter-spacing="2">CARD 5</text>
+  <text x="26" y="449" fill="white" font-size="17" font-weight="800" letter-spacing="1">GEOPOLITICAL / SANCTIONS</text>
+
+  <line x1="200" y1="414" x2="200" y2="482" stroke="#C9A84C" stroke-width="1" stroke-opacity="0.4"/>
+
+  <circle cx="218" cy="430" r="3" fill="#C9A84C"/>
+  <text x="230" y="434" fill="white" font-size="12.5">OFAC (US Treasury) — sanctions compliance, blocked persons list</text>
+
+  <circle cx="218" cy="450" r="3" fill="#C9A84C"/>
+  <text x="230" y="454" fill="white" font-size="12.5">Russia-Ukraine conflict: aviation hull, marine war, sovereign debt exposure</text>
+
+  <circle cx="218" cy="470" r="3" fill="#C9A84C"/>
+  <text x="230" y="474" fill="white" font-size="12.5">Trade credit / PRI market disruption — emerging market risk concentration</text>
+
+  <!-- ═══════════════════════════════════════════
+       BOTTOM BANNER
+       y=492, height=68
+  ════════════════════════════════════════════ -->
+  <rect x="0" y="492" width="800" height="68" fill="#C9A84C"/>
+  <text x="400" y="522" text-anchor="middle" fill="#1B3A6B" font-size="14" font-weight="800" letter-spacing="0.5">993 Level 7 — Strategic Risk Governance: ORSA + Reverse Stress Testing</text>
+  <text x="400" y="546" text-anchor="middle" fill="#1B3A6B" font-size="13" font-weight="600">50 Credits  ·  Written Examination</text>
+
+</svg>

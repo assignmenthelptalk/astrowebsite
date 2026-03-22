@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 800 560" font-family="'Segoe UI', Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="800" height="560" fill="#F8F9FC"/>
+
+  <!-- Title Bar -->
+  <rect x="0" y="0" width="800" height="52" fill="#1B3A6B"/>
+  <text x="400" y="33" text-anchor="middle" fill="white" font-size="18" font-weight="700" letter-spacing="0.5">994 Insurance Market Specialisation — Topic Areas</text>
+
+  <!-- ═══════════════════════════════════════════
+       2×2 GRID LAYOUT
+       Grid area: y=52 to y=492  (440px tall)
+       Left column:  x=0   to x=396
+       Right column: x=404 to x=800
+       Top row:    y=52  to y=268
+       Bottom row: y=276 to y=492
+       Gaps: 8px horizontal, 8px vertical
+  ════════════════════════════════════════════ -->
+
+  <!-- ── BOX 1: ENERGY INSURANCE (top-left, navy) ── -->
+  <rect x="0" y="52" width="396" height="216" fill="#1B3A6B"/>
+  <!-- top accent bar -->
+  <rect x="0" y="52" width="396" height="5" fill="#C9A84C"/>
+
+  <!-- Title -->
+  <text x="20" y="84" fill="#C9A84C" font-size="15" font-weight="800" letter-spacing="1">ENERGY INSURANCE</text>
+  <line x1="20" y1="90" x2="376" y2="90" stroke="#C9A84C" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- Sub-heading: Upstream -->
+  <text x="20" y="110" fill="#C9A84C" font-size="11" font-weight="700" letter-spacing="1">UPSTREAM</text>
+  <text x="20" y="128" fill="white" font-size="11.5">Well control, Operators Extra Expense (OEE),</text>
+  <text x="20" y="143" fill="white" font-size="11.5">platforms, FPSO, subsea pipelines</text>
+
+  <!-- Sub-heading: Downstream -->
+  <text x="20" y="163" fill="#C9A84C" font-size="11" font-weight="700" letter-spacing="1">DOWNSTREAM</text>
+  <text x="20" y="181" fill="white" font-size="11.5">Refineries, LNG terminals — EML analysis</text>
+  <text x="20" y="196" fill="white" font-size="11.5">Key metric: <tspan font-weight="700" fill="#C9A84C">EML (Estimated Maximum Loss)</tspan></text>
+
+  <!-- Market note -->
+  <rect x="20" y="206" width="356" height="28" rx="4" fill="#ffffff" fill-opacity="0.1"/>
+  <text x="28" y="224" fill="white" font-size="11">London market: Lloyd's (Hiscox, Brit) + IUA company market</text>
+
+  <!-- ── BOX 2: CONSTRUCTION INSURANCE (top-right, gold) ── -->
+  <rect x="404" y="52" width="396" height="216" fill="#C9A84C"/>
+  <rect x="404" y="52" width="396" height="5" fill="#1B3A6B"/>
+
+  <text x="424" y="84" fill="#1B3A6B" font-size="15" font-weight="800" letter-spacing="1">CONSTRUCTION INSURANCE</text>
+  <line x1="424" y1="90" x2="780" y2="90" stroke="#1B3A6B" stroke-width="1" stroke-opacity="0.4"/>
+
+  <text x="424" y="110" fill="#1B3A6B" font-size="11" font-weight="700" letter-spacing="1">CAR POLICY STRUCTURE</text>
+  <text x="424" y="128" fill="#1B3A6B" font-size="11.5">Section 1: Contract works (material damage)</text>
+  <text x="424" y="143" fill="#1B3A6B" font-size="11.5">Section 2: Third Party Liability (TPL)</text>
+
+  <text x="424" y="163" fill="#1B3A6B" font-size="11" font-weight="700" letter-spacing="1">JCT CONTRACT FORMS</text>
+  <text x="424" y="181" fill="#1B3A6B" font-size="11.5">Design &amp; Build · Standard · Management</text>
+  <text x="424" y="196" fill="#1B3A6B" font-size="11.5"><tspan font-weight="700">DSU:</tspan> Delay in Start-Up — BI equivalent for construction</text>
+
+  <rect x="424" y="206" width="356" height="28" rx="4" fill="#1B3A6B" fill-opacity="0.12"/>
+  <text x="432" y="224" fill="#1B3A6B" font-size="11" font-weight="600">Surety: On-demand vs conditional performance bonds</text>
+
+  <!-- ── BOX 3: POLITICAL RISK &amp; TRADE CREDIT (bottom-left, gold) ── -->
+  <rect x="0" y="276" width="396" height="216" fill="#C9A84C"/>
+  <rect x="0" y="276" width="396" height="5" fill="#1B3A6B"/>
+
+  <text x="20" y="308" fill="#1B3A6B" font-size="15" font-weight="800" letter-spacing="0.5">POLITICAL RISK &amp; TRADE CREDIT</text>
+  <line x1="20" y1="314" x2="376" y2="314" stroke="#1B3A6B" stroke-width="1" stroke-opacity="0.4"/>
+
+  <text x="20" y="334" fill="#1B3A6B" font-size="11" font-weight="700" letter-spacing="1">PRI COVERS</text>
+  <text x="20" y="351" fill="#1B3A6B" font-size="11.5">Expropriation · Political violence · Inconvertibility</text>
+  <text x="20" y="366" fill="#1B3A6B" font-size="11.5">Contract frustration · CEND</text>
+
+  <text x="20" y="386" fill="#1B3A6B" font-size="11" font-weight="700" letter-spacing="1">TRADE CREDIT</text>
+  <text x="20" y="403" fill="#1B3A6B" font-size="11.5">Whole turnover vs specific account policies</text>
+  <text x="20" y="418" fill="#1B3A6B" font-size="11.5"><tspan font-weight="700">Key underwriters:</tspan> Euler Hermes (Allianz Trade),</text>
+  <text x="20" y="433" fill="#1B3A6B" font-size="11.5">Coface, Atradius, MIGA</text>
+
+  <rect x="20" y="448" width="356" height="28" rx="4" fill="#1B3A6B" fill-opacity="0.12"/>
+  <text x="28" y="466" fill="#1B3A6B" font-size="11" font-weight="600">OECD country risk classification: 0 (lowest) → 7 (highest)</text>
+
+  <!-- ── BOX 4: SPECIALTY LIABILITY (bottom-right, navy) ── -->
+  <rect x="404" y="276" width="396" height="216" fill="#1B3A6B"/>
+  <rect x="404" y="276" width="396" height="5" fill="#C9A84C"/>
+
+  <text x="424" y="308" fill="#C9A84C" font-size="15" font-weight="800" letter-spacing="0.5">SPECIALTY LIABILITY (Level 7)</text>
+  <line x1="424" y1="314" x2="780" y2="314" stroke="#C9A84C" stroke-width="1" stroke-opacity="0.5"/>
+
+  <text x="424" y="334" fill="#C9A84C" font-size="11" font-weight="700" letter-spacing="1">D&amp;O STRUCTURE</text>
+  <text x="424" y="351" fill="white" font-size="11.5">Side A: personal liability (unindemnified directors)</text>
+  <text x="424" y="366" fill="white" font-size="11.5">Side B: company reimbursement · Side C: entity coverage</text>
+
+  <text x="424" y="386" fill="#C9A84C" font-size="11" font-weight="700" letter-spacing="1">EMERGING LIABILITY</text>
+  <text x="424" y="403" fill="white" font-size="11.5">Cyber: Network security + privacy liability</text>
+  <text x="424" y="418" fill="white" font-size="11.5">PFAS: Long-tail environmental accumulation risk</text>
+  <text x="424" y="433" fill="white" font-size="11.5">Securities class actions (US courts)</text>
+
+  <rect x="424" y="448" width="356" height="28" rx="4" fill="#ffffff" fill-opacity="0.1"/>
+  <text x="432" y="466" fill="white" font-size="11">Systemic liability trends driving Lloyd's &amp; IUA underwriting restrictions</text>
+
+  <!-- ═══════════════════════════════════════════
+       CENTRE DIVIDER BADGE (circular, gold)
+       Centred at (400, 276) — sits on the horizontal grid seam
+  ════════════════════════════════════════════ -->
+  <!-- Shadow/halo -->
+  <circle cx="400" cy="274" r="46" fill="#1B3A6B" fill-opacity="0.25"/>
+  <!-- Outer gold ring -->
+  <circle cx="400" cy="274" r="44" fill="#C9A84C" stroke="#1B3A6B" stroke-width="3"/>
+  <!-- Inner navy disc -->
+  <circle cx="400" cy="274" r="38" fill="#1B3A6B"/>
+  <!-- Badge text -->
+  <text x="400" y="265" text-anchor="middle" fill="#C9A84C" font-size="13" font-weight="800">994</text>
+  <text x="400" y="279" text-anchor="middle" fill="white" font-size="8" letter-spacing="0.3">SITTING-SPECIFIC</text>
+  <text x="400" y="291" text-anchor="middle" fill="white" font-size="8" letter-spacing="0.3">CHECK CII SYLLABUS</text>
+
+  <!-- ═══════════════════════════════════════════
+       BOTTOM BANNER
+       y=492, height=68
+  ════════════════════════════════════════════ -->
+  <rect x="0" y="492" width="800" height="68" fill="#C9A84C"/>
+  <text x="400" y="522" text-anchor="middle" fill="#1B3A6B" font-size="14" font-weight="800" letter-spacing="0.5">994 Level 7 — Insurance Market Specialisation</text>
+  <text x="400" y="546" text-anchor="middle" fill="#1B3A6B" font-size="13" font-weight="600">Sitting-Specific Topic Areas  ·  Always verify current syllabus with the CII</text>
+
+</svg>

@@ -1,0 +1,989 @@
+---
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import TawkToWidget from '../components/TawkToWidget.astro';
+import StickyCTA from '../components/StickyCTA.astro';
+
+const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
+const canonicalUrl = new URL(Astro.url.pathname, site);
+const siteUrl = site.origin;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPDFCLTRSC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YPDFCLTRSC');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WCE and WCA insurance claims assignment help for CII Certificate in Insurance. Expert exam preparation covering GCC regulatory frameworks, IAIS ICPs, FNOL, subrogation, and non-UK claims principles. Arabic-language support available for WCA candidates.">
+    <meta name="keywords" content="WCE assignment help, WCA assignment help, CII insurance claims non-UK, WCE exam preparation, WCA Arabic insurance, GCC insurance claims, CII Certificate in Insurance international">
+    <link rel="canonical" href={canonicalUrl.href} />
+    <title>WCE and WCA Insurance Claims Assignment Help — CII Certificate in Insurance | CII Assignment Help</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content={canonicalUrl.href}>
+    <meta property="og:title" content="WCE and WCA Insurance Claims Assignment Help — CII Certificate in Insurance | CII Assignment Help">
+    <meta property="og:description" content="WCE and WCA insurance claims assignment help for CII Certificate in Insurance. Expert exam preparation covering GCC regulatory frameworks, IAIS ICPs, FNOL, subrogation, and non-UK claims principles. Arabic-language support available for WCA candidates.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content={canonicalUrl.href}>
+    <meta property="twitter:title" content="WCE and WCA Insurance Claims Assignment Help — CII Certificate in Insurance | CII Assignment Help">
+    <meta property="twitter:description" content="WCE and WCA insurance claims assignment help for CII Certificate in Insurance. Expert exam preparation covering GCC regulatory frameworks, IAIS ICPs, FNOL, subrogation, and non-UK claims principles. Arabic-language support available for WCA candidates.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
+    <link rel="shortcut icon" href="/favicon.ico?v=4">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            font-size: 1.0625rem;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #1e3a5f;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+            z-index: 101;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #ffffff;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .page-hero {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 4px solid #ffd700;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            color: #ffd700;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .breadcrumb a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            opacity: 0.8;
+        }
+
+        .cta-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: white;
+            padding: 0.9rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0.5rem;
+        }
+
+        .cta-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+            background: #20BA5A;
+        }
+
+        .mid-cta {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .mid-cta h3 {
+            color: #1e3a5f;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .mid-cta p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #0d1f35;
+            padding: 0.8rem 1rem;
+            padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 0px));
+            text-align: center;
+            z-index: 99;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+        }
+
+        .sticky-cta a {
+            display: inline-block;
+            background: #ffd700;
+            color: #0d1f35;
+            padding: 0.7rem 2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            margin: 0 0.3rem;
+        }
+
+        .sticky-cta .wa-sticky {
+            background: #25D366;
+            color: white;
+        }
+
+        main {
+            background: white;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #1e3a5f;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.5rem;
+            color: #2c5282;
+            margin: 2rem auto 1rem;
+            font-weight: 600;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .section-subtitle-sm {
+            font-size: 1.2rem;
+            color: #2c5282;
+            margin: 1.5rem auto 0.8rem;
+            font-weight: 600;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+            max-width: 72ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .intro a {
+            color: #1e3a5f;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #ffd700;
+            transition: color 0.3s;
+        }
+
+        .intro a:hover {
+            color: #ffd700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            border-left: 5px solid #1e3a5f;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            max-width: 800px;
+        }
+
+        .highlight-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .highlight-box p {
+            color: #444;
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box p,
+        .info-box p,
+        .faq-item p {
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box {
+            background: #fff8e1;
+            border-left: 5px solid #ffd700;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            max-width: 800px;
+        }
+
+        .warning-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box {
+            background: #f0f7ff;
+            border-left: 5px solid #2c5282;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            max-width: 800px;
+        }
+
+        .info-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box p {
+            color: #444;
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .modules-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            background: white;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .modules-table thead {
+            background: #1e3a5f;
+            color: white;
+        }
+
+        .modules-table th {
+            padding: 1.1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .modules-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .modules-table tbody tr:hover {
+            background: #f8f9fa;
+            transition: background 0.2s;
+        }
+
+        .modules-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        .info-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .related-posts {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .related-posts h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+        }
+
+        .related-posts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .related-posts li {
+            margin: 0.8rem 0;
+        }
+
+        .related-posts a {
+            color: #2c5282;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .related-posts a:hover {
+            color: #ffd700;
+        }
+
+        .related-posts a:before {
+            content: "→ ";
+            color: #1e3a5f;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            color: #ffffff;
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e3a5f;
+            padding: 1.1rem 2.8rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+        }
+
+        footer {
+            background: #1e3a5f;
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            opacity: 0.9;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1.5rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h4 {
+            color: #1e3a5f;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .faq-item p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1e3a5f;
+                padding: 1rem;
+                gap: 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                z-index: 100;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.7rem 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .page-hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 1.7rem;
+            }
+
+            .modules-table {
+                font-size: 0.85rem;
+            }
+
+            .sticky-cta {
+                display: block;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .page-hero {
+                padding: 3rem 0;
+            }
+
+            .page-hero h1 {
+                font-size: 1.7rem;
+            }
+
+            section {
+                padding: 2.5rem 0;
+            }
+        }
+
+        .infographic-frame { max-width: 800px; margin: 2rem auto; text-align: center; }
+        .infographic-frame img { max-width: 100%; height: auto; border-radius: 8px; }
+        .infographic-caption { font-size: 0.9rem; color: #666; margin-top: 0.5rem; font-style: italic; }
+    </style>
+    <TawkToWidget />
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">CII Assignment Help</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#qualifications">Qualifications</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>WCE and WCA Insurance Claims Assignment Help</h1>
+            <p class="subtitle">CII Certificate in Insurance — Non-UK Claims Handling Exam Support</p>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/cii-assignment-help">CII Assignment Help</a> / WCE and WCA Insurance Claims
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Section 1: What Are WCE and WCA -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">What Are the WCE and WCA CII Insurance Claims Units?</h2>
+                <p class="intro">The WCE and WCA are the non-UK variants of the CII insurance claims handling unit within the Certificate in Insurance qualification. WCE delivers the assessment in English for international markets outside the United Kingdom; WCA delivers the same assessment content in Arabic for students in Arabic-speaking markets, particularly across the Gulf Cooperation Council (GCC) and the wider MENA region. Both variants assess the same core claims handling principles as the UK-facing IF4 unit — FNOL, investigation, coverage assessment, settlement methods, subrogation, contribution, and fraud detection — adapted for students operating under non-UK regulatory frameworks where FCA rules and ICOBS do not apply. WCE and WCA carry 10 credits within the CII Certificate in Insurance qualification. This service provides structured WCE and WCA exam preparation support in both English and Arabic, with specific expertise in the GCC regulatory environment and IAIS international insurance principles.</p>
+
+                <figure class="infographic-frame">
+                    <img src="/infographics/wce-gcc-claims-regulators.svg" alt="GCC Motor Claims — Regulatory Framework" loading="lazy" />
+                    <figcaption class="infographic-caption">GCC insurance claims regulatory framework: CBUAE (UAE), SAMA/IA (Saudi Arabia), CBB (Bahrain), Ministry of Commerce (Kuwait), QCB (Qatar), and CMA (Oman) — each state regulates its own insurance market with no GCC-wide equivalent of the FCA.</figcaption>
+                </figure>
+
+                <h3 class="section-subtitle">WCE — English-Language Claims Handling for Non-UK Markets</h3>
+                <p class="intro">WCE is positioned within the CII Certificate in Insurance for candidates outside the United Kingdom. The syllabus structure mirrors IF4 — covering the full claims handling process from first notification through investigation, coverage assessment, and settlement — but the regulatory context applied throughout is non-UK. FCA Consumer Duty, ICOBS 8, the Financial Ombudsman Service referral mechanism, and the Financial Services Compensation Scheme (FSCS) are absent from the WCE syllabus. In their place, WCE references the general principles of insurance conduct derived from common law and contract law — indemnity, subrogation, proximate cause, contribution, and utmost good faith — which apply across all jurisdictions as they pre-date jurisdiction-specific statutory regulation. WCE is available to candidates in any international market where CII qualifications are recognised, including Asia-Pacific, Sub-Saharan Africa, the Caribbean, and South and Southeast Asia.</p>
+
+                <h3 class="section-subtitle">WCA — Arabic-Language Claims Handling for Gulf and MENA Students</h3>
+                <p class="intro">WCA delivers identical claims handling content to WCE but the examination paper, answer options, scenario text, and all associated CII learning materials are in Arabic. WCA is designed specifically for Arabic-speaking insurance professionals in the GCC states — Saudi Arabia, the United Arab Emirates, Kuwait, Bahrain, Qatar, and Oman — and is also relevant for wider MENA Arabic-speaking markets including Jordan, Egypt, Lebanon, and Morocco. Students working in GCC claims departments already operate in the regulatory environment that WCA tests, which provides a practical advantage in the examination context that equivalent candidates in other markets do not have. Our service provides Arabic-speaking tutors and can deliver assignment guidance and exam preparation in Arabic for WCA candidates who prefer to work in their first language.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Core Claims Principles -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Core Claims Principles in WCE and WCA</h2>
+                <p class="intro">The claims principles examined in WCE and WCA are identical to those in IF4 — the difference lies in the regulatory overlay applied to each principle, not in the principles themselves. Every claims principle derives from the common law foundations of insurance and applies universally.</p>
+
+                <h3 class="section-subtitle">First Notification of Loss (FNOL) and Claims Registration</h3>
+                <p class="intro">FNOL is the point at which the policyholder notifies the insurer of an incident that may give rise to a claim. The insurer registers the claim, assigns a reference number, opens a claim file, and initiates the investigation process. In GCC markets, notification timeframes are jurisdiction-specific: the CBUAE Motor Insurance Unified Policy in the UAE requires notification within 24 hours of a motor accident; SAMA and the Insurance Authority in Saudi Arabia set notification conditions within the policy terms. Late notification may prejudice the claim — in most international jurisdictions, including all GCC states, prompt notification is a condition of the policy (condition precedent in some jurisdictions, condition subsequent in others — the distinction determines whether late notification voids the claim entirely or merely reduces the insurer's liability).</p>
+
+                <h3 class="section-subtitle">Claims Investigation and Coverage Assessment</h3>
+                <p class="intro">Investigation gathers the evidence required to establish facts: what happened, who was responsible, and what the financial extent of the loss is. In GCC motor claims, police reports are mandatory before the insurer will process a third party liability claim — without a police traffic accident report, the claim cannot proceed. For large or complex claims, a loss adjuster is appointed by the insurer to investigate and report. Loss adjuster appointment in GCC markets follows the same insurer-instructed model as in the UK — the loss adjuster reports to and is paid by the insurer.</p>
+                <p class="intro">Coverage assessment applies the same decision logic internationally: is the policy in force? Is the peril insured? Is the proximate cause of loss an insured peril? Are there applicable exclusions? Have policy conditions been met? The proximate cause principle — the dominant, effective cause of loss, not the nearest cause in time — applies universally, derived from the common law authority of <em>Leyland Shipping v Norwich Union</em> [1918], which remains instructive even in non-common law jurisdictions because the underlying principle is universal to insurance contract interpretation.</p>
+
+                <h3 class="section-subtitle">Settlement Methods in International Insurance Claims</h3>
+                <p class="intro">Settlement methods in WCE/WCA are the same four methods as in IF4: cash payment, repair, replacement, and reinstatement. Their application in international markets reflects local market practice:</p>
+                <p class="intro"><strong>Cash indemnity</strong>: Direct payment to the policyholder based on assessed quantum — the most common settlement method in markets where insurer-controlled repair networks do not operate.</p>
+                <p class="intro"><strong>Repair</strong>: The insurer arranges or approves repair. Cashless workshop networks — where the insurer pays the repair garage directly and the policyholder pays only the deductible — are the standard settlement method for motor claims in the UAE and Saudi Arabia. The cashless motor claim settlement process in GCC mirrors the UK approved repairer panel model but is more extensively developed as the dominant settlement route.</p>
+                <p class="intro"><strong>Replacement</strong>: Like-for-like replacement used in total loss situations where a cash settlement based on market value is agreed and the insured sourced the replacement independently — or where the insurer sources an equivalent vehicle directly.</p>
+                <p class="intro"><strong>Reinstatement</strong>: Used in property claims for rebuilding or restoring structures to pre-loss condition. Common in large commercial property losses across the GCC and wider international markets.</p>
+                <p class="intro"><strong>Third Party Administrators (TPAs)</strong>: In GCC health insurance — compulsory for employees in the UAE (Dubai Health Authority; Department of Health, Abu Dhabi) and Saudi Arabia — claims are processed by licensed Third Party Administrators who manage authorisation, processing, and payment on behalf of insurers. TPAs are a significant feature of the GCC health insurance claims landscape that WCE/WCA candidates in those markets will encounter in practice.</p>
+
+                <h3 class="section-subtitle">Subrogation and Fraud Detection in Non-UK Claims</h3>
+                <p class="intro"><strong>Subrogation</strong>: After indemnifying the policyholder under a valid claim, the insurer acquires all rights and remedies the policyholder held against any negligent third party responsible for the loss. Subrogation derives from the indemnity principle — the insured should not receive more than their actual loss — and applies universally regardless of jurisdiction because it is founded in the common law principles that underpin all insurance contracts. Subrogation rights arise only after the insurer has paid the claim, not before. In the UAE, the CBUAE unified motor policy places specific limits on subrogation rights in third party liability motor claims; in Saudi Arabia, SAMA/IA supervised TP limits define the scope.</p>
+                <p class="intro"><strong>Contribution</strong>: Where two or more policies cover the same risk, the same insured, the same peril, and the same insurable interest, contribution requires each insurer to pay its rateable proportion. This principle applies universally and is tested in WCE/WCA as a coverage assessment outcome — not as a UK-specific rule.</p>
+                <p class="intro"><strong>Fraud indicators in international markets</strong>: The fraud typologies tested in WCE/WCA are the same as in IF4 but assessed without reference to the UK Insurance Fraud Bureau or CIFAS. Staged motor accidents — organised rings coordinating low-speed impacts with phantom passenger injury claims — are prevalent in GCC motor markets, particularly in the UAE and Saudi Arabia. Exaggerated medical expense claims following minor injuries are a common fraud type in markets with compulsory health insurance (UAE, Saudi). Arson in commercial property claims and deliberate damage in marine cargo claims are investigated using the same fraud indicator analysis applied in the UK. The insurer's remedies — policy avoidance where fraud constitutes material misrepresentation at inception, claim repudiation, referral to local law enforcement — apply in all markets.</p>
+            </div>
+        </section>
+
+        <!-- Section 3: How WCE/WCA Differ from IF4 -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">How WCE and WCA Differ from IF4</h2>
+                <p class="intro">The comparison below identifies precisely what changes between the UK unit (IF4) and the non-UK variants (WCE/WCA). Core claims principles are identical — the regulatory architecture differs.</p>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Factor</th>
+                            <th>IF4 (UK)</th>
+                            <th>WCE / WCA (Non-UK)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Factor">Language</td>
+                            <td data-label="IF4 (UK)">English</td>
+                            <td data-label="WCE / WCA (Non-UK)">English (WCE) / Arabic (WCA)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Factor">Regulatory framework</td>
+                            <td data-label="IF4 (UK)">FCA, ICOBS 8, Consumer Duty</td>
+                            <td data-label="WCE / WCA (Non-UK)">IAIS ICPs; local regulator (SAMA/IA, CBUAE, CBB, QCB, CMA, etc.)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Factor">Consumer protection rules</td>
+                            <td data-label="IF4 (UK)">FCA Consumer Duty; FOS right to refer</td>
+                            <td data-label="WCE / WCA (Non-UK)">Varies by jurisdiction — good faith obligations; local ombudsman schemes where available</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Factor">Claims conduct obligations</td>
+                            <td data-label="IF4 (UK)">ICOBS 8 — prompt settlement, clear declination</td>
+                            <td data-label="WCE / WCA (Non-UK)">General principles of fair dealing; jurisdiction-specific policy conditions</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Factor">Complaints escalation</td>
+                            <td data-label="IF4 (UK)">Financial Ombudsman Service — 8-week trigger</td>
+                            <td data-label="WCE / WCA (Non-UK)">No FOS equivalent; internal escalation, insurance ombudsman (India), local regulator</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Factor">Compensation scheme</td>
+                            <td data-label="IF4 (UK)">FSCS (UK statutory protection)</td>
+                            <td data-label="WCE / WCA (Non-UK)">No universal equivalent — country-level solvency requirements; no MENA-wide policyholder protection fund</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Factor">Core claims principles</td>
+                            <td data-label="IF4 (UK)">Indemnity, subrogation, proximate cause, contribution</td>
+                            <td data-label="WCE / WCA (Non-UK)">Identical — unchanged across all jurisdictions</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Factor">Motor TP fraud bodies</td>
+                            <td data-label="IF4 (UK)">Insurance Fraud Bureau (IFR, CIFAS)</td>
+                            <td data-label="WCE / WCA (Non-UK)">Local law enforcement referral; no GCC-wide fraud database equivalent</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="intro">The universal principles — indemnity, subrogation, proximate cause, contribution — are unchanged. The regulatory architecture applied to them differs by jurisdiction, and this is precisely what WCE and WCA test.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Non-UK Regulatory Context -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Non-UK Regulatory Context in Insurance Claims</h2>
+                <p class="intro">Insurance regulation in the GCC and wider MENA region is national-level, not regional. There is no GCC-wide equivalent of the FCA. Each state regulates its own insurance market through a separate supervisory authority.</p>
+
+                <h3 class="section-subtitle">GCC Insurance Regulators</h3>
+                <p class="intro"><strong>Saudi Arabia</strong>: Insurance is regulated by the Insurance Authority (IA), which was established as a standalone supervisory body for the insurance sector. The Saudi Central Bank — SAMA (Saudi Arabian Monetary Authority) — previously exercised supervisory functions over insurance and the two institutions' responsibilities overlap in some areas. Compulsory Third Party Liability (CTPL) motor insurance is mandatory under the Motor Vehicles Accidents Compensation Act. All insurance companies in Saudi Arabia are required to operate on a Takaful (Islamic insurance) basis.</p>
+                <p class="intro"><strong>United Arab Emirates</strong>: The UAE Insurance Authority, which previously regulated the insurance market, was merged into the Central Bank of the UAE (CBUAE) in 2020. The CBUAE now supervises all insurance business in the UAE. The UAE Motor Insurance Unified Policy, issued by the regulator, standardises the core terms of motor cover across all UAE insurers. Medical insurance is compulsory for employees under Dubai Health Authority (DHA) regulations in Dubai and Department of Health (DoH) regulations in Abu Dhabi.</p>
+                <p class="intro"><strong>Bahrain</strong>: The Central Bank of Bahrain (CBB) regulates all financial services including insurance. CBB Resolution 47 of 2014 regulates Takaful operators specifically.</p>
+                <p class="intro"><strong>Kuwait</strong>: Insurance regulation falls under the Ministry of Commerce and Industry. CITRA (Communications and Information Technology Regulatory Authority) has specific responsibilities for digital financial services aspects.</p>
+                <p class="intro"><strong>Qatar</strong>: The Qatar Central Bank (QCB) supervises insurance in Qatar. Compulsory motor third party liability insurance is mandated under Qatari law.</p>
+                <p class="intro"><strong>Oman</strong>: The Capital Market Authority (CMA) regulates the insurance market in Oman.</p>
+
+                <h3 class="section-subtitle">IAIS Core Principles as the Global Baseline</h3>
+                <p class="intro">The International Association of Insurance Supervisors (IAIS) is the global standard-setting body for insurance regulation. Its Insurance Core Principles (ICPs) represent the baseline framework against which all national insurance regulatory systems are assessed. WCE and WCA exam questions reference principles aligned with IAIS standards rather than FCA-specific rules.</p>
+                <p class="intro">Relevant ICPs for claims handling scenarios:</p>
+                <ul style="max-width: 72ch; margin: 0 auto 1.5rem; padding-left: 1.5rem; color: #555; line-height: 1.8;">
+                    <li><strong>ICP 19 — Conduct of Business</strong>: Requires insurers and intermediaries to treat customers fairly, communicate clearly, and handle claims promptly and equitably. This is the non-UK equivalent of ICOBS in terms of the conduct standard applicable to WCE/WCA scenarios.</li>
+                    <li><strong>ICP 18 — Intermediaries</strong>: Covers the conduct obligations of insurance intermediaries — relevant for WCE/WCA scenarios involving brokers and agents in the claims process.</li>
+                    <li><strong>ICP 23 — Group-Wide Supervision</strong>: Applies to insurance groups operating across multiple jurisdictions — relevant for WCE/WCA candidates at multinational insurers operating across GCC states.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 5: WCA Arabic Exam -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">WCA — Arabic-Language Insurance Claims Exam: What to Expect</h2>
+                <p class="intro">The WCA exam is conducted entirely in Arabic. The examination paper, all four answer options for each MCQ, and any case scenario text are presented in Arabic. CII learning materials for WCA — including the core study text and practice questions — are available in Arabic. Candidates who prefer to study in Arabic and sit the examination in Arabic are not disadvantaged relative to WCE candidates; the syllabi are identical.</p>
+                <p class="intro">Key Arabic insurance terminology used in the WCA examination context:</p>
+                <ul style="max-width: 72ch; margin: 0 auto 1.5rem; padding-left: 1.5rem; color: #555; line-height: 1.8;">
+                    <li>التأمين (<em>at-ta'meen</em>) — insurance</li>
+                    <li>المطالبة (<em>al-mutaalaba</em>) — claim</li>
+                    <li>التعويض (<em>at-ta'weed</em>) — indemnity / compensation</li>
+                    <li>الحلول محل المؤمن (<em>al-hulool mahall al-mu'amman</em>) — subrogation</li>
+                    <li>السبب القريب (<em>as-sabab al-qareeb</em>) — proximate cause</li>
+                    <li>مرسل الخسائر (<em>mursil al-khasaa'ir</em>) — loss adjuster</li>
+                    <li>الإخطار الأول بالخسارة (<em>al-ikhtar al-awwal bil-khasara</em>) — first notification of loss (FNOL)</li>
+                </ul>
+                <p class="intro">GCC insurance market familiarity provides a practical advantage in WCA exam scenarios — candidates working in UAE or Saudi claims operations already apply the CBUAE and SAMA/IA regulatory frameworks that the exam references. Our service provides Arabic-speaking tutors and assignment preparation support in Arabic for WCA candidates.</p>
+            </div>
+        </section>
+
+        <!-- Section 6: Assessment Format -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">How Is WCE/WCA Assessed?</h2>
+                <p class="intro">WCE and WCA are assessed by a multiple-choice examination in the same format as IF4 but shorter in duration, reflecting the 10-credit (rather than 15-credit) unit weight.</p>
+
+                <div class="highlight-box">
+                    <h3>WCE/WCA Examination Format</h3>
+                    <p><strong>Format</strong>: Multiple-choice examination — one correct answer from four options per question</p>
+                    <p><strong>Number of questions</strong>: Typically 50 questions</p>
+                    <p><strong>Duration</strong>: 1 hour</p>
+                    <p><strong>Pass mark</strong>: 65% (CII Certificate in Insurance standard pass mark)</p>
+                    <p><strong>Delivery</strong>: Computer-based test at an authorised CII examination centre — available internationally, including at CII-approved centres in GCC states</p>
+                </div>
+
+                <p class="intro"><strong>Exam technique for WCE/WCA MCQ scenarios</strong>: Read each scenario carefully and identify the specific claims principle being tested before reading the four options. The distractors in WCE/WCA scenarios typically apply the correct principle to the wrong facts, or substitute a UK-specific regulatory rule (FOS referral, FSCS protection, ICOBS 8) for the correct non-UK answer. Eliminate any option that references FCA, ICOBS, Consumer Duty, FOS, or FSCS as the operative rule — these are wrong answers in WCE/WCA. Focus on what the claims handler must do under the universal principle or the applicable local regulatory context described in the scenario.</p>
+
+                <div class="mid-cta">
+                    <h3>Need expert help with your WCE or WCA exam?</h3>
+                    <p>Contact us today for structured exam preparation support.</p>
+                    <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20WCE%2FWCA%20Insurance%20Claims." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Claims Principles Across Regulatory Systems -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">How Do Insurance Claims Principles Apply Across Different Regulatory Systems?</h2>
+                <p class="intro">The core principles of indemnity, subrogation, proximate cause, and contribution derive from common law and contract law foundations that pre-date jurisdiction-specific insurance regulation. Whether a claim is handled under ICOBS in the UK, under SAMA rules in Saudi Arabia, or under CBUAE guidelines in the UAE, the underlying principle that an insured should not profit from insurance — the principle of indemnity — remains constant. What changes is the procedural framework: notification windows, dispute resolution routes, compensation scheme access, and the specific conduct rules that the local regulator imposes. This is precisely what WCE and WCA test: can the candidate apply universal claims principles correctly within a non-UK operational context, without importing UK-specific regulatory rules that do not apply?</p>
+            </div>
+        </section>
+
+        <!-- Section 8: CII Certificate Pathway -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">WCE/WCA and the CII Certificate in Insurance Pathway</h2>
+                <p class="intro">The CII Certificate in Insurance is the foundational qualification level offered by the Chartered Insurance Institute, recognised internationally by insurers, intermediaries, and regulators in over 150 countries. WCE and WCA sit within the Certificate alongside other non-UK variant units designed for international markets.</p>
+                <p class="intro">WCE and WCA each contribute 10 credits at Level 3 toward the credit total required for the Cert CII designation. The Certificate in Insurance requires a minimum number of credits to achieve the qualification — students should confirm the precise credit requirement against the current CII unit guide. Completion of the Certificate in Insurance enables progression to the CII Diploma in Insurance, where students may take Diploma-level units including <a href="/m05-assignment-help">M05 (Insurance Law)</a>, <a href="/m92-assignment-help">M92 (Insurance Business and Finance)</a>, and <a href="/530-assignment-help">530 (Economics and Business)</a> for a broader and deeper professional qualification.</p>
+                <p class="intro">For <a href="/cii-certificate-in-insurance">CII Certificate in Insurance assignment help</a> across all units including international variants, this service provides structured exam preparation at all levels.</p>
+            </div>
+        </section>
+
+        <!-- Section 9: Takaful -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Takaful Claims: Where WCA Intersects with Islamic Insurance</h2>
+                <p class="intro">Takaful is the Islamic insurance model operating across GCC markets — all insurance companies in Saudi Arabia are required to operate on a Takaful basis; Takaful is also the dominant model in Bahrain and is widely used in the UAE and Kuwait. WCA candidates in Saudi Arabia and the wider GCC will encounter Takaful claims handling in practice.</p>
+                <p class="intro">Under the Takaful model, policyholders are participants who contribute to a mutual risk fund through Tabarru' (donation) contributions rather than paying premiums to an insurer that bears risk. Claims are paid from the Takaful fund, not from the insurer's own capital. The operator manages the fund on behalf of participants under either a Wakalah (agency fee) structure — the operator receives a fixed management fee regardless of fund performance — or a Mudarabah (profit-sharing) structure — the operator shares in the surplus of the fund.</p>
+                <p class="intro">The claims handling process in Takaful follows the same principles as conventional insurance — FNOL, investigation, coverage assessment, settlement — but the contractual relationship differs: participant versus policyholder; fund versus insurer bearing risk; operator as manager rather than underwriter. Surplus distribution — returning unspent contributions to participants at year-end — is a Takaful-specific concept that has no conventional insurance equivalent.</p>
+                <p class="intro">WCA candidates in Saudi Arabia operate exclusively in a Takaful claims environment and benefit from understanding the Takaful fund mechanics alongside the universal claims principles.</p>
+            </div>
+        </section>
+
+        <!-- Section 10: Our Support -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">How Our CII Assignment Help Service Supports WCE and WCA Students</h2>
+                <p class="intro">This service provides structured assignment guidance and exam preparation support for WCE and WCA candidates across all international markets.</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Unit-Specific Exam Preparation</h3>
+                        <p>Structured walkthroughs of scenario-based practice questions aligned to the WCE/WCA syllabus, covering FNOL procedures, coverage assessment decision logic, settlement method selection, subrogation timing, and fraud indicator identification — all in the non-UK regulatory context.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Non-UK Regulatory Expertise</h3>
+                        <p>Our team understands the GCC insurance environment — SAMA/IA in Saudi Arabia, CBUAE in the UAE, CBB in Bahrain — and the IAIS ICP framework that underpins WCE/WCA examination questions. We do not apply UK-specific rules to non-UK scenarios.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Arabic-Language Support</h3>
+                        <p>Arabic-speaking advisors are available for WCA candidates who prefer to discuss concepts, work through scenarios, or receive examination preparation guidance in Arabic.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Flexible Scheduling</h3>
+                        <p>Support is available for students across Gulf Standard Time (GST/+4) and Arabia Standard Time (AST/+3) zones, covering peak study hours across the GCC.</p>
+                    </div>
+                </div>
+
+                <p class="intro">For <a href="/cii-assignment-help">CII insurance assignment help</a> at all qualification levels, including Certificate, Diploma, and Advanced Diploma, this service provides expert support across all units and market variants.</p>
+            </div>
+        </section>
+
+        <!-- Section 11: FAQs -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions — WCE and WCA</h2>
+
+                <div class="faq-item">
+                    <h4>Is the WCA exam actually taken in Arabic?</h4>
+                    <p>Yes. The WCA is the Arabic-language version of the CII insurance claims handling unit. The full examination paper — questions, answer options, and any supporting scenario text — is in Arabic. CII learning materials are available in Arabic for WCA candidates. Our tutors can provide complete exam preparation support in Arabic for WCA students, including scenario walkthroughs, practice MCQs, and concept explanations in Arabic.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Does WCE or WCA cover FCA rules?</h4>
+                    <p>No. Neither WCE nor WCA covers FCA regulation, ICOBS, the Consumer Duty, the Financial Ombudsman Service, or any other UK Financial Conduct Authority instrument. Both units assess claims handling principles in the context of non-UK regulatory environments. Students should focus on universal insurance principles — indemnity, subrogation, proximate cause, contribution — and the regulatory context of their own market, not on UK-specific regulatory rules. Any answer option in a WCE/WCA MCQ scenario that references ICOBS, the FOS 8-week rule, or Consumer Duty as the operative rule is a wrong answer.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Can I take WCE if I am not based in a GCC country?</h4>
+                    <p>Yes. WCE is the English-language non-UK variant and is available to candidates in any international market outside the UK — it is not limited to GCC or MENA candidates. Insurance professionals in Asia-Pacific, Sub-Saharan Africa, the Caribbean, and other international markets take WCE as part of their CII Certificate in Insurance where the IF4 UK variant is not the appropriate unit for their market context.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>How many credits are WCE and WCA worth?</h4>
+                    <p>Both WCE and WCA are worth 10 credits within the CII Certificate in Insurance qualification framework. This is lower than the 15-credit value of IF4 — students building the Certificate in Insurance should factor the credit weight into their qualification planning to ensure they reach the minimum credit total required for the Cert CII designation.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What is the difference between WCE/WCA and IF4?</h4>
+                    <p>IF4 is the UK-market version of the insurance claims handling unit, covering FCA regulation, ICOBS, the Financial Ombudsman Service, and the FSCS. WCE and WCA are the non-UK equivalents assessing identical core claims principles in a non-UK regulatory context. The universal claims principles — FNOL, investigation, coverage assessment, settlement methods, subrogation, fraud indicators — are the same across IF4, WCE, and WCA. The difference is the regulatory framework applied to them: IF4 references FCA/ICOBS; WCE and WCA reference IAIS ICPs and applicable local GCC or international regulators.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Do GCC countries have equivalent insurance compensation schemes to the UK FSCS?</h4>
+                    <p>No. The UK Financial Services Compensation Scheme (FSCS) is a UK-specific statutory mechanism protecting policyholders when an authorised insurer fails. GCC countries do not have a direct regional equivalent. Individual regulators — CBUAE, SAMA/IA, CBB — impose solvency margin requirements on insurers to reduce insolvency risk, and regulators may intervene to transfer policies or protect policyholders in the event of insurer failure. Some GCC markets have policyholder protection fund frameworks under development, but no GCC-wide FSCS equivalent currently exists. WCE/WCA candidates should be aware that the FSCS is not referenced in their examination — any answer option citing the FSCS as the applicable protection mechanism in a WCE/WCA scenario is a wrong answer.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Pages -->
+        <section>
+            <div class="container">
+                <div class="related-posts">
+                    <h3>Related Qualification and Unit Support</h3>
+                    <ul>
+                        <li><a href="/cii-assignment-help">CII Assignment Help — All Qualification Levels</a></li>
+                        <li><a href="/cii-certificate-in-insurance">CII Certificate in Insurance — IF Unit Exam Support</a></li>
+                        <li><a href="/if4-assignment-help">IF4 Insurance Claims Handling — Assignment Help</a></li>
+                        <li><a href="/if1-assignment-help">IF1 Insurance Legal and Regulatory — Assignment Help</a></li>
+                        <li><a href="/gr1-assignment-help">GR1 Group Risk — Assignment Help</a></li>
+                        <li><a href="/590-assignment-help">590 Principles of Takaful — Assignment Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Need Support With WCE or WCA Insurance Claims?</h2>
+                <p>Structured MCQ scenario walkthroughs, GCC regulatory expertise, IAIS ICP framework guidance, and Arabic-language support for WCA candidates across the Gulf and MENA region.</p>
+                <a href="/#contact" class="cta-button">Get Your Free Quote</a>
+                <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20WCE%2FWCA%20Insurance%20Claims." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CII Assignment Help. Supporting insurance professionals worldwide.</p>
+            <p><a href="/">Home</a> | <a href="/#services">Services</a> | <a href="/#contact">Contact</a></p>
+        </div>
+    </footer>
+    <WhatsAppButton />
+
+    <StickyCTA waMessage="Hello! I need help with WCE/WCA Insurance Claims." />
+
+    <script is:inline>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

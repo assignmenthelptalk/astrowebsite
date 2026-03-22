@@ -1,0 +1,1086 @@
+---
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import TawkToWidget from '../components/TawkToWidget.astro';
+import StickyCTA from '../components/StickyCTA.astro';
+
+const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
+const canonicalUrl = new URL(Astro.url.pathname, site);
+const siteUrl = site.origin;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPDFCLTRSC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YPDFCLTRSC');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IMU and IMP India Motor Insurance assignment help for CII Certificate in Insurance. Expert exam preparation covering IRDAI regulations, Motor Vehicles Act 1988, IDV calculation, NCB scales, long-term motor policies, and MACT procedures for Indian insurance professionals.">
+    <meta name="keywords" content="IMU assignment help, IMP assignment help, India motor insurance CII, IRDAI regulations, IDV calculation, NCB India, Motor Vehicles Act 1988, CII Certificate in Insurance India">
+    <link rel="canonical" href={canonicalUrl.href} />
+    <title>IMU and IMP India Motor Insurance Assignment Help — CII Certificate in Insurance | CII Assignment Help</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content={canonicalUrl.href}>
+    <meta property="og:title" content="IMU and IMP India Motor Insurance Assignment Help — CII Certificate in Insurance | CII Assignment Help">
+    <meta property="og:description" content="IMU and IMP India Motor Insurance assignment help for CII Certificate in Insurance. Expert exam preparation covering IRDAI regulations, Motor Vehicles Act 1988, IDV calculation, NCB scales, long-term motor policies, and MACT procedures for Indian insurance professionals.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content={canonicalUrl.href}>
+    <meta property="twitter:title" content="IMU and IMP India Motor Insurance Assignment Help — CII Certificate in Insurance | CII Assignment Help">
+    <meta property="twitter:description" content="IMU and IMP India Motor Insurance assignment help for CII Certificate in Insurance. Expert exam preparation covering IRDAI regulations, Motor Vehicles Act 1988, IDV calculation, NCB scales, long-term motor policies, and MACT procedures for Indian insurance professionals.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
+    <link rel="shortcut icon" href="/favicon.ico?v=4">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            font-size: 1.0625rem;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #1e3a5f;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+            z-index: 101;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #ffffff;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .page-hero {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 4px solid #ffd700;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            color: #ffd700;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .breadcrumb a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            opacity: 0.8;
+        }
+
+        .cta-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: white;
+            padding: 0.9rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0.5rem;
+        }
+
+        .cta-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+            background: #20BA5A;
+        }
+
+        .mid-cta {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .mid-cta h3 {
+            color: #1e3a5f;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .mid-cta p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #0d1f35;
+            padding: 0.8rem 1rem;
+            padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 0px));
+            text-align: center;
+            z-index: 99;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+        }
+
+        .sticky-cta a {
+            display: inline-block;
+            background: #ffd700;
+            color: #0d1f35;
+            padding: 0.7rem 2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            margin: 0 0.3rem;
+        }
+
+        .sticky-cta .wa-sticky {
+            background: #25D366;
+            color: white;
+        }
+
+        main {
+            background: white;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #1e3a5f;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.5rem;
+            color: #2c5282;
+            margin: 2rem auto 1rem;
+            font-weight: 600;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .section-subtitle-sm {
+            font-size: 1.2rem;
+            color: #2c5282;
+            margin: 1.5rem auto 0.8rem;
+            font-weight: 600;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+            max-width: 72ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .intro a {
+            color: #1e3a5f;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #ffd700;
+            transition: color 0.3s;
+        }
+
+        .intro a:hover {
+            color: #ffd700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            border-left: 5px solid #1e3a5f;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            max-width: 800px;
+        }
+
+        .highlight-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .highlight-box p {
+            color: #444;
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box p,
+        .info-box p,
+        .faq-item p {
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box {
+            background: #fff8e1;
+            border-left: 5px solid #ffd700;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            max-width: 800px;
+        }
+
+        .warning-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box {
+            background: #f0f7ff;
+            border-left: 5px solid #2c5282;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            max-width: 800px;
+        }
+
+        .info-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box p {
+            color: #444;
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .modules-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            background: white;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .modules-table thead {
+            background: #1e3a5f;
+            color: white;
+        }
+
+        .modules-table th {
+            padding: 1.1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .modules-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .modules-table tbody tr:hover {
+            background: #f8f9fa;
+            transition: background 0.2s;
+        }
+
+        .modules-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        .info-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .related-posts {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .related-posts h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+        }
+
+        .related-posts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .related-posts li {
+            margin: 0.8rem 0;
+        }
+
+        .related-posts a {
+            color: #2c5282;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .related-posts a:hover {
+            color: #ffd700;
+        }
+
+        .related-posts a:before {
+            content: "→ ";
+            color: #1e3a5f;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            color: #ffffff;
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e3a5f;
+            padding: 1.1rem 2.8rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+        }
+
+        footer {
+            background: #1e3a5f;
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            opacity: 0.9;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1.5rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h4 {
+            color: #1e3a5f;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .faq-item p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1e3a5f;
+                padding: 1rem;
+                gap: 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                z-index: 100;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.7rem 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .page-hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 1.7rem;
+            }
+
+            .modules-table {
+                font-size: 0.85rem;
+            }
+
+            .sticky-cta {
+                display: block;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .page-hero {
+                padding: 3rem 0;
+            }
+
+            .page-hero h1 {
+                font-size: 1.7rem;
+            }
+
+            section {
+                padding: 2.5rem 0;
+            }
+        }
+
+        .infographic-frame { max-width: 800px; margin: 2rem auto; text-align: center; }
+        .infographic-frame img { max-width: 100%; height: auto; border-radius: 8px; }
+        .infographic-caption { font-size: 0.9rem; color: #666; margin-top: 0.5rem; font-style: italic; }
+    </style>
+    <TawkToWidget />
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">CII Assignment Help</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#qualifications">Qualifications</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>IMU and IMP India Motor Insurance Assignment Help</h1>
+            <p class="subtitle">CII Certificate in Insurance — India Motor Exam Support</p>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/cii-assignment-help">CII Assignment Help</a> / IMU and IMP India Motor Insurance
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Section 1: IMU vs IMP -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">IMU vs IMP — Understanding the Two Indian Motor Units</h2>
+                <p class="intro">IMU (India Motor — Underwriting and Claims) and IMP (India Motor Products) are CII motor insurance units specifically designed for insurance professionals operating in the Indian market. Both units carry 15 credits at Level 3 and are assessed by a scenario-based multiple-choice question (MCQ) examination. They cover the IRDAI regulatory framework, the Motor Vehicles Act 1988 (India), Indian motor insurance cover types, Insured Declared Value calculation, No Claim Bonus mechanics, long-term motor policy requirements, Compulsory Personal Accident cover, and the Indian motor claims handling process including surveyor appointment and Motor Accident Claims Tribunal procedures. IMU and IMP replace the UK-specific content of IF5 with the Indian regulatory and market context — the Road Traffic Act 1988 (UK), the MIB, and MID references in IF5 do not apply; the Motor Vehicles Act 1988 (India), IRDAI circulars, and the Solatium Fund are the correct statutory and regulatory authorities.</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>IMU — India Motor: Underwriting and Claims</h3>
+                        <p>IMU focuses on how motor risks are underwritten and how motor claims are handled in the Indian market. Syllabus areas include: risk assessment at proposal stage, IRDAI compliance requirements in the underwriting process, proposal form evaluation, premium calculation including Own Damage rating factors, FNOL procedures under Indian insurer practice, surveyor appointment requirements under the Insurance Act 1938 as amended, and settlement procedures including Motor Accident Claims Tribunal (MACT) compensation principles.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>IMP — India Motor Products</h3>
+                        <p>IMP focuses on the structure and scope of motor insurance products available in the Indian market. Syllabus areas include: the third party liability (TPL) cover structure, the Own Damage (OD) section of a comprehensive policy, Insured Declared Value (IDV) calculation methodology, No Claim Bonus (NCB) scales and transfer rules, Compulsory Personal Accident (CPA) cover obligations, long-term motor policy structures mandated by IRDAI from 2018, and add-on covers available in the Indian market.</p>
+                    </div>
+                </div>
+
+                <p class="intro">The process-versus-product distinction is directly tested in MCQ scenarios: a question asking how a surveyor should assess OD damage is an IMU topic; a question asking what the IDV is for a vehicle of a given age is an IMP topic. Understanding which unit owns which topic prevents candidates from confusing the two syllabus areas in the examination.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: IRDAI -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">IRDAI and the Indian Motor Insurance Regulatory Framework</h2>
+                <p class="intro">IRDAI (Insurance Regulatory and Development Authority of India) is the statutory regulator for all insurance business in India — general insurance, life insurance, and health insurance. Understanding IRDAI's structure, powers, and specific role in motor insurance regulation is mandatory for both IMU and IMP examinations.</p>
+
+                <p class="intro"><strong>Establishment</strong>: IRDAI was established under the Insurance Regulatory and Development Authority Act 1999. It replaced the Controller of Insurance, who had regulated the Indian insurance market under the colonial-era Insurance Act 1938. The Insurance Act 1938 remains in force as the primary legislation governing insurance contracts and insurer obligations in India; IRDAI exercises its regulatory powers within that statutory framework and issues circulars, regulations, and guidelines that supplement it.</p>
+
+                <p class="intro"><strong>IRDAI powers in motor insurance</strong>: IRDAI sets the mandatory terms for compulsory Third Party (TP) motor cover — insurers cannot alter the TP cover scope or price it independently. IRDAI approves motor product wordings before they may be sold (under the Use and File or File and Use procedures). IRDAI sets solvency margin requirements for all general insurers, including motor insurers. IRDAI issues circulars that mandate structural changes to the motor insurance market — the long-term policy mandate (2018) and the CPA cover amount (2019) are both IRDAI circular-driven requirements.</p>
+
+                <h3 class="section-subtitle">Premium Regulation — The Critical IMU/IMP Exam Distinction</h3>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Cover Component</th>
+                            <th>Premium Regulation Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Cover Component">Third Party (TP) cover</td>
+                            <td data-label="Premium Regulation Status">IRDAI-regulated — premium rates set annually by IRDAI; insurers cannot compete on TP premium</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Cover Component">Own Damage (OD) cover</td>
+                            <td data-label="Premium Regulation Status">Detariffed since 2007 — insurers set their own OD rates based on underwriting judgement</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="intro">Until 2007, both TP and OD premiums were set by the Tariff Advisory Committee (TAC) — insurers could not vary rates. In 2007, OD rates were detariffed — liberalised so that insurers could compete on OD pricing. TP rates remain fully regulated: all insurers charge the same TP premium for a given vehicle category, set annually by IRDAI. This dual regulation structure is one of the most frequently tested distinctions in IMU/IMP MCQ scenarios. A question asking whether an insurer can discount the TP premium to attract business requires the answer: no, TP rates are IRDAI-regulated and cannot be discounted.</p>
+
+                <p class="intro"><strong>Product approval</strong>: All motor insurance wordings and add-on covers must be filed with IRDAI before sale. IRDAI reviews filings for consumer protection compliance and product transparency. Insurers may not sell products that have not been approved through the applicable filing procedure.</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Motor Vehicles Act 1988 -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Motor Vehicles Act 1988 (India) — Compulsory Third Party Cover</h2>
+                <p class="intro">The Motor Vehicles Act 1988 (India) is the primary legislation governing the use of motor vehicles on Indian roads and the compulsory insurance obligation that attaches to that use. It is the Indian equivalent of the UK's Road Traffic Act 1988, but the two statutes are entirely separate and their provisions differ.</p>
+
+                <div class="highlight-box">
+                    <h3>Motor Vehicles Act 1988 (India) s.146 — Minimum Cover</h3>
+                    <p>No person shall use a motor vehicle in a public place without a policy of insurance that at minimum covers:</p>
+                    <p>- Death or bodily injury to any third party (unlimited liability for personal injury — there is no statutory cap on personal injury compensation under the Motor Vehicles Act);</p>
+                    <p>- Damage to third party property (currently covered up to ₹7.5 lakh per incident, subject to IRDAI revision);</p>
+                    <p>- Death or bodily injury of passengers if the vehicle is a public service vehicle (bus, taxi).</p>
+                    <p>The unlimited personal injury liability under the Motor Vehicles Act is a critical exam distinction from the property damage cap. IF5 candidates familiar with the UK MIB framework must discard that structure when approaching IMU/IMP scenarios — there is no cap on TP personal injury liability in India.</p>
+                </div>
+
+                <h3 class="section-subtitle">Motor Accident Claims Tribunal (MACT)</h3>
+                <p class="intro">Disputes arising from motor accident compensation claims in India are heard by Motor Accident Claims Tribunals, not by civil courts. The MACT process and the compensation principles applicable under it — including the Pranay Sethi formula, in which compensation for loss of earnings is calculated using an age-based multiplier derived from actuarial tables — are tested in IMU scenarios. The MACT compensation award covers: loss of income (multiplier × annual income), medical expenses, pain and suffering, loss of consortium, and funeral expenses.</p>
+
+                <h3 class="section-subtitle">Solatium Fund and the India Motor Third Party Insurance Pool</h3>
+                <p class="intro"><strong>Solatium Fund</strong>: The Indian equivalent of the UK Motor Insurers Bureau Untraced Drivers Agreement is the Solatium Fund, administered by the General Insurance Corporation of India. The Solatium Fund compensates victims of hit-and-run accidents where the at-fault vehicle and driver cannot be identified. Fixed compensation of ₹50,000 for grievous hurt and ₹2 lakh for death (amounts subject to IRDAI revision). The Solatium Fund is funded by contributions from all motor insurers in India.</p>
+                <p class="intro"><strong>India Motor Third Party Insurance Pool (IMTPIP)</strong>: The IMTPIP was established in 2007 to pool TP risk for commercial vehicles, which were unprofitable for individual insurers at regulated tariff rates. The IMTPIP was abolished in 2012 and replaced by a declined risk pool arrangement for commercial vehicles that individual insurers declined to write on a standalone basis.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Indian Motor Cover Types -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Indian Motor Cover Types — TP Only vs Comprehensive</h2>
+
+                <figure class="infographic-frame">
+                    <img src="/infographics/imu-india-vs-uk-motor.svg" alt="India vs UK Motor Insurance — Key Differences" loading="lazy" />
+                    <figcaption class="infographic-caption">India vs UK motor insurance: key regulatory and structural differences — IRDAI vs FCA, Motor Vehicles Act 1988 (India) vs Road Traffic Act 1988 (UK), Solatium Fund vs MIB, MACT vs civil courts, and the 50% India NCB cap versus the 65–70% UK NCD ceiling.</figcaption>
+                </figure>
+
+                <p class="intro">Indian motor insurance is structured into two principal cover types: standalone Third Party Only and comprehensive (package) cover. The distinction between them — and the specific components of each — is examined in detail in both IMU and IMP scenarios.</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Third Party Only Cover</h3>
+                        <p>Covers the policyholder's legal liability to third parties for death, personal injury, and property damage caused by the use of the insured vehicle, in accordance with Motor Vehicles Act 1988 s.146. TP cover does NOT cover own vehicle damage (accidental, fire, or theft), personal injury to the owner-driver, or natural calamity damage to the insured vehicle. TP premium is IRDAI-regulated — the same rate applies regardless of which insurer provides the cover.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Comprehensive Cover (Package Policy)</h3>
+                        <p>A comprehensive motor policy in India consists of two distinct sections: the Third Party (TP) section — identical to standalone TP cover with IRDAI-regulated premium, unlimited personal injury liability, and ₹7.5 lakh property damage cap; and the Own Damage (OD) section — covering accidental damage to the insured vehicle, fire, theft, and natural calamities. OD premium is set by the insurer (detariffed since 2007).</p>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle">Insured Declared Value (IDV)</h3>
+                <p class="intro">The IDV is the sum insured for the OD section of a comprehensive policy. It represents the current market value of the insured vehicle and is the maximum amount the insurer will pay on a total loss claim. IDV is calculated as the manufacturer's listed selling price minus depreciation according to the IRDAI depreciation schedule based on vehicle age:</p>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Vehicle Age</th>
+                            <th>Depreciation Rate</th>
+                            <th>Effective IDV (% of List Price)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Vehicle Age">Not exceeding 6 months</td>
+                            <td data-label="Depreciation Rate">5%</td>
+                            <td data-label="Effective IDV (% of List Price)">95%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Vehicle Age">Exceeding 6 months but not 1 year</td>
+                            <td data-label="Depreciation Rate">15%</td>
+                            <td data-label="Effective IDV (% of List Price)">85%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Vehicle Age">Exceeding 1 year but not 2 years</td>
+                            <td data-label="Depreciation Rate">20%</td>
+                            <td data-label="Effective IDV (% of List Price)">80%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Vehicle Age">Exceeding 2 years but not 3 years</td>
+                            <td data-label="Depreciation Rate">30%</td>
+                            <td data-label="Effective IDV (% of List Price)">70%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Vehicle Age">Exceeding 3 years but not 4 years</td>
+                            <td data-label="Depreciation Rate">40%</td>
+                            <td data-label="Effective IDV (% of List Price)">60%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Vehicle Age">Exceeding 4 years but not 5 years</td>
+                            <td data-label="Depreciation Rate">50%</td>
+                            <td data-label="Effective IDV (% of List Price)">50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="intro">For vehicles older than 5 years, the IDV is agreed between the insurer and the insured based on the vehicle's condition and market value. IDV is negotiable within a band above or below the IRDAI schedule figure — selecting a higher IDV produces a higher OD premium; selecting a lower IDV reduces the premium but also reduces the total loss settlement.</p>
+
+                <h3 class="section-subtitle">No Claim Bonus (NCB)</h3>
+                <p class="intro">The Indian motor NCB scale is applied to the OD premium only — not to the TP premium (which is IRDAI-regulated and fixed regardless of claims history). The NCB scale is:</p>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Claim-Free Years</th>
+                            <th>NCB Percentage (applied to OD premium)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Claim-Free Years">1 year</td>
+                            <td data-label="NCB Percentage (applied to OD premium)">20%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Claim-Free Years">2 years</td>
+                            <td data-label="NCB Percentage (applied to OD premium)">25%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Claim-Free Years">3 years</td>
+                            <td data-label="NCB Percentage (applied to OD premium)">35%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Claim-Free Years">4 years</td>
+                            <td data-label="NCB Percentage (applied to OD premium)">45%</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Claim-Free Years">5+ years</td>
+                            <td data-label="NCB Percentage (applied to OD premium)">50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="intro">The maximum NCB in India is 50% — this is an exam-critical distinction from the UK NCD scale, where the ceiling is 65–70%. IMU/IMP scenarios that present a driver with five or more claim-free years require 50% as the maximum NCB, not the UK figure. NCB is earned by the owner-driver (not attached to the vehicle) and is transferable between insurers on renewal with an NCB certificate. NCB applies only to the OD section — TP renewal premium is unaffected by claims history.</p>
+
+                <h3 class="section-subtitle">Add-On Covers</h3>
+                <p class="intro">The Indian market offers a range of OD add-on covers that must be individually elected and separately priced:</p>
+                <ul style="max-width: 72ch; margin: 0 auto 1.5rem; padding-left: 1.5rem; color: #555; line-height: 1.8;">
+                    <li><strong>Zero depreciation (Nil Depreciation)</strong>: The most popular add-on. Eliminates the standard depreciation deduction applied to replaced parts at the time of an OD claim — the insurer pays the full replacement cost of parts without any depreciation deduction. Typically available for vehicles up to five years old.</li>
+                    <li><strong>Engine Protect</strong>: Covers consequential engine damage (e.g. hydrostatic lock from driving through a flooded road) — which is excluded under standard OD cover as a consequential loss.</li>
+                    <li><strong>Consumables cover</strong>: Covers the cost of consumables (engine oil, brake fluid, nuts, bolts) replaced during a repair — also excluded under standard OD cover.</li>
+                    <li><strong>Return to Invoice (RTI)</strong>: In the event of total loss, the settlement is based on the original purchase invoice value rather than the depreciated IDV. Particularly valuable for new vehicles in the first one-to-two years.</li>
+                    <li><strong>Roadside assistance</strong>: Breakdown, towing, fuel delivery, flat tyre assistance.</li>
+                </ul>
+
+                <h3 class="section-subtitle">Compulsory Personal Accident (CPA) Cover</h3>
+                <p class="intro">IRDAI mandates ₹15 lakh Compulsory Personal Accident cover for the owner-driver as a standalone policy requirement (IRDAI circular 2019). CPA is not bundled automatically within the OD section; it must be confirmed separately at renewal. Vehicles with a CPA policy already in force are exempt from purchasing CPA again within the same policy year. CPA cover is for the owner-driver — not all passengers.</p>
+            </div>
+        </section>
+
+        <!-- Section 5: Long-Term Motor Policies -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Long-Term Motor Policies — IRDAI 2018 Circular</h2>
+                <p class="intro">From 1 September 2018, IRDAI mandated long-term motor insurance for all new vehicles at the point of first registration. This requirement was introduced to reduce the number of uninsured vehicles in India by locking in compulsory TP cover for the full manufacturer warranty period.</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>New Private Cars (from 1 September 2018)</h3>
+                        <p><strong>5-year TP policy</strong>: mandatory at point of sale; cannot be cancelled or transferred to another insurer during the five-year period.</p>
+                        <p><strong>OD section</strong>: the policyholder may choose between a 3-year OD policy bundled with the 5-year TP, or a 5-year TP only policy with annual OD arranged separately.</p>
+                        <p>The OD insurer may differ from the TP insurer — the two sections can be placed independently.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>New Two-Wheelers (from 1 September 2018)</h3>
+                        <p><strong>5-year TP policy</strong>: mandatory. OD may be annual or long-term at the policyholder's option.</p>
+                        <p><strong>OD flexibility</strong>: The OD component can be renewed annually, changed to a different insurer at each renewal, or allowed to lapse if the policyholder does not require own damage cover. The 5-year TP cannot be modified — it runs for the full statutory period regardless of the policyholder's preferences.</p>
+                    </div>
+                </div>
+
+                <div class="mid-cta">
+                    <h3>Need expert help with your IMU / IMP exam?</h3>
+                    <p>Contact us today for structured exam preparation support.</p>
+                    <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20IMU%2FIMP%20India%20Motor%20Insurance." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: India vs UK Comparison -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">How Do Indian Motor Insurance Regulations Differ from the UK Framework?</h2>
+                <p class="intro">The Indian motor insurance framework applies different statutory authorities, regulatory structures, and market mechanics from the UK equivalent. Candidates who have already studied IF5 must not carry UK rules into IMU/IMP scenarios.</p>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>UK (IF5)</th>
+                            <th>India (IMU/IMP)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Element">Compulsory cover statute</td>
+                            <td data-label="UK (IF5)">Road Traffic Act 1988 s.143</td>
+                            <td data-label="India (IMU/IMP)">Motor Vehicles Act 1988 (India) s.146</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Element">TP personal injury liability</td>
+                            <td data-label="UK (IF5)">No statutory cap (third party)</td>
+                            <td data-label="India (IMU/IMP)">Unlimited — no cap</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Element">TP property damage</td>
+                            <td data-label="UK (IF5)">No specific cap in RTA</td>
+                            <td data-label="India (IMU/IMP)">₹7.5 lakh per incident</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Element">Premium regulation</td>
+                            <td data-label="UK (IF5)">Market-rated (FCA rules apply)</td>
+                            <td data-label="India (IMU/IMP)">TP: IRDAI-regulated; OD: detariffed (insurer-set)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Element">NCD / NCB maximum</td>
+                            <td data-label="UK (IF5)">65–70% (UK personal lines)</td>
+                            <td data-label="India (IMU/IMP)">50% (India — OD only)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Element">Sum insured for own damage</td>
+                            <td data-label="UK (IF5)">Market value at loss date</td>
+                            <td data-label="India (IMU/IMP)">IDV — based on IRDAI depreciation schedule</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Element">Untraced driver compensation</td>
+                            <td data-label="UK (IF5)">MIB Untraced Drivers Agreement</td>
+                            <td data-label="India (IMU/IMP)">Solatium Fund (GIC)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Element">Dispute resolution (motor)</td>
+                            <td data-label="UK (IF5)">Civil courts / MIB / FOS</td>
+                            <td data-label="India (IMU/IMP)">Motor Accident Claims Tribunal (MACT)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Element">Long-term policy mandate</td>
+                            <td data-label="UK (IF5)">None in UK</td>
+                            <td data-label="India (IMU/IMP)">5-year TP mandatory for new vehicles (2018)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 7: Surveyor Requirement -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Indian Motor Claims: Surveyor Requirement and Loss Assessment</h2>
+                <p class="intro">A distinctive feature of the Indian motor claims process — and an IMU exam topic — is the statutory requirement to appoint a licensed surveyor and loss assessor for claims above a threshold value.</p>
+
+                <div class="highlight-box">
+                    <h3>Statutory Surveyor Appointment</h3>
+                    <p>Under the Insurance Act 1938 (India), insurers are required to appoint a licensed surveyor and loss assessor for all claims exceeding ₹50,000. The surveyor — licensed and regulated by IRDAI — physically inspects the damaged vehicle, assesses the quantum of the loss, identifies the cause of damage, and submits a survey report to the insurer with a recommended settlement figure. The surveyor in the Indian market plays a role equivalent to the loss adjuster in the UK market.</p>
+                </div>
+
+                <p class="intro"><strong>Survey report</strong>: The insurer must settle the claim within 30 days of receiving the final survey report (subject to any investigation requirements). Where the insurer requires further information, it must communicate this within 15 days of receiving the survey report. The Insurance Regulatory and Development Authority (Insurance Ombudsman) Rules 2017 provide an ombudsman route for grievance resolution where the insurer and policyholder cannot agree.</p>
+                <p class="intro"><strong>Cashless claims</strong>: For OD repairs at network garages, Indian motor insurers operate a cashless facility — the insurer pays the approved repair cost directly to the garage, and the policyholder pays only the deductible (compulsory excess plus any voluntary excess elected at inception). Cashless claims require the garage to be on the insurer's approved network.</p>
+            </div>
+        </section>
+
+        <!-- Section 8: Exam Technique -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">How to Pass the IMU / IMP MCQ Exam — Exam Technique</h2>
+                <p class="intro">IMU and IMP MCQ scenarios present Indian motor insurance situations — regulatory compliance decisions, cover type identification, IDV calculation, NCB application, or claims process steps. The exam technique mirrors the approach used for IF5 but requires India-specific regulatory values at every step.</p>
+
+                <p class="intro"><strong>Step 1 — Confirm whether the scenario is a process question (IMU) or a product question (IMP).</strong> A scenario asking how a surveyor should handle an OD claim is IMU. A scenario asking what the correct IDV is for a 3-year-old vehicle is IMP. Identifying the unit context prevents misapplication of syllabus content.</p>
+                <p class="intro"><strong>Step 2 — Apply IRDAI regulatory values, not UK values.</strong> The most common IMU/IMP trap for candidates who have studied IF5 is importing UK figures: applying a 65% NCB instead of 50%, or omitting the IRDAI depreciation schedule and applying market value directly. Both produce the wrong answer.</p>
+
+                <div class="warning-box">
+                    <h3>Common IMU/IMP Exam Traps</h3>
+                    <p>1. Applying UK NCB rates (65–70%) to India — India's maximum NCB is 50% and applies to the OD premium only. TP premium is unaffected by NCB.</p>
+                    <p>2. Treating OD premium as IRDAI-regulated — OD rates have been detariffed since 2007. Only TP rates are IRDAI-set.</p>
+                    <p>3. Confusing the TP property damage cap (₹7.5 lakh) with the unlimited personal injury liability — personal injury to third parties under the Motor Vehicles Act carries unlimited liability.</p>
+                    <p>4. Applying the Solatium Fund as if it operates like the MIB — the Solatium Fund pays fixed amounts (₹50,000 for grievous hurt; ₹2 lakh for death); the MIB structure and its Untraced/Uninsured Agreement mechanics do not apply in India.</p>
+                    <p>5. Omitting the surveyor requirement — claims above ₹50,000 require a licensed surveyor. This is a mandatory process step in Indian motor claims that has no direct UK equivalent.</p>
+                </div>
+
+                <p class="intro"><strong>IDV calculation practice</strong>: The IRDAI depreciation schedule is directly examined. For a vehicle aged 1–2 years, depreciation is 20% — the IDV is 80% of the manufacturer's listed price. Practice the schedule for every age band before the examination.</p>
+            </div>
+        </section>
+
+        <!-- Section 9: CII India Qualification Pathway -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">IMU / IMP Within the CII India Qualification Pathway</h2>
+                <p class="intro">IMU and IMP are part of the CII's India-specific Certificate in Insurance stream, designed for professionals in the Indian insurance market who seek an internationally recognised qualification that bridges the Indian regulatory environment with global insurance standards. CII qualifications are recognised by IRDAI-licensed insurers and intermediaries across India as evidence of professional competence at an internationally benchmarked level.</p>
+                <p class="intro">Indian CII students combine units from the India-specific range with core IF units to build the credits required for the Cert CII designation. IMU and IMP together contribute 30 credits at Level 3 toward the 100-credit minimum. Completion of the Certificate in Insurance leads to the CII Diploma in Insurance, where students may progress to Diploma-level units including <a href="/m05-assignment-help">M05 (Insurance Law)</a>, <a href="/m92-assignment-help">M92 (Insurance Business and Finance)</a>, and <a href="/530-assignment-help">530 (Economics and Business)</a> for a broader professional qualification framework.</p>
+                <p class="intro">For <a href="/cii-certificate-in-insurance">CII Certificate in Insurance assignment help</a> across all units including the India-specific range, and for <a href="/cii-assignment-help">CII assignment help</a> at all levels, this service provides structured exam preparation and assignment support.</p>
+            </div>
+        </section>
+
+        <!-- Section 10: FAQs -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions — IMU / IMP</h2>
+
+                <div class="faq-item">
+                    <h4>What is the difference between IMU and IMP?</h4>
+                    <p>IMU focuses on the process of underwriting and handling motor claims in the Indian market — how proposals are assessed, how premiums are calculated, how claims are notified, investigated, surveyed, and settled. IMP focuses on the products themselves — the structure of TP cover and comprehensive (package) cover, IDV methodology, NCB entitlement and transfer, CPA obligations, long-term policy requirements, and add-on covers. Most students prepare for both units together as the syllabus areas are complementary.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Are IRDAI regulations tested in CII IMU/IMP exams?</h4>
+                    <p>Yes. IRDAI's regulatory framework is central to both IMU and IMP. Tested regulatory areas include: the distinction between IRDAI-regulated TP premiums and insurer-set OD premiums, the IRDAI 2018 long-term policy mandate for new vehicles, the 2019 IRDAI circular setting ₹15 lakh CPA cover for owner-drivers, and IRDAI's product approval procedures. Candidates must be familiar with the IRDAI framework as the primary regulatory authority — not the FCA or any UK regulatory reference.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What is IDV and how is it calculated?</h4>
+                    <p>Insured Declared Value (IDV) is the sum insured for the Own Damage section of an Indian comprehensive motor policy. It is calculated as the manufacturer's listed selling price minus depreciation per the IRDAI schedule based on vehicle age. For a vehicle aged between one and two years, the depreciation rate is 20% — the IDV is 80% of the listed price. For a vehicle aged between two and three years, the depreciation rate is 30% — the IDV is 70% of the listed price. The IRDAI depreciation schedule runs to five age bands, after which the IDV is agreed between insurer and insured based on condition and market evidence.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Does India have an equivalent of the UK MIB?</h4>
+                    <p>India's Solatium Fund compensates victims of hit-and-run accidents where the at-fault vehicle is untraced — this is the closest equivalent to the UK MIB Untraced Drivers Agreement. However, the Solatium Fund pays fixed amounts (currently ₹50,000 for grievous hurt; ₹2 lakh for death), whereas the UK MIB compensates actual loss. India does not have a direct equivalent of the MIB Uninsured Drivers Agreement — the Motor Vehicles Act places the obligation on the insurer under the TP policy to satisfy claims directly, with MACT jurisdiction over disputed amounts.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Pages -->
+        <section>
+            <div class="container">
+                <div class="related-posts">
+                    <h3>Related Qualification and Unit Support</h3>
+                    <ul>
+                        <li><a href="/cii-assignment-help">CII Assignment Help — All Qualification Levels</a></li>
+                        <li><a href="/cii-certificate-in-insurance">CII Certificate in Insurance — IF Unit Exam Support</a></li>
+                        <li><a href="/if5-assignment-help">IF5 Motor Insurance — Assignment Help</a></li>
+                        <li><a href="/if1-assignment-help">IF1 Insurance Legal and Regulatory — Assignment Help</a></li>
+                        <li><a href="/if4-assignment-help">IF4 Insurance Claims Handling — Assignment Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Need Support With IMU or IMP India Motor Insurance?</h2>
+                <p>Structured MCQ scenario walkthroughs, IRDAI regulatory expertise, IDV calculation practice, NCB application guidance, and full coverage of the India-specific motor insurance framework for CII Certificate in Insurance candidates.</p>
+                <a href="/#contact" class="cta-button">Get Your Free Quote</a>
+                <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20IMU%2FIMP%20India%20Motor%20Insurance." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CII Assignment Help. Supporting insurance professionals worldwide.</p>
+            <p><a href="/">Home</a> | <a href="/#services">Services</a> | <a href="/#contact">Contact</a></p>
+        </div>
+    </footer>
+    <WhatsAppButton />
+
+    <StickyCTA waMessage="Hello! I need help with IMU/IMP India Motor Insurance." />
+
+    <script is:inline>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

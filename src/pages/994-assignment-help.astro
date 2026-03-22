@@ -1,0 +1,1084 @@
+---
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import TawkToWidget from '../components/TawkToWidget.astro';
+import StickyCTA from '../components/StickyCTA.astro';
+
+const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
+const canonicalUrl = new URL(Astro.url.pathname, site);
+const siteUrl = site.origin;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPDFCLTRSC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YPDFCLTRSC');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="994 Insurance Market Specialisation assignment help for CII Advanced Diploma in Insurance. Expert Level 7 support covering energy insurance, construction (CAR, JCT, DSU), political risk, trade credit, D&O, cyber liability, and PFAS — for any confirmed sitting topic.">
+    <meta name="keywords" content="994 Insurance Market Specialisation, 994 assignment help, CII Advanced Diploma Level 7, energy insurance upstream downstream, CAR construction JCT DSU, political risk trade credit, D&O cyber PFAS">
+    <link rel="canonical" href={canonicalUrl.href} />
+    <title>994 Insurance Market Specialisation Assignment Help — CII Advanced Diploma | CII Assignment Help</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content={canonicalUrl.href}>
+    <meta property="og:title" content="994 Insurance Market Specialisation Assignment Help — CII Advanced Diploma | CII Assignment Help">
+    <meta property="og:description" content="994 Insurance Market Specialisation assignment help for CII Advanced Diploma in Insurance. Expert Level 7 support covering energy insurance, construction (CAR, JCT, DSU), political risk, trade credit, D&O, cyber liability, and PFAS — for any confirmed sitting topic.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content={canonicalUrl.href}>
+    <meta property="twitter:title" content="994 Insurance Market Specialisation Assignment Help — CII Advanced Diploma | CII Assignment Help">
+    <meta property="twitter:description" content="994 Insurance Market Specialisation assignment help for CII Advanced Diploma in Insurance. Expert Level 7 support covering energy insurance, construction (CAR, JCT, DSU), political risk, trade credit, D&O, cyber liability, and PFAS — for any confirmed sitting topic.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
+    <link rel="shortcut icon" href="/favicon.ico?v=4">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            font-size: 1.0625rem;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #1e3a5f;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+            z-index: 101;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #ffffff;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .page-hero {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 4px solid #ffd700;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            color: #ffd700;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .breadcrumb a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            opacity: 0.8;
+        }
+
+        .cta-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: white;
+            padding: 0.9rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0.5rem;
+        }
+
+        .cta-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+            background: #20BA5A;
+        }
+
+        .mid-cta {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .mid-cta h3 {
+            color: #1e3a5f;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .mid-cta p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #0d1f35;
+            padding: 0.8rem 1rem;
+            padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 0px));
+            text-align: center;
+            z-index: 99;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+        }
+
+        .sticky-cta a {
+            display: inline-block;
+            background: #ffd700;
+            color: #0d1f35;
+            padding: 0.7rem 2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            margin: 0 0.3rem;
+        }
+
+        .sticky-cta .wa-sticky {
+            background: #25D366;
+            color: white;
+        }
+
+        main {
+            background: white;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #1e3a5f;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.5rem;
+            color: #2c5282;
+            margin: 2rem auto 1rem;
+            font-weight: 600;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .section-subtitle-sm {
+            font-size: 1.2rem;
+            color: #2c5282;
+            margin: 1.5rem auto 0.8rem;
+            font-weight: 600;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+            max-width: 72ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .intro a {
+            color: #1e3a5f;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #ffd700;
+            transition: color 0.3s;
+        }
+
+        .intro a:hover {
+            color: #ffd700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            border-left: 5px solid #1e3a5f;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            max-width: 800px;
+        }
+
+        .highlight-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .highlight-box p {
+            color: #444;
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box p,
+        .info-box p,
+        .faq-item p {
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box {
+            background: #fff8e1;
+            border-left: 5px solid #ffd700;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            max-width: 800px;
+        }
+
+        .warning-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box {
+            background: #f0f7ff;
+            border-left: 5px solid #2c5282;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            max-width: 800px;
+        }
+
+        .info-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box p {
+            color: #444;
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .modules-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            background: white;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .modules-table thead {
+            background: #1e3a5f;
+            color: white;
+        }
+
+        .modules-table th {
+            padding: 1.1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .modules-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .modules-table tbody tr:hover {
+            background: #f8f9fa;
+            transition: background 0.2s;
+        }
+
+        .modules-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        .info-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .related-posts {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .related-posts h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+        }
+
+        .related-posts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .related-posts li {
+            margin: 0.8rem 0;
+        }
+
+        .related-posts a {
+            color: #2c5282;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .related-posts a:hover {
+            color: #ffd700;
+        }
+
+        .related-posts a:before {
+            content: "→ ";
+            color: #1e3a5f;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            color: #ffffff;
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e3a5f;
+            padding: 1.1rem 2.8rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+        }
+
+        footer {
+            background: #1e3a5f;
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            opacity: 0.9;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1.5rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h4 {
+            color: #1e3a5f;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .faq-item p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1e3a5f;
+                padding: 1rem;
+                gap: 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                z-index: 100;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.7rem 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .page-hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 1.7rem;
+            }
+
+            .modules-table {
+                font-size: 0.85rem;
+            }
+
+            .sticky-cta {
+                display: block;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .page-hero {
+                padding: 3rem 0;
+            }
+
+            .page-hero h1 {
+                font-size: 1.7rem;
+            }
+
+            section {
+                padding: 2.5rem 0;
+            }
+        }
+
+        .infographic-frame { max-width: 800px; margin: 2rem auto; text-align: center; }
+        .infographic-frame img { max-width: 100%; height: auto; border-radius: 8px; }
+        .infographic-caption { font-size: 0.9rem; color: #666; margin-top: 0.5rem; font-style: italic; }
+    </style>
+    <TawkToWidget />
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">CII Assignment Help</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#qualifications">Qualifications</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>994 Insurance Market Specialisation Assignment Help</h1>
+            <p class="subtitle">CII Advanced Diploma in Insurance — Written Exam Support at Level 7</p>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/cii-assignment-help">CII Assignment Help</a> / <a href="/cii-advanced-diploma-in-insurance">Advanced Diploma in Insurance</a> / 994 Insurance Market Specialisation
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Section 1: Introduction -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">994 Insurance Market Specialisation — Unit Overview</h2>
+                <p class="intro">Unit 994 — Insurance Market Specialisation is a 50-credit Level 7 written examination unit within the CII Advanced Diploma in Insurance. A critical characteristic of 994 that candidates must know immediately: the specific subject area examined in 994 varies by examination sitting. The CII announces the topic for each 994 sitting several months before the examination date — candidates must check the CII website under the 994 unit listing for their specific sitting before commencing detailed preparation. This page covers the main specialist market areas that have been and can be examined — energy (upstream and downstream), construction (CAR, JCT, DSU), political risk and trade credit, and specialty liability (D&amp;O, cyber, PFAS) — each at the depth Level 7 requires. The unit is taken by insurance professionals working in specialist markets who are pursuing the ACII designation; the exam requires not just technical knowledge of the specialist market but strategic analysis of its structures, pricing, capacity dynamics, and emerging issues.</p>
+
+                <div class="warning-box">
+                    <h3>Important: Confirm Your 994 Sitting Topic First</h3>
+                    <p>The specific subject area examined in 994 varies by examination period. The CII publishes the 994 topic for each sitting several months in advance on the CII website under the 994 unit listing. Do not begin specialist market preparation until you have confirmed your topic. Contact us once you have confirmed your topic and we will match you with a specialist for that specific area.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: What Does 994 Cover -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">What Does 994 Cover? — Understanding the Sitting-Specific Structure</h2>
+
+                <figure class="infographic-frame">
+                    <img src="/infographics/994-specialist-markets-overview.svg" alt="994 Insurance Market Specialisation — Topic Areas" loading="lazy" />
+                    <figcaption class="infographic-caption">The principal specialist market topic areas examined in 994: energy (upstream/downstream), construction (CAR, JCT, DSU), political risk and trade credit, and specialty liability (D&amp;O, cyber, PFAS). The sitting-specific topic is confirmed by the CII in advance of each examination period.</figcaption>
+                </figure>
+
+                <p class="intro">Unit 994's sitting-specific nature is not a minor administrative detail — it is the defining feature of how candidates must prepare. Unlike 991 or 993 where the syllabus is fixed, a 994 candidate sitting in one period may face an energy insurance examination while a candidate in the next period faces a construction or political risk examination. The CII's publication of the topic in advance gives candidates a defined target, but it also means that preparation must be focused on the announced topic rather than spread across all areas.</p>
+                <p class="intro">What all 994 topics have in common regardless of the specific sitting subject: (1) Level 7 analytical standard — specialist technical knowledge is the foundation, not the destination; (2) global market context — the exam expects knowledge of which markets lead the class, who the major underwriters are, and how capacity and pricing behave across the cycle; (3) emerging issues — each specialist market has current developments (climate risk, sanctions, coverage disputes, digital disruption) that Level 7 answers must address; (4) analytical structure — comparing approaches, evaluating tradeoffs, and reaching justified conclusions rather than listing product features.</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Energy Insurance -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Energy Insurance in 994 — Upstream and Downstream at Level 7</h2>
+                <p class="intro">Energy insurance is among the most technically complex specialist classes in the London market and one of the most frequently examined 994 topics. The London market — Lloyd's syndicates and IUA company market members — is the global centre for energy insurance, handling risks that domestic markets in producing countries cannot absorb.</p>
+
+                <h3 class="section-subtitle">Upstream Energy Insurance — Exploration, Production, and Offshore</h3>
+                <p class="intro">Upstream energy covers risks associated with oil and gas exploration and production (E&amp;P) activities. The policy structure addresses both the physical assets and the consequential costs of incidents.</p>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Coverage Section</th>
+                            <th>What It Covers</th>
+                            <th>Key Underwriting Trigger</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Coverage Section">Well control / blowout</td>
+                            <td data-label="What It Covers">Costs of regaining control of a runaway well — well-killing costs, re-drilling costs, seepage, pollution</td>
+                            <td data-label="Key Underwriting Trigger">Loss of well control event</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Coverage Section">Operator's Extra Expense (OEE)</td>
+                            <td data-label="What It Covers">Consequential costs of a well control incident including loss of production income, third-party well control contractor costs</td>
+                            <td data-label="Key Underwriting Trigger">Well control event with extended remediation</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Coverage Section">Physical damage — offshore</td>
+                            <td data-label="What It Covers">Platforms, FPSO vessels, subsea equipment, pipelines — material damage on an all-risks basis</td>
+                            <td data-label="Key Underwriting Trigger">Physical loss or damage from any cause not excluded</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Coverage Section">Offshore liability</td>
+                            <td data-label="What It Covers">Third-party liability for bodily injury, property damage, and pollution arising from offshore operations</td>
+                            <td data-label="Key Underwriting Trigger">Third-party claim or statutory liability</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="intro"><strong>Key underwriting factors</strong>: Well type (exploration well — higher risk than development well on a proven reservoir), reservoir depth and pressure (higher pressure = higher blowout risk), operator experience and track record (major IOC vs independent E&amp;P company), age and maintenance standard of offshore installation (asset values, inspection records), geographic location (Gulf of Mexico — US OPA '90 unlimited liability for spills; North Sea — OPOL and OSPAR environmental framework; West Africa — weaker regulatory oversight, higher political risk).</p>
+                <p class="intro"><strong>EML for offshore installations</strong>: Estimated Maximum Loss for a major FPSO or offshore platform can reach $1 billion or more for the largest and most complex installations. London market capacity — from Lloyd's syndicates (Hiscox, Brit, CV Starr) and IUA company market members — is essential for providing the capacity required at these values.</p>
+                <p class="intro"><strong>Oil Pollution Act 1990 (US OPA '90)</strong>: For US-waters offshore operations, OPA '90 imposes unlimited liability on responsible parties for oil spills — unlimited in the sense that there is no cap on natural resources damages, removal costs, or third-party economic losses. This is a major underwriting consideration for Gulf of Mexico operations; the Deepwater Horizon (2010) claims illustrated the scale of OPA '90 exposure.</p>
+
+                <h3 class="section-subtitle">Downstream Energy Insurance — Refineries and Processing Plants</h3>
+                <p class="intro">Downstream energy covers petrochemical refineries, LNG liquefaction and regasification terminals, oil refineries, and gas processing facilities — high-value, concentrated, and highly hazardous assets.</p>
+                <p class="intro"><strong>Policy structure</strong>: Material damage (all-risk or named perils on plant and machinery, buildings, and stock) and business interruption (indemnity period often 24–36 months given the extreme complexity and time required to reconstruct or repair damaged refinery process units).</p>
+                <p class="intro"><strong>EML analysis as the core underwriting tool</strong>: The Estimated Maximum Loss is the maximum foreseeable loss from a single event at the facility — typically a major fire or explosion at the highest-value process unit. EML calculation for a downstream facility requires process hazard analysis (identifying which process units contain the highest hazard), fire and explosion modelling (blast overpressure radius, radiant heat flux modelling), assessment of separation between high-value process units, and fire protection quality (suppression systems, detection, water supply and deluge capacity).</p>
+                <p class="intro">A downstream facility with a Total Insured Value of $3 billion may have an EML of $500 million if process units are adequately separated and fire protection is first-class — or an EML of $1.5 billion if process units are closely packed with inadequate fire separation. The EML drives the per-risk capacity required from the market and the premium level.</p>
+                <p class="intro"><strong>DSU (Delay in Start-Up)</strong> for downstream: where a refinery or processing facility is undergoing major capital investment (expansion or reconstruction), DSU provides cover for the financial losses resulting from delays to start-up caused by insured material damage events during construction. The indemnity period and maximum indemnity period in DSU policies for major downstream projects are typically longer than for construction projects generally, reflecting the complexity and the revenue at stake.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Construction Insurance -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Construction Insurance in 994 — CAR Structure, JCT Forms, and DSU</h2>
+                <p class="intro">Construction insurance is a major specialty market topic that tests candidates' understanding of how risk is allocated across a construction project — between employer, contractor, and insurer — and how that allocation changes depending on which JCT contract form is used.</p>
+
+                <h3 class="section-subtitle">CAR Policy Structure and JCT Contract Forms</h3>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Coverage</th>
+                            <th>Sum Insured</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Section">Section 1 — Contract Works</td>
+                            <td data-label="Coverage">Material damage to the works being constructed — all-risk basis</td>
+                            <td data-label="Sum Insured">Contract value (increases as works progress)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Section">Section 2 — Third Party Liability</td>
+                            <td data-label="Coverage">Injury to third parties or damage to their property caused by contract operations</td>
+                            <td data-label="Sum Insured">Policy limit (separate from Section 1)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Section">Section 3 — Employer's Liability (optional)</td>
+                            <td data-label="Coverage">Employer's liability for injury to the contractor's own employees</td>
+                            <td data-label="Sum Insured">Statutory minimum or higher</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="intro">The policy period runs from commencement of works through practical completion to the end of the defects liability period (typically 12 months post-completion). During the defects liability period, the contractor is responsible for rectifying defects — the CAR policy maintains cover for the risk of an insured event during this period.</p>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>JCT Form</th>
+                            <th>Design Responsibility</th>
+                            <th>Construction Risk</th>
+                            <th>CAR Named Insured</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="JCT Form">JCT Design and Build (D&amp;B)</td>
+                            <td data-label="Design Responsibility">Contractor designs and builds</td>
+                            <td data-label="Construction Risk">Contractor bears design and construction risk</td>
+                            <td data-label="CAR Named Insured">Contractor typically arranges; employer may require joint names</td>
+                        </tr>
+                        <tr>
+                            <td data-label="JCT Form">JCT Standard Building Contract</td>
+                            <td data-label="Design Responsibility">Employer retains design; contractor builds to employer's design</td>
+                            <td data-label="Construction Risk">Contractor bears construction risk; employer bears design risk</td>
+                            <td data-label="CAR Named Insured">Joint-name policy common (protects both parties' interests)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="JCT Form">JCT Management Contract</td>
+                            <td data-label="Design Responsibility">Employer retains design; management contractor co-ordinates works contractors</td>
+                            <td data-label="Construction Risk">Risk allocation is complex — management contractor has limited direct construction risk</td>
+                            <td data-label="CAR Named Insured">Employer often arranges to protect the whole project</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="intro">The 994 exam at Level 7 requires candidates to evaluate the implications of the JCT form choice for insurance structuring — not simply describe what each form involves. A joint-name CAR policy protects both employer and contractor; a contractor-arranged policy may leave the employer without direct insurer recourse if the contractor becomes insolvent.</p>
+
+                <h3 class="section-subtitle">DSU — Delay in Start-Up Insurance</h3>
+                <p class="intro">DSU (Delay in Start-Up) insurance is the construction-phase equivalent of Business Interruption. It covers financial losses resulting from a delay to the start of commercial operations caused by an insured event under the contract works (Section 1 material damage) section.</p>
+                <p class="intro"><strong>Covered losses under DSU</strong>: Anticipated revenue loss during the delay period (revenue the project would have generated from its original target start date), additional financing costs (interest on construction loans continuing during the delay), and fixed overhead and operating costs that cannot be avoided during the delay. DSU does not cover delays caused by construction deficiencies, design errors, or contractor performance failures — only delays caused by an insured material damage event.</p>
+                <p class="intro"><strong>Indemnity period and maximum indemnity period</strong>: The indemnity period begins from the original target start-up date and runs for the actual delay period, subject to the maximum indemnity period stated in the policy. For a major infrastructure project, the maximum indemnity period may be 18–36 months. The maximum indemnity period is a key underwriting consideration — a longer period increases the insurer's exposure significantly.</p>
+                <p class="intro"><strong>Underwriting key factors for DSU</strong>: Total project value, construction timeline, revenue projections from the completed facility, construction risk quality (contractor experience, design complexity, procurement strategy), and maximum indemnity period. DSU underwriters must assess whether the delay risk is adequately reflected in the premium — a project with a complex critical path and a tight revenue start date has higher DSU risk than a simple project with buffer time built into the programme.</p>
+
+                <div class="mid-cta">
+                    <h3>Get Expert Help with Your 994 Exam — Any Specialist Topic</h3>
+                    <p>Our 994 support team covers all specialist market topics — energy, construction, political risk, trade credit, specialty liability, marine, and aviation. Tell us your sitting's confirmed topic and we will match you with the right specialist.</p>
+                    <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20994%20Insurance%20Market%20Specialisation." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Political Risk and Trade Credit -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Political Risk and Trade Credit Insurance in 994</h2>
+
+                <h3 class="section-subtitle">Political Risk Insurance (PRI)</h3>
+                <p class="intro">Political risk insurance covers investors, exporters, and lenders against losses arising from sovereign or governmental actions affecting their overseas investments or transactions.</p>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Coverage</th>
+                            <th>Definition</th>
+                            <th>Key Trigger</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Coverage">Expropriation</td>
+                            <td data-label="Definition">Government confiscation or nationalisation of assets without adequate compensation</td>
+                            <td data-label="Key Trigger">Government action that deprives investor of economic benefit of the investment</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Coverage">Political violence</td>
+                            <td data-label="Definition">War, terrorism, civil commotion, revolution — causing physical damage or business disruption</td>
+                            <td data-label="Key Trigger">Political violence event affecting the insured's assets</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Coverage">Currency inconvertibility</td>
+                            <td data-label="Definition">Government restrictions preventing conversion and repatriation of profits or capital</td>
+                            <td data-label="Key Trigger">Host government action blocking currency transfer</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Coverage">Contract frustration</td>
+                            <td data-label="Definition">Host government failure to honour contractual obligations — government as a commercial counterparty</td>
+                            <td data-label="Key Trigger">Government repudiation or frustration of a contract</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="intro"><strong>Key PRI underwriters</strong>: Lloyd's political risk market (Hiscox, Beazley, Chaucer), MIGA (World Bank's Multilateral Investment Guarantee Agency — development-finance focused), US EXIM Bank, Euler Hermes (now Allianz Trade), and Coface. The London private market and multilateral institutions operate in parallel — MIGA takes longer-term and lower-premium risks that the private market prices out; the London market takes the more commercially priced, complex risks.</p>
+                <p class="intro"><strong>Country risk rating</strong>: The OECD country risk classification runs from 0 (lowest risk — OECD high-income economies) to 7 (highest risk — severely indebted or politically unstable economies). The PRI underwriter uses the OECD classification as a starting point but applies qualitative judgement — political change, regulatory track record, judicial independence, and sector-specific nationalisation history are all relevant underwriting factors beyond the OECD score.</p>
+
+                <h3 class="section-subtitle">Trade Credit Insurance</h3>
+                <p class="intro">Trade credit insurance covers sellers of goods and services against buyers' failure to pay for goods or services delivered on credit. It is a volume-driven market — major underwriters (Euler Hermes/Allianz Trade, Coface, Atradius) cover billions of euros of trade receivables across millions of transactions globally.</p>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Structure</th>
+                            <th>Coverage Scope</th>
+                            <th>Premium Basis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Structure">Whole turnover</td>
+                            <td data-label="Coverage Scope">All buyers in the insured's debtor book above a minimum turnover level</td>
+                            <td data-label="Premium Basis">Percentage of turnover</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Structure">Specific account</td>
+                            <td data-label="Coverage Scope">Single named buyer</td>
+                            <td data-label="Premium Basis">Flat premium or rate on line of credit</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="intro"><strong>Credit limit</strong>: The maximum exposure per buyer that the insurer will cover — set by the insurer based on the buyer's financial strength, credit history, and sector risk. If the insurer declines to set a credit limit for a specific buyer (or reduces an existing limit), the policyholder is no longer covered for that buyer — this can affect the policyholder's willingness to continue trading on credit terms with that buyer.</p>
+                <p class="intro"><strong>Protracted default</strong>: A buyer fails to pay within an agreed waiting period — typically 90–180 days beyond the payment due date — without becoming formally insolvent. Protracted default cover activates when the waiting period expires; the policyholder does not need to wait for formal insolvency proceedings to claim.</p>
+            </div>
+        </section>
+
+        <!-- Section 6: Specialty Liability -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Specialty Liability at Level 7 — D&amp;O, Cyber Liability, and PFAS</h2>
+
+                <h3 class="section-subtitle">D&amp;O Insurance — Side A, B, and C at 994 Depth</h3>
+                <p class="intro">Directors and Officers (D&amp;O) insurance protects the personal assets of directors and officers of companies against claims arising from their management decisions. At Level 7, 994 requires understanding of the three-sided structure of D&amp;O policies.</p>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Side</th>
+                            <th>Insures</th>
+                            <th>Key Coverage Trigger</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Side">Side A</td>
+                            <td data-label="Insures">Personal assets of directors and officers — where the company does not (or cannot) indemnify them</td>
+                            <td data-label="Key Coverage Trigger">Personal liability for wrongful acts; company indemnification is unavailable (company insolvent, or indemnification legally prohibited)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Side">Side B</td>
+                            <td data-label="Insures">The company — reimbursement of the company when it has indemnified directors or officers for covered claims</td>
+                            <td data-label="Key Coverage Trigger">Company has paid D&amp;O claim on behalf of the director/officer</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Side">Side C</td>
+                            <td data-label="Insures">The company entity — securities claims against the company itself (entity coverage)</td>
+                            <td data-label="Key Coverage Trigger">Securities class action or regulatory investigation naming the company</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="intro"><strong>Securities class actions</strong>: The largest D&amp;O claims globally are US securities class actions — brought against companies (and their directors) listed on US exchanges or with US investors, alleging that share price declines resulted from misrepresentation or omission in company disclosures. US class actions can generate claims measured in hundreds of millions of dollars; the US litigation environment (discovery obligations, jury trials, contingency fee plaintiffs' lawyers) drives both frequency and severity. D&amp;O underwriters assess US securities exposure as a primary rating factor.</p>
+
+                <h3 class="section-subtitle">Cyber Liability at 994 Depth</h3>
+                <p class="intro">Cyber liability insurance covers losses arising from cyber events — data breaches, ransomware attacks, network outages, and third-party claims arising from the insured's failure to protect data. At Level 7, 994 requires analysis of the coverage structure and its emerging challenges.</p>
+                <p class="intro"><strong>Key cyber liability coverage components</strong>: Network security liability (third-party claims from individuals whose data was compromised), privacy liability (regulatory fines and penalties from data protection authorities — ICO GDPR fines, FTC enforcement in the US), crisis management costs (forensic investigation, notification costs, public relations), and first-party business interruption (loss of income from the insured's own network outage).</p>
+                <p class="intro"><strong>Cyber accumulation challenge</strong>: Cyber liability underwriters face the same systemic accumulation issue discussed in unit 993 — a single cyber event can simultaneously trigger claims across an entire portfolio. Pricing adequacy for cyber is a current market challenge: the rapid escalation of ransomware frequency in 2020–2022 led to significant market hardening; underwriters are now wrestling with how to model tail risk events (systemic cloud outage, critical infrastructure attack) that have no historical loss data.</p>
+
+                <h3 class="section-subtitle">PFAS — Emerging Long-Tail Accumulation</h3>
+                <p class="intro">Per- and Polyfluoroalkyl Substances (PFAS) — "forever chemicals" — represent a major emerging long-tail liability accumulation issue for specialty liability markets. PFAS have been used in thousands of industrial and consumer products since the 1950s; they are extremely persistent in the environment and have been linked to adverse health effects. US litigation against PFAS manufacturers and users has been generating claims comparable in scale to asbestos litigation, raising questions about historic general liability and pollution policy exposure for decades of prior underwriting. For 994, PFAS represents an example of how environmental and health science can create retroactive underwriting exposures across multiple policy generations — a strategic risk management issue as much as a claims issue.</p>
+            </div>
+        </section>
+
+        <!-- Section 7: Preparation Strategy -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">How to Prepare for 994 When the Sitting Topic Varies</h2>
+                <p class="intro">The sitting-specific nature of 994 requires a different preparation approach from most CII Advanced Diploma units. Candidates should follow this preparation strategy:</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Step 1 — Confirm Your Sitting Topic</h3>
+                        <p>The CII publishes the 994 topic for each examination period on the CII website under the 994 unit listing, typically several months before the sitting. Do not begin specialist market preparation until you have confirmed your topic.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Step 2 — Acquire Topic-Specific Technical Knowledge</h3>
+                        <p>The CII publishes study materials for the announced topic. Supplement this with market-specific sources — Lloyd's market reports, IUA statistics, Lloyd's and IUA market bulletins for the relevant class.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Step 3 — Identify Current Emerging Issues</h3>
+                        <p>Every 994 topic has current market issues that Level 7 answers must address. For energy: transition risk, offshore wind. For construction: supply chain risk, contractor insolvency. For political risk: sanctions developments, ESG. For specialty liability: PFAS accumulation, D&amp;O for ESG claims, cyber pricing cycle.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Step 4 — Practise Level 7 Analytical Structure</h3>
+                        <p>Technical knowledge of the specialist market is the foundation; the Level 7 analytical task — constructing arguments, evaluating tradeoffs, reaching justified conclusions — is what turns that knowledge into an examination performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Assessment -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">How Is 994 Assessed?</h2>
+                <p class="intro">Unit 994 is assessed by written examination at Level 7 — 50 credits. The examination tests specialist market technical knowledge applied at academic analytical standard. A Level 7 994 answer structure: (1) Define key concepts with technical precision — not generic insurance definitions, but specialist market definitions with correct technical values (EML, OEE, DSU indemnity period, D&amp;O Side A). (2) Compare structures or approaches — not just describe options. (3) Evaluate advantages and limitations in the context of the specific market dynamics, current pricing cycle, and emerging issues. (4) Reference current market developments or case studies that demonstrate live analytical engagement with the specialist area. (5) Reach a clear conclusion that follows from the analysis.</p>
+
+                <div class="warning-box">
+                    <h3>Common Level 7 Failures in 994</h3>
+                    <p>Describing what a CAR policy covers without evaluating the risk allocation implications of different JCT contract forms. Explaining what upstream energy covers without analysing the EML methodology or the OPA '90 liability framework. Listing D&amp;O Side A, B, and C without evaluating how the three sides interact in an insolvency scenario where Side A coverage is most critical. At Level 7, description of product features does not demonstrate the analytical standard required.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: 994 in the Pathway -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">How Does 994 Fit into the CII Advanced Diploma?</h2>
+                <p class="intro">Unit 994 sits alongside <a href="/993-assignment-help">993 strategic risk management assignment help</a> and <a href="/991-assignment-help">991 London market specialisation assignment help</a> as a Level 7, 50-credit optional unit within the CII Advanced Diploma in Insurance. Candidates in specialist market roles — energy underwriters, construction underwriters, political risk brokers, specialty liability practitioners — find 994 the most directly relevant Advanced Diploma optional unit for their professional context. Combined with a 30-credit core unit such as <a href="/960-assignment-help">960 advanced underwriting assignment help</a>, 994 provides substantial credit contribution to ACII eligibility from two units.</p>
+                <p class="intro">Unit 994's sitting-specific structure means preparation is highly focused — candidates commit to one specialist market area rather than surveying the full range. This focus also means that a candidate with deep expertise in, for example, energy underwriting has a significant advantage when the energy topic is announced — expertise becomes directly examinable at Level 7 depth.</p>
+                <p class="intro">For candidates seeking <a href="/993-assignment-help">993 strategic risk management assignment help</a> or <a href="/lm3-assignment-help">LM3 London Market Broker assignment help</a> as alternative optional units, see those pages for a comparison of which unit best fits different professional backgrounds. For the full Advanced Diploma pathway, see <a href="/cii-advanced-diploma-in-insurance">CII Advanced Diploma in Insurance assignment help</a>.</p>
+            </div>
+        </section>
+
+        <!-- Section 10: FAQs -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions about 994</h2>
+
+                <div class="faq-item">
+                    <h4>How do I know which specialist market 994 will cover in my sitting?</h4>
+                    <p>The CII announces the 994 topic area for each examination sitting period several months in advance. Candidates should check the CII website under the 994 unit listing for their specific sitting. The topic is confirmed well enough in advance to allow focused preparation — do not assume continuity from one sitting period to the next, as the topic changes. Our support service is available for any specialist market topic; contact us once you have confirmed your sitting's announced topic.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What are the most commonly examined 994 topics?</h4>
+                    <p>Based on CII examination history, energy insurance (upstream and downstream), construction insurance, and political risk/trade credit have been among the most frequently examined topics for unit 994. However, specialty liability, marine, and aviation have also been examined in different sitting periods. The specific topic varies between sittings, so candidates must always verify directly with the CII for their specific examination period — never rely on assumptions based on previous sitting topics.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>How hard is 994?</h4>
+                    <p>Unit 994 is among the hardest CII units for most candidates because it combines specialist technical knowledge — which is genuinely deep and not intuitively obvious to candidates without direct market experience — with Level 7 analytical writing requirements. Candidates working in the relevant specialist market have a significant content advantage but still need structured preparation to reach the academic analytical standard. Candidates from non-specialist backgrounds face the dual challenge of acquiring the technical knowledge and developing the analytical writing technique simultaneously.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>How should I structure a Level 7 994 answer?</h4>
+                    <p>A 994 Level 7 answer requires: (1) precise definition of key specialist concepts with correct technical values (not paraphrased descriptions); (2) comparison of structures or approaches rather than listing them separately; (3) evaluation of advantages and limitations in the context of current market dynamics; (4) reference to current market developments, case studies, or regulatory changes demonstrating live engagement with the specialist area; and (5) a clear, reasoned conclusion. Answers that describe how a specialist insurance product works without analysing its market position, pricing challenges, capacity constraints, or strategic implications typically fall short of the Level 7 standard.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Can I get help with 994 regardless of which topic my sitting covers?</h4>
+                    <p>Yes. Our CII assignment help service covers all 994 specialist market topics — energy (upstream and downstream), construction (CAR, JCT, DSU, surety), political risk, trade credit, specialty liability (D&amp;O, cyber), marine, and aviation. Once you have confirmed your sitting's topic with the CII, contact us with the specific focus area and we will match you with a specialist who has direct market expertise in that area for targeted Level 7 preparation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Pages -->
+        <section>
+            <div class="container">
+                <div class="related-posts">
+                    <h3>Related Qualification and Unit Support</h3>
+                    <ul>
+                        <li><a href="/cii-advanced-diploma-in-insurance">Advanced Diploma in Insurance — All Units</a></li>
+                        <li><a href="/991-assignment-help">991 London Market Specialisation — Assignment Help</a></li>
+                        <li><a href="/993-assignment-help">993 Strategic Risk Management — Assignment Help</a></li>
+                        <li><a href="/990-assignment-help">990 Insurance Corporate Management — Assignment Help</a></li>
+                        <li><a href="/lm3-assignment-help">LM3 London Market Broker — Assignment Help</a></li>
+                        <li><a href="/cii-assignment-help">CII Assignment Help — All Qualification Levels</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Need Support With 994 Insurance Market Specialisation?</h2>
+                <p>Specialist market expertise across all 994 topic areas — energy (upstream/downstream), construction (CAR, JCT, DSU), political risk, trade credit, D&amp;O, cyber, and PFAS. Confirm your sitting topic with the CII and we will match you with a specialist for targeted Level 7 preparation.</p>
+                <a href="/#contact" class="cta-button">Get Your Free Quote</a>
+                <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20994%20Insurance%20Market%20Specialisation." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CII Assignment Help. Supporting insurance professionals worldwide.</p>
+            <p><a href="/">Home</a> | <a href="/#services">Services</a> | <a href="/#contact">Contact</a></p>
+        </div>
+    </footer>
+    <WhatsAppButton />
+
+    <StickyCTA waMessage="Hello! I need help with 994 Insurance Market Specialisation." />
+
+    <script is:inline>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

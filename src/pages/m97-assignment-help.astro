@@ -1,0 +1,989 @@
+---
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import TawkToWidget from '../components/TawkToWidget.astro';
+import StickyCTA from '../components/StickyCTA.astro';
+
+const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
+const canonicalUrl = new URL(Astro.url.pathname, site);
+const siteUrl = site.origin;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPDFCLTRSC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YPDFCLTRSC');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="M97 Reinsurance assignment help for CII Diploma in Insurance. Written exam support covering proportional and non-proportional treaty structures, burning cost, rate on line, facultative reinsurance and pricing methodology at RQF Level 4.">
+    <meta name="keywords" content="M97 Reinsurance, M97 assignment help, CII Diploma Reinsurance, burning cost, rate on line, quota share, excess of loss, M97 written exam, DipCII reinsurance unit">
+    <link rel="canonical" href={canonicalUrl.href} />
+    <title>M97 Reinsurance Assignment Help — CII Diploma in Insurance | CII Assignment Help</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content={canonicalUrl.href}>
+    <meta property="og:title" content="M97 Reinsurance Assignment Help — CII Diploma in Insurance | CII Assignment Help">
+    <meta property="og:description" content="M97 Reinsurance assignment help for CII Diploma in Insurance. Written exam support covering proportional and non-proportional treaty structures, burning cost, rate on line, facultative reinsurance and pricing methodology at RQF Level 4.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content={canonicalUrl.href}>
+    <meta property="twitter:title" content="M97 Reinsurance Assignment Help — CII Diploma in Insurance | CII Assignment Help">
+    <meta property="twitter:description" content="M97 Reinsurance assignment help for CII Diploma in Insurance. Written exam support covering proportional and non-proportional treaty structures, burning cost, rate on line, facultative reinsurance and pricing methodology at RQF Level 4.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
+    <link rel="shortcut icon" href="/favicon.ico?v=4">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            font-size: 1.0625rem;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #1e3a5f;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+            z-index: 101;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #ffffff;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .page-hero {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 4px solid #ffd700;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            color: #ffd700;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .breadcrumb a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            opacity: 0.8;
+        }
+
+        .cta-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: white;
+            padding: 0.9rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0.5rem;
+        }
+
+        .cta-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+            background: #20BA5A;
+        }
+
+        .mid-cta {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .mid-cta h3 {
+            color: #1e3a5f;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .mid-cta p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #0d1f35;
+            padding: 0.8rem 1rem;
+            padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 0px));
+            text-align: center;
+            z-index: 99;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+        }
+
+        .sticky-cta a {
+            display: inline-block;
+            background: #ffd700;
+            color: #0d1f35;
+            padding: 0.7rem 2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            margin: 0 0.3rem;
+        }
+
+        .sticky-cta .wa-sticky {
+            background: #25D366;
+            color: white;
+        }
+
+        main {
+            background: white;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #1e3a5f;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.5rem;
+            color: #2c5282;
+            margin: 2rem auto 1rem;
+            font-weight: 600;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .section-subtitle-sm {
+            font-size: 1.2rem;
+            color: #2c5282;
+            margin: 1.5rem auto 0.8rem;
+            font-weight: 600;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+            max-width: 72ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .intro a {
+            color: #1e3a5f;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #ffd700;
+            transition: color 0.3s;
+        }
+
+        .intro a:hover {
+            color: #ffd700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            border-left: 5px solid #1e3a5f;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            max-width: 800px;
+        }
+
+        .highlight-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .highlight-box p {
+            color: #444;
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box p,
+        .info-box p,
+        .faq-item p {
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box {
+            background: #fff8e1;
+            border-left: 5px solid #ffd700;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            max-width: 800px;
+        }
+
+        .warning-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box {
+            background: #f0f7ff;
+            border-left: 5px solid #2c5282;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            max-width: 800px;
+        }
+
+        .info-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box p {
+            color: #444;
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .modules-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            background: white;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .modules-table thead {
+            background: #1e3a5f;
+            color: white;
+        }
+
+        .modules-table th {
+            padding: 1.1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .modules-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .modules-table tbody tr:hover {
+            background: #f8f9fa;
+            transition: background 0.2s;
+        }
+
+        .modules-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        .info-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .related-posts {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .related-posts h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+        }
+
+        .related-posts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .related-posts li {
+            margin: 0.8rem 0;
+        }
+
+        .related-posts a {
+            color: #2c5282;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .related-posts a:hover {
+            color: #ffd700;
+        }
+
+        .related-posts a:before {
+            content: "→ ";
+            color: #1e3a5f;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            color: #ffffff;
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e3a5f;
+            padding: 1.1rem 2.8rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+        }
+
+        footer {
+            background: #1e3a5f;
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            opacity: 0.9;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1.5rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h4 {
+            color: #1e3a5f;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .faq-item p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1e3a5f;
+                padding: 1rem;
+                gap: 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                z-index: 100;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.7rem 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .page-hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 1.7rem;
+            }
+
+            .modules-table {
+                font-size: 0.85rem;
+            }
+
+            .sticky-cta {
+                display: block;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .page-hero {
+                padding: 3rem 0;
+            }
+
+            .page-hero h1 {
+                font-size: 1.7rem;
+            }
+
+            section {
+                padding: 2.5rem 0;
+            }
+        }
+
+        .infographic-frame { max-width: 800px; margin: 2rem auto; text-align: center; }
+        .infographic-frame img { max-width: 100%; height: auto; border-radius: 8px; }
+        .infographic-caption { font-size: 0.9rem; color: #666; margin-top: 0.5rem; font-style: italic; }
+    </style>
+    <TawkToWidget />
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">CII Assignment Help</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#qualifications">Qualifications</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>M97 Reinsurance Assignment Help</h1>
+            <p class="subtitle">CII Diploma in Insurance — Written Exam Support at RQF Level 4</p>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/cii-assignment-help">CII Assignment Help</a> / <a href="/CII-Diploma-in-Insurance">Diploma in Insurance</a> / M97 Reinsurance
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Section 1: What is M97 -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">What Is M97 Reinsurance?</h2>
+                <p class="intro">M97 Reinsurance is a 30-credit Level 4 written exam unit within the <a href="/CII-Diploma-in-Insurance">CII Diploma in Insurance</a> — the highest credit value of any optional Diploma unit. The written exam requires structured analytical answers on reinsurance structures, pricing methodology, and the global reinsurance market. M97 is taken by Diploma candidates specialising in reinsurance, underwriting, or broker roles involving reinsurance placement. The unit's 30-credit weight reflects its technical depth: candidates must understand and apply the mechanics of proportional and non-proportional treaty structures, calculate burning cost from loss data, derive rate on line and payback period, and distinguish facultative from treaty reinsurance with specific use cases. Approximately 120–150 study hours are required to reach exam standard, with the most consistent study feedback indicating that candidates underestimate the time needed to develop numerical facility with reinsurance pricing — reading the concepts is insufficient; calculating from data is what the exam demands.</p>
+
+                <figure class="infographic-frame">
+                    <img src="/infographics/m97-reinsurance-types.svg" alt="Types of Reinsurance — M97 CII Diploma" loading="lazy" />
+                    <figcaption class="infographic-caption">The main reinsurance structures covered in M97 — proportional (quota share and surplus) and non-proportional (risk XL, cat XL, aggregate XL, stop loss) — and their primary purposes in a cedant's reinsurance programme.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Section 2: Syllabus and Five Functions -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">What Does M97 Cover? — The Five Functions of Reinsurance</h2>
+                <p class="intro">M97 covers the full structure of the reinsurance market at Diploma practice level: why reinsurance exists, proportional treaty mechanisms (quota share and surplus), non-proportional treaty mechanisms (risk XL, cat XL, aggregate XL, stop loss), facultative reinsurance, pricing methodology (burning cost and rate on line), the global reinsurance market, retrocession, and credit risk management. Practice level in M97 means the candidate must explain mechanics with numerical examples, not merely name the structures.</p>
+
+                <h3 class="section-subtitle">Why Reinsurance Exists — The Five Functions</h3>
+                <p class="intro">Reinsurance serves five distinct purposes. M97 requires candidates to articulate all five with specific application, not list them as headings.</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>1. Capital Protection</h3>
+                        <p>An insurer writing a £50 million property risk retains capital against the full exposure on its balance sheet. Reinsurance transfers part of that exposure, releasing tied-up capital for deployment elsewhere — improving return on equity for the cedant.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>2. Capacity Provision</h3>
+                        <p>Without reinsurance, an insurer can only write risks up to its net retention limit. Reinsurance enables writing risks that individually exceed the insurer's own capacity — particularly significant for large commercial property, marine hull, and offshore energy risks.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>3. Result Stabilisation</h3>
+                        <p>A catastrophe year without adequate reinsurance could eliminate an insurer's annual profit or threaten solvency. Reinsurance smooths the loss ratio across years, protecting the insurer's financial stability in catastrophe years.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>4. Spread of Risk</h3>
+                        <p>Reinsurers accept business from cedants across multiple countries, classes, and lines of business. This geographic and class diversification gives the reinsurer a more stable overall portfolio — individual country or class catastrophes are offset by uncorrelated results elsewhere.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>5. Expertise Acquisition</h3>
+                        <p>Specialist reinsurers accumulate underwriting data, actuarial loss experience, and risk assessment expertise across global markets. The cedant accesses this knowledge through the reinsurance relationship.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Proportional Treaty -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Proportional Treaty Reinsurance — Quota Share and Surplus</h2>
+                <p class="intro">Both quota share and surplus are proportional treaty structures — the premium and losses are shared between cedant and reinsurer in a defined proportion. They differ fundamentally in how that proportion is determined for each risk.</p>
+
+                <h3 class="section-subtitle">Quota Share</h3>
+                <p class="intro"><strong>Quota share</strong>: The cedant cedes a fixed percentage of every risk in the defined class. That percentage applies to every risk in the class — large, small, profitable, unprofitable alike. A 30% quota share means: the cedant retains 70% of the premium and pays 70% of every loss; the reinsurer receives 30% of the premium and pays 30% of every loss. The <strong>ceding commission</strong> paid by the reinsurer to the cedant represents the reinsurer's contribution to the cedant's acquisition costs. Main use cases: new classes of business where the cedant lacks sufficient loss experience to price with confidence; classes with volatile historical results.</p>
+
+                <h3 class="section-subtitle">Surplus Treaty</h3>
+                <p class="intro"><strong>Surplus treaty</strong>: The cedant retains a fixed monetary amount per risk — the "line" — typically set at the cedant's comfortable net retention for that class. The surplus above that line, up to a maximum number of surplus lines, is ceded to the treaty. The maximum cession per risk is the number of surplus lines multiplied by the cedant's retention line.</p>
+
+                <div class="highlight-box">
+                    <h3>Surplus Treaty — Worked Example</h3>
+                    <p>Cedant's line = £500,000. Treaty provides 9 surplus lines = maximum cession of 9 × £500,000 = £4,500,000.</p>
+                    <p>For a risk with a total sum insured of £2,000,000: cedant retains £500,000 (25% of the risk); cedes £1,500,000 (75%) to the surplus treaty.</p>
+                    <p>For a risk with a total sum insured of £400,000: cedant retains the entire risk (below the line — no cession).</p>
+                    <p>For a risk with a total sum insured of £5,500,000: cedant retains £500,000 (9.1%); cedes £4,500,000 (81.8%) to the surplus treaty — the remaining £500,000 must be retained net or placed facultatively.</p>
+                </div>
+
+                <p class="intro">Surplus is more flexible than quota share: small risks below the line are retained in full; large risks are ceded in proportion to their size above the line. The premium and loss proportions vary by individual risk, reflecting the cedant's relative exposure on each.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Non-Proportional Treaty -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Non-Proportional Treaty Reinsurance — Excess of Loss</h2>
+                <p class="intro">Non-proportional reinsurance responds to the <em>amount</em> of the loss rather than a proportion of the risk. The cedant bears all losses up to a retention; the reinsurer pays the excess above that retention up to a defined limit. Premium and loss are not shared in the same proportion — the premium is separately calculated and fixed.</p>
+
+                <h3 class="section-subtitle">Risk XL, Cat XL, Aggregate XL, and Stop Loss</h3>
+                <p class="intro"><strong>Risk XL (per-risk excess of loss)</strong>: The reinsurer pays losses on any single risk that exceed the cedant's retention, up to the reinsurance limit. Structure is expressed as "limit xs retention." Example: £1m xs £500k means the reinsurer pays the portion of any single-risk loss between £500,000 and £1,500,000. Risk XL protects the cedant against large individual losses on single risks — it does not protect against an accumulation of many smaller losses.</p>
+                <p class="intro"><strong>Cat XL (catastrophe excess of loss)</strong>: Per-event cover. The reinsurer pays the aggregate of all losses from a single catastrophe event that exceed the cedant's event retention, up to the cat XL limit. Catastrophe events must be defined precisely in the treaty — typically using hours clauses (72 hours for windstorm; 168 hours for flood). <strong>Reinstatement provisions</strong> are a critical cat XL feature: after the reinsurer pays a cat XL loss, the treaty limit is reinstated — usually one automatic reinstatement at 100% additional premium or at pro-rata additional premium.</p>
+                <p class="intro"><strong>Aggregate XL</strong>: The reinsurer pays when the cedant's aggregate losses for a defined class across the policy year exceed an annual retention, up to a limit. This protects against an accumulation of attritional losses in a bad year — multiple medium-sized losses each below the risk XL retention.</p>
+                <p class="intro"><strong>Stop loss</strong>: The reinsurer pays when the cedant's loss ratio for a defined class exceeds a specified level — for example, the reinsurer pays losses above a 90% loss ratio up to a 120% loss ratio. Stop loss provides direct protection against an adverse underwriting year. In practice it is rarely used in commercial property and liability lines due to moral hazard concerns.</p>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Structure</th>
+                            <th>Basis</th>
+                            <th>Retention Applied To</th>
+                            <th>Primary Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Structure">Quota share</td>
+                            <td data-label="Basis">Proportional</td>
+                            <td data-label="Retention Applied To">Each risk (fixed %)</td>
+                            <td data-label="Primary Purpose">Capacity and capital relief — broad class basis</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Structure">Surplus treaty</td>
+                            <td data-label="Basis">Proportional</td>
+                            <td data-label="Retention Applied To">Each risk (variable by size vs line)</td>
+                            <td data-label="Primary Purpose">Capacity for large risks; retains small risks in full</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Structure">Risk XL</td>
+                            <td data-label="Basis">Non-proportional</td>
+                            <td data-label="Retention Applied To">Single-risk loss</td>
+                            <td data-label="Primary Purpose">Large individual loss protection</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Structure">Cat XL</td>
+                            <td data-label="Basis">Non-proportional</td>
+                            <td data-label="Retention Applied To">Per-event aggregate</td>
+                            <td data-label="Primary Purpose">Catastrophe accumulation protection</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Structure">Aggregate XL</td>
+                            <td data-label="Basis">Non-proportional</td>
+                            <td data-label="Retention Applied To">Annual aggregate losses</td>
+                            <td data-label="Primary Purpose">Attritional loss accumulation protection</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Structure">Stop loss</td>
+                            <td data-label="Basis">Non-proportional</td>
+                            <td data-label="Retention Applied To">Annual loss ratio</td>
+                            <td data-label="Primary Purpose">Underwriting year result protection</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 5: Facultative Reinsurance -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Facultative Reinsurance — When Treaty Is Not Enough</h2>
+                <p class="intro">Facultative reinsurance operates on a per-risk basis. The cedant has the choice to cede or retain each individual risk; the reinsurer has the right to accept or decline each individual risk presented. Neither party is under any automatic obligation — there is no class-level commitment on either side. This distinguishes facultative from all treaty forms, where the reinsurer is automatically obligated to accept every risk within the defined class and parameters.</p>
+
+                <h3 class="section-subtitle">Specific Use Cases for Facultative Placement</h3>
+                <ul style="max-width: 72ch; margin: 1rem auto; padding-left: 1.5rem; color: #555; line-height: 1.8;">
+                    <li>Risks exceeding the treaty capacity limit — the risk sum insured exceeds the maximum available under the treaty; facultative reinsurance bridges the gap</li>
+                    <li>Risks excluded from the treaty class definition — chemical processing, nuclear, aviation war risks — where the treaty excludes the risk type</li>
+                    <li>Risks where the cedant wants to reduce its net retention below the treaty retention level — high-hazard individual risks</li>
+                    <li>Situations where the cedant wants an independent facultative reinsurer's rating opinion as a second underwriting view</li>
+                </ul>
+
+                <p class="intro"><strong>Obligatory-facultative (fac-oblig)</strong> is a hybrid structure: the cedant is obligated to offer the reinsurer every risk meeting defined criteria; the reinsurer retains the right to accept or decline each individual risk. Used where the cedant needs guaranteed access to a reinsurer for a defined risk class, but the reinsurer is not willing to commit to an automatic obligatory treaty.</p>
+
+                <div class="highlight-box">
+                    <h3>Key M97 Distinction — Treaty vs Facultative</h3>
+                    <p>Treaty reinsurance provides automatic, predictable capacity for an entire class — the cedant knows the coverage position on every risk bound without individual negotiation. Facultative reinsurance provides maximum flexibility for individual risks at the cost of certainty — every risk requires separate placement, and the cedant cannot bind the original risk until facultative placement is confirmed.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Pricing -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Reinsurance Pricing — Burning Cost and Rate on Line</h2>
+                <p class="intro">Reinsurance pricing is one of the most technically demanding M97 topics and is explicitly tested in every examination sitting. M97 requires candidates to perform the calculation, not describe the method — worked examples with specific figures are the expected answer format for pricing questions.</p>
+
+                <h3 class="section-subtitle">Burning Cost Method — Worked Example</h3>
+                <p class="intro">The burning cost method prices risk XL layers from historical loss data. It is the standard pricing approach for risk excess of loss where sufficient historical loss data exists.</p>
+
+                <div class="info-box">
+                    <h3>Burning Cost Formula</h3>
+                    <p>Burning cost rate = (Total recoverable losses to the layer over the study period ÷ Total subject premium earned over the study period) × Loading factor</p>
+                    <p>A risk XL reinsurer pricing a £1m xs £500k property layer needs a minimum of 5 years of loss data — ideally 7–10 years to capture the impact of rare large losses.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Burning Cost — Worked Example (£1m xs £500k Layer)</h3>
+                    <p>Past 5 years of loss data: Year 1: £0 recoverable. Year 2: £800,000 total loss → recoverable to layer: £300,000. Year 3: £0 recoverable. Year 4: £1,200,000 total loss → recoverable: £700,000 (layer pays £500k to £1.5m; £1,200,000 − £500,000 = £700,000). Year 5: £0 recoverable.</p>
+                    <p>Total recoverable over 5 years: £1,000,000. Average annual recoverable: £1,000,000 ÷ 5 = £200,000.</p>
+                    <p>Subject premium: £800,000 per year average. Burning cost = £200,000 ÷ £800,000 = 25%.</p>
+                    <p>Apply loading factor of 1.3: Reinsurance rate = 25% × 1.3 = <strong>32.5% of subject premium</strong>.</p>
+                </div>
+
+                <h3 class="section-subtitle">Rate on Line and Payback Period</h3>
+                <p class="intro">Rate on line is the standard pricing metric for cat XL layers and other high-severity, low-frequency reinsurance covers where burning cost data is sparse or unreliable.</p>
+
+                <div class="info-box">
+                    <h3>Rate on Line Formula</h3>
+                    <p>Rate on line (%) = (Annual reinsurance premium ÷ Reinsurance limit) × 100</p>
+                    <p>Payback period = Reinsurance limit ÷ Annual reinsurance premium (expressed in years)</p>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Rate on Line — Worked Example</h3>
+                    <p>Annual reinsurance premium for a £10 million cat XL layer: £500,000.</p>
+                    <p>Rate on line = £500,000 ÷ £10,000,000 × 100 = <strong>5%</strong>.</p>
+                    <p>Payback period = £10,000,000 ÷ £500,000 = <strong>20 years</strong>.</p>
+                    <p>The payback period represents the theoretical number of years required for the reinsurer to accumulate enough premium income to recover the full limit from one loss event. A payback period of 20 years implies the reinsurer's pricing assumption is that the layer will be hit to its full limit, on average, once every 20 years.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Assessment and Answer Structure -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">How Is M97 Assessed? — Written Exam Format</h2>
+                <p class="intro">M97 is assessed by written examination — not MCQ. As the highest-credit optional Diploma unit at 30 credits, the written exam is longer and more demanding than 20-credit Diploma units such as <a href="/m80-assignment-help">M80</a> or <a href="/m85-assignment-help">M85</a>. The exam combines short-answer questions (approximately 10–15 marks) requiring precise definition and mechanical explanation, with extended answer questions (25 marks) requiring analytical comparison of structures, programme design recommendations, and numerical calculations with worked steps shown.</p>
+                <p class="intro">The indicative pass mark for M97 is approximately 50% — confirm against current CII guidance. Study hours: 120–150, reflecting the 30-credit depth requirement. The most consistent tutor feedback is that candidates underestimate time needed for reinsurance pricing mechanics — burning cost, rate on line, and payback period require calculation practice with numerical examples, not just reading the formulas.</p>
+
+                <h3 class="section-subtitle">How to Structure Your M97 Written Answers</h3>
+                <p class="intro">M97 requires analytical answers, not descriptions. The distinction between an inadequate answer and a competent one is specific: "describe quota share" (inadequate) versus "evaluate when quota share is preferable to surplus for a cedant with a homogeneous portfolio of small commercial risks where administrative simplicity is a priority" (correct level).</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Step 1: Define Precisely</h3>
+                        <p>Use the correct technical terminology: cedant, retention, cession, proportional, non-proportional, attachment point, reinstatement.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Step 2: Explain Mechanics</h3>
+                        <p>Include specific values or a brief numerical example — quota share: state the proportion and show how premium and loss split; surplus: state the line and show how cession varies by risk size; XL: state the retention and limit structure and show how a specific loss is allocated.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Step 3: Evaluate</h3>
+                        <p>Advantages and limitations — quota share: administratively simple, broad capacity support, but inflexible (cedes profitable small risks); surplus: flexible, retains small risks in full, but complex to administer.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Step 4: Connect to Scenario</h3>
+                        <p>If the question describes a specific cedant or risk profile, the evaluation must refer to that profile. Generic answers that do not engage with the scenario will not achieve the available marks for application.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Diploma Pathway -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">M97 in the CII Diploma in Insurance Pathway</h2>
+                <p class="intro">M97 is one of 18 optional units within the <a href="/CII-Diploma-in-Insurance">CII Diploma in Insurance</a>. With 30 credits, it carries more credit than any other optional Diploma unit and reflects a specialist qualification trajectory. Candidates who complete M97 typically progress to the CII Advanced Diploma in Insurance. For broker-side candidates involved in reinsurance placement, M97 is direct preparation for the 930 Advanced Insurance Broking unit, which covers reinsurance broking and programme placement strategy at Advanced Diploma level.</p>
+                <p class="intro">M97 also connects closely to <a href="/m80-assignment-help">M80 Underwriting Practice</a> at Diploma level — M80 covers facultative reinsurance from the direct underwriter's perspective, while M97 extends the reinsurance framework to treaty structures, pricing methodology, and the global market. Candidates studying both M97 and M80 develop the most complete Diploma-level understanding of the reinsurance relationship from both the cedant and the reinsurer perspective.</p>
+            </div>
+        </section>
+
+        <!-- Section 9: FAQs -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions about M97</h2>
+
+                <div class="faq-item">
+                    <h4>How hard is M97 compared to other Diploma optional units?</h4>
+                    <p>M97 is widely regarded as the most technically demanding optional Diploma unit. It carries 30 credits — 50% more than M80 or M85 — and the written exam is correspondingly longer and more rigorous. The technical difficulty is twofold: candidates must understand the conceptual architecture of reinsurance structures (five treaty types, facultative, retrocession) and demonstrate numerical facility with reinsurance pricing calculations (burning cost, rate on line, payback period). Candidates without a reinsurance background typically need 120 hours of preparation or more to reach exam standard on the pricing methodology alone.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>How long does M97 take to study?</h4>
+                    <p>The CII recommends approximately 120–150 study hours for a 30-credit unit. Most M97 candidates spread this across 12–20 weeks. The most consistent tutoring feedback is that candidates underestimate the time required to develop competence with reinsurance pricing mechanics. Burning cost calculation from multi-year loss data, rate on line derivation, and payback period interpretation require repeated numerical practice — not just reading the formulas. Allocate at least 20–25 study hours specifically to pricing methodology, working through multiple calculation examples with varying data sets before the examination.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What is the difference between quota share and surplus reinsurance?</h4>
+                    <p>Both are proportional treaties — premium and losses are shared between cedant and reinsurer in a defined proportion — but the critical difference is how that proportion is determined for each risk. In quota share, the cedant cedes the same fixed percentage of every risk in the class — a 30% quota share applies 30%/70% to every risk regardless of size or quality. In surplus, the cedant retains each risk up to a defined monetary line and only cedes the surplus above that line — small risks below the line are retained in full, while large risks are ceded proportionally based on their size relative to the line. Surplus is therefore more flexible and more suitable for cedants with a wide range of risk sizes; quota share is simpler to administer and more appropriate for homogeneous portfolios or new classes where the cedant needs broad reinsurance support.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What written answer structure does M97 require?</h4>
+                    <p>M97 written answers require the following structure in sequence: define the concept precisely using correct reinsurance terminology; explain the mechanics with a brief numerical example (show the actual numbers — quota share premium split, surplus cession calculation, risk XL loss allocation); evaluate the advantages and limitations of the structure in the context described; connect the analysis to the specific scenario in the question. Purely descriptive answers score at a low level. Answers that include a worked numerical example and an evaluation connected to the scenario context achieve the required M97 standard.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Is M97 relevant if I work in broking rather than underwriting?</h4>
+                    <p>M97 is highly relevant for reinsurance brokers, who design and place reinsurance programmes on behalf of cedants. The M97 content on treaty structure mechanics, pricing methodology, and programme design directly applies to reinsurance broking practice. Understanding burning cost and rate on line analysis is essential for a broker advising a cedant on whether a proposed reinsurance programme offers fair value. Candidates working for wholesale broking firms, London Market specialists, or Bermuda-based intermediaries frequently choose M97 as preparation for the 930 Advanced Insurance Broking unit at Advanced Diploma level.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Pages -->
+        <section>
+            <div class="container">
+                <div class="related-posts">
+                    <h3>Related Qualification and Unit Support</h3>
+                    <ul>
+                        <li><a href="/CII-Diploma-in-Insurance">CII Diploma in Insurance — All Core and Optional Units</a></li>
+                        <li><a href="/m05-assignment-help">M05 Insurance Law — Assignment Help</a></li>
+                        <li><a href="/m92-assignment-help">M92 Insurance Business and Finance — Assignment Help</a></li>
+                        <li><a href="/530-assignment-help">530 Economics and Business — Assignment Help</a></li>
+                        <li><a href="/m80-assignment-help">M80 Underwriting Practice — Assignment Help</a></li>
+                        <li><a href="/m85-assignment-help">M85 Claims Practice — Assignment Help</a></li>
+                        <li><a href="/993-assignment-help">993 Strategic Risk Management — Assignment Help</a></li>
+                        <li><a href="/cii-assignment-help">CII Assignment Help — All Qualification Levels</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Need Support With M97 Reinsurance?</h2>
+                <p>Structured written exam preparation covering treaty structures, facultative reinsurance, burning cost calculations, rate on line analysis, and payback period interpretation. Worked examples and answer templates for M97 extended questions.</p>
+                <a href="/#contact" class="cta-button">Get Your Free Quote</a>
+                <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20M97%20Reinsurance." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CII Assignment Help. Supporting insurance professionals worldwide.</p>
+            <p><a href="/">Home</a> | <a href="/#services">Services</a> | <a href="/#contact">Contact</a></p>
+        </div>
+    </footer>
+    <WhatsAppButton />
+
+    <StickyCTA waMessage="Hello! I need help with M97 Reinsurance." />
+
+    <script is:inline>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

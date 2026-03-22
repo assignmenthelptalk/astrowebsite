@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" role="img" aria-labelledby="if1-principles-title">
+  <title id="if1-principles-title">Six Principles of Insurance Law — IF1 CII Certificate in Insurance</title>
+
+  <!-- Background -->
+  <rect width="800" height="520" fill="#F8F9FC"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="800" height="60" fill="#1B3A6B"/>
+  <text x="400" y="22" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#C9A84C" font-weight="600" letter-spacing="1">IF1 — INSURANCE: LEGAL AND REGULATORY</text>
+  <text x="400" y="44" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#FFFFFF" font-weight="700">The Six Principles of Insurance Law</text>
+
+  <!-- Divider line -->
+  <line x1="40" y1="70" x2="760" y2="70" stroke="#E8ECF4" stroke-width="1"/>
+
+  <!-- === ROW 1 === -->
+
+  <!-- Card 1: Utmost Good Faith -->
+  <rect x="30" y="78" width="228" height="130" rx="6" fill="#FFFFFF" stroke="#E8ECF4" stroke-width="1.5"/>
+  <rect x="30" y="78" width="228" height="36" rx="6" fill="#1B3A6B"/>
+  <rect x="30" y="100" width="228" height="14" fill="#1B3A6B"/>
+  <circle cx="55" cy="96" r="13" fill="#C9A84C"/>
+  <text x="55" y="101" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#FFFFFF" font-weight="700">1</text>
+  <text x="168" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="700">Utmost Good Faith</text>
+  <text x="144" y="128" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C" font-style="italic">Uberrimae fidei</text>
+  <text x="144" y="147" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">Both parties must disclose all</text>
+  <text x="144" y="161" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">material facts without misrepresentation</text>
+  <line x1="48" y1="172" x2="240" y2="172" stroke="#E8ECF4" stroke-width="1"/>
+  <text x="48" y="184" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#1B3A6B" font-weight="600">Statute:</text>
+  <text x="100" y="184" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#2C2C2C">Consumer Insurance Act 2012</text>
+  <text x="48" y="197" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#2C2C2C">Insurance Act 2015 (business)</text>
+
+  <!-- Card 2: Insurable Interest -->
+  <rect x="286" y="78" width="228" height="130" rx="6" fill="#FFFFFF" stroke="#E8ECF4" stroke-width="1.5"/>
+  <rect x="286" y="78" width="228" height="36" rx="6" fill="#1B3A6B"/>
+  <rect x="286" y="100" width="228" height="14" fill="#1B3A6B"/>
+  <circle cx="311" cy="96" r="13" fill="#C9A84C"/>
+  <text x="311" y="101" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#FFFFFF" font-weight="700">2</text>
+  <text x="400" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="700">Insurable Interest</text>
+  <text x="400" y="128" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">Legal/financial relationship with subject</text>
+  <text x="400" y="142" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">matter — benefit from preservation,</text>
+  <text x="400" y="156" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">loss from damage. Required for validity.</text>
+  <line x1="304" y1="172" x2="496" y2="172" stroke="#E8ECF4" stroke-width="1"/>
+  <text x="304" y="184" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#1B3A6B" font-weight="600">Statute:</text>
+  <text x="356" y="184" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#2C2C2C">Life Assurance Act 1774</text>
+  <text x="304" y="197" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#2C2C2C">Marine Insurance Act 1906 s.5</text>
+
+  <!-- Card 3: Indemnity -->
+  <rect x="542" y="78" width="228" height="130" rx="6" fill="#FFFFFF" stroke="#E8ECF4" stroke-width="1.5"/>
+  <rect x="542" y="78" width="228" height="36" rx="6" fill="#1B3A6B"/>
+  <rect x="542" y="100" width="228" height="14" fill="#1B3A6B"/>
+  <circle cx="567" cy="96" r="13" fill="#C9A84C"/>
+  <text x="567" y="101" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#FFFFFF" font-weight="700">3</text>
+  <text x="656" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="700">Indemnity</text>
+  <text x="656" y="126" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C" font-style="italic">"No better, no worse"</text>
+  <text x="656" y="142" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">Restore to pre-loss position.</text>
+  <text x="656" y="156" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">No profit from a claim.</text>
+  <line x1="560" y1="172" x2="752" y2="172" stroke="#E8ECF4" stroke-width="1"/>
+  <text x="560" y="184" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#1B3A6B" font-weight="600">Exceptions:</text>
+  <text x="620" y="184" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#2C2C2C">Life assurance</text>
+  <text x="560" y="197" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#2C2C2C">Agreed value policies</text>
+
+  <!-- === ROW 2 === -->
+
+  <!-- Card 4: Subrogation -->
+  <rect x="30" y="226" width="228" height="130" rx="6" fill="#FFFFFF" stroke="#E8ECF4" stroke-width="1.5"/>
+  <rect x="30" y="226" width="228" height="36" rx="6" fill="#1B3A6B"/>
+  <rect x="30" y="248" width="228" height="14" fill="#1B3A6B"/>
+  <circle cx="55" cy="244" r="13" fill="#C9A84C"/>
+  <text x="55" y="249" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#FFFFFF" font-weight="700">4</text>
+  <text x="168" y="248" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="700">Subrogation</text>
+  <text x="144" y="276" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">After payment, insurer steps into</text>
+  <text x="144" y="290" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">insured's shoes to pursue third party.</text>
+  <text x="144" y="304" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#C9A84C" font-weight="600">Arises AFTER payment only.</text>
+  <line x1="48" y1="320" x2="240" y2="320" stroke="#E8ECF4" stroke-width="1"/>
+  <text x="48" y="332" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#1B3A6B" font-weight="600">Key case:</text>
+  <text x="100" y="332" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#2C2C2C">Castellain v Preston (1883)</text>
+
+  <!-- Card 5: Contribution -->
+  <rect x="286" y="226" width="228" height="130" rx="6" fill="#FFFFFF" stroke="#E8ECF4" stroke-width="1.5"/>
+  <rect x="286" y="226" width="228" height="36" rx="6" fill="#1B3A6B"/>
+  <rect x="286" y="248" width="228" height="14" fill="#1B3A6B"/>
+  <circle cx="311" cy="244" r="13" fill="#C9A84C"/>
+  <text x="311" y="249" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#FFFFFF" font-weight="700">5</text>
+  <text x="400" y="248" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="700">Contribution</text>
+  <text x="400" y="276" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">Two or more policies covering same risk —</text>
+  <text x="400" y="290" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">each insurer pays rateable proportion.</text>
+  <text x="400" y="306" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">Formula: (limit ÷ total limits) × loss</text>
+  <line x1="304" y1="320" x2="496" y2="320" stroke="#E8ECF4" stroke-width="1"/>
+  <text x="304" y="332" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#1B3A6B" font-weight="600">Key case:</text>
+  <text x="356" y="332" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#2C2C2C">North British &amp; Mercantile v London</text>
+
+  <!-- Card 6: Proximate Cause -->
+  <rect x="542" y="226" width="228" height="130" rx="6" fill="#FFFFFF" stroke="#E8ECF4" stroke-width="1.5"/>
+  <rect x="542" y="226" width="228" height="36" rx="6" fill="#1B3A6B"/>
+  <rect x="542" y="248" width="228" height="14" fill="#1B3A6B"/>
+  <circle cx="567" cy="244" r="13" fill="#C9A84C"/>
+  <text x="567" y="249" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#FFFFFF" font-weight="700">6</text>
+  <text x="656" y="248" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#FFFFFF" font-weight="700">Proximate Cause</text>
+  <text x="656" y="276" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">Dominant, effective, operative cause</text>
+  <text x="656" y="290" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">of loss — nearest in efficiency,</text>
+  <text x="656" y="304" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#2C2C2C">not necessarily nearest in time.</text>
+  <line x1="560" y1="320" x2="752" y2="320" stroke="#E8ECF4" stroke-width="1"/>
+  <text x="560" y="332" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#1B3A6B" font-weight="600">Key case:</text>
+  <text x="612" y="332" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#2C2C2C">Leyland Shipping v Norwich Union [1918]</text>
+
+  <!-- Divider -->
+  <line x1="30" y1="374" x2="770" y2="374" stroke="#E8ECF4" stroke-width="1.5"/>
+
+  <!-- Key rules summary bar -->
+  <rect x="30" y="382" width="740" height="50" rx="4" fill="#1B3A6B" opacity="0.06"/>
+  <text x="400" y="400" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#1B3A6B" font-weight="700">KEY EXAM RULES</text>
+  <text x="400" y="418" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9.5" fill="#2C2C2C">Subrogation arises AFTER payment  ·  Insurable interest timing differs by class  ·  Proximate = dominant cause, not last cause  ·  Contribution = rateable proportion</text>
+
+  <!-- Statutory sources note -->
+  <text x="30" y="456" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#999">Statutory sources: Consumer Insurance (Disclosure and Representations) Act 2012  ·  Insurance Act 2015  ·  Life Assurance Act 1774  ·  Marine Insurance Act 1906</text>
+
+  <!-- Footer -->
+  <text x="400" y="505" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#999">ciiassignmenthelp.com</text>
+</svg>

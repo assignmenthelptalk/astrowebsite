@@ -1,0 +1,88 @@
+<svg width="100%" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="800" height="520" fill="#F8F9FC"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="800" height="56" fill="#1B3A6B"/>
+  <text x="400" y="36" text-anchor="middle" fill="white" font-size="20" font-weight="bold">Types of Reinsurance — M97 CII Diploma</text>
+
+  <!-- ===== ROW 1: PROPORTIONAL ===== -->
+  <!-- Section header -->
+  <rect x="20" y="68" width="760" height="32" rx="6" fill="#C9A84C"/>
+  <text x="400" y="89" text-anchor="middle" fill="white" font-size="15" font-weight="bold">PROPORTIONAL REINSURANCE</text>
+
+  <!-- Card 1: Quota Share -->
+  <rect x="20" y="108" width="370" height="140" rx="8" fill="#1B3A6B"/>
+  <text x="205" y="133" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="bold">Quota Share</text>
+  <line x1="40" y1="141" x2="370" y2="141" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+  <circle cx="42" cy="160" r="4" fill="#C9A84C"/>
+  <text x="54" y="165" fill="white" font-size="12">Fixed % of all risks</text>
+  <circle cx="42" cy="182" r="4" fill="#C9A84C"/>
+  <text x="54" y="187" fill="white" font-size="12">Premium and losses shared in same ratio</text>
+  <circle cx="42" cy="204" r="4" fill="#C9A84C"/>
+  <text x="54" y="209" fill="white" font-size="12">Provides capacity</text>
+  <circle cx="42" cy="226" r="4" fill="#C9A84C"/>
+  <text x="54" y="231" fill="white" font-size="12">Simple administration</text>
+
+  <!-- Card 2: Surplus -->
+  <rect x="410" y="108" width="370" height="140" rx="8" fill="#1B3A6B"/>
+  <text x="595" y="133" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="bold">Surplus</text>
+  <line x1="430" y1="141" x2="760" y2="141" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+  <circle cx="432" cy="160" r="4" fill="#C9A84C"/>
+  <text x="444" y="165" fill="white" font-size="12">Cedant retains line</text>
+  <circle cx="432" cy="182" r="4" fill="#C9A84C"/>
+  <text x="444" y="187" fill="white" font-size="12">Surplus above line transferred</text>
+  <circle cx="432" cy="204" r="4" fill="#C9A84C"/>
+  <text x="444" y="209" fill="white" font-size="12">Only larger risks reinsured</text>
+  <circle cx="432" cy="226" r="4" fill="#C9A84C"/>
+  <text x="444" y="231" fill="white" font-size="12">More complex admin</text>
+
+  <!-- ===== ROW 2: NON-PROPORTIONAL ===== -->
+  <!-- Section header -->
+  <rect x="20" y="262" width="760" height="32" rx="6" fill="#C9A84C"/>
+  <text x="400" y="283" text-anchor="middle" fill="white" font-size="15" font-weight="bold">NON-PROPORTIONAL REINSURANCE</text>
+
+  <!-- Card 1: Risk XL -->
+  <rect x="20" y="302" width="238" height="148" rx="8" fill="#1B3A6B"/>
+  <text x="139" y="326" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="bold">Risk XL</text>
+  <line x1="36" y1="334" x2="242" y2="334" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+  <circle cx="36" cy="352" r="4" fill="#C9A84C"/>
+  <text x="48" y="357" fill="white" font-size="11.5">Protects single risk losses</text>
+  <circle cx="36" cy="373" r="4" fill="#C9A84C"/>
+  <text x="48" y="378" fill="white" font-size="11.5">Deductible = retention</text>
+  <circle cx="36" cy="394" r="4" fill="#C9A84C"/>
+  <text x="48" y="399" fill="white" font-size="11.5">Reinstatable</text>
+  <circle cx="36" cy="415" r="4" fill="#C9A84C"/>
+  <text x="48" y="420" fill="white" font-size="11.5">Property / casualty focus</text>
+
+  <!-- Card 2: Cat XL -->
+  <rect x="281" y="302" width="238" height="148" rx="8" fill="#1B3A6B"/>
+  <text x="400" y="326" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="bold">Cat XL</text>
+  <line x1="297" y1="334" x2="503" y2="334" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+  <circle cx="297" cy="352" r="4" fill="#C9A84C"/>
+  <text x="309" y="357" fill="white" font-size="11.5">Protects accumulation losses</text>
+  <circle cx="297" cy="373" r="4" fill="#C9A84C"/>
+  <text x="309" y="378" fill="white" font-size="11.5">Multiple event aggregate</text>
+  <circle cx="297" cy="394" r="4" fill="#C9A84C"/>
+  <text x="309" y="399" fill="white" font-size="11.5">High limits available</text>
+  <circle cx="297" cy="415" r="4" fill="#C9A84C"/>
+  <text x="309" y="420" fill="white" font-size="11.5">Nat cat focus</text>
+
+  <!-- Card 3: Aggregate XL -->
+  <rect x="542" y="302" width="238" height="148" rx="8" fill="#1B3A6B"/>
+  <text x="661" y="326" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="bold">Aggregate XL</text>
+  <line x1="558" y1="334" x2="764" y2="334" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+  <circle cx="558" cy="352" r="4" fill="#C9A84C"/>
+  <text x="570" y="357" fill="white" font-size="11.5">Annual loss protection</text>
+  <circle cx="558" cy="373" r="4" fill="#C9A84C"/>
+  <text x="570" y="378" fill="white" font-size="11.5">Covers frequency</text>
+  <circle cx="558" cy="394" r="4" fill="#C9A84C"/>
+  <text x="570" y="399" fill="white" font-size="11.5">Stop loss variant</text>
+  <circle cx="558" cy="415" r="4" fill="#C9A84C"/>
+  <text x="570" y="420" fill="white" font-size="11.5">BI / attritional focus</text>
+
+  <!-- ===== BURNING COST FORMULA BAR ===== -->
+  <rect x="0" y="462" width="800" height="58" fill="#1B3A6B"/>
+  <text x="400" y="484" text-anchor="middle" fill="#C9A84C" font-size="12" font-weight="bold">BURNING COST FORMULA</text>
+  <text x="400" y="506" text-anchor="middle" fill="white" font-size="13">(Paid + Outstanding Losses) ÷ Subject Premium × 100 = Burning Cost %</text>
+</svg>

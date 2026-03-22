@@ -1,0 +1,946 @@
+---
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import TawkToWidget from '../components/TawkToWidget.astro';
+import StickyCTA from '../components/StickyCTA.astro';
+
+const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
+const canonicalUrl = new URL(Astro.url.pathname, site);
+const siteUrl = site.origin;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPDFCLTRSC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YPDFCLTRSC');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GR1 Group Risk exam preparation for the CII qualification. MCQ support covering group life assurance, group income protection, group critical illness, free cover limit, SSP integration, Equality Act 2010, and tax treatment of employer-funded group risk schemes.">
+    <meta name="keywords" content="GR1 assignment help, GR1 Group Risk, CII group risk qualification, group life assurance, group income protection, GR1 MCQ exam">
+    <link rel="canonical" href={canonicalUrl.href} />
+    <title>GR1 Group Risk Assignment Help — CII Group Risk Qualification | CII Assignment Help</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content={canonicalUrl.href}>
+    <meta property="og:title" content="GR1 Group Risk Assignment Help — CII Group Risk Qualification | CII Assignment Help">
+    <meta property="og:description" content="GR1 Group Risk exam preparation for the CII qualification. MCQ support covering group life assurance, group income protection, group critical illness, free cover limit, SSP integration, Equality Act 2010, and tax treatment of employer-funded group risk schemes.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content={canonicalUrl.href}>
+    <meta property="twitter:title" content="GR1 Group Risk Assignment Help — CII Group Risk Qualification | CII Assignment Help">
+    <meta property="twitter:description" content="GR1 Group Risk exam preparation for the CII qualification. MCQ support covering group life assurance, group income protection, group critical illness, free cover limit, SSP integration, Equality Act 2010, and tax treatment of employer-funded group risk schemes.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
+    <link rel="shortcut icon" href="/favicon.ico?v=4">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            font-size: 1.0625rem;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #1e3a5f;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+            z-index: 101;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #ffffff;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .page-hero {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 4px solid #ffd700;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            color: #ffd700;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .breadcrumb a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            opacity: 0.8;
+        }
+
+        .cta-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: white;
+            padding: 0.9rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0.5rem;
+        }
+
+        .cta-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+            background: #20BA5A;
+        }
+
+        .mid-cta {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .mid-cta h3 {
+            color: #1e3a5f;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .mid-cta p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #0d1f35;
+            padding: 0.8rem 1rem;
+            padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 0px));
+            text-align: center;
+            z-index: 99;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+        }
+
+        .sticky-cta a {
+            display: inline-block;
+            background: #ffd700;
+            color: #0d1f35;
+            padding: 0.7rem 2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            margin: 0 0.3rem;
+        }
+
+        .sticky-cta .wa-sticky {
+            background: #25D366;
+            color: white;
+        }
+
+        main {
+            background: white;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #1e3a5f;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.5rem;
+            color: #2c5282;
+            margin: 2rem auto 1rem;
+            font-weight: 600;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .section-subtitle-sm {
+            font-size: 1.2rem;
+            color: #2c5282;
+            margin: 1.5rem auto 0.8rem;
+            font-weight: 600;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+            max-width: 72ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .intro a {
+            color: #1e3a5f;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #ffd700;
+            transition: color 0.3s;
+        }
+
+        .intro a:hover {
+            color: #ffd700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            border-left: 5px solid #1e3a5f;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            max-width: 800px;
+        }
+
+        .highlight-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .highlight-box p {
+            color: #444;
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box p,
+        .info-box p,
+        .faq-item p {
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box {
+            background: #fff8e1;
+            border-left: 5px solid #ffd700;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            max-width: 800px;
+        }
+
+        .warning-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box {
+            background: #f0f7ff;
+            border-left: 5px solid #2c5282;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            max-width: 800px;
+        }
+
+        .info-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box p {
+            color: #444;
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .modules-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            background: white;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .modules-table thead {
+            background: #1e3a5f;
+            color: white;
+        }
+
+        .modules-table th {
+            padding: 1.1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .modules-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .modules-table tbody tr:hover {
+            background: #f8f9fa;
+            transition: background 0.2s;
+        }
+
+        .modules-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        .info-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .related-posts {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .related-posts h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+        }
+
+        .related-posts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .related-posts li {
+            margin: 0.8rem 0;
+        }
+
+        .related-posts a {
+            color: #2c5282;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .related-posts a:hover {
+            color: #ffd700;
+        }
+
+        .related-posts a:before {
+            content: "→ ";
+            color: #1e3a5f;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            color: #ffffff;
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e3a5f;
+            padding: 1.1rem 2.8rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+        }
+
+        footer {
+            background: #1e3a5f;
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            opacity: 0.9;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1.5rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h4 {
+            color: #1e3a5f;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .faq-item p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .infographic-frame {
+            max-width: 800px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        .infographic-frame img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .infographic-caption {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1e3a5f;
+                padding: 1rem;
+                gap: 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                z-index: 100;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.7rem 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .page-hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 1.7rem;
+            }
+
+            .modules-table {
+                font-size: 0.85rem;
+            }
+
+            .sticky-cta {
+                display: block;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .page-hero {
+                padding: 3rem 0;
+            }
+
+            .page-hero h1 {
+                font-size: 1.7rem;
+            }
+
+            section {
+                padding: 2.5rem 0;
+            }
+        }
+    </style>
+    <TawkToWidget />
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">CII Assignment Help</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#qualifications">Qualifications</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>GR1 Group Risk Assignment Help</h1>
+            <p class="subtitle">CII Group Risk Qualification — MCQ Exam Preparation at Level 3</p>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/cii-assignment-help">CII Assignment Help</a> / <a href="/cii-certificate-in-insurance">Certificate in Insurance</a> / GR1 Group Risk
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Intro Section -->
+        <section>
+            <div class="container">
+                <p class="intro">GR1 is a 15-credit Level 3 CII unit assessed by MCQ scenario-based examination, covering employer-sponsored group risk insurance: group life assurance, group income protection, and group critical illness. GR1 is specifically designed for professionals working in employee benefits, group risk broking, HR advisory, or corporate insurance roles where employer-funded protection schemes form part of the job function.</p>
+
+                <figure class="infographic-frame">
+                    <img src="/infographics/gr1-group-risk-products.svg" alt="Group Risk Products Comparison – GR1 CII showing group life assurance, group income protection, and group critical illness side by side." loading="lazy" />
+                    <figcaption class="infographic-caption">Comparing group life, group income protection and group critical illness</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Section 1: Group Life Assurance -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Group Life Assurance – Death in Service Benefits</h2>
+
+                <h3 class="section-subtitle">Benefit Design</h3>
+                <p class="intro">Group life assurance (death in service) benefit is typically expressed as a multiple of the employee's annual salary – for example, 2× or 4× salary. The employer pays the entire premium; the benefit is payable to the beneficiaries upon the employee's death.</p>
+
+                <h3 class="section-subtitle">Trust Structure</h3>
+                <p class="intro">Group life benefits are written in trust. This means the benefit does not form part of the deceased employee's estate and is therefore not subject to inheritance tax or probate delay. The trustees – typically employer representatives – hold the benefit on trust for the beneficiaries and have discretion over who receives it.</p>
+
+                <h3 class="section-subtitle">Expression of Wishes</h3>
+                <p class="intro">The employee nominates preferred beneficiaries via an expression of wishes form. <strong>This document is not legally binding on the trustees</strong> – it is influential guidance, but the trustees retain final discretion and can depart from it if circumstances justify.</p>
+
+                <h3 class="section-subtitle">Free Cover Limit (FCL)</h3>
+                <p class="intro">The Free Cover Limit is the maximum benefit per member that the insurer will cover without requiring individual evidence of health. Members whose benefit entitlement is at or below the FCL are covered automatically. Members whose benefit exceeds the FCL must provide individual medical evidence for the excess amount. A larger scheme typically attracts a higher FCL.</p>
+
+                <h3 class="section-subtitle">P11D Tax Treatment</h3>
+                <p class="intro">Employer-paid group life assurance premiums are generally <strong>exempt from P11D</strong> reporting for employees – they do not create a personal income tax liability. Group income protection premiums paid by employers, however, <strong>are P11D reportable</strong> – they constitute a taxable benefit in kind for the employee.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Group Income Protection -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Group Income Protection – Replacing Employee Income During Long-Term Absence</h2>
+
+                <h3 class="section-subtitle">Benefit Basis</h3>
+                <p class="intro">GIP benefits are typically set at 50–75% of the employee's pre-absence salary. The benefit is not designed to replace full salary – preserving the financial incentive to return to work.</p>
+
+                <h3 class="section-subtitle">Deferred Period</h3>
+                <p class="intro">The deferred period is the waiting period before GIP benefits commence. Standard options: 13 weeks, 26 weeks, and 52 weeks. A 52-week deferred period costs significantly less than a 13-week period. Employers with generous occupational sick pay may choose a longer deferred period.</p>
+
+                <h3 class="section-subtitle">Definition of Disability</h3>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Definition</th>
+                            <th>Description</th>
+                            <th>Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Own occupation</td>
+                            <td>Unable to perform the specific duties of the employee's own job</td>
+                            <td>Most generous – highest premium cost</td>
+                        </tr>
+                        <tr>
+                            <td>Any occupation</td>
+                            <td>Unable to perform any occupation for which they are suited</td>
+                            <td>Most restrictive – lowest premium cost</td>
+                        </tr>
+                        <tr>
+                            <td>Activities of daily work (ADW)</td>
+                            <td>Unable to perform a defined list of functional work activities</td>
+                            <td>Intermediate</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="section-subtitle">Statutory Sick Pay Integration</h3>
+                <p class="intro">SSP pays <strong>£116.75 per week</strong> (2024-25) for a maximum of <strong>28 weeks</strong>. Eligibility requires average weekly earnings above the Lower Earnings Limit of £123 per week. Where the GIP deferred period is 52 weeks, a gap exists between SSP exhaustion at week 28 and GIP commencement at week 52 – the employee must claim Employment and Support Allowance (ESA) during this gap.</p>
+
+                <h3 class="section-subtitle">Rehabilitation Services</h3>
+                <p class="intro">Modern GIP insurers provide insurer-funded vocational rehabilitation services – physiotherapy, psychological support, occupational health referrals, and workplace adjustment advice. These are triggered early in absence to reduce total claim duration.</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Group Critical Illness -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Group Critical Illness – Lump Sum on Diagnosis</h2>
+
+                <h3 class="section-subtitle">ABI Model Definitions</h3>
+                <p class="intro">The ABI publishes standardised condition definitions to ensure consistency across insurers. The three core conditions by claim volume:</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Cancer</h3>
+                        <p>Malignant tumour meeting specified staging criteria – less advanced cancers excluded.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Heart Attack</h3>
+                        <p>Death of heart muscle due to coronary artery blockage – evidenced by specific ECG changes and enzyme elevation.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Stroke</h3>
+                        <p>Cerebrovascular event causing permanent neurological deficit lasting a minimum specified period – TIAs excluded.</p>
+                    </div>
+                </div>
+
+                <p class="intro">Standard GCI covers 5–7 conditions. Extended GCI covers 30–50 conditions.</p>
+
+                <h3 class="section-subtitle">Survival Period</h3>
+                <p class="intro">Most GCI policies include a survival period – typically 14 or 30 days from diagnosis – before the benefit is paid.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Statutory Obligations -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Employer Statutory Obligations – SSP and Equality Act 2010</h2>
+
+                <h3 class="section-subtitle">Statutory Sick Pay</h3>
+                <p class="intro">Employers must pay SSP to eligible employees who cannot work due to illness. SSP pays <strong>£116.75 per week</strong> for a maximum of <strong>28 weeks</strong>. When SSP exhausts, the employer's obligation ends and the employee may apply for ESA.</p>
+
+                <h3 class="section-subtitle">Equality Act 2010 – Disability Definition</h3>
+                <p class="intro">Under the Equality Act 2010, a person has a disability if they have a physical or mental impairment that has a <strong>substantial and long-term</strong> adverse effect on their ability to carry out normal day-to-day activities. "Long-term" means lasting or expected to last at least 12 months.</p>
+
+                <h3 class="section-subtitle">Reasonable Adjustments</h3>
+                <p class="intro">Employers must make reasonable adjustments for employees with disabilities. These may include: modified working hours, adapted equipment, phased return to work, reallocation of specific duties. Failure to make reasonable adjustments constitutes disability discrimination.</p>
+            </div>
+        </section>
+
+        <!-- Section 5: Scheme Design and Tax -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Scheme Design – Free Cover Limit, Membership, and Tax Treatment</h2>
+
+                <h3 class="section-subtitle">Actively at Work Clause</h3>
+                <p class="intro">Members must be actively at work on the date of scheme commencement to be covered from that date. An employee absent due to illness on the scheme commencement date will not be covered until they return to active employment.</p>
+
+                <h3 class="section-subtitle">Tax Treatment Summary</h3>
+
+                <table class="modules-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Employer Premium – P11D?</th>
+                            <th>Employee Benefit – Tax?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Group life assurance</td>
+                            <td>Generally exempt – not P11D</td>
+                            <td>Generally not subject to inheritance tax (trust structure)</td>
+                        </tr>
+                        <tr>
+                            <td>Group income protection</td>
+                            <td>P11D reportable – taxable benefit</td>
+                            <td>GIP payments are taxable income for the employee</td>
+                        </tr>
+                        <tr>
+                            <td>Group critical illness</td>
+                            <td>P11D reportable in most cases</td>
+                            <td>Lump sum – broadly no income tax</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 6: Exam Technique -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">How to Pass the GR1 MCQ Exam – Exam Technique</h2>
+
+                <div class="warning-box">
+                    <h3>Common GR1 Exam Traps</h3>
+                    <p>1. Treating expression of wishes as legally binding – it is not. The trustees retain final discretion.</p>
+                    <p>2. Assuming GIP benefits begin when SSP ends – GIP has a deferred period. With a 52-week deferred period and 28-week SSP, a gap of approximately 24 weeks exists.</p>
+                    <p>3. Treating group life premiums as P11D reportable – they are generally exempt. Group income protection premiums ARE P11D reportable.</p>
+                    <p>4. SSP calculation – know the weekly rate (£116.75) and 28-week maximum duration.</p>
+                </div>
+
+                <div class="mid-cta">
+                    <h3>Need GR1 MCQ Exam Support?</h3>
+                    <p>Structured topic summaries, product comparison cards, tax treatment reference sheets, and scenario-based MCQ practice covering the full GR1 syllabus.</p>
+                    <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20GR1%20Group%20Risk." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: GR1 Pathway -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">GR1 Within the CII Qualification Pathway</h2>
+                <p class="intro">GR1 is a specialist Certificate-level unit for professionals in the group risk and employee benefits sector. GR1 complements <a href="/if1-assignment-help">IF1 insurance legal and regulatory assignment help</a>, which provides the broader insurance law framework within which group risk products operate. For <a href="/cii-certificate-in-insurance">CII Certificate in Insurance assignment help</a>, this service provides structured exam preparation.</p>
+            </div>
+        </section>
+
+        <!-- Section 8: FAQs -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions – GR1</h2>
+
+                <div class="faq-item">
+                    <h4>Is GR1 the same as the IF unit series?</h4>
+                    <p>GR1 is a separate unit within the CII Certificate framework, specifically designed for the group risk and employee benefits sector. It covers employer-sponsored group risk schemes – group life, group income protection, and group critical illness – not the general insurance products addressed in the IF series.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What is the free cover limit in group risk?</h4>
+                    <p>The FCL is the maximum benefit per member the insurer covers without individual medical evidence. Members at or below the FCL are automatically covered; members above must undergo individual underwriting for the excess amount. Larger schemes typically attract higher FCLs.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>How does group income protection integrate with SSP?</h4>
+                    <p>SSP pays £116.75 per week for up to 28 weeks. GIP has a deferred period of 13, 26, or 52 weeks. A 26-week deferred period gives approximate continuity with SSP exhaustion. A 52-week deferred period creates a ~24-week gap during which the employee must claim ESA.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Pages -->
+        <section>
+            <div class="container">
+                <div class="related-posts">
+                    <h3>Related Qualification and Unit Support</h3>
+                    <ul>
+                        <li><a href="/cii-certificate-in-insurance">CII Certificate in Insurance</a></li>
+                        <li><a href="/if1-assignment-help">IF1 Insurance Legal and Regulatory</a></li>
+                        <li><a href="/cii-assignment-help">CII Assignment Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Need Support With GR1 Group Risk?</h2>
+                <p>Structured topic summaries, group risk product comparison cards, tax treatment reference sheets, SSP and GIP integration guides, and scenario-based MCQ practice covering the full GR1 syllabus.</p>
+                <a href="/#contact" class="cta-button">Get Your Free Quote</a>
+                <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20GR1%20Group%20Risk." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CII Assignment Help. Supporting insurance professionals worldwide.</p>
+            <p><a href="/">Home</a> | <a href="/#services">Services</a> | <a href="/#contact">Contact</a></p>
+        </div>
+    </footer>
+    <WhatsAppButton />
+
+    <StickyCTA waMessage="Hello! I need help with GR1 Group Risk." />
+
+    <script is:inline>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" role="img" aria-labelledby="if5-motor-cover-title">
+  <title id="if5-motor-cover-title">IF5 Motor Insurance Cover Types Comparison: Third Party Only, Third Party Fire and Theft, Comprehensive</title>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8F9FC"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="800" height="48" fill="#1B3A6B"/>
+  <text x="400" y="31" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">IF5 — Motor Insurance Cover Types Comparison</text>
+
+  <!-- Column headers -->
+  <!-- Feature column -->
+  <rect x="16" y="56" width="232" height="44" fill="#1B3A6B"/>
+  <text x="132" y="83" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#C9A84C">FEATURE</text>
+
+  <!-- TPO column -->
+  <rect x="252" y="56" width="164" height="44" fill="#1B3A6B"/>
+  <text x="334" y="75" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">Third Party Only</text>
+  <text x="334" y="91" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#C9A84C">(TPO)</text>
+
+  <!-- TPFT column -->
+  <rect x="420" y="56" width="164" height="44" fill="#1B3A6B"/>
+  <text x="502" y="71" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">Third Party Fire</text>
+  <text x="502" y="85" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">&amp; Theft</text>
+  <text x="502" y="97" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#C9A84C">(TPFT)</text>
+
+  <!-- Comprehensive column -->
+  <rect x="588" y="56" width="196" height="44" fill="#1B3A6B"/>
+  <text x="686" y="75" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">Comprehensive</text>
+  <text x="686" y="91" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#C9A84C">Full cover</text>
+
+  <!-- Row 1 — RTA 1988 compulsory minimum -->
+  <rect x="16" y="104" width="232" height="38" fill="#E8ECF4"/>
+  <text x="132" y="124" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#2C2C2C">RTA 1988 compulsory</text>
+  <text x="132" y="137" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#2C2C2C">minimum</text>
+  <rect x="252" y="104" width="164" height="38" fill="#E8ECF4"/>
+  <text x="334" y="127" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#C9A84C">✓ meets minimum</text>
+  <rect x="420" y="104" width="164" height="38" fill="#E8ECF4"/>
+  <text x="502" y="127" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#C9A84C">✓ meets minimum</text>
+  <rect x="588" y="104" width="196" height="38" fill="#E8ECF4"/>
+  <text x="686" y="127" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#C9A84C">✓ meets minimum</text>
+
+  <!-- Row 2 — Third party injury/property -->
+  <rect x="16" y="146" width="232" height="38" fill="#FFFFFF"/>
+  <text x="132" y="166" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#2C2C2C">Third party</text>
+  <text x="132" y="179" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#2C2C2C">injury / property</text>
+  <rect x="252" y="146" width="164" height="38" fill="#FFFFFF"/>
+  <text x="334" y="170" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#C9A84C">✓</text>
+  <rect x="420" y="146" width="164" height="38" fill="#FFFFFF"/>
+  <text x="502" y="170" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#C9A84C">✓</text>
+  <rect x="588" y="146" width="196" height="38" fill="#FFFFFF"/>
+  <text x="686" y="170" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#C9A84C">✓</text>
+
+  <!-- Row 3 — Fire damage to own vehicle -->
+  <rect x="16" y="188" width="232" height="38" fill="#E8ECF4"/>
+  <text x="132" y="208" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#2C2C2C">Fire damage to</text>
+  <text x="132" y="221" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#2C2C2C">own vehicle</text>
+  <rect x="252" y="188" width="164" height="38" fill="#E8ECF4"/>
+  <text x="334" y="212" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#999999">✗</text>
+  <rect x="420" y="188" width="164" height="38" fill="#E8ECF4"/>
+  <text x="502" y="212" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#C9A84C">✓</text>
+  <rect x="588" y="188" width="196" height="38" fill="#E8ECF4"/>
+  <text x="686" y="212" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#C9A84C">✓</text>
+
+  <!-- Row 4 — Theft of own vehicle -->
+  <rect x="16" y="230" width="232" height="38" fill="#FFFFFF"/>
+  <text x="132" y="250" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#2C2C2C">Theft of own vehicle</text>
+  <rect x="252" y="230" width="164" height="38" fill="#FFFFFF"/>
+  <text x="334" y="254" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#999999">✗</text>
+  <rect x="420" y="230" width="164" height="38" fill="#FFFFFF"/>
+  <text x="502" y="254" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#C9A84C">✓</text>
+  <rect x="588" y="230" width="196" height="38" fill="#FFFFFF"/>
+  <text x="686" y="254" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#C9A84C">✓</text>
+
+  <!-- Row 5 — Own vehicle damage (accident) -->
+  <rect x="16" y="272" width="232" height="38" fill="#E8ECF4"/>
+  <text x="132" y="292" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#2C2C2C">Own vehicle damage</text>
+  <text x="132" y="305" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#2C2C2C">(accident)</text>
+  <rect x="252" y="272" width="164" height="38" fill="#E8ECF4"/>
+  <text x="334" y="296" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#999999">✗</text>
+  <rect x="420" y="272" width="164" height="38" fill="#E8ECF4"/>
+  <text x="502" y="296" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#999999">✗</text>
+  <rect x="588" y="272" width="196" height="38" fill="#E8ECF4"/>
+  <text x="686" y="296" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#C9A84C">✓</text>
+
+  <!-- Row 6 — Windscreen/glass -->
+  <rect x="16" y="314" width="232" height="38" fill="#FFFFFF"/>
+  <text x="132" y="337" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#2C2C2C">Windscreen / glass</text>
+  <rect x="252" y="314" width="164" height="38" fill="#FFFFFF"/>
+  <text x="334" y="338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#999999">✗</text>
+  <rect x="420" y="314" width="164" height="38" fill="#FFFFFF"/>
+  <text x="502" y="338" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#999999">✗</text>
+  <rect x="588" y="314" width="196" height="38" fill="#FFFFFF"/>
+  <text x="686" y="334" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#C9A84C">Optional add-on</text>
+
+  <!-- Border lines -->
+  <rect x="16" y="104" width="768" height="248" rx="0" fill="none" stroke="#1B3A6B" stroke-width="1.5"/>
+  <!-- Vertical dividers -->
+  <line x1="248" y1="56" x2="248" y2="352" stroke="#1B3A6B" stroke-width="1.5"/>
+  <line x1="416" y1="56" x2="416" y2="352" stroke="#1B3A6B" stroke-width="1.5"/>
+  <line x1="584" y1="56" x2="584" y2="352" stroke="#1B3A6B" stroke-width="1.5"/>
+
+  <!-- Footer -->
+  <text x="400" y="385" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#999">ciiassignmenthelp.com</text>
+</svg>

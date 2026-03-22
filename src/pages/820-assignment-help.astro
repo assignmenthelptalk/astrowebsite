@@ -1,0 +1,913 @@
+---
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import TawkToWidget from '../components/TawkToWidget.astro';
+import StickyCTA from '../components/StickyCTA.astro';
+
+const site = Astro.site ?? new URL('https://www.ciiassignmenthelp.com');
+const canonicalUrl = new URL(Astro.url.pathname, site);
+const siteUrl = site.origin;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPDFCLTRSC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YPDFCLTRSC');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="820 Advanced Claims assignment help for CII Advanced Diploma in Insurance. Expert written exam support covering claims philosophy, coverage disputes, fraud strategy, IBNR reserving and litigation strategy at Level 6.">
+    <meta name="keywords" content="820 Advanced Claims, 820 assignment help, CII Advanced Diploma claims, Advanced Claims Management, 820 written exam, ACII claims unit">
+    <link rel="canonical" href={canonicalUrl.href} />
+    <title>820 Advanced Claims Assignment Help — CII Advanced Diploma in Insurance | CII Assignment Help</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content={canonicalUrl.href}>
+    <meta property="og:title" content="820 Advanced Claims Assignment Help — CII Advanced Diploma in Insurance | CII Assignment Help">
+    <meta property="og:description" content="820 Advanced Claims assignment help for CII Advanced Diploma in Insurance. Expert written exam support covering claims philosophy, coverage disputes, fraud strategy, IBNR reserving and litigation strategy at Level 6.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content={canonicalUrl.href}>
+    <meta property="twitter:title" content="820 Advanced Claims Assignment Help — CII Advanced Diploma in Insurance | CII Assignment Help">
+    <meta property="twitter:description" content="820 Advanced Claims assignment help for CII Advanced Diploma in Insurance. Expert written exam support covering claims philosophy, coverage disputes, fraud strategy, IBNR reserving and litigation strategy at Level 6.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4" sizes="any">
+    <link rel="shortcut icon" href="/favicon.ico?v=4">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            font-size: 1.0625rem;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #1e3a5f;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+            z-index: 101;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #ffffff;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .page-hero {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 4px solid #ffd700;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .page-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .page-hero .subtitle {
+            font-size: 1.3rem;
+            color: #ffd700;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .breadcrumb a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            opacity: 0.8;
+        }
+
+        .cta-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: white;
+            padding: 0.9rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 0.5rem;
+        }
+
+        .cta-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+            background: #20BA5A;
+        }
+
+        .mid-cta {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .mid-cta h3 {
+            color: #1e3a5f;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .mid-cta p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #0d1f35;
+            padding: 0.8rem 1rem;
+            padding-bottom: calc(0.8rem + env(safe-area-inset-bottom, 0px));
+            text-align: center;
+            z-index: 99;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+        }
+
+        .sticky-cta a {
+            display: inline-block;
+            background: #ffd700;
+            color: #0d1f35;
+            padding: 0.7rem 2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            margin: 0 0.3rem;
+        }
+
+        .sticky-cta .wa-sticky {
+            background: #25D366;
+            color: white;
+        }
+
+        main {
+            background: white;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #1e3a5f;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.5rem;
+            color: #2c5282;
+            margin: 2rem auto 1rem;
+            font-weight: 600;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .section-subtitle-sm {
+            font-size: 1.2rem;
+            color: #2c5282;
+            margin: 1.5rem auto 0.8rem;
+            font-weight: 600;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+            max-width: 72ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .intro a {
+            color: #1e3a5f;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #ffd700;
+            transition: color 0.3s;
+        }
+
+        .intro a:hover {
+            color: #ffd700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+            border-left: 5px solid #1e3a5f;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            max-width: 800px;
+        }
+
+        .highlight-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .highlight-box p {
+            color: #444;
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box p,
+        .info-box p,
+        .faq-item p {
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box {
+            background: #fff8e1;
+            border-left: 5px solid #ffd700;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            max-width: 800px;
+        }
+
+        .warning-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box {
+            background: #f0f7ff;
+            border-left: 5px solid #2c5282;
+            padding: 1.8rem;
+            margin: 2rem auto;
+            border-radius: 6px;
+            max-width: 800px;
+        }
+
+        .info-box h3 {
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-box p {
+            color: #444;
+            line-height: 1.8;
+            max-width: 72ch;
+            margin-bottom: 0.8rem;
+        }
+
+        .modules-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            background: white;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .modules-table thead {
+            background: #1e3a5f;
+            color: white;
+        }
+
+        .modules-table th {
+            padding: 1.1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .modules-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .modules-table tbody tr:hover {
+            background: #f8f9fa;
+            transition: background 0.2s;
+        }
+
+        .modules-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        .info-card h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .related-posts {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .related-posts h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+        }
+
+        .related-posts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .related-posts li {
+            margin: 0.8rem 0;
+        }
+
+        .related-posts a {
+            color: #2c5282;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .related-posts a:hover {
+            color: #ffd700;
+        }
+
+        .related-posts a:before {
+            content: "→ ";
+            color: #1e3a5f;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0d1f35 0%, #1e3a5f 100%) !important;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-section h2 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            color: #ffffff;
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e3a5f;
+            padding: 1.1rem 2.8rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+        }
+
+        footer {
+            background: #1e3a5f;
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            opacity: 0.9;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1.5rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h4 {
+            color: #1e3a5f;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .faq-item p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1e3a5f;
+                padding: 1rem;
+                gap: 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                z-index: 100;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.7rem 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .page-hero h1 {
+                font-size: 2rem;
+            }
+
+            .page-hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 1.7rem;
+            }
+
+            .modules-table {
+                font-size: 0.85rem;
+            }
+
+            .sticky-cta {
+                display: block;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .page-hero {
+                padding: 3rem 0;
+            }
+
+            .page-hero h1 {
+                font-size: 1.7rem;
+            }
+
+            section {
+                padding: 2.5rem 0;
+            }
+        }
+
+        .infographic-frame { max-width: 800px; margin: 2rem auto; text-align: center; }
+        .infographic-frame img { max-width: 100%; height: auto; border-radius: 8px; }
+        .infographic-caption { font-size: 0.9rem; color: #666; margin-top: 0.5rem; font-style: italic; }
+    </style>
+    <TawkToWidget />
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">CII Assignment Help</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#qualifications">Qualifications</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>820 Advanced Claims Assignment Help</h1>
+            <p class="subtitle">CII Advanced Diploma in Insurance — Written Exam Support at Level 6</p>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/cii-assignment-help">CII Assignment Help</a> / <a href="/cii-advanced-diploma-in-insurance">Advanced Diploma in Insurance</a> / 820 Advanced Claims
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Section 1: Intro -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">820 Advanced Claims Assignment Help — CII Advanced Diploma in Insurance</h2>
+                <p class="intro">CII unit 820, Advanced Claims Management, is a 30-credit Level 6 written examination unit and one of three compulsory core units in the CII Advanced Diploma in Insurance. It is designed for senior claims professionals — claims directors, heads of claims, and senior claims managers — who are required to demonstrate strategic, portfolio-level analytical thinking rather than operational claims handling competence. The written examination does not reward descriptions of claims processes; it rewards strategic decision-making, application of complex legal doctrine, and the ability to evaluate claims philosophy, fraud strategy, reserving methodology, and litigation choices at a leadership level. This service provides expert 820 assignment help covering every major syllabus area, written exam answer structure, and the analytical depth the CII examiner expects at Level 6.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Claims Philosophy -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Claims Philosophy and Strategy — What 820 Requires at Senior Strategic Level</h2>
+                <p class="intro">Claims philosophy at 820 level is a board-level conversation, not a process manual. The central strategic proposition that 820 examines is this: the claim is the product. The premium is the price charged; the claim settlement is the product the insurer delivers. How the claims function is designed, governed, and resourced determines whether that product is competitive.</p>
+
+                <h3 class="section-subtitle">Claims as a Competitive Differentiator</h3>
+                <p class="intro">The 820 syllabus positions the claims function not as a back-office cost centre but as the primary product delivery mechanism of an insurer. Claims performance across four dimensions directly determines an insurer's competitive position: speed of settlement, which directly affects Net Promoter Score and renewal retention; accuracy of coverage decisions, which reduces litigation exposure and Financial Ombudsman Service referrals; fraud containment, which directly improves the loss ratio; and legal cost management through panel solicitor arrangements, early ADR strategy, and litigation expense budgets.</p>
+                <p class="intro">At portfolio level, total claims cost is the dominant driver of the combined ratio. A combined ratio consistently above 100% means the insurer pays more in claims and expenses than it earns in premium — producing capital erosion, reinsurance cost increases, and premium rate pressure. The claims director's mandate is to manage claims cost per policy at a level that sustains underwriting profitability across the cycle. This is the framing 820 expects: not how to settle a claim, but how to design a claims function that delivers a financially sustainable and commercially differentiated product.</p>
+
+                <h3 class="section-subtitle">TPA Model vs In-House Claims — Outsourcing Strategy</h3>
+                <p class="intro">Third party administrators (TPAs) are specialist claims handling organisations contracted by insurers to manage claims on their behalf. The strategic decision to outsource claims handling is not a cost-reduction exercise — it is an organisational design question. The TPA model is analytically justified when: the insurer lacks specialist expertise for a class (complex liability, workers' compensation, aviation); the insurer is entering a new market without existing infrastructure; captive insurer arrangements where the parent does not wish to build a claims function; or where TPA scale economies produce demonstrably better claims outcomes than an in-house team of equivalent cost.</p>
+                <p class="intro">In-house claims management is strategically preferred when the insurer's brand reputation is closely linked to claims handling quality; when claims data is proprietary and strategically critical for underwriting pricing; when regulatory accountability under FCA ICOBS standards is more directly managed through a supervised in-house function; or when claims volume justifies fixed infrastructure investment. The critical decision criterion at senior level is not the TPA fee but total claims outcomes — do TPAs settle claims too quickly (leakage), too slowly (customer satisfaction deterioration), or in ways that undermine coverage consistency? The insurer remains fully responsible for claims conduct standards even under TPA delegation.</p>
+
+                <figure class="infographic-frame">
+                    <img src="/infographics/820-claims-strategy-framework.svg" alt="820 Strategic Claims Triage Model: 4-quadrant matrix plotting claim complexity against strategic value" loading="lazy" />
+                    <figcaption class="infographic-caption">The 820 Strategic Claims Triage Model — four quadrants map claims by complexity and strategic value to the appropriate handling channel: Fast Track automation, Relationship management, TPA referral, or Senior Claims specialist team with legal counsel.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Section 3: Coverage Disputes -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Complex Coverage Disputes — Strategic Analytical Level</h2>
+                <p class="intro">Complex coverage disputes are the hardest area of the 820 written examination. Three doctrines dominate: concurrent causation, policy trigger, and aggregation. Each requires both precise legal knowledge and the ability to frame the doctrine as a strategic decision the claims director must make.</p>
+
+                <h3 class="section-subtitle">Concurrent Causation — Wayne Tank &amp; Pump Co v Employers Liability [1972]</h3>
+                <p class="intro">Concurrent causation arises when a loss has two or more proximate causes — one covered and one excluded. The Court of Appeal in <em>Wayne Tank &amp; Pump Co v Employers Liability</em> [1972] established the default rule for general liability insurance: where there are two concurrent proximate causes, one insured and one excluded, the insurer is entitled to rely on the exclusion and deny the claim in its entirety. The exclusion prevails.</p>
+                <p class="intro">Strategic implications for a claims director are threefold. First, coverage investigations must identify all causes of loss systematically — a single excluded cause in a concurrent chain (defective workmanship, deliberate act, war) permits full denial. Second, policy wordings must be reviewed for the presence of non-vitiation clauses or innocent co-insured provisions, which modify the Wayne Tank outcome in composite policies by assessing each insured's coverage position separately. Third, the Wayne Tank principle applies differently between all-risks property wordings and named perils wordings — all-risks coverage starts from an assumption of cover and requires the insurer to establish the exclusion; named perils requires the insured to establish that the loss falls within a covered peril. The claims director's coverage counsel must identify which framework applies before making a reservation decision.</p>
+
+                <h3 class="section-subtitle">Policy Trigger Disputes — Fairchild and Long-Tail Latent Disease</h3>
+                <p class="intro">Policy trigger disputes determine which policy year — and therefore which insurer — is required to respond to a claim when a loss event is latent or spans multiple policy periods. Two trigger doctrines govern UK insurance law.</p>
+                <p class="intro">The occurrence trigger holds that the policy responds when the loss event occurs, regardless of discovery or when the claim is made. The claims-made trigger holds that the policy responds when the claim is first made against the insured, regardless of when the underlying incident occurred. Professional indemnity, D&amp;O, and some medical malpractice policies use claims-made triggers; most property and general liability policies use occurrence triggers.</p>
+                <p class="intro"><em>Fairchild v Glenhaven Funeral Services</em> [2002] (House of Lords) is the foundational case for long-tail latent disease claims. In mesothelioma claims arising from asbestos exposure across multiple employers and policy periods, it is medically impossible to prove which specific employer's breach caused the disease — a single asbestos fibre can trigger mesothelioma. The House of Lords held that any employer who materially contributed to the risk of the claimant contracting mesothelioma is liable. <em>Bolton MBC v Municipal Mutual</em> [2006] confirmed that the EL trigger for mesothelioma is the date of exposure, not the date of diagnosis or manifestation — meaning each employer's EL insurer from the relevant exposure periods bears proportionate liability.</p>
+                <p class="intro">The strategic claims director implications are direct: the trigger question determines whether the current-year policy responds or whether historical insurers must be traced through the EL Tracing Office (ELTO) database; latent disease IBNR must account for claims not yet reported because the disease has not yet manifested; and reinsurance treaties must be reviewed for trigger alignment, because a reinsurance treaty written on an occurrence basis may not respond where the primary policy trigger is claims-made.</p>
+
+                <h3 class="section-subtitle">Aggregation — Barnard &amp; Ors v Zurich Insurance and the Unifying Event Test</h3>
+                <p class="intro">Aggregation clauses allow an insurer to treat multiple individual claims as a single occurrence or event, with a single deductible and a single limit applying, and a single reinsurance recovery available. The commercial consequence is significant: whether multiple claims aggregate or are treated separately determines the insurer's net retained exposure and reinsurance recovery position.</p>
+                <p class="intro">The applicable aggregation test depends entirely on the policy wording. Three tests operate in practice: the single occurrence test (narrow — requires a close causal connection between each claim and a single defined event); the unifying cause test (broader — claims may be aggregated if they share a common underlying cause, even if separated in time and place); and the unifying event test (intermediate). <em>Barnard &amp; Ors v Zurich Insurance</em> applied the aggregation test in a professional indemnity context, examining whether multiple claims arising from the same underlying negligence could be treated as a single claim for deductible and limit purposes. The court's analysis turned on the precise wording — the applicable test is always a matter of construction.</p>
+                <p class="intro">At claims director level, the aggregation determination must be made early and applied consistently across the portfolio. Inconsistent aggregation decisions create coverage estoppel risk and litigation exposure. Coverage counsel must advise on the correct test per wording class, and reserving must reflect the aggregation determination made — aggregate reserving produces materially different IBNR positions than per-claim reserving.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Large Loss Management -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Large Loss Management — Catastrophe Response and Lloyd's Operations</h2>
+                <p class="intro">Large loss management at 820 level is a strategic and governance question. When a catastrophe event strikes, the claims director functions as incident commander — not claims handler.</p>
+
+                <h3 class="section-subtitle">Catastrophe Response Protocols</h3>
+                <p class="intro">A catastrophe event — hurricane, earthquake, major flood, pandemic, terrorism — creates simultaneous mass-notification, triage, and reserving demands that exceed normal claims capacity. A pre-defined catastrophe response plan must establish: a trigger threshold (what event scale or notification volume activates the CAT plan); an incident command structure with defined escalation paths to the CEO, CFO, and board; emergency staffing protocols including TPA surge capacity and specialist CAT adjusters; a customer communication cascade to proactively reach policyholders in the affected area before claims are made; and a preliminary IBNR estimate to be provided to the CFO and reinsurance team within 24–72 hours to enable reinsurance recovery notifications.</p>
+                <p class="intro">CAT IBNR in the first 30–60 days is necessarily model-dependent. Unlike attritional IBNR, which develops from known claims, catastrophe IBNR must be estimated from total insured values in the affected zone, policy count, and historical frequency data from comparable events — sourced from catastrophe models (RMS, AIR Worldwide). The 820 examiner expects candidates to distinguish catastrophe IBNR estimation (model-driven, event-specific) from attritional IBNR methodology (development triangle-based).</p>
+
+                <h3 class="section-subtitle">Lloyd's Major Claims Operation and International Coordination</h3>
+                <p class="intro">Lloyd's of London operates a dedicated Major Claims function — part of Lloyd's Performance Management Directorate — that coordinates claims handling across all syndicates exposed to a major loss event. Its functions include establishing a major loss code enabling all syndicates to aggregate claims under a single event identifier; producing market-level loss estimates and IBNR guidance; and coordinating with the lead underwriter and lead claims adjuster to establish the market's coverage position on any disputed issues.</p>
+                <p class="intro">Cross-border claims introduce jurisdictional complexity that the claims director must anticipate at programme design stage. Key issues include: which law governs the policy (Rome I Regulation for EU counterparties, or contractual choice of law); where proceedings must be served; and enforcement of judgments across borders. The New York Convention on the Recognition and Enforcement of Foreign Arbitral Awards (1958) provides the mechanism for enforcing arbitral awards in over 160 countries — making LCIA arbitration clauses strategically preferable to litigation clauses for cross-border commercial insurance disputes.</p>
+            </div>
+        </section>
+
+        <!-- Section 5: Fraud Strategy -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Fraud Strategy — SIU Design and the IFED Framework</h2>
+                <p class="intro">Fraud strategy at 820 level is an organisational design and intelligence function — not an investigative technique manual. The claims director's strategic mandate is to build and govern a fraud response capability that is proportionate, legally defensible, and effective against both fraud typologies.</p>
+
+                <h3 class="section-subtitle">Organised Fraud Networks vs Opportunistic Fraud</h3>
+                <p class="intro">The claims director must distinguish two fundamentally different fraud typologies requiring different strategic responses. Opportunistic fraud — an individual policyholder exaggerating or fabricating a genuine claim — is managed through claims validation analytics, contra-indicator review, DVLA and HPI vehicle checks, and cross-referencing fraud databases including CIFAS and the Insurance Fraud Bureau (IFB). The primary tool is data: identifying statistical anomalies in claim patterns relative to risk profile.</p>
+                <p class="intro">Organised fraud is materially more damaging in scale and requires an entirely different response. Organised fraud networks manufacture claims: ghost vehicle fraud (insuring a non-existent or scrapped vehicle and claiming for a fabricated accident), staged accident fraud ("crash for cash" — orchestrating a deliberate low-speed rear impact, typically at a junction, with multiple claimants for whiplash injuries), and insurance identity fraud using stolen identities to take out policies. The ABI estimates that insurance fraud costs UK insurers over £1.1 billion annually. The strategic response to organised fraud requires intelligence sharing through the IFB Insurance Fraud Covert Action Service (IFCAS), referral to the Insurance Fraud Enforcement Department (IFED), and a criminal prosecution strategy.</p>
+                <p class="intro">The Fraud Act 2006 creates three fraud offences directly relevant to insurance claims management: fraud by false representation under s.2 — making a false statement knowing it to be false or misleading; fraud by failing to disclose information under s.3 — where a legal duty to disclose exists; and fraud by abuse of position under s.4 — where the person holds a position of trust and abuses it. Critically for claims strategy, the prosecution does not need to prove actual financial loss — only dishonest intent to make a gain or cause a loss.</p>
+
+                <h3 class="section-subtitle">SIU Design — Building a Special Investigations Unit</h3>
+                <p class="intro">A Special Investigations Unit (SIU) is a dedicated team within the claims function responsible for detecting, investigating, and responding to suspected fraud. At claims director level, the SIU design decisions are strategic: whether to build an in-house SIU (providing better data integration and institutional fraud pattern knowledge) or outsource to specialist investigation firms (providing surge capacity and specialist surveillance capability); establishing objective referral criteria based on claim value, fraud indicator score from a propensity model, or specific typology flags; defining SIU authority levels for commissioning surveillance, obtaining voice recordings, instructing forensic accountants, and making IFED referrals; and managing the relationship with IFED.</p>
+                <p class="intro">The Insurance Fraud Enforcement Department is a dedicated police unit (City of London Police) funded by the insurance industry, established in 2012. IFED focuses exclusively on insurance fraud and possesses powers of arrest, search, and seizure that the insurer does not hold. IFED referral is appropriate for organised fraud rings where criminal prosecution is warranted — not for individual opportunistic fraud cases where civil recovery is the proportionate response.</p>
+            </div>
+        </section>
+
+        <!-- Section 6: Litigation Strategy -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Claims Litigation Strategy — ADR, Arbitration and Litigation Funding</h2>
+                <p class="intro">Every claims litigation decision is a strategic trade-off between cost, time, certainty, and commercial relationship management. The claims director must have a pre-defined litigation management framework that governs when to mediate, when to arbitrate, and when to litigate — and how litigation funding changes all of those calculations.</p>
+
+                <h3 class="section-subtitle">Alternative Dispute Resolution — Mediation and Early Neutral Evaluation</h3>
+                <p class="intro">Mediation is a voluntary, confidential process in which an independent mediator assists the parties in negotiating a settlement. It is not binding unless the parties execute a settlement agreement. Mediation is strategically appropriate where both parties have commercial reasons to settle (ongoing relationship, reputational risk, cost of extended litigation), where quantum is agreed but liability is in dispute, and where a compromise is commercially rational for both sides. Under CPR Practice Direction Pre-Action Conduct, a party who unreasonably refuses to participate in mediation risks a costs sanction even if successful at trial — this makes early ADR consideration a legal obligation, not merely a preference.</p>
+                <p class="intro">Early Neutral Evaluation (ENE) is a process in which a senior independent evaluator — typically a retired judge or leading barrister — provides a non-binding assessment of the likely trial outcome. ENE is most effective where a party needs an independent external view to accept the commercial reality of their position, or where the dispute turns on a defined legal point that can be assessed without full evidence.</p>
+                <p class="intro">Without prejudice communications during settlement negotiations cannot be used as evidence at trial. "Without prejudice save as to costs" (WPSATC) — the Calderbank variant — allows the offer to be disclosed to the court after liability is determined for costs assessment purposes. A party who fails to beat the offer at trial bears costs from the date of the offer. The claims director must ensure that all settlement correspondence is correctly marked, and that authority levels for without prejudice offers are clearly delegated and documented.</p>
+
+                <h3 class="section-subtitle">LCIA Arbitration and the New York Convention</h3>
+                <p class="intro">Arbitration is the primary dispute resolution mechanism for complex commercial insurance disputes in the London market. The London Court of International Arbitration (LCIA) is the principal arbitral institution for London market insurance and reinsurance disputes. Key strategic features that 820 candidates must be able to analyse: confidentiality — unlike court proceedings, arbitral proceedings and awards are private; choice of arbitrator with specialist insurance expertise for technical coverage disputes; LCIA's expedited procedure producing a final award within six to nine months compared to two to three years for commercial court litigation; and very limited rights of appeal under the Arbitration Act 1996 s.69 (appeal on a point of law only with court permission). Most importantly for cross-border claims: LCIA awards are enforceable in over 160 countries under the New York Convention (1958), making arbitration clauses strategically superior for policies covering international risks.</p>
+
+                <h3 class="section-subtitle">Litigation Funding — Burford Capital and Third-Party Finance</h3>
+                <p class="intro">Litigation funding (third-party funding or litigation finance) — provided by specialist funders including Burford Capital, Harbour Litigation Funding, and Vannin Capital — is a mechanism by which a funder provides capital to pursue or defend litigation in exchange for a share of any recovery, typically 20–40% of any settlement or judgment.</p>
+                <p class="intro">In insurance claims, litigation funding materially changes the strategic landscape. A policyholder backed by a sophisticated funder is a substantially better-resourced opponent. The funder will have conducted a detailed commercial merit assessment before committing — meaning that a funded claim is one where a professional assessor has concluded it has significant merit. The claims director must adjust reservation strategy (higher settlement cost probability on funded claims) and prioritise early ADR before the funder achieves full position. Litigation funding is also used by insurers to pursue high-value subrogation recoveries where upfront legal costs are prohibitive relative to the expected recovery value.</p>
+            </div>
+        </section>
+
+        <!-- Section 7: Reserving -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Claims Reserving — IBNR Methodology and Actuarial Strategy</h2>
+                <p class="intro">Reserving is not a technical actuarial task for the claims director — it is a strategic financial decision with direct consequences for balance sheet adequacy, capital requirements, and regulatory compliance.</p>
+
+                <h3 class="section-subtitle">IBNR Methodology — Development Triangle and Bornhuetter-Ferguson</h3>
+                <p class="intro">IBNR (Incurred But Not Reported) reserves represent the estimated cost of claims that have occurred but have not yet been reported, plus the expected further development of claims already notified. Two primary actuarial methods are tested in 820.</p>
+                <p class="intro">The development triangle method (chain-ladder method) constructs a historical matrix of cumulative paid claims by accident year and development year. Development factors are derived from historical patterns showing how claims in each accident year grow from one development year to the next. These factors are applied to the most recent diagonal to project ultimate claims cost. The method produces reliable estimates when historical development patterns are stable. It breaks down when there are changes in claims settlement speed, major mix-of-business shifts, or inflationary disruption to historical patterns.</p>
+                <p class="intro">The Bornhuetter-Ferguson (BF) method is a credibility-weighted blend of the development triangle estimate and an a priori (expected) loss ratio. The BF method is appropriate when the accident year is immature — insufficient development to rely on the triangle alone; when a catastrophe event has produced abnormal development patterns that distort the triangle; or when a new class of business has no meaningful historical data. The a priori loss ratio (derived from pricing or industry benchmarks) receives greater weight in early development years; the triangle estimate gains weight as the accident year matures. The 820 examiner specifically tests whether candidates can distinguish when each method applies — not simply define both methods.</p>
+                <p class="intro">At claims director level, the role is not to perform actuarial calculations but to challenge actuarial reserve estimates, understand the assumptions driving them, and escalate material reserve deficiencies. Quarterly or bi-annual reserving workshops — between claims, actuarial, finance, and underwriting — are best practice governance.</p>
+
+                <h3 class="section-subtitle">FCA and PRA Reserve Adequacy — Regulatory Expectations</h3>
+                <p class="intro">Under UK Solvency II (the UK's post-Brexit retained framework), technical provisions must include a Best Estimate of liabilities — the 50th percentile, meaning equally likely to be too high as too low — plus a Risk Margin. The PRA expects that claims reserves are neither systematically optimistic nor conservative; persistent patterns of over- or under-reserving attract supervisory scrutiny. The FCA monitors reserve release activity — a reserve release occurs when a prior accident year reserve is reduced because claims developed more favourably than expected, improving the reported combined ratio and boosting pre-tax profit. The FCA is alert to insurers using reserve releases to mask deteriorating underwriting performance, and this is a strategic governance concern for the board and claims director alike.</p>
+            </div>
+        </section>
+
+        <!-- Section 8: Emerging Claims -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Emerging Claims — Cyber, Climate, and the Litigation Funding Effect</h2>
+                <p class="intro">Emerging claims categories test the 820 candidate's ability to apply established claims management principles to new and evolving loss environments.</p>
+
+                <h3 class="section-subtitle">Cyber Claims — ICO 72-Hour Notification and Ransomware Strategy</h3>
+                <p class="intro">Ransomware is the dominant cyber claims scenario at the London market level. A criminal actor encrypts the insured's IT systems and demands a ransom for the decryption key. The strategic claims decisions at incident date are: whether to pay the ransom (law enforcement generally advises against payment — and OFAC sanctions risk arises if the ransomware operator is a designated sanctioned entity); engaging a specialist incident response firm (CrowdStrike, Kroll, Mandiant) immediately; notifying affected parties; and assessing the business interruption loss — the revenue loss during system downtime is typically covered under the BI extension of the cyber policy, and its quantum often exceeds the ransom amount by a multiple.</p>
+                <p class="intro">Under UK GDPR Article 33, where a personal data breach is likely to result in a risk to individuals' rights and freedoms, the data controller must notify the Information Commissioner's Office (ICO) within 72 hours of becoming aware of the breach. Failure to notify on time constitutes a regulatory breach — the ICO can impose fines up to £17.5 million or 4% of annual global turnover, whichever is higher. The claims director must ensure that ICO notification tracking is a day-one priority in the cyber incident response process, not a secondary action after technical remediation.</p>
+
+                <h3 class="section-subtitle">Climate Change Claims — Flood, Subsidence, and Attritional Loss Patterns</h3>
+                <p class="intro">Climate change is structuring a new claims environment that challenges historical loss data assumptions. Increased surface water flooding frequency affects areas previously classified as low-risk under existing flood zone models — creating pricing inadequacy and policy exclusion disputes on commercial flood claims (Flood Re covers eligible domestic properties but not commercial risks, which remain fully market-managed). Extended dry summers are increasing soil shrinkage and clay subsidence claims — structural damage to domestic and commercial properties with longer development tails than standard weather claims. The distinction between attritional climate losses (many small frequent weather events that shift the underlying loss ratio continuously) and discrete catastrophe events (intensifying in severity) is a strategic reserving distinction: attritional climate trends require pricing adjustment in base rates, not CAT modelling responses.</p>
+            </div>
+        </section>
+
+        <!-- Section 9: Exam Technique -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">How to Structure Your 820 Written Exam Answers</h2>
+                <p class="intro">The 820 written examination rewards structured strategic analysis. Every answer must demonstrate the perspective of a claims director making a portfolio-level decision — not a claims handler managing a single file.</p>
+                <p class="intro">The four-step structure for 820 scenario questions is: first, identify the strategic issue — is this a coverage dispute (concurrent causation, trigger, aggregation), a fraud strategy question, a reserving decision, or a litigation strategy choice? Second, state the applicable legal rule or doctrine with authority — cite Wayne Tank, Fairchild, the Fraud Act 2006, or the relevant regulatory provision clearly, not as a name-drop but with a statement of what the authority decided or requires. Third, apply the rule to the specific scenario facts — what does the doctrine produce in this particular situation? Fourth, state the strategic recommendation or decision — what should the claims director decide, and why?</p>
+                <p class="intro">The most common 820 exam failures are: answering at claims handler level (describing how to manage a single file rather than how to set claims strategy); citing cases without stating what they decided; discussing fraud indicators without connecting to SIU design or IFED referral; and describing IBNR methodology without distinguishing the development triangle from the Bornhuetter-Ferguson method and explaining when each applies.</p>
+                <p class="intro">Our 820 assignment help provides: coverage dispute analysis drills, IBNR methodology worked examples, litigation strategy frameworks, fraud strategy answer models, and catastrophe response scenario practice — all structured to the Level 6 strategic analytical standard the CII examiner requires.</p>
+
+                <div class="mid-cta">
+                    <h3>Need expert help with your 820 written exam?</h3>
+                    <p>Contact us today for strategic exam preparation support.</p>
+                    <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20820%20Advanced%20Claims." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 10: Pathway -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">820 Within the CII Advanced Diploma in Insurance Pathway</h2>
+                <p class="intro">820 Advanced Claims Management does not stand alone as a claims technical qualification. It functions as one of three strategic leadership units — alongside 930 Advanced Insurance Broking and 960 Advanced Underwriting — that together form the analytical core of the CII Advanced Diploma in Insurance. The reserving methodology tested in 820 (IBNR, Bornhuetter-Ferguson) connects directly to the portfolio management and catastrophe modelling content in 960. The coverage dispute doctrine in 820 builds on the insurance law foundations established in M05. Passing all three core units — 820, 930, 960 — and meeting the overall credit requirements of the Advanced Diploma qualifies candidates for ACII (Associate of the Chartered Insurance Institute) designation.</p>
+                <p class="intro">820 Advanced Claims Management is one of three compulsory core units in the <a href="/cii-advanced-diploma-in-insurance">CII Advanced Diploma in Insurance</a> — alongside <a href="/930-assignment-help">930 Advanced Insurance Broking</a> and 960 Advanced Underwriting. All three are 30-credit Level 6 written examination units that together constitute the strategic leadership layer of the ACII qualification pathway.</p>
+                <p class="intro">Candidates who have completed the CII Diploma in Insurance carry forward credits from M05 Insurance Law and Practice, M92 Insurance Business and Finance, and 530 Economics and Business — these Diploma core units are not re-sat at Advanced Diploma level. Progression beyond the Advanced Diploma moves to Level 7 optional units (991 Strategic Risk Management, 993 Advanced Reinsurance, 994 Advanced Financial Planning in Insurance — 50 credits each) and ultimately to Fellowship (FCII) and Chartered Insurer status. <a href="/cii-assignment-help">CII assignment help</a> is available across all levels of the qualification pathway.</p>
+            </div>
+        </section>
+
+        <!-- Section 11: FAQs -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions about 820 Advanced Claims</h2>
+
+                <div class="faq-item">
+                    <h4>Q1: Is 820 assessed by written exam or MCQ?</h4>
+                    <p>820 Advanced Claims Management is assessed exclusively by written examination — not MCQ. The examiner expects structured analytical answers demonstrating strategic, senior-level thinking. Candidates who prepare for 820 using MCQ study methods consistently underperform — the examination rewards the ability to construct a reasoned claims strategy recommendation, not the recall of isolated facts. Every answer must reflect the perspective of a claims director operating at portfolio level.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Q2: What level of claims experience do I need before taking 820?</h4>
+                    <p>820 is designed for candidates who already hold the CII Diploma in Insurance and have experience operating at a senior level in claims — claims manager, technical claims specialist, or senior claims adjuster at minimum. The CII imposes no mandatory experience threshold, but the syllabus assumes familiarity with claims processes and commercial insurance frameworks. Candidates with only operational claims handling experience typically find the strategic framing of 820 challenging without structured preparation that explicitly bridges operational knowledge to strategic analysis.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Q3: What are the hardest areas of the 820 syllabus?</h4>
+                    <p>The three most technically demanding areas are: complex coverage disputes — correctly applying Wayne Tank concurrent causation, Fairchild and Bolton MBC policy trigger doctrine, and aggregation clause analysis requires precise legal knowledge combined with strategic application; IBNR reserving — distinguishing the development triangle from the Bornhuetter-Ferguson method and knowing when each is appropriate; and claims litigation strategy — understanding when mediation, LCIA arbitration, and litigation each serve the claims director's strategic objectives, and how litigation funding changes the settlement calculation.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Q4: How long does 820 take to study?</h4>
+                    <p>Most candidates with senior claims experience require 150–180 hours of focused study. Candidates transitioning into claims management from a different insurance specialism may need 180–200 hours. Study should cover all syllabus areas proportionately — do not over-focus on coverage disputes at the expense of fraud strategy and reserving, which carry significant examination weight. The shift from practical claims knowledge to structured written analytical responses is the most common preparation challenge.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Q5: How does 820 connect to the ACII qualification?</h4>
+                    <p>820 is one of the three compulsory core units required for the CII Advanced Diploma in Insurance. Passing 820, 930, and 960 — together with holding or completing M05, M92, and 530 at Diploma level — satisfies the qualification requirements for the Advanced Diploma and confers ACII (Associate of the Chartered Insurance Institute) designation. ACII is the primary senior professional qualification in the UK general insurance market and is recognised by Lloyd's and the London market as the benchmark for claims, underwriting, and broking leadership.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Pages -->
+        <section>
+            <div class="container">
+                <div class="related-posts">
+                    <h3>Related Qualification and Unit Support</h3>
+                    <ul>
+                        <li><a href="/cii-advanced-diploma-in-insurance">Advanced Diploma in Insurance — All Core and Optional Units</a></li>
+                        <li><a href="/m85-assignment-help">M85 Claims Practice — Assignment Help</a></li>
+                        <li><a href="/930-assignment-help">930 Advanced Insurance Broking — Assignment Help</a></li>
+                        <li><a href="/990-assignment-help">990 Insurance Corporate Management — Assignment Help</a></li>
+                        <li><a href="/991-assignment-help">991 London Market Specialisation — Assignment Help</a></li>
+                        <li><a href="/993-assignment-help">993 Strategic Risk Management — Assignment Help</a></li>
+                        <li><a href="/cii-assignment-help">CII Assignment Help — All Qualification Levels</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Need Support With 820 Advanced Claims?</h2>
+                <p>Coverage dispute analysis drills, IBNR methodology worked examples, litigation strategy frameworks, fraud strategy answer models, and catastrophe response scenario practice — all structured to the Level 6 strategic analytical standard the CII examiner requires.</p>
+                <a href="/#contact" class="cta-button">Get Your Free Quote</a>
+                <a href="https://wa.me/254721165448?text=Hello!%20I%20need%20help%20with%20820%20Advanced%20Claims." target="_blank" rel="noopener noreferrer" class="cta-whatsapp">💬 WhatsApp Us Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CII Assignment Help. Supporting insurance professionals worldwide.</p>
+            <p><a href="/">Home</a> | <a href="/#services">Services</a> | <a href="/#contact">Contact</a></p>
+        </div>
+    </footer>
+    <WhatsAppButton />
+
+    <StickyCTA waMessage="Hello! I need help with 820 Advanced Claims." />
+
+    <script is:inline>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

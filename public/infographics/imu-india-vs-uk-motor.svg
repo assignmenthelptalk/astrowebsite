@@ -1,0 +1,90 @@
+<svg width="100%" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="800" height="420" fill="#F8F9FC"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="800" height="52" fill="#1B3A6B"/>
+  <text x="400" y="33" text-anchor="middle" fill="white" font-size="19" font-weight="bold">India vs UK Motor Insurance — Key Differences</text>
+
+  <!-- ===== TABLE HEADER ROW ===== -->
+  <rect x="20" y="62" width="760" height="40" rx="6" fill="#1B3A6B"/>
+  <!-- Column dividers in header -->
+  <line x1="240" y1="62" x2="240" y2="102" stroke="white" stroke-width="1" opacity="0.3"/>
+  <line x1="500" y1="62" x2="500" y2="102" stroke="white" stroke-width="1" opacity="0.3"/>
+  <!-- Header labels -->
+  <text x="130" y="87" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="bold">Feature</text>
+  <text x="370" y="87" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="bold">India (IMU)</text>
+  <text x="640" y="87" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="bold">United Kingdom</text>
+
+  <!-- Flag accent strips under header labels -->
+  <rect x="60" y="98" width="140" height="3" rx="1" fill="#C9A84C"/>
+  <rect x="290" y="98" width="160" height="3" rx="1" fill="#C9A84C"/>
+  <rect x="555" y="98" width="170" height="3" rx="1" fill="#C9A84C"/>
+
+  <!-- ===== ROW 1: Regulator (#F8F9FC) ===== -->
+  <rect x="20" y="102" width="760" height="46" fill="#F8F9FC" stroke="#e0e4ef" stroke-width="0.5"/>
+  <line x1="240" y1="102" x2="240" y2="148" stroke="#d0d6e8" stroke-width="1"/>
+  <line x1="500" y1="102" x2="500" y2="148" stroke="#d0d6e8" stroke-width="1"/>
+  <text x="130" y="120" text-anchor="middle" fill="#1B3A6B" font-size="12" font-weight="bold">Regulator</text>
+  <text x="370" y="120" text-anchor="middle" fill="#1B3A6B" font-size="12">IRDAI</text>
+  <text x="370" y="138" text-anchor="middle" fill="#1B3A6B" font-size="10" font-style="italic">(Insurance Regulatory &amp; Dev. Authority)</text>
+  <text x="640" y="120" text-anchor="middle" fill="#1B3A6B" font-size="12">FCA / PRA</text>
+  <text x="640" y="138" text-anchor="middle" fill="#1B3A6B" font-size="10" font-style="italic">(Financial Conduct / Prudential Reg. Auth.)</text>
+
+  <!-- ===== ROW 2: Compulsory Cover (white) ===== -->
+  <rect x="20" y="148" width="760" height="46" fill="white" stroke="#e0e4ef" stroke-width="0.5"/>
+  <line x1="240" y1="148" x2="240" y2="194" stroke="#d0d6e8" stroke-width="1"/>
+  <line x1="500" y1="148" x2="500" y2="194" stroke="#d0d6e8" stroke-width="1"/>
+  <text x="130" y="166" text-anchor="middle" fill="#1B3A6B" font-size="12" font-weight="bold">Compulsory Cover</text>
+  <text x="370" y="166" text-anchor="middle" fill="#1B3A6B" font-size="12">Third-Party Liability</text>
+  <text x="370" y="182" text-anchor="middle" fill="#1B3A6B" font-size="10" font-style="italic">(Motor Vehicles Act 1988)</text>
+  <text x="640" y="166" text-anchor="middle" fill="#1B3A6B" font-size="12">Third-Party Only</text>
+  <text x="640" y="182" text-anchor="middle" fill="#1B3A6B" font-size="10" font-style="italic">(Road Traffic Act 1988)</text>
+
+  <!-- ===== ROW 3: TP Premium (#F8F9FC) ===== -->
+  <rect x="20" y="194" width="760" height="46" fill="#F8F9FC" stroke="#e0e4ef" stroke-width="0.5"/>
+  <line x1="240" y1="194" x2="240" y2="240" stroke="#d0d6e8" stroke-width="1"/>
+  <line x1="500" y1="194" x2="500" y2="240" stroke="#d0d6e8" stroke-width="1"/>
+  <text x="130" y="212" text-anchor="middle" fill="#1B3A6B" font-size="12" font-weight="bold">TP Premium</text>
+  <text x="370" y="212" text-anchor="middle" fill="#1B3A6B" font-size="12">IRDAI-set tariff</text>
+  <text x="370" y="228" text-anchor="middle" fill="#1B3A6B" font-size="10" font-style="italic">(annual rate schedule)</text>
+  <text x="640" y="212" text-anchor="middle" fill="#1B3A6B" font-size="12">Market-rated</text>
+  <text x="640" y="228" text-anchor="middle" fill="#1B3A6B" font-size="10" font-style="italic">(risk-based, insurer-set)</text>
+
+  <!-- ===== ROW 4: OD Cover (white) ===== -->
+  <rect x="20" y="240" width="760" height="46" fill="white" stroke="#e0e4ef" stroke-width="0.5"/>
+  <line x1="240" y1="240" x2="240" y2="286" stroke="#d0d6e8" stroke-width="1"/>
+  <line x1="500" y1="240" x2="500" y2="286" stroke="#d0d6e8" stroke-width="1"/>
+  <text x="130" y="258" text-anchor="middle" fill="#1B3A6B" font-size="12" font-weight="bold">OD Cover</text>
+  <text x="370" y="258" text-anchor="middle" fill="#1B3A6B" font-size="12">Voluntary add-on</text>
+  <text x="370" y="274" text-anchor="middle" fill="#1B3A6B" font-size="10" font-style="italic">(separate Own Damage policy)</text>
+  <text x="640" y="258" text-anchor="middle" fill="#1B3A6B" font-size="12">Included in</text>
+  <text x="640" y="274" text-anchor="middle" fill="#1B3A6B" font-size="12">Comprehensive</text>
+
+  <!-- ===== ROW 5: Claim Settlement (#F8F9FC) ===== -->
+  <rect x="20" y="286" width="760" height="46" fill="#F8F9FC" stroke="#e0e4ef" stroke-width="0.5"/>
+  <line x1="240" y1="286" x2="240" y2="332" stroke="#d0d6e8" stroke-width="1"/>
+  <line x1="500" y1="286" x2="500" y2="332" stroke="#d0d6e8" stroke-width="1"/>
+  <text x="130" y="304" text-anchor="middle" fill="#1B3A6B" font-size="12" font-weight="bold">Claim Settlement</text>
+  <text x="370" y="304" text-anchor="middle" fill="#1B3A6B" font-size="12">MACT tribunals</text>
+  <text x="370" y="320" text-anchor="middle" fill="#1B3A6B" font-size="10" font-style="italic">(Motor Accident Claims Tribunal)</text>
+  <text x="640" y="304" text-anchor="middle" fill="#1B3A6B" font-size="12">FOS / courts</text>
+  <text x="640" y="320" text-anchor="middle" fill="#1B3A6B" font-size="10" font-style="italic">(Financial Ombudsman Service)</text>
+
+  <!-- ===== ROW 6: Market Structure (white) ===== -->
+  <rect x="20" y="332" width="760" height="46" fill="white" stroke="#e0e4ef" stroke-width="0.5"/>
+  <line x1="240" y1="332" x2="240" y2="378" stroke="#d0d6e8" stroke-width="1"/>
+  <line x1="500" y1="332" x2="500" y2="378" stroke="#d0d6e8" stroke-width="1"/>
+  <text x="130" y="350" text-anchor="middle" fill="#1B3A6B" font-size="12" font-weight="bold">Market Structure</text>
+  <text x="370" y="350" text-anchor="middle" fill="#1B3A6B" font-size="11">~25 public + private insurers</text>
+  <text x="370" y="366" text-anchor="middle" fill="#1B3A6B" font-size="10" font-style="italic">(PSUs + private sector)</text>
+  <text x="640" y="350" text-anchor="middle" fill="#1B3A6B" font-size="11">50+ private insurers + Lloyd's</text>
+  <text x="640" y="366" text-anchor="middle" fill="#1B3A6B" font-size="10" font-style="italic">(competitive, Lloyd's syndicates)</text>
+
+  <!-- Outer border for table -->
+  <rect x="20" y="62" width="760" height="316" rx="6" fill="none" stroke="#1B3A6B" stroke-width="2"/>
+
+  <!-- ===== FOOTER ===== -->
+  <rect x="0" y="384" width="800" height="36" fill="#1B3A6B"/>
+  <text x="400" y="407" text-anchor="middle" fill="white" font-size="11">IMU = International Motor Underwriting  ·  CII Diploma Module  ·  Source: IRDAI / FCA regulatory frameworks</text>
+</svg>

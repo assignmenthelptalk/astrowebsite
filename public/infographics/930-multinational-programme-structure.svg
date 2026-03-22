@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" role="img" aria-labelledby="title-930-multinational">
+  <title id="title-930-multinational">Multinational Programme: Master + Local Policy Architecture</title>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="#F8F9FC"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="800" height="50" fill="#1B3A6B"/>
+  <text x="400" y="32" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#C9A84C" text-anchor="middle">Multinational Programme: Master + Local Policy Architecture</text>
+
+  <!-- MASTER POLICY box -->
+  <rect x="150" y="70" width="500" height="80" rx="6" fill="#1B3A6B"/>
+  <text x="400" y="98" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9A84C" text-anchor="middle">MASTER POLICY</text>
+  <text x="400" y="118" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">Issued in parent company's home country</text>
+  <text x="400" y="136" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">Covers DIC (broader terms) + DIL (higher limits)</text>
+
+  <!-- Arrow from master to local -->
+  <line x1="400" y1="150" x2="400" y2="190" stroke="#1B3A6B" stroke-width="2.5"/>
+  <polygon points="393,183 407,183 400,196" fill="#1B3A6B"/>
+
+  <!-- Horizontal connector line -->
+  <line x1="140" y1="196" x2="660" y2="196" stroke="#1B3A6B" stroke-width="2"/>
+  <!-- Left drop -->
+  <line x1="140" y1="196" x2="140" y2="216" stroke="#1B3A6B" stroke-width="2"/>
+  <!-- Centre drop -->
+  <line x1="400" y1="196" x2="400" y2="216" stroke="#1B3A6B" stroke-width="2"/>
+  <!-- Right drop -->
+  <line x1="660" y1="196" x2="660" y2="216" stroke="#1B3A6B" stroke-width="2"/>
+
+  <!-- Local Policy A — UK -->
+  <rect x="50" y="216" width="180" height="90" rx="6" fill="#FFFFFF" stroke="#1B3A6B" stroke-width="2"/>
+  <rect x="50" y="216" width="180" height="28" rx="6" fill="#E8ECF4"/>
+  <rect x="50" y="238" width="180" height="6" fill="#E8ECF4"/>
+  <text x="140" y="235" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1B3A6B" text-anchor="middle">Local Policy A (UK)</text>
+  <text x="140" y="262" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Admitted</text>
+  <text x="140" y="279" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Standard terms</text>
+  <text x="140" y="296" font-family="Arial, sans-serif" font-size="10" fill="#1B3A6B" text-anchor="middle">Non-admitted permitted</text>
+
+  <!-- Local Policy B — Brazil -->
+  <rect x="310" y="216" width="180" height="90" rx="6" fill="#FFFFFF" stroke="#C9A84C" stroke-width="2"/>
+  <rect x="310" y="216" width="180" height="28" rx="6" fill="#C9A84C"/>
+  <rect x="310" y="238" width="180" height="6" fill="#C9A84C"/>
+  <text x="400" y="235" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1B3A6B" text-anchor="middle">Local Policy B (Brazil)</text>
+  <text x="400" y="262" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Must-admit country</text>
+  <text x="400" y="279" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Mandatory local insurer</text>
+  <text x="400" y="296" font-family="Arial, sans-serif" font-size="10" fill="#C9A84C" text-anchor="middle" font-weight="bold">Fronting arrangement required</text>
+
+  <!-- Local Policy C — Singapore -->
+  <rect x="570" y="216" width="180" height="90" rx="6" fill="#FFFFFF" stroke="#1B3A6B" stroke-width="2"/>
+  <rect x="570" y="216" width="180" height="28" rx="6" fill="#E8ECF4"/>
+  <rect x="570" y="238" width="180" height="6" fill="#E8ECF4"/>
+  <text x="660" y="235" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1B3A6B" text-anchor="middle">Local Policy C (Singapore)</text>
+  <text x="660" y="262" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Non-admitted permitted</text>
+  <text x="660" y="279" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C" text-anchor="middle">Standard terms apply</text>
+  <text x="660" y="296" font-family="Arial, sans-serif" font-size="10" fill="#1B3A6B" text-anchor="middle">Flexible programme structure</text>
+
+  <!-- DIC/DIL Legend box -->
+  <rect x="160" y="328" width="480" height="64" rx="6" fill="#FFFFFF" stroke="#C9A84C" stroke-width="2"/>
+  <rect x="160" y="328" width="480" height="24" rx="6" fill="#1B3A6B"/>
+  <rect x="160" y="346" width="480" height="6" fill="#1B3A6B"/>
+  <text x="400" y="344" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C9A84C" text-anchor="middle">DIC / DIL Legend</text>
+  <text x="195" y="364" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C">DIC = Difference in Conditions: master fills gaps where local terms are narrower</text>
+  <text x="195" y="381" font-family="Arial, sans-serif" font-size="11" fill="#2C2C2C">DIL = Difference in Limits: master tops up where local limits fall below programme standard</text>
+
+  <!-- Footer -->
+  <text x="400" y="412" font-family="Arial, sans-serif" font-size="10" fill="#1B3A6B" text-anchor="middle" opacity="0.7">ciiassignmenthelp.com</text>
+</svg>

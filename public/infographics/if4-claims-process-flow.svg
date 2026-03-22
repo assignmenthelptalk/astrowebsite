@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" width="100%" role="img" aria-labelledby="if4-claims-flow-title">
+  <title id="if4-claims-flow-title">IF4 Insurance Claims Process Flow: FNOL, Investigation, Coverage Assessment, Settlement</title>
+
+  <!-- Background -->
+  <rect width="800" height="340" fill="#F8F9FC"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="800" height="48" fill="#1B3A6B"/>
+  <text x="400" y="31" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">IF4 — Insurance Claims Process Flow</text>
+
+  <!-- Step boxes -->
+  <!-- Step 1: FNOL -->
+  <rect x="28" y="72" width="158" height="168" rx="6" fill="#1B3A6B"/>
+  <text x="107" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#C9A84C">STAGE 1</text>
+  <text x="107" y="120" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">FNOL</text>
+  <line x1="50" y1="130" x2="164" y2="130" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="107" y="149" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">Policyholder</text>
+  <text x="107" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">notifies insurer</text>
+  <text x="107" y="182" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">Details recorded</text>
+  <text x="107" y="200" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">&amp; reserve set</text>
+  <text x="107" y="218" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#C9A84C">Claim reference</text>
+  <text x="107" y="233" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#C9A84C">issued</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="200,150 216,143 216,157" fill="#C9A84C"/>
+  <line x1="186" y1="150" x2="216" y2="150" stroke="#C9A84C" stroke-width="2.5"/>
+
+  <!-- Step 2: Investigation -->
+  <rect x="220" y="72" width="158" height="168" rx="6" fill="#1B3A6B"/>
+  <text x="299" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#C9A84C">STAGE 2</text>
+  <text x="299" y="120" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF">INVESTIGATION</text>
+  <line x1="242" y1="130" x2="356" y2="130" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="299" y="149" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">Loss adjuster /</text>
+  <text x="299" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">assessor appointed</text>
+  <text x="299" y="182" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">Facts gathered</text>
+  <text x="299" y="200" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">Fraud indicators</text>
+  <text x="299" y="218" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">checked</text>
+  <text x="299" y="236" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#C9A84C">Coverage assessed</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="392,150 408,143 408,157" fill="#C9A84C"/>
+  <line x1="378" y1="150" x2="408" y2="150" stroke="#C9A84C" stroke-width="2.5"/>
+
+  <!-- Step 3: Coverage Assessment -->
+  <rect x="412" y="72" width="158" height="168" rx="6" fill="#1B3A6B"/>
+  <text x="491" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#C9A84C">STAGE 3</text>
+  <text x="491" y="116" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#FFFFFF">COVERAGE</text>
+  <text x="491" y="130" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#FFFFFF">ASSESSMENT</text>
+  <line x1="434" y1="138" x2="548" y2="138" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="491" y="156" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">Policy terms</text>
+  <text x="491" y="171" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">reviewed</text>
+  <text x="491" y="189" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">Proximate cause</text>
+  <text x="491" y="204" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">determined</text>
+  <text x="491" y="222" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#C9A84C">Liability admitted</text>
+  <text x="491" y="237" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#C9A84C">or queried</text>
+
+  <!-- Arrow 3 -->
+  <polygon points="584,150 600,143 600,157" fill="#C9A84C"/>
+  <line x1="570" y1="150" x2="600" y2="150" stroke="#C9A84C" stroke-width="2.5"/>
+
+  <!-- Step 4: Settlement -->
+  <rect x="604" y="72" width="168" height="168" rx="6" fill="#1B3A6B"/>
+  <text x="688" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#C9A84C">STAGE 4</text>
+  <text x="688" y="120" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">SETTLEMENT</text>
+  <line x1="626" y1="130" x2="750" y2="130" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="688" y="149" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">Payment, repair,</text>
+  <text x="688" y="164" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">replacement, or</text>
+  <text x="688" y="179" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">reinstatement</text>
+  <text x="688" y="200" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#E8ECF4">Discharge issued</text>
+  <text x="688" y="218" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#C9A84C">Subrogation rights</text>
+  <text x="688" y="233" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" fill="#C9A84C">arise after payment</text>
+
+  <!-- Legend label -->
+  <text x="28" y="268" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#1B3A6B">Settlement Methods:</text>
+
+  <!-- Legend boxes -->
+  <rect x="168" y="254" width="130" height="30" rx="4" fill="#1B3A6B"/>
+  <text x="233" y="274" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#FFFFFF">Cash Payment</text>
+
+  <rect x="308" y="254" width="130" height="30" rx="4" fill="#1B3A6B"/>
+  <text x="373" y="274" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#FFFFFF">Repair</text>
+
+  <rect x="448" y="254" width="130" height="30" rx="4" fill="#1B3A6B"/>
+  <text x="513" y="274" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#FFFFFF">Replacement</text>
+
+  <rect x="588" y="254" width="144" height="30" rx="4" fill="#1B3A6B"/>
+  <text x="660" y="274" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#C9A84C">Reinstatement</text>
+
+  <!-- Footer -->
+  <text x="400" y="325" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#999">ciiassignmenthelp.com</text>
+</svg>

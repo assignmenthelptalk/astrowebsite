@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size: 22px; font-weight: bold; fill: #1B3A6B; }
+      .box-header { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; fill: white; }
+      .box-label { font-family: Arial, Helvetica, sans-serif; font-size: 10px; fill: #555555; }
+      .box-value { font-family: Arial, Helvetica, sans-serif; font-size: 10px; fill: #1B3A6B; font-weight: bold; }
+      .regulator-name { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; fill: #C9A84C; }
+      .notable-text { font-family: Arial, Helvetica, sans-serif; font-size: 9.5px; fill: #444444; font-style: italic; }
+      .banner-text { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; fill: #C9A84C; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 13px; fill: #555555; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#F8F9FC"/>
+
+  <!-- Title area -->
+  <rect x="0" y="0" width="800" height="56" fill="#1B3A6B"/>
+  <text x="400" y="22" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="20" font-weight="bold" fill="white">GCC Motor Claims — Regulatory Framework</text>
+  <text x="400" y="44" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#C9A84C">Six Jurisdictions | Compulsory TPL | Key Regulatory Features</text>
+
+  <!-- ==================== ROW 1 ==================== -->
+
+  <!-- Box 1: UAE -->
+  <rect x="24" y="72" width="232" height="126" rx="6" ry="6" fill="white" stroke="#D0D8E8" stroke-width="1.5"/>
+  <rect x="24" y="72" width="232" height="30" rx="6" ry="6" fill="#1B3A6B"/>
+  <rect x="24" y="90" width="232" height="12" fill="#1B3A6B"/>
+  <text x="140" y="92" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="white">🇦🇪  UAE</text>
+
+  <text x="36" y="118" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Regulator:</text>
+  <text x="105" y="118" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#C9A84C">CBUAE</text>
+  <text x="36" y="133" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Compulsory TPL:</text>
+  <text x="135" y="133" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B">Yes</text>
+  <text x="36" y="148" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Cashless repairs:</text>
+  <text x="138" y="148" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B">TPA network</text>
+  <line x1="36" y1="158" x2="244" y2="158" stroke="#E0E8F0" stroke-width="1"/>
+  <text x="36" y="171" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#444444" font-style="italic">Notable: DIFC separate framework</text>
+
+  <!-- Box 2: Saudi Arabia -->
+  <rect x="284" y="72" width="232" height="126" rx="6" ry="6" fill="white" stroke="#D0D8E8" stroke-width="1.5"/>
+  <rect x="284" y="72" width="232" height="30" rx="6" ry="6" fill="#1B3A6B"/>
+  <rect x="284" y="90" width="232" height="12" fill="#1B3A6B"/>
+  <text x="400" y="92" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="white">🇸🇦  Saudi Arabia</text>
+
+  <text x="296" y="118" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Regulator:</text>
+  <text x="365" y="118" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#C9A84C">SAMA</text>
+  <text x="296" y="133" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Compulsory TPL:</text>
+  <text x="395" y="133" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B">Yes</text>
+  <text x="296" y="148" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Health:</text>
+  <text x="340" y="148" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B">CCHI mandated</text>
+  <line x1="296" y1="158" x2="504" y2="158" stroke="#E0E8F0" stroke-width="1"/>
+  <text x="296" y="171" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#444444" font-style="italic">Notable: Cooperative insurance model</text>
+
+  <!-- Box 3: Bahrain -->
+  <rect x="544" y="72" width="232" height="126" rx="6" ry="6" fill="white" stroke="#D0D8E8" stroke-width="1.5"/>
+  <rect x="544" y="72" width="232" height="30" rx="6" ry="6" fill="#1B3A6B"/>
+  <rect x="544" y="90" width="232" height="12" fill="#1B3A6B"/>
+  <text x="660" y="92" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="white">🇧🇭  Bahrain</text>
+
+  <text x="556" y="118" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Regulator:</text>
+  <text x="625" y="118" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#C9A84C">CBB</text>
+  <text x="556" y="133" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Compulsory TPL:</text>
+  <text x="655" y="133" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B">Yes</text>
+  <text x="556" y="148" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Claims:</text>
+  <text x="598" y="148" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B">Direct settlement</text>
+  <line x1="556" y1="158" x2="764" y2="158" stroke="#E0E8F0" stroke-width="1"/>
+  <text x="556" y="171" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#444444" font-style="italic">Notable: 15-day claims decision requirement</text>
+
+  <!-- ==================== ROW 2 ==================== -->
+
+  <!-- Box 4: Qatar -->
+  <rect x="24" y="214" width="232" height="126" rx="6" ry="6" fill="white" stroke="#D0D8E8" stroke-width="1.5"/>
+  <rect x="24" y="214" width="232" height="30" rx="6" ry="6" fill="#1B3A6B"/>
+  <rect x="24" y="232" width="232" height="12" fill="#1B3A6B"/>
+  <text x="140" y="234" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="white">🇶🇦  Qatar</text>
+
+  <text x="36" y="260" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Regulator:</text>
+  <text x="105" y="260" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#C9A84C">QCB</text>
+  <text x="36" y="275" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Compulsory TPL:</text>
+  <text x="135" y="275" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B">Yes</text>
+  <text x="36" y="290" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Claim disputes:</text>
+  <text x="125" y="290" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B">QFC Regulatory Tribunal</text>
+  <line x1="36" y1="300" x2="244" y2="300" stroke="#E0E8F0" stroke-width="1"/>
+  <text x="36" y="313" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#444444" font-style="italic">Notable: Mandatory health insurance</text>
+
+  <!-- Box 5: Kuwait -->
+  <rect x="284" y="214" width="232" height="126" rx="6" ry="6" fill="white" stroke="#D0D8E8" stroke-width="1.5"/>
+  <rect x="284" y="214" width="232" height="30" rx="6" ry="6" fill="#1B3A6B"/>
+  <rect x="284" y="232" width="232" height="12" fill="#1B3A6B"/>
+  <text x="400" y="234" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="white">🇰🇼  Kuwait</text>
+
+  <text x="296" y="260" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Regulator:</text>
+  <text x="365" y="260" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#C9A84C">CITRA</text>
+  <text x="296" y="275" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Compulsory TPL:</text>
+  <text x="395" y="275" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B">Yes</text>
+  <text x="296" y="290" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Settlement:</text>
+  <text x="358" y="290" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B">KFAS arbitration</text>
+  <line x1="296" y1="300" x2="504" y2="300" stroke="#E0E8F0" stroke-width="1"/>
+  <text x="296" y="313" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#444444" font-style="italic">Notable: Compulsory motor TPL since 1959</text>
+
+  <!-- Box 6: Oman -->
+  <rect x="544" y="214" width="232" height="126" rx="6" ry="6" fill="white" stroke="#D0D8E8" stroke-width="1.5"/>
+  <rect x="544" y="214" width="232" height="30" rx="6" ry="6" fill="#1B3A6B"/>
+  <rect x="544" y="232" width="232" height="12" fill="#1B3A6B"/>
+  <text x="660" y="234" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="white">🇴🇲  Oman</text>
+
+  <text x="556" y="260" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Regulator:</text>
+  <text x="625" y="260" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#C9A84C">CMA</text>
+  <text x="556" y="275" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Compulsory TPL:</text>
+  <text x="655" y="275" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B">Yes</text>
+  <text x="556" y="290" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Standard forms:</text>
+  <text x="644" y="290" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="bold" fill="#1B3A6B">CMA mandated</text>
+  <line x1="556" y1="300" x2="764" y2="300" stroke="#E0E8F0" stroke-width="1"/>
+  <text x="556" y="313" font-family="Arial,Helvetica,sans-serif" font-size="9.5" fill="#444444" font-style="italic">Notable: Motor OD statutory schedule</text>
+
+  <!-- ==================== LEGEND ROW ==================== -->
+  <rect x="24" y="358" width="752" height="44" rx="6" ry="6" fill="white" stroke="#D0D8E8" stroke-width="1.5"/>
+  <text x="400" y="373" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="bold" fill="#1B3A6B">Common Features Across All GCC Jurisdictions</text>
+  <text x="400" y="391" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555">Compulsory TPL in all 6 states  |  IF4 claims principles apply universally  |  Takaful frameworks operate in parallel  |  Reinsurance cessions regulated locally</text>
+
+  <!-- ==================== BOTTOM BANNER ==================== -->
+  <rect x="0" y="420" width="800" height="80" fill="#1B3A6B"/>
+  <text x="400" y="449" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#C9A84C">WCE covers claims handling in non-UK markets —</text>
+  <text x="400" y="468" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="bold" fill="#C9A84C">same IF4 principles, different regulatory frameworks</text>
+  <text x="400" y="489" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="white">CII WCE Examination Support  |  ciiassignmenthelp.com</text>
+</svg>

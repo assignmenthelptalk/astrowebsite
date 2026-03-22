@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 800 520">
+  <defs>
+    <style>
+      .col-header { font-family: Georgia, 'Times New Roman', serif; font-size: 16px; font-weight: bold; }
+      .row-label { font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-weight: bold; letter-spacing: 0.8px; text-transform: uppercase; }
+      .row-value { font-family: Arial, Helvetica, sans-serif; font-size: 11px; }
+      .banner-heading { font-family: Georgia, 'Times New Roman', serif; font-size: 13px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" fill="#F8F9FC"/>
+
+  <!-- Title Bar -->
+  <rect x="0" y="0" width="800" height="54" fill="#1B3A6B"/>
+  <text x="400" y="22" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="20" font-weight="bold" fill="white">590 Takaful — Three Operational Models</text>
+  <text x="400" y="43" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#C9A84C">Mudarabah | Wakalah | Hybrid — Side-by-Side Comparison</text>
+
+  <!-- ==================== COLUMN HEADERS ==================== -->
+
+  <!-- Col 1: Mudarabah (navy) -->
+  <rect x="12" y="66" width="242" height="46" rx="6" ry="6" fill="#1B3A6B"/>
+  <text x="133" y="85" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="17" font-weight="bold" fill="white">Mudarabah</text>
+  <text x="133" y="103" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#C9A84C">Profit-Sharing Model</text>
+
+  <!-- Col 2: Wakalah (gold) -->
+  <rect x="280" y="66" width="242" height="46" rx="6" ry="6" fill="#C9A84C"/>
+  <text x="401" y="85" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="17" font-weight="bold" fill="#1B3A6B">Wakalah</text>
+  <text x="401" y="103" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#1B3A6B">Fixed-Fee Agency Model</text>
+
+  <!-- Col 3: Hybrid (navy) -->
+  <rect x="548" y="66" width="242" height="46" rx="6" ry="6" fill="#1B3A6B"/>
+  <text x="669" y="85" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="17" font-weight="bold" fill="white">Hybrid</text>
+  <text x="669" y="103" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#C9A84C">Wakalah + Mudarabah</text>
+
+  <!-- ==================== ROW DEFINITIONS ==================== -->
+  <!-- Rows: y start 122, each row height 46, 6 rows = 276px, ends at 398 -->
+
+  <!-- ROW 1: Operator Role — y=122 -->
+  <rect x="12" y="122" width="242" height="46" fill="white" stroke="#D0D8E8" stroke-width="1"/>
+  <rect x="280" y="122" width="242" height="46" fill="#FEFAF0" stroke="#D0D8E8" stroke-width="1"/>
+  <rect x="548" y="122" width="242" height="46" fill="white" stroke="#D0D8E8" stroke-width="1"/>
+
+  <text x="24" y="136" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="0.8">OPERATOR ROLE</text>
+  <text x="24" y="154" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#1B3A6B">Mudarib</text>
+  <text x="24" y="168" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555" font-style="italic">(Business partner)</text>
+
+  <text x="292" y="136" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#1B3A6B" letter-spacing="0.8">OPERATOR ROLE</text>
+  <text x="292" y="154" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#1B3A6B">Wakeel</text>
+  <text x="292" y="168" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555" font-style="italic">(Agent)</text>
+
+  <text x="560" y="136" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="0.8">OPERATOR ROLE</text>
+  <text x="560" y="154" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="white">Agent + Partner</text>
+  <text x="560" y="168" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#C9A84C" font-style="italic">(Dual capacity)</text>
+
+  <!-- ROW 2: Operator Income — y=168 -->
+  <rect x="12" y="168" width="242" height="46" fill="#F0F4FA" stroke="#D0D8E8" stroke-width="1"/>
+  <rect x="280" y="168" width="242" height="46" fill="#FDF6E3" stroke="#D0D8E8" stroke-width="1"/>
+  <rect x="548" y="168" width="242" height="46" fill="#F0F4FA" stroke="#D0D8E8" stroke-width="1"/>
+
+  <text x="24" y="182" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="0.8">OPERATOR INCOME</text>
+  <text x="24" y="198" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1B3A6B">Share of fund surplus</text>
+  <text x="24" y="210" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555" font-style="italic">(Performance-linked)</text>
+
+  <text x="292" y="182" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#1B3A6B" letter-spacing="0.8">OPERATOR INCOME</text>
+  <text x="292" y="198" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1B3A6B">Fixed fee: 10–35% of</text>
+  <text x="292" y="210" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1B3A6B">contributions</text>
+
+  <text x="560" y="182" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="0.8">OPERATOR INCOME</text>
+  <text x="560" y="198" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="white">Wakalah fee +</text>
+  <text x="560" y="210" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="white">Mudarabah on investments</text>
+
+  <!-- ROW 3: Surplus — y=214 -->
+  <rect x="12" y="214" width="242" height="46" fill="white" stroke="#D0D8E8" stroke-width="1"/>
+  <rect x="280" y="214" width="242" height="46" fill="#FEFAF0" stroke="#D0D8E8" stroke-width="1"/>
+  <rect x="548" y="214" width="242" height="46" fill="white" stroke="#D0D8E8" stroke-width="1"/>
+
+  <text x="24" y="228" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="0.8">SURPLUS DISTRIBUTION</text>
+  <text x="24" y="244" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1B3A6B">Split by agreed ratio</text>
+  <text x="24" y="256" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555" font-style="italic">(e.g. 60/40 operator/participants)</text>
+
+  <text x="292" y="228" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#1B3A6B" letter-spacing="0.8">SURPLUS DISTRIBUTION</text>
+  <text x="292" y="244" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1B3A6B">All surplus to participants</text>
+  <text x="292" y="256" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555" font-style="italic">(Operator fee already fixed)</text>
+
+  <text x="560" y="228" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="0.8">SURPLUS DISTRIBUTION</text>
+  <text x="560" y="244" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="white">Investment profit shared;</text>
+  <text x="560" y="256" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="white">u/w surplus → participants</text>
+
+  <!-- ROW 4: Deficit — y=260 -->
+  <rect x="12" y="260" width="242" height="46" fill="#F0F4FA" stroke="#D0D8E8" stroke-width="1"/>
+  <rect x="280" y="260" width="242" height="46" fill="#FDF6E3" stroke="#D0D8E8" stroke-width="1"/>
+  <rect x="548" y="260" width="242" height="46" fill="#F0F4FA" stroke="#D0D8E8" stroke-width="1"/>
+
+  <text x="24" y="274" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="0.8">DEFICIT HANDLING</text>
+  <text x="24" y="290" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1B3A6B">Operator provides Qard</text>
+  <text x="24" y="302" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555" font-style="italic">(Interest-free loan)</text>
+
+  <text x="292" y="274" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#1B3A6B" letter-spacing="0.8">DEFICIT HANDLING</text>
+  <text x="292" y="290" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1B3A6B">Operator provides Qard</text>
+  <text x="292" y="302" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#555555" font-style="italic">(Interest-free loan)</text>
+
+  <text x="560" y="274" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="0.8">DEFICIT HANDLING</text>
+  <text x="560" y="290" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="white">Operator provides Qard</text>
+  <text x="560" y="302" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#C9A84C" font-style="italic">(Interest-free loan)</text>
+
+  <!-- ROW 5: Market — y=306 -->
+  <rect x="12" y="306" width="242" height="46" fill="white" stroke="#D0D8E8" stroke-width="1"/>
+  <rect x="280" y="306" width="242" height="46" fill="#FEFAF0" stroke="#D0D8E8" stroke-width="1"/>
+  <rect x="548" y="306" width="242" height="46" fill="white" stroke="#D0D8E8" stroke-width="1"/>
+
+  <text x="24" y="320" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="0.8">PRIMARY MARKET</text>
+  <text x="24" y="338" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1B3A6B">Malaysia / Southeast Asia</text>
+
+  <text x="292" y="320" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#1B3A6B" letter-spacing="0.8">PRIMARY MARKET</text>
+  <text x="292" y="338" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#1B3A6B">GCC / Saudi Arabia / UAE</text>
+
+  <text x="560" y="320" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="0.8">PRIMARY MARKET</text>
+  <text x="560" y="338" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="white">Malaysia (BNM-approved)</text>
+
+  <!-- ROW 6: Transparency — y=352 -->
+  <rect x="12" y="352" width="242" height="42" rx="0" ry="0" fill="#F0F4FA" stroke="#D0D8E8" stroke-width="1"/>
+  <rect x="280" y="352" width="242" height="42" fill="#FDF6E3" stroke="#D0D8E8" stroke-width="1"/>
+  <rect x="548" y="352" width="242" height="42" fill="#F0F4FA" stroke="#D0D8E8" stroke-width="1"/>
+  <!-- Rounded bottom corners via clip -->
+  <rect x="12" y="376" width="242" height="18" rx="0" ry="0" fill="#F0F4FA" stroke="#D0D8E8" stroke-width="1"/>
+  <rect x="280" y="376" width="242" height="18" fill="#FDF6E3" stroke="#D0D8E8" stroke-width="1"/>
+  <rect x="548" y="376" width="242" height="18" fill="#F0F4FA" stroke="#D0D8E8" stroke-width="1"/>
+
+  <text x="24" y="366" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="0.8">TRANSPARENCY LEVEL</text>
+  <!-- Medium bar -->
+  <rect x="24" y="372" width="80" height="10" rx="5" ry="5" fill="#1B3A6B" fill-opacity="0.30"/>
+  <rect x="24" y="372" width="52" height="10" rx="5" ry="5" fill="#1B3A6B"/>
+  <text x="112" y="382" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#1B3A6B">Medium</text>
+  <text x="24" y="392" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#555555" font-style="italic">(performance-linked)</text>
+
+  <text x="292" y="366" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#1B3A6B" letter-spacing="0.8">TRANSPARENCY LEVEL</text>
+  <!-- High bar -->
+  <rect x="292" y="372" width="100" height="10" rx="5" ry="5" fill="#1B3A6B" fill-opacity="0.20"/>
+  <rect x="292" y="372" width="100" height="10" rx="5" ry="5" fill="#1B3A6B"/>
+  <text x="398" y="382" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#1B3A6B">High</text>
+  <text x="292" y="392" font-family="Arial,Helvetica,sans-serif" font-size="9" fill="#555555" font-style="italic">(fee fixed regardless of fund)</text>
+
+  <text x="560" y="366" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#C9A84C" letter-spacing="0.8">TRANSPARENCY LEVEL</text>
+  <!-- Medium-High bar -->
+  <rect x="560" y="372" width="100" height="10" rx="5" ry="5" fill="white" fill-opacity="0.20"/>
+  <rect x="560" y="372" width="76" height="10" rx="5" ry="5" fill="white"/>
+  <text x="642" y="382" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="white">Med-High</text>
+
+  <!-- ==================== BOTTOM TABARRU BANNER ==================== -->
+  <rect x="0" y="402" width="800" height="72" fill="#C9A84C"/>
+
+  <!-- Arabic-styled ornamental divider -->
+  <line x1="40" y1="416" x2="760" y2="416" stroke="#1B3A6B" stroke-width="0.75" stroke-dasharray="4,3"/>
+
+  <text x="400" y="436" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14" font-weight="bold" fill="#1B3A6B">All models use TABARRU — charitable contribution replacing commercial premium.</text>
+  <text x="400" y="454" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11.5" fill="#1B3A6B">Fund invested in Shariah-compliant instruments only.</text>
+  <text x="400" y="470" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#1B3A6B">CII 590 Takaful Examination Support  |  ciiassignmenthelp.com</text>
+</svg>
