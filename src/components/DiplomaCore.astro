@@ -1,0 +1,246 @@
+---
+interface Props {
+    currentPage?: 'm05' | 'm92' | '530' | '';
+}
+const { currentPage = '' } = Astro.props;
+---
+
+<section class="diploma-core-banner">
+    <div class="container">
+        <p class="diploma-core-eyebrow">CII Diploma in Insurance — Compulsory Core Units</p>
+        <h2 class="diploma-core-heading">Every Diploma Student Must Pass All Three</h2>
+        <p class="diploma-core-subheading">
+            M05, M92 and 530 are the three mandatory units at the heart of the CII Diploma in Insurance.
+            No substitution or exemption is available. All three must be passed before the Diploma is awarded.
+        </p>
+        <div class="diploma-core-grid">
+
+            {currentPage === 'm05' ? (
+                <div class="diploma-core-card diploma-core-card--current">
+                    <span class="diploma-core-badge">You Are Here</span>
+                    <div class="diploma-core-code">M05</div>
+                    <div class="diploma-core-title">Insurance Law</div>
+                    <div class="diploma-core-meta">25 Credits &bull; Level 4 &bull; Written Exam</div>
+                    <p class="diploma-core-desc">
+                        The hardest CII Diploma unit. Requires statutory citation, case law application
+                        and IRAC-format written answers — assessed in full prose, not MCQ.
+                    </p>
+                </div>
+            ) : (
+                <a href="/m05-assignment-help" class="diploma-core-card diploma-core-card--link">
+                    <span class="diploma-core-badge">Core Unit</span>
+                    <div class="diploma-core-code">M05</div>
+                    <div class="diploma-core-title">Insurance Law</div>
+                    <div class="diploma-core-meta">25 Credits &bull; Level 4 &bull; Written Exam</div>
+                    <p class="diploma-core-desc">
+                        The hardest CII Diploma unit. Requires statutory citation, case law application
+                        and IRAC-format written answers — assessed in full prose, not MCQ.
+                    </p>
+                    <span class="diploma-core-cta">Get Assignment Help &rarr;</span>
+                </a>
+            )}
+
+            {currentPage === 'm92' ? (
+                <div class="diploma-core-card diploma-core-card--current">
+                    <span class="diploma-core-badge">You Are Here</span>
+                    <div class="diploma-core-code">M92</div>
+                    <div class="diploma-core-title">Insurance Business and Finance</div>
+                    <div class="diploma-core-meta">25 Credits &bull; Level 4 &bull; Written Exam</div>
+                    <p class="diploma-core-desc">
+                        Combined ratio, Solvency II three-pillar capital framework, reinsurance structures
+                        and insurance market distribution — written exam with financial calculations.
+                    </p>
+                </div>
+            ) : (
+                <a href="/m92-assignment-help" class="diploma-core-card diploma-core-card--link">
+                    <span class="diploma-core-badge">Core Unit</span>
+                    <div class="diploma-core-code">M92</div>
+                    <div class="diploma-core-title">Insurance Business and Finance</div>
+                    <div class="diploma-core-meta">25 Credits &bull; Level 4 &bull; Written Exam</div>
+                    <p class="diploma-core-desc">
+                        Combined ratio, Solvency II three-pillar capital framework, reinsurance structures
+                        and insurance market distribution — written exam with financial calculations.
+                    </p>
+                    <span class="diploma-core-cta">Get Assignment Help &rarr;</span>
+                </a>
+            )}
+
+            {currentPage === '530' ? (
+                <div class="diploma-core-card diploma-core-card--current">
+                    <span class="diploma-core-badge">You Are Here</span>
+                    <div class="diploma-core-code">530</div>
+                    <div class="diploma-core-title">Economics and Business</div>
+                    <div class="diploma-core-meta">30 Credits &bull; Level 6 &bull; Written Exam</div>
+                    <p class="diploma-core-desc">
+                        The highest-credit core unit. Market structures, macroeconomic analysis applied
+                        to insurance markets and business strategy — assessed at Level 6.
+                    </p>
+                </div>
+            ) : (
+                <a href="/530-assignment-help" class="diploma-core-card diploma-core-card--link">
+                    <span class="diploma-core-badge">Core Unit</span>
+                    <div class="diploma-core-code">530</div>
+                    <div class="diploma-core-title">Economics and Business</div>
+                    <div class="diploma-core-meta">30 Credits &bull; Level 6 &bull; Written Exam</div>
+                    <p class="diploma-core-desc">
+                        The highest-credit core unit. Market structures, macroeconomic analysis applied
+                        to insurance markets and business strategy — assessed at Level 6.
+                    </p>
+                    <span class="diploma-core-cta">Get Assignment Help &rarr;</span>
+                </a>
+            )}
+
+        </div>
+    </div>
+</section>
+
+<style>
+    .diploma-core-banner {
+        background: linear-gradient(135deg, #0d1f35 0%, #1a3355 100%);
+        padding: 3.5rem 0;
+        border-top: 4px solid #ffd700;
+        border-bottom: 4px solid #ffd700;
+    }
+
+    .diploma-core-eyebrow {
+        text-align: center;
+        color: #ffd700;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 0.6rem;
+    }
+
+    .diploma-core-heading {
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.9rem;
+        font-weight: 700;
+        margin-bottom: 0.6rem;
+    }
+
+    .diploma-core-subheading {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 1rem;
+        max-width: 680px;
+        margin: 0 auto 2.5rem;
+        line-height: 1.7;
+    }
+
+    .diploma-core-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .diploma-core-card {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 215, 0, 0.25);
+        border-radius: 10px;
+        padding: 1.75rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .diploma-core-card--link {
+        text-decoration: none;
+        color: inherit;
+        transition: background 0.25s, border-color 0.25s, transform 0.25s;
+        cursor: pointer;
+    }
+
+    .diploma-core-card--link:hover {
+        background: rgba(255, 215, 0, 0.1);
+        border-color: #ffd700;
+        transform: translateY(-3px);
+    }
+
+    .diploma-core-card--current {
+        background: rgba(255, 215, 0, 0.08);
+        border-color: #ffd700;
+    }
+
+    .diploma-core-badge {
+        display: inline-block;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #0d1f35;
+        background: #ffd700;
+        padding: 0.2rem 0.6rem;
+        border-radius: 3px;
+        margin-bottom: 0.5rem;
+        align-self: flex-start;
+    }
+
+    .diploma-core-card--current .diploma-core-badge {
+        background: rgba(255, 215, 0, 0.5);
+        color: #ffffff;
+    }
+
+    .diploma-core-code {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #ffd700;
+        line-height: 1.1;
+    }
+
+    .diploma-core-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #ffffff;
+        line-height: 1.3;
+    }
+
+    .diploma-core-meta {
+        font-size: 0.82rem;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+    }
+
+    .diploma-core-desc {
+        font-size: 0.92rem;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.65;
+        flex-grow: 1;
+    }
+
+    .diploma-core-cta {
+        display: inline-block;
+        margin-top: 0.8rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: #ffd700;
+        align-self: flex-start;
+    }
+
+    @media (max-width: 900px) {
+        .diploma-core-grid {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .diploma-core-heading {
+            font-size: 1.55rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .diploma-core-banner {
+            padding: 2.5rem 0;
+        }
+
+        .diploma-core-heading {
+            font-size: 1.35rem;
+        }
+
+        .diploma-core-subheading {
+            font-size: 0.92rem;
+        }
+    }
+</style>
